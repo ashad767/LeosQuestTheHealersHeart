@@ -9,6 +9,7 @@ public class Wizard : MonoBehaviour
     private Animator a;
     [SerializeField] private AnimationClip[] animLength;
     [SerializeField] private Transform MC;
+    [SerializeField] private GameObject bulletPrefab;
 
     private enum States { idle, lunge, shoot, regen };
 
@@ -34,14 +35,16 @@ public class Wizard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        sr.flipX = MC.position.x > transform.position.x ? true : false;  // Flip boss sprite on its X axis depending on if the MC is left or right of the boss
+        // Flip boss sprite on its X axis depending on if the MC is left or right of the boss
+        sr.flipX = MC.position.x > transform.position.x;  
 
         if (!shoot && !regen && !lunge)
         {
             a.SetInteger("state", (int)States.idle);
         }
 
-        if (!idle) { transform.position = Vector3.MoveTowards(transform.position, MC.position, 2 * Time.deltaTime); }
+        // Make the boss move towards MC when MC is NOT idle
+        if (!idle) { transform.position = Vector3.MoveTowards(transform.position, MC.position, 2f * Time.deltaTime); }
 
     }
 
@@ -82,7 +85,7 @@ public class Wizard : MonoBehaviour
 
                 regen = true;
                 a.SetInteger("state", (int)States.regen);
-                yield return new WaitForSeconds(animLength[1].length);
+                yield return new WaitForSeconds(animLength[1].length + 0.1f);
                 regen = false;
             }
         }
@@ -90,12 +93,27 @@ public class Wizard : MonoBehaviour
 
     private IEnumerator shootAnim()
     {
+        // Don't want to show shooting animation while regen animation is going on
         while(!regen)
         {
-            yield return new WaitForSeconds(Random.Range(2.5f, 5.5f));
+            // Wait a random # of seconds before shooting
+            yield return new WaitForSeconds(Random.Range(2.5f, 5f));
 
             shoot = true;
             a.SetInteger("state", (int)States.shoot);
+
+            // Create/Instantiate a bullet prefab when shooting animation starts
+            GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+
+            // rotations in degrees are based on the bullet prefab being flipped (originally pointing left side)
+            // flipping it on its X axis makes it point to the right and makes it easier for rotation logic
+            bullet.GetComponent<SpriteRenderer>().flipX = true; 
+
+            Vector2 bulletDir = MC.position - bullet.transform.position;
+            float rotation_in_Degrees = Mathf.Atan2(bulletDir.y, bulletDir.x) * Mathf.Rad2Deg;
+            bullet.transform.rotation = Quaternion.Euler(0,0, rotation_in_Degrees);
+            bullet.GetComponent<Rigidbody2D>().velocity = bulletDir.normalized * 6f;
+
             yield return new WaitForSeconds(animLength[0].length);
             shoot = false;
         }
@@ -106,7 +124,7 @@ public class Wizard : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(Random.Range(2f, 4f));
-            health -= 20;
+            health -= 5;
 
             if(health < 0f)
             {

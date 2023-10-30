@@ -576,6 +576,7 @@ MonoBehaviour:
   - {fileID: 7400000, guid: c32d81e0cf5c4544993caece6340eb7e, type: 2}
   - {fileID: 7400000, guid: 8ddb50f063890eb4891e999205590e0e, type: 2}
   MC: {fileID: 2049059778}
+  bulletPrefab: {fileID: 692449540808126300, guid: 4a314bbc9ec77cc49bd4b7e3abe553a0, type: 3}
   idle: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
