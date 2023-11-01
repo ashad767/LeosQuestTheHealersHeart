@@ -13,19 +13,43 @@ public class DestroyBullet : MonoBehaviour
     private int numberOfGBalls = 10;
     private float angleIncrement;
 
+    private float timer = 0f;
+
     // Start is called before the first frame update
     void Start()
     {
         angleIncrement = 360f / numberOfGBalls;
-
-        StartCoroutine(triggerExplosion());
     }
 
-    IEnumerator triggerExplosion()
+    private void Update()
     {
-        // Let the main bullet travel for 0.9 seconds before exploding
-        yield return new WaitForSeconds(0.9f);
+        timer += Time.deltaTime;
 
+        // If the main bullet is exiting the camera's view, trigger explosion
+        if (!IsWithinCameraFrustum())
+        {
+            triggerExplosion();
+        }
+
+        // Else, check if the main bullet travelled for 0.9 or more seconds before exploding
+        else if(timer >= 0.9f)
+        {
+            triggerExplosion();
+
+        }
+    }
+
+    //Check if the main bullet is within the camera's view
+    bool IsWithinCameraFrustum()
+    {
+        Plane[] planes = GeometryUtility.CalculateFrustumPlanes(Camera.main);
+        BoxCollider2D bulletCollider = GetComponent<BoxCollider2D>();
+
+        return GeometryUtility.TestPlanesAABB(planes, bulletCollider.bounds);
+    }
+
+    void triggerExplosion()
+    {
         GameObject explosionAnim = Instantiate(explosion, transform.position, Quaternion.identity);
 
         // Instantiate/Load the green balls that shoot out after the main bullet explodes 
@@ -50,5 +74,4 @@ public class DestroyBullet : MonoBehaviour
             Destroy(gBall, Random.Range(0.3f, 1.3f));
         }
     }
-
 }

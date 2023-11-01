@@ -18,6 +18,8 @@ public class Wizard : MonoBehaviour
     private bool shoot = false;
     private bool regen = false;
 
+    private float bossMoveSpeed;
+
     public float maxHealth = 100f;
     public float currentHealth = 100f;
 
@@ -51,7 +53,11 @@ public class Wizard : MonoBehaviour
         }
 
         // Make the boss move towards MC when MC is NOT idle
-        if (!idle) { transform.position = Vector2.MoveTowards(transform.position, MC.position, 3.5f * Time.deltaTime); }
+        if (!idle) 
+        {
+            bossMoveSpeed = isAngry ? 4.2f : 3.5f;
+            transform.position = Vector2.MoveTowards(transform.position, MC.position, bossMoveSpeed * Time.deltaTime); 
+        }
 
     }
 
@@ -59,8 +65,16 @@ public class Wizard : MonoBehaviour
     {
         while (true)
         {
-            // Boss stays idle for a random # of seconds
-            yield return new WaitForSeconds(Random.Range(2.3f, 3.5f));
+            // Boss stays idle for a random # of seconds (if angry, stays idle for less time)
+            if (isAngry)
+            {
+                yield return new WaitForSeconds(Random.Range(1.5f, 2.4f));
+            }
+            else
+            {
+                yield return new WaitForSeconds(Random.Range(2.3f, 3.5f));
+            }
+            
 
             // Boss starts following for a random # of seconds
             idle = false;
@@ -70,13 +84,15 @@ public class Wizard : MonoBehaviour
             {
                 // I want the boss to lunge at the MC based on the MC's distance and direction.
                 // So I first take the direction in which the boss has to lunge towards (-1 or 1, in X or Y direction)
-                // Then multiply by the distance between the boss and MC. But that would be too fast,so I divided the distance by 2 to make it slower
+                // Then multiply by the distance between the boss and MC. But that would be too fast,so I divided the distance by either 1.5 or 2 to make it slower
                 // I then put those X & Y values as the velocity for the boss 
                 float whereIsMC_X = Mathf.Sign(MC.position.x);
                 float whereIsMC_Y = Mathf.Sign(MC.position.y);
                 float lungeSpeedX = Mathf.Abs(MC.position.x - transform.position.x);
                 float lungeSpeedY = Mathf.Abs(MC.position.y - transform.position.y);
-                rb.velocity = new Vector2(whereIsMC_X * (lungeSpeedX / 2), whereIsMC_Y * (lungeSpeedY / 2));
+                
+                float lungeSpeedController = isAngry ? 1.5f : 2f;
+                rb.velocity = new Vector2(whereIsMC_X * (lungeSpeedX / lungeSpeedController), whereIsMC_Y * (lungeSpeedY / lungeSpeedController));
 
                 lunge = true;
                 a.SetInteger("state", (int)States.lunge);
@@ -86,7 +102,15 @@ public class Wizard : MonoBehaviour
                 rb.velocity = new Vector2(0, 0); // stops boss from drifting away after lunging
             }
 
-            yield return new WaitForSeconds(Random.Range(2.5f, 3f));  // move around for a few seconds
+            // move around for a few seconds (if angry, move around for longer)
+            if (isAngry)
+            {
+                yield return new WaitForSeconds(Random.Range(3.1f, 3.5f));  
+            }
+            else
+            {
+                yield return new WaitForSeconds(Random.Range(2.5f, 3f));
+            }
 
             idle = true;
 
@@ -122,8 +146,15 @@ public class Wizard : MonoBehaviour
         // Don't want to show shooting animation while regen animation is going on
         while (!regen)
         {
-            // Wait a random # of seconds before shooting
-            yield return new WaitForSeconds(Random.Range(2.5f, 4f));
+            // Wait a random # of seconds before shooting (if angry, wait less time)
+            if (isAngry)
+            {
+                yield return new WaitForSeconds(Random.Range(2f, 2.7f));
+            }
+            else
+            {
+                yield return new WaitForSeconds(Random.Range(2.5f, 4f));
+            }
 
             shoot = true;
             a.SetInteger("state", (int)States.shoot);
