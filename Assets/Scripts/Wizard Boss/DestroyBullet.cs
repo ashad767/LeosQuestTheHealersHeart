@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DestroyBullet : MonoBehaviour
 {
-    [SerializeField] GameObject explosion;
+    [SerializeField] GameObject explosionPrefab;
     [SerializeField] AnimationClip explosionLength;
     [SerializeField] GameObject greenBallPrefab;
 
@@ -50,7 +50,7 @@ public class DestroyBullet : MonoBehaviour
 
     void triggerExplosion()
     {
-        GameObject explosionAnim = Instantiate(explosion, transform.position, Quaternion.identity);
+        GameObject explosionAnim = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
 
         // Instantiate/Load the green balls that shoot out after the main bullet explodes 
         greenBallsLoader();
