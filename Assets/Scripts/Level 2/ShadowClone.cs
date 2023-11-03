@@ -11,7 +11,7 @@ public class ShadowClone : MonoBehaviour
     private Animator a;
     [SerializeField] private AnimationClip[] shadowAnimLength;
 
-    private float bossMoveSpeed;
+    private float shadowMoveSpeed;
     private float health = 50f;
     private Color originalColor;
 
@@ -28,7 +28,7 @@ public class ShadowClone : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         a = GetComponent<Animator>();
 
-        bossMoveSpeed = isBossAngry ? Random.Range(4.5f, 6f) : Random.Range(3.7f, 4.5f);
+        shadowMoveSpeed = isBossAngry ? Random.Range(6f, 7f) : Random.Range(5f, 6f);
         originalColor = sr.color;
 
         StartCoroutine(lungeAnim());
@@ -41,7 +41,7 @@ public class ShadowClone : MonoBehaviour
         // Flip boss sprite on its X axis depending on if the MC is left or right of the boss
         sr.flipX = MC.transform.position.x > transform.position.x;
 
-        transform.position = Vector2.MoveTowards(transform.position, MC.transform.position, bossMoveSpeed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, MC.transform.position, shadowMoveSpeed * Time.deltaTime);
     }
 
     private IEnumerator lungeAnim()
@@ -55,7 +55,7 @@ public class ShadowClone : MonoBehaviour
         float lungeSpeedX = Mathf.Abs(MC.transform.position.x - transform.position.x);
         float lungeSpeedY = Mathf.Abs(MC.transform.position.y - transform.position.y);
 
-        float lungeSpeedController = isBossAngry ? Random.Range(1.2f, 1.4f) : Random.Range(1.4f, 1.8f);
+        float lungeSpeedController = isBossAngry ? Random.Range(1.2f, 1.4f) : Random.Range(1.4f, 1.5f);
         rb.velocity = new Vector2(whereIsMC_X * (lungeSpeedX / lungeSpeedController), whereIsMC_Y * (lungeSpeedY / lungeSpeedController));
 
         yield return new WaitForSeconds(shadowAnimLength[0].length + 0.6f);
@@ -75,7 +75,7 @@ public class ShadowClone : MonoBehaviour
             health -= 20f;
 
             // When boss gets hit, I want to momentarily make the boss go slighlty transparent, then back to its original color
-            hitEffect.a = 0.3f;
+            hitEffect.a = 0.4f;
             sr.color = hitEffect;
             yield return new WaitForSeconds(0.12f);
             sr.color = originalColor;

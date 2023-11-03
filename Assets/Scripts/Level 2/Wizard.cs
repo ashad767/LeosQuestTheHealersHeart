@@ -66,7 +66,7 @@ public class Wizard : MonoBehaviour
     {
         while (true)
         {
-            // if I'm not currently shooting, then I can regenerate health
+            // if I'm not currently shooting, then I can regenerate health (if boss is in low health)
             if (!shoot)
             {
                 StartCoroutine(regenFunction());
@@ -79,7 +79,7 @@ public class Wizard : MonoBehaviour
             }
             else
             {
-                yield return new WaitForSeconds(Random.Range(2.3f, 3.5f));
+                yield return new WaitForSeconds(Random.Range(2.4f, 3f));
             }
             
 
@@ -105,10 +105,14 @@ public class Wizard : MonoBehaviour
             idle = true;
 
             // Create/Instantiate a shadow prefab when idle
-            GameObject shadow = Instantiate(shadowClonePrefab, transform.position, Quaternion.identity);
-            ShadowClone sc = shadow.GetComponent<ShadowClone>();
-            sc.MC = MC.gameObject;
-            sc.isBossAngry = isAngry;
+            bool createShadow = Random.Range(0f, 1f) <= 0.7f; // if a float is picked randomly and it's less than 0.5f, then create shadow clone, else don't
+            if (createShadow)
+            {
+                GameObject shadow = Instantiate(shadowClonePrefab, transform.position, Quaternion.identity);
+                ShadowClone sc = shadow.GetComponent<ShadowClone>();
+                sc.MC = MC.gameObject;
+                sc.isBossAngry = isAngry;
+            }
         }
     }
 
@@ -142,11 +146,11 @@ public class Wizard : MonoBehaviour
             // Wait a random # of seconds before shooting (if angry, wait less time)
             if (isAngry)
             {
-                yield return new WaitForSeconds(Random.Range(1.6f, 2.2f));
+                yield return new WaitForSeconds(Random.Range(1.2f, 1.7f));
             }
             else
             {
-                yield return new WaitForSeconds(Random.Range(2.5f, 4f));
+                yield return new WaitForSeconds(Random.Range(2f, 3f));
             }
 
             shoot = true;
