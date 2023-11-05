@@ -10,6 +10,7 @@ public class ShadowClone : MonoBehaviour
     private SpriteRenderer sr;
     private Animator a;
     [SerializeField] private AnimationClip[] shadowAnimLength;
+    [SerializeField] AudioSource shadowWhisper;
 
     private float shadowMoveSpeed;
     private float health = 50f;
@@ -33,6 +34,8 @@ public class ShadowClone : MonoBehaviour
 
         StartCoroutine(lungeAnim());
         StartCoroutine(dummyShadowHitTester());
+
+        shadowWhisper.Play();
     }
 
     // Update is called once per frame

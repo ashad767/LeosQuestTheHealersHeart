@@ -7,6 +7,7 @@ public class DestroyBullet : MonoBehaviour
     [SerializeField] GameObject explosionPrefab;
     [SerializeField] AnimationClip explosionLength;
     [SerializeField] GameObject greenBallPrefab;
+    public GameObject audioManager;
 
     private float greenBallsSpeed = 9f;
 
@@ -51,6 +52,7 @@ public class DestroyBullet : MonoBehaviour
     void triggerExplosion()
     {
         GameObject explosionAnim = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+        audioManager.GetComponent<AudioManager>().PlayBulletExplosionSound();
 
         // Instantiate/Load the green balls that shoot out after the main bullet explodes 
         greenBallsLoader();

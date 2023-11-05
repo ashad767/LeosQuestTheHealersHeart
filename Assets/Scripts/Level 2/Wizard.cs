@@ -14,6 +14,14 @@ public class Wizard : MonoBehaviour
     [SerializeField] private GameObject bulletPrefab;
 
     [SerializeField] private GameObject shadowClonePrefab;
+
+    // Audio
+    [SerializeField] AudioSource lungeAudio;
+    [SerializeField] AudioSource shootBulletAudio;
+    [SerializeField] AudioSource regenAudio;
+
+    [SerializeField] private GameObject audioManagerToBeUsedInDestroyBullet;
+
     private enum States { idle, lunge, shoot, regen };
 
     public bool idle = true;
@@ -132,6 +140,7 @@ public class Wizard : MonoBehaviour
 
         lunge = true;
         a.SetInteger("state", (int)States.lunge);
+        lungeAudio.Play();
         yield return new WaitForSeconds(animLength[2].length + 0.6f);
         lunge = false;
 
@@ -159,19 +168,23 @@ public class Wizard : MonoBehaviour
             // Instantiate the main bullet 3x rapidly when at low health
             if (isAngry)
             {
-                mainBulletLoader(); 
+                mainBulletLoader();
+                shootBulletAudio.Play();
                 yield return new WaitForSeconds(animLength[0].length);
 
                 mainBulletLoader();
+                shootBulletAudio.Play();
                 yield return new WaitForSeconds(animLength[0].length);
 
                 mainBulletLoader();
+                shootBulletAudio.Play();
                 yield return new WaitForSeconds(animLength[0].length);
             }
 
             else
             {
                 mainBulletLoader(); // Instantiate the main bullet
+                shootBulletAudio.Play();
                 yield return new WaitForSeconds(animLength[0].length);
             }
             shoot = false;
@@ -182,6 +195,8 @@ public class Wizard : MonoBehaviour
     {
         // Create/Instantiate a bullet prefab when shooting animation starts
         GameObject mainBullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+        DestroyBullet db = mainBullet.GetComponent<DestroyBullet>();
+        db.audioManager = audioManagerToBeUsedInDestroyBullet;
 
         // rotations in degrees are based on the bullet prefab being flipped (originally pointing left side)
         // flipping it on its X axis makes it point to the right and makes it easier for rotation logic
@@ -207,6 +222,7 @@ public class Wizard : MonoBehaviour
             currentHealth += Random.Range(10f, 20f);
 
             a.SetInteger("state", (int)States.regen);
+            regenAudio.Play();
             yield return new WaitForSeconds(animLength[1].length + 0.1f);
             regen = false;
         }
