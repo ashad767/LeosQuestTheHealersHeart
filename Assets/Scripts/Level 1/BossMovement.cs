@@ -6,11 +6,20 @@ using UnityEngine;
 public class BossMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
+    private SpriteRenderer sr;
     private Animator a;
     private Transform fearCircle;
-    [SerializeField] AnimationClip[] anim;
+    private Transform donut;
+
+    public float currentHealth = 100f;
+    public float maxHealth = 100f;
+
+
+    [SerializeField] AnimationClip[] anim; // Some of the boss animations. Using it to access their lengths
     [SerializeField] Transform MC;
     [SerializeField] GameObject sawPrefab;
+    [SerializeField] GameObject landingSmokePrefab;
+    [SerializeField] GameObject powerUpPrefab;
 
     // Audio
     [SerializeField] AudioSource startJump;
@@ -23,6 +32,7 @@ public class BossMovement : MonoBehaviour
     private bool attack = false;
     private bool jump = false;
     private bool fear = false;
+    private bool fearRunning = false;
 
     // For the jump animation
     private Vector2 snapshotMCPosition; // snapshot of MC's position during boss' jump
@@ -36,13 +46,14 @@ public class BossMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
         a = GetComponent<Animator>();
         
         fearCircle = transform.Find("Circle");
-        SpriteRenderer fearCircleSprite = fearCircle.GetComponent<SpriteRenderer>();
-        fearCircleSprite.enabled = false;
+        donut = transform.Find("Donut");
 
-        StartCoroutine(follow_MC(fearCircle, fearCircleSprite));
+        StartCoroutine(follow_MC());
+        StartCoroutine(dummyBossHitTester());
     }
 
     // Update is called once per frame
@@ -59,13 +70,14 @@ public class BossMovement : MonoBehaviour
             a.SetInteger("state", (int)States.idle);
         }
 
+        float movementSpeed = fearRunning ? 5.5f : 4f;
         if (!idle && !jump && !fear)
         {
-            transform.position = Vector2.MoveTowards(transform.position, MC.position, 4f * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, MC.position, movementSpeed * Time.deltaTime);
         }
     }
 
-    private IEnumerator follow_MC(Transform fearCircle, SpriteRenderer fearCircleSprite)
+    private IEnumerator follow_MC()
     {
         while (true)
         {
@@ -85,18 +97,90 @@ public class BossMovement : MonoBehaviour
             // This is why when the attack animation happened right before the jump animation, the attack animation triggered and finishes during the jump animation duration, and since after that attack=false and idle=true, the idle animation happens while jumping. This is why I added a 1s exit time duration from attack -> jump animations to fix this bug.
             yield return new WaitForSeconds((anim[2].length * 2) + jumpDuration);
 
-            fear = true;
-            a.SetInteger("state", (int)States.fear);
-            fearCircleSprite.enabled = true;
-            fearCircle.localScale = new Vector3(5, 5, 0);
-            yield return new WaitForSeconds(anim[3].length);
-            fearCircle.localScale = new Vector3(0, 0, 0);
-            fear = false;
-
-            loadSaws();
+            if (!fearRunning)
+            {
+                if (Random.Range(0f, 1f) <= 0.6f)
+                {
+                    loadSaws();
+                }
+                else
+                {
+                    fearRunning = true;
+                    StartCoroutine(fearFunc());
+                }
+            }
             idle = true;
         }
     }
+
+    private IEnumerator fearFunc()
+    {
+        fear = true;
+        a.SetInteger("state", (int)States.fear);
+        loadPowerUp(); // power up animation
+        yield return new WaitForSeconds(anim[3].length);
+        StartCoroutine(ExpandAndContractCircles(fearCircle, donut));
+        fear = false;
+    }
+
+    private void loadPowerUp()
+    {
+        Vector3 powerUpOffset = new Vector3(-0.25f, 0.24f, 0f);
+        GameObject powerUp = Instantiate(powerUpPrefab, transform.position + powerUpOffset, Quaternion.identity);
+        powerUp.transform.SetParent(transform);
+        Destroy(powerUp, anim[5].length);
+    }
+
+    private IEnumerator ExpandAndContractCircles(Transform fearC, Transform donutC)
+    {
+        float circleExpansionDuration = 0.2f;
+        float fearEffectDuration = 15f;
+        float fearStartTime = Time.time;
+        Vector3 maxScale = new Vector3(6, 6, 0);
+        Vector3 initialScale = Vector3.zero;
+        Transform currentCircle = fearC;
+        fearCircle.GetComponent<SpriteRenderer>().enabled = true;
+        donut.GetComponent<SpriteRenderer>().enabled = true;
+
+        while (Time.time - fearStartTime < fearEffectDuration) // Run for 15 seconds
+        {
+            // Gradually expand the current circle
+            float startTime = Time.time;
+            float elapsedTime = 0f;
+            while (elapsedTime < circleExpansionDuration)
+            {
+                float t = elapsedTime / circleExpansionDuration;
+                currentCircle.localScale = Vector3.Lerp(initialScale, maxScale, t);
+                elapsedTime = Time.time - startTime;
+                yield return null;
+            }
+            currentCircle.localScale = maxScale;
+
+            // Switch to the other circle
+            currentCircle = (currentCircle == fearC) ? donutC : fearC;
+
+            // Set the sorting layer to make the current circle render above
+            SetSortingLayerOrder(currentCircle, 2);
+
+            // Instantly contract the current circle
+            currentCircle.localScale = initialScale;
+
+            // Set the sorting layer to make the other circle render below
+            Transform otherCircle = (currentCircle == donutC) ? fearC : donutC;
+            SetSortingLayerOrder(otherCircle, 1);
+        }
+        
+        fearRunning = false;
+
+        fearCircle.GetComponent<SpriteRenderer>().enabled = false;
+        donut.GetComponent<SpriteRenderer>().enabled = false;
+    }
+
+    private void SetSortingLayerOrder(Transform circle, int sortingOrder)
+    {
+        circle.GetComponent<SpriteRenderer>().sortingOrder = sortingOrder;
+    }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -139,6 +223,10 @@ public class BossMovement : MonoBehaviour
         startJump.Play();
         yield return new WaitForSeconds(anim[2].length);
 
+        // disable the fear circle sprites when jumping (looks better this way ig)
+        fearCircle.GetComponent<SpriteRenderer>().enabled = false;
+        donut.GetComponent<SpriteRenderer>().enabled = false;
+
         GetComponent<CircleCollider2D>().radius = 0f; // When boss jumps, don't want a collider on him
 
         float timeElapsed = 0.0f; // time elapsed from the beginning of jump until the end
@@ -158,6 +246,15 @@ public class BossMovement : MonoBehaviour
         
         // Trigger screen shake when the boss lands
         Camera.main.GetComponent<ScreenShake>().Shake();
+        
+        loadLandingSmoke(); // landing the jump animation
+        
+        // re-enable the circle sprites if 'fearRunning' is true
+        if (fearRunning)
+        {
+            fearCircle.GetComponent<SpriteRenderer>().enabled = true;
+            donut.GetComponent<SpriteRenderer>().enabled = true;
+        }
 
         // splash damage from jump landing (double the boss' box collider to imitate splash damage)
         GetComponent<CircleCollider2D>().radius = originalRadius * 2; 
@@ -168,9 +265,17 @@ public class BossMovement : MonoBehaviour
         
         GetComponent<CircleCollider2D>().radius = originalRadius; // reset box collider size from splash damage effect
 
+        
+
         jump = false;
     }
 
+    private void loadLandingSmoke()
+    {
+        Vector3 smokeOffset = new Vector3(-0.13f, -0.53f, 0f);
+        GameObject landingSmoke = Instantiate(landingSmokePrefab, transform.position + smokeOffset, Quaternion.identity);
+        Destroy(landingSmoke, anim[4].length);
+    }
     private void loadSaws()
     {
         // Main camera's viewport goes from (0,0) (bottom left of screen) to (1,1) (top right of screen)
@@ -183,6 +288,32 @@ public class BossMovement : MonoBehaviour
 
         sawPos = Camera.main.ViewportToWorldPoint(new Vector3(Random.Range(1.7f, 1.9f), Random.Range(0f, 1f), 10f));
         Instantiate(sawPrefab, sawPos, Quaternion.identity);
+    }
+
+    private IEnumerator dummyBossHitTester()
+    {
+        while (true)
+        {
+            Color originalColor = sr.color;
+            Color hitEffect = sr.color;
+
+            yield return new WaitForSeconds(2.5f);
+            currentHealth -= 10f;
+
+            // When boss gets hit, I want to momentarily make the boss go slighlty transparent, then back to its original/angry color
+            hitEffect.a = 0.3f;
+            sr.color = hitEffect;
+            yield return new WaitForSeconds(0.12f);
+            sr.color = originalColor;
+
+            if (currentHealth <= 0f)
+            {
+                a.SetTrigger("death"); // show death animation
+                rb.bodyType = RigidbodyType2D.Static;
+                yield return new WaitForSeconds(anim[6].length);
+                Destroy(gameObject); // Destroys boss gameobjects
+            }
+        }
     }
 
 }
