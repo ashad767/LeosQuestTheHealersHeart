@@ -5,11 +5,14 @@ using UnityEngine;
 public class RotatingSaw : MonoBehaviour
 {
     private Rigidbody2D rb;
+    [SerializeField] AudioSource rotatingSaws;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = Vector2.left * 9f;
+        rotatingSaws.Play();
+        rb.velocity = Vector2.left * 9.5f;
     }
 
     // Update is called once per frame
