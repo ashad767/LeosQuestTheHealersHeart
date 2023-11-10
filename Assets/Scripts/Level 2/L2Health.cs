@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Health : MonoBehaviour
+public class L2Health : MonoBehaviour
 {
     // Because I'm only allowed to drag & drop gameObjects in SerializeFields (or public variables), and this script is not attached to Wizard gameObject (it's attached to Slider, which is also not a prefab),
     // I need to make a reference to 'Wizard.cs' by referencing an actual gameObject (Wizard), then using the script (Wizard.cs). So I dragged & dropped the Wizard game object to this SerializeField, then using its script Wizard.cs
@@ -22,9 +22,12 @@ public class Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        slider.value = wizard.currentHealth / wizard.maxHealth;
+        if(wizard != null)
+        {
+            slider.value = wizard.currentHealth / wizard.maxHealth;
+        }
 
-        if(slider.value <= slider.minValue )
+        if (slider.value <= slider.minValue )
         {
             fillImage.enabled = false;
         }

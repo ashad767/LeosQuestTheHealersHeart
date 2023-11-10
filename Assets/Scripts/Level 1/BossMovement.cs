@@ -143,8 +143,8 @@ public class BossMovement : MonoBehaviour
     private IEnumerator ExpandAndContractCircles(Transform pulseC, Transform donutC)
     {
         float circleExpansionDuration = 0.17f;
-        float fearEffectDuration = 15f;
-        float fearStartTime = Time.time;
+        float pulseEffectDuration = 15f;
+        float pulseStartTime = Time.time;
         Vector3 maxScale = new Vector3(4.5f, 4.5f, 0);
         Vector3 initialScale = Vector3.zero;
         Transform currentCircle = pulseC;
@@ -154,7 +154,7 @@ public class BossMovement : MonoBehaviour
         powerUpPulse.Play();
 
         // Run for 15 seconds ; also needed to add '&& !dead' or else the pulsating effect would keep going even after boss died
-        while ((Time.time - fearStartTime < fearEffectDuration) && !dead ) 
+        while ((Time.time - pulseStartTime < pulseEffectDuration) && !dead ) 
         {
             // Gradually expand the current circle
             float startTime = Time.time;

@@ -11,14 +11,17 @@ public class Wizard : MonoBehaviour
     private Animator a;
     [SerializeField] private AnimationClip[] animLength;
     [SerializeField] private Transform MC;
+    
+    // Prefabs
     [SerializeField] private GameObject bulletPrefab;
-
     [SerializeField] private GameObject shadowClonePrefab;
+    [SerializeField] private GameObject angryChargePrefab;
 
     // Audio
     [SerializeField] AudioSource lungeAudio;
     [SerializeField] AudioSource shootBulletAudio;
     [SerializeField] AudioSource regenAudio;
+    [SerializeField] AudioSource death;
 
     [SerializeField] private GameObject audioManagerToBeUsedInDestroyBullet;
 
@@ -113,7 +116,7 @@ public class Wizard : MonoBehaviour
             idle = true;
 
             // Create/Instantiate a shadow prefab when idle
-            bool createShadow = Random.Range(0f, 1f) <= 0.7f; // if a float is picked randomly and it's less than 0.5f, then create shadow clone, else don't
+            bool createShadow = Random.Range(0f, 1f) <= 0.75f; // if a float is picked randomly and it's less than 0.75f, then create shadow clone, else don't
             if (createShadow)
             {
                 GameObject shadow = Instantiate(shadowClonePrefab, transform.position, Quaternion.identity);
@@ -214,6 +217,9 @@ public class Wizard : MonoBehaviour
         {
             if (currentHealth < 35f)
             {
+                GameObject charge = Instantiate(angryChargePrefab, transform.position, Quaternion.identity);
+                charge.transform.SetParent(transform);
+                Destroy(charge, animLength[4].length);
                 isAngry = true;
                 sr.color = angryColor;
             }
@@ -247,21 +253,27 @@ public class Wizard : MonoBehaviour
             if (currentHealth <= 0f)
             {
                 a.SetTrigger("death"); // show death animation
+                death.Play();
                 rb.bodyType = RigidbodyType2D.Static;
-                yield return new WaitForSeconds(animLength[3].length);
+                yield return new WaitForSeconds(death.clip.length);
                 Destroy(transform.parent.gameObject); // Destroys boss gameobjects
             }
         }
     }
-
     private void OnDestroy()
     {
         // Find all active shadow clone prefabs in the scene and destroy them
         GameObject[] shadowClonesToDestroy = GameObject.FindGameObjectsWithTag("shadow_clone");
+        GameObject[] bulletsToDestroy = GameObject.FindGameObjectsWithTag("wizardBullet");
 
-        foreach(GameObject shadowClone in shadowClonesToDestroy)
+        foreach (GameObject shadowClone in shadowClonesToDestroy)
         {
             Destroy(shadowClone);
+        }
+
+        foreach (GameObject bullet in bulletsToDestroy)
+        {
+            Destroy(bullet);
         }
     }
 }

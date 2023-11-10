@@ -33,7 +33,7 @@ public class DestroyBullet : MonoBehaviour
         }
 
         // Else, check if the main bullet travelled for 0.9 or more seconds before exploding
-        else if(timer >= 0.9f)
+        else if(timer >= 1f)
         {
             triggerExplosion();
 
@@ -73,7 +73,15 @@ public class DestroyBullet : MonoBehaviour
             GameObject gBall = Instantiate(greenBallPrefab, transform.position, Quaternion.identity);
             gBall.GetComponent<Rigidbody2D>().velocity = direction * greenBallsSpeed;
 
-            Destroy(gBall, Random.Range(0.3f, 1.3f));
+            Destroy(gBall, Random.Range(0.3f, 1.3f)); // destroy the green ball after anytime between 0.3 to 1.3 seconds
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            triggerExplosion();
         }
     }
 }
