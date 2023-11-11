@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Wizard : MonoBehaviour
+public class L2BossMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
     private SpriteRenderer sr;
@@ -152,45 +152,49 @@ public class Wizard : MonoBehaviour
 
     private IEnumerator shootAnim()
     {
-        // Don't want to show shooting animation while regen animation is going on
-        while (!regen)
+        while (true)
         {
             // Wait a random # of seconds before shooting (if angry, wait less time)
             if (isAngry)
             {
-                yield return new WaitForSeconds(Random.Range(1.2f, 1.7f));
+                yield return new WaitForSeconds(Random.Range(1.2f, 1.6f));
             }
             else
             {
                 yield return new WaitForSeconds(Random.Range(2f, 3f));
             }
 
-            shoot = true;
-            a.SetInteger("state", (int)States.shoot);
-
-            // Instantiate the main bullet 3x rapidly when at low health
-            if (isAngry)
+            // Don't want to show shooting animation while regen animation is going on
+            if (!regen)
             {
-                mainBulletLoader();
-                shootBulletAudio.Play();
-                yield return new WaitForSeconds(animLength[0].length);
+                shoot = true;
+                a.SetInteger("state", (int)States.shoot);
 
-                mainBulletLoader();
-                shootBulletAudio.Play();
-                yield return new WaitForSeconds(animLength[0].length);
+                // Instantiate the main bullet 3x rapidly when at low health
+                if (isAngry)
+                {
+                    mainBulletLoader();
+                    shootBulletAudio.Play();
+                    yield return new WaitForSeconds(animLength[0].length);
 
-                mainBulletLoader();
-                shootBulletAudio.Play();
-                yield return new WaitForSeconds(animLength[0].length);
+                    mainBulletLoader();
+                    shootBulletAudio.Play();
+                    yield return new WaitForSeconds(animLength[0].length);
+
+                    mainBulletLoader();
+                    shootBulletAudio.Play();
+                    yield return new WaitForSeconds(animLength[0].length);
+                }
+
+                else
+                {
+                    mainBulletLoader(); // Instantiate the main bullet
+                    shootBulletAudio.Play();
+                    yield return new WaitForSeconds(animLength[0].length);
+                }
+                shoot = false;
             }
 
-            else
-            {
-                mainBulletLoader(); // Instantiate the main bullet
-                shootBulletAudio.Play();
-                yield return new WaitForSeconds(animLength[0].length);
-            }
-            shoot = false;
         }
     }
 
@@ -226,7 +230,6 @@ public class Wizard : MonoBehaviour
 
             regen = true;
             currentHealth += Random.Range(10f, 20f);
-
             a.SetInteger("state", (int)States.regen);
             regenAudio.Play();
             yield return new WaitForSeconds(animLength[1].length + 0.1f);
@@ -241,8 +244,8 @@ public class Wizard : MonoBehaviour
         {
             Color hitEffect = sr.color;
 
-            yield return new WaitForSeconds(2.5f);
-            currentHealth -= 10f;
+            yield return new WaitForSeconds(1.5f);
+            currentHealth -= 5f;
 
             // When boss gets hit, I want to momentarily make the boss go slighlty transparent, then back to its original/angry color
             hitEffect.a = 0.3f;

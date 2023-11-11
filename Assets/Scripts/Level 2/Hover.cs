@@ -11,7 +11,7 @@ public class Hover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GetComponent<Wizard>().idle)
+        if (GetComponent<L2BossMovement>().idle)
         {
             hoverPoints[0].transform.SetParent(transform.parent);
             hoverPoints[1].transform.SetParent(transform.parent);

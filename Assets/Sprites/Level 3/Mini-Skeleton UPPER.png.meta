@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 44668c136c3770a4c9dc28893195d2b7
+guid: 8636ae404b97c1f4eb3fee61aa77a1ee
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,11 +110,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mini-Zombie_0
+      name: Mini-Skeleton UPPER_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1280
+        y: 1282
         width: 64
         height: 64
       alignment: 0
@@ -124,18 +124,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11a15e85ddae45f4a8eac94bf0e1199b
-      internalID: -54911091
+      spriteID: 4a518ee3dcdc5e049b0c498d7d39bb27
+      internalID: -867798501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_1
+      name: Mini-Skeleton UPPER_1
       rect:
         serializedVersion: 2
         x: 64
-        y: 1280
+        y: 1282
         width: 64
         height: 64
       alignment: 0
@@ -145,18 +145,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70d0334b3da685541825ded925c91d97
-      internalID: -439038969
+      spriteID: 1cb0bbcbe39787946abd07a03135ffe4
+      internalID: 1966054574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_2
+      name: Mini-Skeleton UPPER_2
       rect:
         serializedVersion: 2
         x: 128
-        y: 1280
+        y: 1282
         width: 64
         height: 64
       alignment: 0
@@ -166,18 +166,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3494478ba8d16944a9ec1429eda506cc
-      internalID: 1613799721
+      spriteID: 22836192ef5fbfb40adb9d65adb5c0c6
+      internalID: 1706099742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_3
+      name: Mini-Skeleton UPPER_3
       rect:
         serializedVersion: 2
         x: 192
-        y: 1280
+        y: 1282
         width: 64
         height: 64
       alignment: 0
@@ -187,18 +187,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2aa3c29419b98c4bab6a1196a3a9386
-      internalID: 741471543
+      spriteID: 9b22ec3f70166e04f8a89d4e08d11bf8
+      internalID: -1997001359
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_4
+      name: Mini-Skeleton UPPER_4
       rect:
         serializedVersion: 2
         x: 256
-        y: 1280
+        y: 1282
         width: 64
         height: 64
       alignment: 0
@@ -208,18 +208,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73852c9abc725b047b415556d2270249
-      internalID: 1634374502
+      spriteID: 1c504295a5ab737469afa39c88b8c1f5
+      internalID: -450259439
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_5
+      name: Mini-Skeleton UPPER_5
       rect:
         serializedVersion: 2
         x: 320
-        y: 1280
+        y: 1282
         width: 64
         height: 64
       alignment: 0
@@ -229,18 +229,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69084ca793c1d7d4a90ea793a220f2fe
-      internalID: -280041913
+      spriteID: 0de1f7d96b0f41747a5a9576ecabc76f
+      internalID: -1971026181
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_6
+      name: Mini-Skeleton UPPER_6
       rect:
         serializedVersion: 2
         x: 384
-        y: 1280
+        y: 1282
         width: 64
         height: 64
       alignment: 0
@@ -250,606 +250,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16612581518f4ac41b8a12e5fd332564
-      internalID: 321265610
+      spriteID: 7c7f0e98f36cb834a9adf9c725510085
+      internalID: 571240740
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_7
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1216
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 23713539fc89096428cad281881c40f9
-      internalID: -1717712977
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_8
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 1216
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 932372dbc5fa8314794e3737c5989911
-      internalID: 1181176086
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_9
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 1216
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 91a7dd8445fe9c34c94976753a328dd9
-      internalID: 632435822
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_10
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 1216
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc6a27e089151834b82708ec04af765c
-      internalID: -2077760608
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_11
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 1216
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9360b5ce4e6693a4f9f485c770f5e446
-      internalID: 625353325
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_12
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 1216
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c30ff2e8fa72d214a9859ffa27868340
-      internalID: -2019363253
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_13
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 1216
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa179c22b46135d46aef9ce805272737
-      internalID: -927329914
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_14
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1152
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 10ee664a29a51d944900be648dede266
-      internalID: 2140326019
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_15
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 1152
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d8a12c62a4109c34d809ea0acfaeeca9
-      internalID: 5526014
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_16
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 1152
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cfd8f7c2eda85644a9c6459c26fec7e8
-      internalID: -1297345838
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_17
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 1152
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc62e6913e1276741aeeb17335f2e9ed
-      internalID: 570033684
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_18
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 1152
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: faeeeff1b10e918469a3f8739984ff5c
-      internalID: 1414341039
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_19
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 1152
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 94766ec8ed1a301409ddf8b5b823660c
-      internalID: 18842104
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_20
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 1152
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b3647049d3979ae47b83a0165410c23e
-      internalID: -1132682036
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_21
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1088
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2cf72527b2a28774b81fc7b8d9f7bb6c
-      internalID: 1310277923
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_22
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 1088
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 924be8ab735c4cd4a949304a70419ac6
-      internalID: 1757693223
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_23
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 1088
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae4b37ac5c8e73945a2188615655f85f
-      internalID: 1766728995
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_24
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 1088
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 158d16ac21f474e449fc9a0475d9dbc2
-      internalID: 1456282556
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_25
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 1088
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ada1a7503650934e8b39b592f2f2e95
-      internalID: 42155583
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_26
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 1088
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed721c61285e24f4c8c4773fe27d5315
-      internalID: -868437962
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_27
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 1088
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 43a20f8a61b44f84483bbb485e0dd16c
-      internalID: -193278253
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_28
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1024
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb1a8cd3b8969bc41ad1af7b633c0204
-      internalID: 1587373331
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_29
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 1024
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb2de6a877fcc6e43a32d0f9cc631ab6
-      internalID: 530001063
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_30
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 1024
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3bae3ad3f2466f9419d85f51924e0667
-      internalID: -1169516388
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_31
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 1024
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fba86b72cae4b7546999d486310aeedb
-      internalID: 2050514642
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_32
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 1024
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f18b1744829c3140ba539a8bdfd8d5c
-      internalID: -1762224128
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_33
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 1024
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 048d58ffcde95114cafb4ca5e89cda65
-      internalID: 262440398
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_34
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 1024
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc99d8001e68ccc4988606b2b8ae7c33
-      internalID: 1767038044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_35
+      name: Mini-Skeleton UPPER_7
       rect:
         serializedVersion: 2
         x: 448
-        y: 1024
+        y: 1282
         width: 64
         height: 64
       alignment: 0
@@ -859,18 +271,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83797b2bf9b776745857f7e188e5c992
-      internalID: 163420302
+      spriteID: 8b5a688b488a92644bca4d1fd8dadec1
+      internalID: 1428968245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_36
+      name: Mini-Skeleton UPPER_8
       rect:
         serializedVersion: 2
         x: 0
-        y: 960
+        y: 1218
         width: 64
         height: 64
       alignment: 0
@@ -880,18 +292,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 022420b58dc0f604fb2393b5a88b2ef6
-      internalID: 1543226737
+      spriteID: c46b997a74627024fbd11926680f8a12
+      internalID: -1505675290
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_37
+      name: Mini-Skeleton UPPER_9
       rect:
         serializedVersion: 2
         x: 64
-        y: 960
+        y: 1218
         width: 64
         height: 64
       alignment: 0
@@ -901,18 +313,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a9a066cea786ae4f9d1afb2373f7098
-      internalID: -1902502523
+      spriteID: 1e18fec2020b4d44492843a76fcf4fd3
+      internalID: -1020658385
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_38
+      name: Mini-Skeleton UPPER_10
       rect:
         serializedVersion: 2
         x: 128
-        y: 960
+        y: 1218
         width: 64
         height: 64
       alignment: 0
@@ -922,18 +334,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22d664c1dee90744eaea593b9076d600
-      internalID: -77327096
+      spriteID: 01947f73071f854458f89c648270ad91
+      internalID: 1305807305
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_39
+      name: Mini-Skeleton UPPER_11
       rect:
         serializedVersion: 2
         x: 192
-        y: 960
+        y: 1218
         width: 64
         height: 64
       alignment: 0
@@ -943,18 +355,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc7be8d7539104940a1b72b84cd6f728
-      internalID: 775588910
+      spriteID: 1a700a9313b43ea438d37af0b4d0dba4
+      internalID: -305488792
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_40
+      name: Mini-Skeleton UPPER_12
       rect:
         serializedVersion: 2
         x: 256
-        y: 960
+        y: 1218
         width: 64
         height: 64
       alignment: 0
@@ -964,18 +376,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edbe1e66fd5b92841a6c95cf284d9d7d
-      internalID: 1251232278
+      spriteID: c56c8502880244740b76e1c7ab82aed6
+      internalID: -1390622802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_41
+      name: Mini-Skeleton UPPER_13
       rect:
         serializedVersion: 2
         x: 320
-        y: 960
+        y: 1218
         width: 64
         height: 64
       alignment: 0
@@ -985,18 +397,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 182885db670237446969dd3daf5c0e68
-      internalID: 841068655
+      spriteID: 6592c1ed2bfdae047860f48ad66c8094
+      internalID: -266125102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_42
+      name: Mini-Skeleton UPPER_14
       rect:
         serializedVersion: 2
         x: 384
-        y: 960
+        y: 1218
         width: 64
         height: 64
       alignment: 0
@@ -1006,39 +418,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b914bc2cf91637648b6965f17afe35a3
-      internalID: -1728459073
+      spriteID: 66635839e24c6854ebd81384612043e8
+      internalID: -784443984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_43
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 960
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d6f797bbca75374fb1e39387fbdab13
-      internalID: -962031166
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_44
+      name: Mini-Skeleton UPPER_15
       rect:
         serializedVersion: 2
         x: 0
-        y: 896
+        y: 1154
         width: 64
         height: 64
       alignment: 0
@@ -1048,18 +439,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1085fc75c2717f74095a5355b10ce6e2
-      internalID: -243974014
+      spriteID: f4c982f00470f99489af8f01e76ca95c
+      internalID: -1093845491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_45
+      name: Mini-Skeleton UPPER_16
       rect:
         serializedVersion: 2
         x: 64
-        y: 896
+        y: 1154
         width: 64
         height: 64
       alignment: 0
@@ -1069,18 +460,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4e8493f0cfc2e54e8c5fe305846fa7e
-      internalID: 622131418
+      spriteID: 864bc0ee5219e374e8e3f2271987b8b5
+      internalID: -168333110
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_46
+      name: Mini-Skeleton UPPER_17
       rect:
         serializedVersion: 2
         x: 128
-        y: 896
+        y: 1154
         width: 64
         height: 64
       alignment: 0
@@ -1090,18 +481,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69321e33319b44042a903142f568651c
-      internalID: -1969764272
+      spriteID: 425a2e77f6a6d2b42b13fb793a8e9ee5
+      internalID: -1603247670
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_47
+      name: Mini-Skeleton UPPER_18
       rect:
         serializedVersion: 2
         x: 192
-        y: 896
+        y: 1154
         width: 64
         height: 64
       alignment: 0
@@ -1111,18 +502,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b8e028a5ff3f3b42922d8215cdb2a4d
-      internalID: 378885995
+      spriteID: e7e8af8ffb1e24b4199c8a189e51603d
+      internalID: 2088827373
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_48
+      name: Mini-Skeleton UPPER_19
       rect:
         serializedVersion: 2
         x: 256
-        y: 896
+        y: 1154
         width: 64
         height: 64
       alignment: 0
@@ -1132,18 +523,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bf4071bec3defa41914a996018102fb
-      internalID: 2093002941
+      spriteID: cfb9d48527878b740b734e5d17382b3a
+      internalID: -374068881
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_49
+      name: Mini-Skeleton UPPER_20
       rect:
         serializedVersion: 2
         x: 320
-        y: 896
+        y: 1154
         width: 64
         height: 64
       alignment: 0
@@ -1153,18 +544,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aed71e7be0ecc3348b5e17d9ef677c79
-      internalID: 824784522
+      spriteID: 0f08a17b4566ab547adad9079ab780c3
+      internalID: -463935938
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_50
+      name: Mini-Skeleton UPPER_21
       rect:
         serializedVersion: 2
         x: 384
-        y: 896
+        y: 1154
         width: 64
         height: 64
       alignment: 0
@@ -1174,39 +565,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff0f1e2af0f85e847a2b34c726bb04b9
-      internalID: -139398899
+      spriteID: 62b865663fc16e442bb6d86fd70366d5
+      internalID: 366518834
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_51
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 896
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a74d67e77d709d4fb146b7f8a90a4c9
-      internalID: -911960021
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_52
+      name: Mini-Skeleton UPPER_22
       rect:
         serializedVersion: 2
         x: 0
-        y: 832
+        y: 1090
         width: 64
         height: 64
       alignment: 0
@@ -1216,18 +586,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13fca265f8a234e489b58d14c0cd94ad
-      internalID: -1883779546
+      spriteID: 714698e4dcb5dd04895901bdef5ca7fa
+      internalID: 1234245824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_53
+      name: Mini-Skeleton UPPER_23
       rect:
         serializedVersion: 2
         x: 64
-        y: 832
+        y: 1090
         width: 64
         height: 64
       alignment: 0
@@ -1237,18 +607,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c3306459ad1b634a826beae5e6e251f
-      internalID: -805096321
+      spriteID: 708a5bf514fd81e4daca505f954d1b6d
+      internalID: -1630808150
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_54
+      name: Mini-Skeleton UPPER_24
       rect:
         serializedVersion: 2
         x: 128
-        y: 832
+        y: 1090
         width: 64
         height: 64
       alignment: 0
@@ -1258,18 +628,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c900e91127bbc8c499906f765901bf6e
-      internalID: -1380611066
+      spriteID: 87788a33b3ecb50468baf8cb3c7861ad
+      internalID: 1290868366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_55
+      name: Mini-Skeleton UPPER_25
       rect:
         serializedVersion: 2
         x: 192
-        y: 832
+        y: 1090
         width: 64
         height: 64
       alignment: 0
@@ -1279,18 +649,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a745fd65160a0a248b80703b6db59fa8
-      internalID: 1725244309
+      spriteID: f1e99db1dce863946865dd234c275487
+      internalID: -1431984892
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_56
+      name: Mini-Skeleton UPPER_26
       rect:
         serializedVersion: 2
         x: 256
-        y: 832
+        y: 1090
         width: 64
         height: 64
       alignment: 0
@@ -1300,18 +670,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0948bd94d51fed44bb74d5e6f6550944
-      internalID: -965393915
+      spriteID: 4a2b416faf7b4a947821bb902c7d605e
+      internalID: -543002529
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_57
+      name: Mini-Skeleton UPPER_27
       rect:
         serializedVersion: 2
         x: 320
-        y: 832
+        y: 1090
         width: 64
         height: 64
       alignment: 0
@@ -1321,18 +691,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d6d32f4392f8974e831b60861634357
-      internalID: -1638453690
+      spriteID: 6a429bfcf7862cc4ab75ca2f69414abd
+      internalID: 1195667117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_58
+      name: Mini-Skeleton UPPER_28
       rect:
         serializedVersion: 2
         x: 384
-        y: 832
+        y: 1090
         width: 64
         height: 64
       alignment: 0
@@ -1342,39 +712,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57be3f84be31fa446927cec76d403e0f
-      internalID: 518700194
+      spriteID: 55a6960fc092b6b42807c526f5aa10cf
+      internalID: 1995284256
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_59
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 832
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc5a651749669f249b7beda964b10038
-      internalID: 5965096
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mini-Zombie_60
+      name: Mini-Skeleton UPPER_29
       rect:
         serializedVersion: 2
         x: 0
-        y: 768
+        y: 1026
         width: 64
         height: 64
       alignment: 0
@@ -1384,18 +733,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bbea602c5aa7eb4e8f6e18be61c355a
-      internalID: -808525183
+      spriteID: 7abab81bb82383742b90dcffcb2df818
+      internalID: -1341329754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_61
+      name: Mini-Skeleton UPPER_30
       rect:
         serializedVersion: 2
         x: 64
-        y: 768
+        y: 1026
         width: 64
         height: 64
       alignment: 0
@@ -1405,18 +754,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0c41d936268f554b8be9f1332075409
-      internalID: 1054318337
+      spriteID: 0b5db873359094a4a9c6e385f801596f
+      internalID: 111970486
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_62
+      name: Mini-Skeleton UPPER_31
       rect:
         serializedVersion: 2
         x: 128
-        y: 768
+        y: 1026
         width: 64
         height: 64
       alignment: 0
@@ -1426,18 +775,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 236efce01e1d9ed43b738c52670f10e3
-      internalID: -1884926246
+      spriteID: 8fe9857780caa5f4c83be4bf8de3912d
+      internalID: 1535402484
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_63
+      name: Mini-Skeleton UPPER_32
       rect:
         serializedVersion: 2
         x: 192
-        y: 768
+        y: 1026
         width: 64
         height: 64
       alignment: 0
@@ -1447,18 +796,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a9b6e1fd272b9843bb6533167037976
-      internalID: 630179051
+      spriteID: 11d852ace8e992749974f6ac0999e899
+      internalID: 615985478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_64
+      name: Mini-Skeleton UPPER_33
       rect:
         serializedVersion: 2
         x: 256
-        y: 768
+        y: 1026
         width: 64
         height: 64
       alignment: 0
@@ -1468,18 +817,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 148ca48f41f89a641bf5de5d3b40435d
-      internalID: 1202969623
+      spriteID: cc1f43e05c840f3428bd061130cd5e28
+      internalID: -1782485608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_65
+      name: Mini-Skeleton UPPER_34
       rect:
         serializedVersion: 2
         x: 320
-        y: 768
+        y: 1026
         width: 64
         height: 64
       alignment: 0
@@ -1489,18 +838,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bf2d494b3e71fa4ea1e1d35d3951dee
-      internalID: 1134221981
+      spriteID: 001828d2455c3be49baf1cded7cccfd7
+      internalID: 605770788
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_66
+      name: Mini-Skeleton UPPER_35
       rect:
         serializedVersion: 2
         x: 384
-        y: 768
+        y: 1026
         width: 64
         height: 64
       alignment: 0
@@ -1510,18 +859,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e70515299970cc34e9a5aa233bdba00a
-      internalID: 1410710842
+      spriteID: a0aaf60068be65641ba6e6f4c86ae2aa
+      internalID: -1435255091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_67
+      name: Mini-Skeleton UPPER_36
       rect:
         serializedVersion: 2
         x: 448
-        y: 768
+        y: 1026
         width: 64
         height: 64
       alignment: 0
@@ -1531,18 +880,690 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f060e746818dbad4993d45fcefcac433
-      internalID: -413930448
+      spriteID: 5c05d0cdda3023f458ee551ed9d1b38a
+      internalID: 1977275256
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_68
+      name: Mini-Skeleton UPPER_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 962
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f3acb4a865261240971a929ab3421c6
+      internalID: -1440256142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_38
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 962
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc0721c638721054abeff2f730e49007
+      internalID: 97175803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_39
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 962
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d91f622524b07043aadd8bf8af6fc94
+      internalID: -1310273137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_40
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 962
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fcb1add6ea00654db515ae791ff74f3
+      internalID: 567203847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_41
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 962
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85abf7faceac71146a49a71baf4246cf
+      internalID: -2021087936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_42
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 962
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df07d8cdb0709b74e989cccc982173c3
+      internalID: 1427680173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_43
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 962
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c03b0c4ae01964b822d3e212486542
+      internalID: 164397218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_44
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 962
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d170963b1e03b43babe15b4420d492
+      internalID: 1674209069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 898
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5ffe304bedb5c4dbed9980b99c5c24
+      internalID: 1541411992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_46
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 898
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0664796a91d1a644392f869a41058095
+      internalID: -1379998422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_47
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 898
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be569624c0e3a334ba189acc24065ba2
+      internalID: -811589250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_48
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 898
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fdaac3b0b9c8c841946429a89b8dbda
+      internalID: 1438840029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_49
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 898
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee72084e86347c3419fd631c2f3b0553
+      internalID: 976689145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_50
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 898
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2057ea7955fe7e449fe929182c81676
+      internalID: 1957579801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_51
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 898
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 213c514ee33df2d4bbb5a816e89bb457
+      internalID: -36646019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_52
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 898
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65caf5353d4fa8e4ba20a1fccf10fd59
+      internalID: 598768102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 834
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e1ee38fd2abcec41881813dd5d84dfd
+      internalID: -1543116675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_54
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 834
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7511e6bb1c6a647a8416afb1009514
+      internalID: -1076040194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_55
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 834
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1241d8755d2d5894aa40f9ba54d03ea9
+      internalID: -1446435889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_56
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 834
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdb6105831b700f4db9024ff28ff22cd
+      internalID: 1301088603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_57
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 834
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 962992d1f474e8a4eafcd4a41f707f93
+      internalID: 401149373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_58
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 834
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f06c017df460349899a4bea298c809
+      internalID: -276916991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_59
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 834
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e40563a649b4cf48b98b8e00331cfb7
+      internalID: -1622100608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_60
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 834
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15154cf6d1334bf49bf85a0da4bae195
+      internalID: -1448691921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_61
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 770
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c96058deed76c64a8944b1ca4d4f070
+      internalID: 195735353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_62
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 770
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28bf5c01c4846dc47bd771e12fae6eeb
+      internalID: -772093401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_63
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 770
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9def2616f7672546b900037b4c5b530
+      internalID: -812369350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_64
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 770
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df4c7b0ce7d9164eb74a0f7b90ef1c5
+      internalID: 693936873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_65
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 770
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff474bbf0162733448df8701a0e1baed
+      internalID: -1419180627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_66
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 770
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f9bdf419489264385282415d323aa8
+      internalID: -1486104550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_67
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 770
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bbf2af141445b14d95933726169cb87
+      internalID: 1111965796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_68
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 770
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e96af117fd63e43851d404bdff1beb
+      internalID: -1282208028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini-Skeleton UPPER_69
       rect:
         serializedVersion: 2
         x: 512
-        y: 768
+        y: 770
         width: 64
         height: 64
       alignment: 0
@@ -1552,18 +1573,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e26450f7a897a204c884a29082c6ce3a
-      internalID: 1184862472
+      spriteID: 352fa4e0eb9a9ec4092060d3165c68ef
+      internalID: -615841856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_69
+      name: Mini-Skeleton UPPER_70
       rect:
         serializedVersion: 2
         x: 0
-        y: 704
+        y: 706
         width: 64
         height: 64
       alignment: 0
@@ -1573,18 +1594,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a66c3dee785c0d441a7c93fc4d17e333
-      internalID: -1693177260
+      spriteID: 4ebb66dc2c1c16d4780a02fe8ce103bd
+      internalID: 1637196877
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_70
+      name: Mini-Skeleton UPPER_71
       rect:
         serializedVersion: 2
         x: 64
-        y: 704
+        y: 706
         width: 64
         height: 64
       alignment: 0
@@ -1594,18 +1615,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b82c07e085400274eac8752169a42636
-      internalID: 2003874071
+      spriteID: dcb30fdcda27fbf498b16824a130bcbe
+      internalID: -1341489341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_71
+      name: Mini-Skeleton UPPER_72
       rect:
         serializedVersion: 2
         x: 128
-        y: 704
+        y: 706
         width: 64
         height: 64
       alignment: 0
@@ -1615,18 +1636,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5206ea6e97fe336418385ab8efc5d35f
-      internalID: -1719672293
+      spriteID: df40f68d66141de45b82656e6f8c6c27
+      internalID: 1702476728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_72
+      name: Mini-Skeleton UPPER_73
       rect:
         serializedVersion: 2
         x: 192
-        y: 704
+        y: 706
         width: 64
         height: 64
       alignment: 0
@@ -1636,18 +1657,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44ac079b495ac814098bb949efa6f03f
-      internalID: 306308046
+      spriteID: 913082ac1c9aef14f9954e50f7349e00
+      internalID: 1310503760
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_73
+      name: Mini-Skeleton UPPER_74
       rect:
         serializedVersion: 2
         x: 256
-        y: 704
+        y: 706
         width: 64
         height: 64
       alignment: 0
@@ -1657,18 +1678,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f148790cf28d204089b8b1deeb0c6d5
-      internalID: 936414255
+      spriteID: bf83f1cf03ade774cb108e108214815a
+      internalID: -1498569893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_74
+      name: Mini-Skeleton UPPER_75
       rect:
         serializedVersion: 2
         x: 320
-        y: 704
+        y: 706
         width: 64
         height: 64
       alignment: 0
@@ -1678,18 +1699,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32cdf3f7248af7547bc2add05c9a284b
-      internalID: 2090991163
+      spriteID: b46a8d359d3684f4ab8f81c1fe6c0400
+      internalID: -737302981
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_75
+      name: Mini-Skeleton UPPER_76
       rect:
         serializedVersion: 2
         x: 384
-        y: 704
+        y: 706
         width: 64
         height: 64
       alignment: 0
@@ -1699,18 +1720,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 534a52d6d4b8ef3488398fcb2dff5c6f
-      internalID: -453149146
+      spriteID: c1c4ff37f1d6bd04a8bae75fd87bbc21
+      internalID: 1158495796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_76
+      name: Mini-Skeleton UPPER_77
       rect:
         serializedVersion: 2
         x: 448
-        y: 704
+        y: 706
         width: 64
         height: 64
       alignment: 0
@@ -1720,18 +1741,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16412164bddd1b749861a7d2aabd6c8d
-      internalID: 1821817185
+      spriteID: c8ee00548ef47d840b9e0c3f2c67e7da
+      internalID: -472848122
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_77
+      name: Mini-Skeleton UPPER_78
       rect:
         serializedVersion: 2
         x: 512
-        y: 704
+        y: 706
         width: 64
         height: 64
       alignment: 0
@@ -1741,18 +1762,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3aa2031272e55e7479c2aed9bb2ee398
-      internalID: -339695440
+      spriteID: 2a126800e9b0abb42aaf5fad2ae2524a
+      internalID: -2004967716
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_78
+      name: Mini-Skeleton UPPER_79
       rect:
         serializedVersion: 2
         x: 0
-        y: 640
+        y: 642
         width: 64
         height: 64
       alignment: 0
@@ -1762,18 +1783,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f560f24de7656244a60c6097ee5f4dd
-      internalID: -256652293
+      spriteID: 66a77667df3414142bdd2c0d448e94c5
+      internalID: -67027707
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_79
+      name: Mini-Skeleton UPPER_80
       rect:
         serializedVersion: 2
         x: 64
-        y: 640
+        y: 642
         width: 64
         height: 64
       alignment: 0
@@ -1783,18 +1804,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 318c7236644c546418f9f9248e51c65d
-      internalID: -727691612
+      spriteID: d67c9602e442d484fa547a39749e4859
+      internalID: -46543005
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_80
+      name: Mini-Skeleton UPPER_81
       rect:
         serializedVersion: 2
         x: 128
-        y: 640
+        y: 642
         width: 64
         height: 64
       alignment: 0
@@ -1804,18 +1825,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38289fa70b031814389439f5f6de78b8
-      internalID: -1217747993
+      spriteID: 8a436ffe07d79164b87a14ac1ff926dc
+      internalID: -744651642
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_81
+      name: Mini-Skeleton UPPER_82
       rect:
         serializedVersion: 2
         x: 192
-        y: 640
+        y: 642
         width: 64
         height: 64
       alignment: 0
@@ -1825,18 +1846,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13c541eb14f11f44eb9a65617c89502e
-      internalID: 2119057229
+      spriteID: 9725d783e1eea0d4c9143b150854f0a3
+      internalID: -411200761
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_82
+      name: Mini-Skeleton UPPER_83
       rect:
         serializedVersion: 2
         x: 256
-        y: 640
+        y: 642
         width: 64
         height: 64
       alignment: 0
@@ -1846,18 +1867,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb90fe22295ed1f4cbb2bdaef4afb6e9
-      internalID: -1173295171
+      spriteID: 14c14cbe78b64324b847e50b85e5636a
+      internalID: 536702061
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_83
+      name: Mini-Skeleton UPPER_84
       rect:
         serializedVersion: 2
         x: 320
-        y: 640
+        y: 642
         width: 64
         height: 64
       alignment: 0
@@ -1867,18 +1888,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1dcd5ec0b0ed189469ecefb7252656e1
-      internalID: -1012862278
+      spriteID: 713c1fe17a3240345a6d7bb3fb4ee542
+      internalID: -1935478310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_84
+      name: Mini-Skeleton UPPER_85
       rect:
         serializedVersion: 2
         x: 384
-        y: 640
+        y: 642
         width: 64
         height: 64
       alignment: 0
@@ -1888,18 +1909,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b10afde723d5744e8cf38e26e4090cd
-      internalID: 1424021055
+      spriteID: 44a035cfdb31e3643b5272573a6a5692
+      internalID: -1208660499
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_85
+      name: Mini-Skeleton UPPER_86
       rect:
         serializedVersion: 2
         x: 448
-        y: 640
+        y: 642
         width: 64
         height: 64
       alignment: 0
@@ -1909,18 +1930,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 814e5ff37b9c844499ec8c3dc6238cf8
-      internalID: -212320002
+      spriteID: 64dea437cdf7224468dcc4043c8d7c81
+      internalID: -1211875713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_86
+      name: Mini-Skeleton UPPER_87
       rect:
         serializedVersion: 2
         x: 512
-        y: 640
+        y: 642
         width: 64
         height: 64
       alignment: 0
@@ -1930,18 +1951,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a6300b3c678f1444ae7fa66f1c6eec2
-      internalID: 482466415
+      spriteID: 3e952d0cfe164894799657d0f5fa252a
+      internalID: -1922665972
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_87
+      name: Mini-Skeleton UPPER_88
       rect:
         serializedVersion: 2
         x: 0
-        y: 576
+        y: 578
         width: 64
         height: 64
       alignment: 0
@@ -1951,18 +1972,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 904ad660984faf04e9ab2fd5c8b1a24d
-      internalID: 1956327206
+      spriteID: 35c6dc1b08b26da4898d27cb5e295d4d
+      internalID: 1894706642
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_88
+      name: Mini-Skeleton UPPER_89
       rect:
         serializedVersion: 2
         x: 64
-        y: 576
+        y: 578
         width: 64
         height: 64
       alignment: 0
@@ -1972,18 +1993,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49b47f54891c8a045b62ea4ecae5a322
-      internalID: 38214697
+      spriteID: ca8af9e1de0439a48bcbe248628de925
+      internalID: 372326471
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_89
+      name: Mini-Skeleton UPPER_90
       rect:
         serializedVersion: 2
         x: 128
-        y: 576
+        y: 578
         width: 64
         height: 64
       alignment: 0
@@ -1993,18 +2014,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acbcba8e29d6b2c4f893d102d16dd641
-      internalID: 1954518030
+      spriteID: 2ee62b2e359b9bf4ea3fc37da21928ef
+      internalID: -353178795
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_90
+      name: Mini-Skeleton UPPER_91
       rect:
         serializedVersion: 2
         x: 192
-        y: 576
+        y: 578
         width: 64
         height: 64
       alignment: 0
@@ -2014,18 +2035,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 980caa88857d17d46aaa743ba6f6de6b
-      internalID: 1781732681
+      spriteID: 354df13aa6cc5cc4fbce5ed4774c9561
+      internalID: -850888903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_91
+      name: Mini-Skeleton UPPER_92
       rect:
         serializedVersion: 2
         x: 256
-        y: 576
+        y: 578
         width: 64
         height: 64
       alignment: 0
@@ -2035,18 +2056,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b05b9f2f75eb5634fa5c249675b8ce76
-      internalID: -56549060
+      spriteID: 8494df8572d53f947ad7f8419013ae07
+      internalID: 40550173
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_92
+      name: Mini-Skeleton UPPER_93
       rect:
         serializedVersion: 2
         x: 320
-        y: 576
+        y: 578
         width: 64
         height: 64
       alignment: 0
@@ -2056,18 +2077,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e66eb0600ff84e47bc2205e72aa3e6e
-      internalID: 476827151
+      spriteID: 45cd2967deb0f0a4abcc36ce87697693
+      internalID: -1721948133
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_93
+      name: Mini-Skeleton UPPER_94
       rect:
         serializedVersion: 2
         x: 384
-        y: 576
+        y: 578
         width: 64
         height: 64
       alignment: 0
@@ -2077,18 +2098,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92022f9eca8792a4f80b0551edb99490
-      internalID: -344724932
+      spriteID: 5c649a1d3342b5d40a48969f5355d99c
+      internalID: 2114865047
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_94
+      name: Mini-Skeleton UPPER_95
       rect:
         serializedVersion: 2
         x: 448
-        y: 576
+        y: 578
         width: 64
         height: 64
       alignment: 0
@@ -2098,18 +2119,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 950207174c65ea5448f6bc9a2538102b
-      internalID: -2021266201
+      spriteID: 88c643eaec334f64fa3f0047187bd038
+      internalID: 530608972
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_95
+      name: Mini-Skeleton UPPER_96
       rect:
         serializedVersion: 2
         x: 512
-        y: 576
+        y: 578
         width: 64
         height: 64
       alignment: 0
@@ -2119,18 +2140,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1d80c22d11c67748ac1903c559443b2
-      internalID: -1961942946
+      spriteID: 70191a2e63e5c784492a7210700e3649
+      internalID: 944524030
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_96
+      name: Mini-Skeleton UPPER_97
       rect:
         serializedVersion: 2
         x: 0
-        y: 512
+        y: 514
         width: 64
         height: 64
       alignment: 0
@@ -2140,18 +2161,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd79d9e4665c09d429eb3862c78d39cb
-      internalID: -1819778127
+      spriteID: de98cc34a4964d9408e8668bdd9b6336
+      internalID: -798240026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_97
+      name: Mini-Skeleton UPPER_98
       rect:
         serializedVersion: 2
         x: 64
-        y: 512
+        y: 514
         width: 64
         height: 64
       alignment: 0
@@ -2161,18 +2182,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e57a545a82b319140a5f98c34b008449
-      internalID: -931410038
+      spriteID: 7c7f71525e9bb61469646ee72cf8a057
+      internalID: -20557582
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_98
+      name: Mini-Skeleton UPPER_99
       rect:
         serializedVersion: 2
         x: 128
-        y: 512
+        y: 514
         width: 64
         height: 64
       alignment: 0
@@ -2182,18 +2203,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0dd91d799b54054a908b7a443ea045e
-      internalID: 292464896
+      spriteID: 02c3efd7ead7e2344b570afa92abe71e
+      internalID: 200481075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_99
+      name: Mini-Skeleton UPPER_100
       rect:
         serializedVersion: 2
         x: 192
-        y: 512
+        y: 514
         width: 64
         height: 64
       alignment: 0
@@ -2203,18 +2224,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76c9d44c87d3e9c4b9283a02e931edc6
-      internalID: -1040478382
+      spriteID: 015c965130f1346439f33ade44e7a1d1
+      internalID: -1889182192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_100
+      name: Mini-Skeleton UPPER_101
       rect:
         serializedVersion: 2
         x: 256
-        y: 512
+        y: 514
         width: 64
         height: 64
       alignment: 0
@@ -2224,18 +2245,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 270e6fb507052934f8538f72c641423a
-      internalID: -187871947
+      spriteID: 074dac9c2cfeb4c41a2dddeb68f363e4
+      internalID: 1792378473
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_101
+      name: Mini-Skeleton UPPER_102
       rect:
         serializedVersion: 2
         x: 320
-        y: 512
+        y: 514
         width: 64
         height: 64
       alignment: 0
@@ -2245,18 +2266,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 328cee72715a3d54f8d3d62f6c23edc9
-      internalID: 480245333
+      spriteID: f3b198b5dcfce2c47a9dafdcb8acee7f
+      internalID: 2125444294
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_102
+      name: Mini-Skeleton UPPER_103
       rect:
         serializedVersion: 2
         x: 0
-        y: 448
+        y: 450
         width: 64
         height: 64
       alignment: 0
@@ -2266,18 +2287,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4153adcbc58047643a065f779181ca59
-      internalID: -318887034
+      spriteID: 54fa915b7f6f5e248ba202fcf64ac4d6
+      internalID: -1099201951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_103
+      name: Mini-Skeleton UPPER_104
       rect:
         serializedVersion: 2
         x: 64
-        y: 448
+        y: 450
         width: 64
         height: 64
       alignment: 0
@@ -2287,18 +2308,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48e8c197fcfd9d74dbb678156c548908
-      internalID: -1806488868
+      spriteID: 3f533e39503a79e4a886e3850455fe9a
+      internalID: 1850065376
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_104
+      name: Mini-Skeleton UPPER_105
       rect:
         serializedVersion: 2
         x: 128
-        y: 448
+        y: 450
         width: 64
         height: 64
       alignment: 0
@@ -2308,18 +2329,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e91283cfdb144c458f7db070a83c57f
-      internalID: -1942107907
+      spriteID: 14aa417b22e67394e84cf8b3d8fbf6e0
+      internalID: 1509299268
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_105
+      name: Mini-Skeleton UPPER_106
       rect:
         serializedVersion: 2
         x: 192
-        y: 448
+        y: 450
         width: 64
         height: 64
       alignment: 0
@@ -2329,18 +2350,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de34e8e3e18a8ea4a95a448682b58bcc
-      internalID: -856958891
+      spriteID: 9f8ce0ec5d13b4847bf09631b949b37c
+      internalID: -1322751552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_106
+      name: Mini-Skeleton UPPER_107
       rect:
         serializedVersion: 2
         x: 256
-        y: 448
+        y: 450
         width: 64
         height: 64
       alignment: 0
@@ -2350,18 +2371,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cae88a416c5f5642bf7c9910eb4a7dd
-      internalID: -1503479478
+      spriteID: 6d0d734d03239d741b8d63ddb9e9007f
+      internalID: -222947744
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_107
+      name: Mini-Skeleton UPPER_108
       rect:
         serializedVersion: 2
         x: 320
-        y: 448
+        y: 450
         width: 64
         height: 64
       alignment: 0
@@ -2371,18 +2392,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 546af4ae77756b94bb4aece731acf2b1
-      internalID: 1540872466
+      spriteID: 954f4094ff42b83498fff94eece3b919
+      internalID: 706048945
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_108
+      name: Mini-Skeleton UPPER_109
       rect:
         serializedVersion: 2
         x: 0
-        y: 384
+        y: 386
         width: 64
         height: 64
       alignment: 0
@@ -2392,18 +2413,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fe80ad8eabbb6447bcec68fda58fbb6
-      internalID: 1854979655
+      spriteID: f2c0da22eb69aa64c8d46defcfce2e8f
+      internalID: 2107518797
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_109
+      name: Mini-Skeleton UPPER_110
       rect:
         serializedVersion: 2
         x: 64
-        y: 384
+        y: 386
         width: 64
         height: 64
       alignment: 0
@@ -2413,18 +2434,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a611a318bfb0854aaec417246110eb4
-      internalID: -289177593
+      spriteID: a18b16137276522438f6611bdc9cf06d
+      internalID: 2076492679
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_110
+      name: Mini-Skeleton UPPER_111
       rect:
         serializedVersion: 2
         x: 128
-        y: 384
+        y: 386
         width: 64
         height: 64
       alignment: 0
@@ -2434,18 +2455,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16a389672e864044e89ad4abcb7f24c1
-      internalID: 561122517
+      spriteID: c1f9da49586226c47861d29c983f7c87
+      internalID: 1084384035
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_111
+      name: Mini-Skeleton UPPER_112
       rect:
         serializedVersion: 2
         x: 192
-        y: 384
+        y: 386
         width: 64
         height: 64
       alignment: 0
@@ -2455,18 +2476,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e53cd345f8b8e414b970be1a2b6172be
-      internalID: -1195833756
+      spriteID: f1f3ebe392d6bfc40ae6c0774c24df47
+      internalID: -229888274
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_112
+      name: Mini-Skeleton UPPER_113
       rect:
         serializedVersion: 2
         x: 256
-        y: 384
+        y: 386
         width: 64
         height: 64
       alignment: 0
@@ -2476,18 +2497,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c346f1fc601a944e9501ed383f403b7
-      internalID: 803931365
+      spriteID: e990c67399896f5438aea0e067c97bb6
+      internalID: -1409571162
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_113
+      name: Mini-Skeleton UPPER_114
       rect:
         serializedVersion: 2
         x: 320
-        y: 384
+        y: 386
         width: 64
         height: 64
       alignment: 0
@@ -2497,18 +2518,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34389457b93c60242965246fc9f8e13f
-      internalID: -26950438
+      spriteID: e71849de4fea8e64f996103e8f1e0316
+      internalID: -792114935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_114
+      name: Mini-Skeleton UPPER_115
       rect:
         serializedVersion: 2
         x: 0
-        y: 320
+        y: 322
         width: 64
         height: 64
       alignment: 0
@@ -2518,18 +2539,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c605c31b3fee0914282ebb2c5842da93
-      internalID: 1879588936
+      spriteID: 12d4fdc74b8532241bf07a0ace868aca
+      internalID: 402978952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_115
+      name: Mini-Skeleton UPPER_116
       rect:
         serializedVersion: 2
         x: 64
-        y: 320
+        y: 322
         width: 64
         height: 64
       alignment: 0
@@ -2539,18 +2560,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b47182d401156a479bdbcc7377c6e5c
-      internalID: 459657721
+      spriteID: 05993496cc5e1114181342f8fe01ea3c
+      internalID: -58567514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_116
+      name: Mini-Skeleton UPPER_117
       rect:
         serializedVersion: 2
         x: 128
-        y: 320
+        y: 322
         width: 64
         height: 64
       alignment: 0
@@ -2560,18 +2581,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04662030a7f0e234ca7a0e3303a94755
-      internalID: -1985170442
+      spriteID: 84a182cac4adaf84f8cb8418ff32d5e2
+      internalID: 985323040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_117
+      name: Mini-Skeleton UPPER_118
       rect:
         serializedVersion: 2
         x: 192
-        y: 320
+        y: 322
         width: 64
         height: 64
       alignment: 0
@@ -2581,18 +2602,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0739b2981b406134581e6417a16bb5da
-      internalID: 340228722
+      spriteID: 27afbc5a609b7094f8509e353e37e9fa
+      internalID: -1693909292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_118
+      name: Mini-Skeleton UPPER_119
       rect:
         serializedVersion: 2
         x: 256
-        y: 320
+        y: 322
         width: 64
         height: 64
       alignment: 0
@@ -2602,18 +2623,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc9a39b78e62d28419324188e5c15086
-      internalID: -652466894
+      spriteID: cade70a37b4e26d4e87146bee73c51b6
+      internalID: 662213747
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_119
+      name: Mini-Skeleton UPPER_120
       rect:
         serializedVersion: 2
         x: 320
-        y: 320
+        y: 322
         width: 64
         height: 64
       alignment: 0
@@ -2623,18 +2644,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a9995d0801b2ed4a9741fd20c48f403
-      internalID: 1318239939
+      spriteID: 59f57deecfbad444eb82a834e375d0dd
+      internalID: 667172469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_120
+      name: Mini-Skeleton UPPER_121
       rect:
         serializedVersion: 2
         x: 0
-        y: 256
+        y: 258
         width: 64
         height: 64
       alignment: 0
@@ -2644,18 +2665,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9900b59b6882403409a704616a2d9f00
-      internalID: -1542389075
+      spriteID: 747a1bad253e4014aa67a37f5cd19b58
+      internalID: -1421759914
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_121
+      name: Mini-Skeleton UPPER_122
       rect:
         serializedVersion: 2
         x: 64
-        y: 256
+        y: 258
         width: 64
         height: 64
       alignment: 0
@@ -2665,18 +2686,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0febee3210bdf2149a5e5aaa4cd05ce5
-      internalID: 1431197312
+      spriteID: a0c28e1879fcb224d9d95598a1d631e1
+      internalID: -1220007290
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_122
+      name: Mini-Skeleton UPPER_123
       rect:
         serializedVersion: 2
         x: 128
-        y: 256
+        y: 258
         width: 64
         height: 64
       alignment: 0
@@ -2686,18 +2707,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2dcf786225e80814faea828e932c9dc0
-      internalID: 130657394
+      spriteID: 732ba6c61397a3f4aaf56a274167c0e6
+      internalID: 401881516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_123
+      name: Mini-Skeleton UPPER_124
       rect:
         serializedVersion: 2
         x: 192
-        y: 256
+        y: 258
         width: 64
         height: 64
       alignment: 0
@@ -2707,18 +2728,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b999884c73af524089ce3da3eb58682
-      internalID: -1296553083
+      spriteID: 270ffadbd3cf6384f9add41cb37f9ac7
+      internalID: -315025985
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_124
+      name: Mini-Skeleton UPPER_125
       rect:
         serializedVersion: 2
         x: 256
-        y: 256
+        y: 258
         width: 64
         height: 64
       alignment: 0
@@ -2728,18 +2749,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e15f36753c5537e43b6ca9ad1398efa9
-      internalID: 648809019
+      spriteID: bfdaa9dd0a3769e40b093b7a63eaf315
+      internalID: -1837013135
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_125
+      name: Mini-Skeleton UPPER_126
       rect:
         serializedVersion: 2
         x: 320
-        y: 256
+        y: 258
         width: 64
         height: 64
       alignment: 0
@@ -2749,18 +2770,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 257b3c60ef2a8d84b92089a888af7d43
-      internalID: 2101053403
+      spriteID: 99c5759691cf71b46bca016de1a3014f
+      internalID: 1092187468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_126
+      name: Mini-Skeleton UPPER_127
       rect:
         serializedVersion: 2
         x: 384
-        y: 256
+        y: 258
         width: 64
         height: 64
       alignment: 0
@@ -2770,18 +2791,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e52da9cc0fc3afd4086857655f0a5d6b
-      internalID: 954288339
+      spriteID: c26c8b3add0e2a9439e767d2444f164c
+      internalID: -1238364382
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_127
+      name: Mini-Skeleton UPPER_128
       rect:
         serializedVersion: 2
         x: 448
-        y: 256
+        y: 258
         width: 64
         height: 64
       alignment: 0
@@ -2791,18 +2812,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72ba0782547af9c47bdde998c5cd11a9
-      internalID: 1219137921
+      spriteID: 82f1e4743c37fa0439144b3218aa94a6
+      internalID: 1154913581
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_128
+      name: Mini-Skeleton UPPER_129
       rect:
         serializedVersion: 2
         x: 512
-        y: 256
+        y: 258
         width: 64
         height: 64
       alignment: 0
@@ -2812,18 +2833,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cc5e9644ac61784282b94be6d18e204
-      internalID: 699137285
+      spriteID: 59225579e287f9f4c81dbdcdafce5490
+      internalID: -368164791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_129
+      name: Mini-Skeleton UPPER_130
       rect:
         serializedVersion: 2
         x: 576
-        y: 256
+        y: 258
         width: 64
         height: 64
       alignment: 0
@@ -2833,18 +2854,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 828052163850da34faf6227736789fe1
-      internalID: 452028867
+      spriteID: 130d697f83ce14145b36ff8853902456
+      internalID: -1463915887
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_130
+      name: Mini-Skeleton UPPER_131
       rect:
         serializedVersion: 2
         x: 640
-        y: 256
+        y: 258
         width: 64
         height: 64
       alignment: 0
@@ -2854,18 +2875,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73b6058269e0f814cad458754e2b7670
-      internalID: -1035451531
+      spriteID: 815c45ff336a78b409aab25b0e7fdc3d
+      internalID: 725746291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_131
+      name: Mini-Skeleton UPPER_132
       rect:
         serializedVersion: 2
         x: 704
-        y: 256
+        y: 258
         width: 64
         height: 64
       alignment: 0
@@ -2875,18 +2896,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f78b8c4125301664eaeaf0cc2f2221f8
-      internalID: 231742549
+      spriteID: 985f45c3c7b20a24e86410f1474d506b
+      internalID: -358052917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_132
+      name: Mini-Skeleton UPPER_133
       rect:
         serializedVersion: 2
         x: 768
-        y: 256
+        y: 258
         width: 64
         height: 64
       alignment: 0
@@ -2896,18 +2917,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 724e7b142952acb46ab3f95d2d714ff9
-      internalID: -1169165819
+      spriteID: 04ea4c7f3d274a4458ed95a3f7af0ccf
+      internalID: -1809819979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_133
+      name: Mini-Skeleton UPPER_134
       rect:
         serializedVersion: 2
         x: 0
-        y: 192
+        y: 194
         width: 64
         height: 64
       alignment: 0
@@ -2917,18 +2938,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af5ac8a9117fa6a4f8511dc2046a9fe9
-      internalID: -369968152
+      spriteID: b4468fc832a9b3342ad6a3414621204d
+      internalID: 1647064610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_134
+      name: Mini-Skeleton UPPER_135
       rect:
         serializedVersion: 2
         x: 64
-        y: 192
+        y: 194
         width: 64
         height: 64
       alignment: 0
@@ -2938,18 +2959,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25bcc4bd7c6511843a96b7ecc3bed6b7
-      internalID: -554738658
+      spriteID: 48ca04b5351ba5e4f9636fc57234a8a3
+      internalID: -1924983693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_135
+      name: Mini-Skeleton UPPER_136
       rect:
         serializedVersion: 2
         x: 128
-        y: 192
+        y: 194
         width: 64
         height: 64
       alignment: 0
@@ -2959,18 +2980,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c35479ce0d2cdb48bbf35619f55bda8
-      internalID: 1166846113
+      spriteID: 4a70dade00979b749bc2f836258bcbdd
+      internalID: 1714357771
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_136
+      name: Mini-Skeleton UPPER_137
       rect:
         serializedVersion: 2
         x: 192
-        y: 192
+        y: 194
         width: 64
         height: 64
       alignment: 0
@@ -2980,18 +3001,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c13b0e00935171841970d43eaaa53f10
-      internalID: 1998119658
+      spriteID: 499b169e7e872294da70e47e8fdbb111
+      internalID: 1984506074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_137
+      name: Mini-Skeleton UPPER_138
       rect:
         serializedVersion: 2
         x: 256
-        y: 192
+        y: 194
         width: 64
         height: 64
       alignment: 0
@@ -3001,18 +3022,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea20c668f9d75b6479bc20a9224ad51f
-      internalID: -248019176
+      spriteID: 190e8bddb6afac74fb909052818237ed
+      internalID: 74850581
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_138
+      name: Mini-Skeleton UPPER_139
       rect:
         serializedVersion: 2
         x: 320
-        y: 192
+        y: 194
         width: 64
         height: 64
       alignment: 0
@@ -3022,18 +3043,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dadd800770e61a242a1f1c6c53641b5a
-      internalID: 684369521
+      spriteID: ef987bee6b840df4cbced7ebb0b72b4e
+      internalID: 1709380535
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_139
+      name: Mini-Skeleton UPPER_140
       rect:
         serializedVersion: 2
         x: 384
-        y: 192
+        y: 194
         width: 64
         height: 64
       alignment: 0
@@ -3043,18 +3064,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2729ffa2b0c892741891f22e97bcebcc
-      internalID: -559675611
+      spriteID: 7e5d82636147fd04ea63dfcc185cfdc7
+      internalID: -1285180358
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_140
+      name: Mini-Skeleton UPPER_141
       rect:
         serializedVersion: 2
         x: 448
-        y: 192
+        y: 194
         width: 64
         height: 64
       alignment: 0
@@ -3064,18 +3085,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32a4507241ff9304d8b1f820cec39297
-      internalID: -1638619874
+      spriteID: ea3652e629ea33644872fcbebb9f6dc1
+      internalID: -1526974069
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_141
+      name: Mini-Skeleton UPPER_142
       rect:
         serializedVersion: 2
         x: 512
-        y: 192
+        y: 194
         width: 64
         height: 64
       alignment: 0
@@ -3085,18 +3106,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1ceea70676dffc459edb09f577c3b79
-      internalID: -2039170773
+      spriteID: 61c8ec741ca0e0b4cb2a0378cd61fdf5
+      internalID: 238479871
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_142
+      name: Mini-Skeleton UPPER_143
       rect:
         serializedVersion: 2
         x: 576
-        y: 192
+        y: 194
         width: 64
         height: 64
       alignment: 0
@@ -3106,18 +3127,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a084a56337e8bec4dbc590abb900025b
-      internalID: 1081724571
+      spriteID: 908309109cecbb64d9e55d77ce93df55
+      internalID: 338178865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_143
+      name: Mini-Skeleton UPPER_144
       rect:
         serializedVersion: 2
         x: 640
-        y: 192
+        y: 194
         width: 64
         height: 64
       alignment: 0
@@ -3127,18 +3148,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3758fd4f5380d7d4fa760ec76dc85c50
-      internalID: 511020039
+      spriteID: ce22ff7b78066374798eb4845a7f90d1
+      internalID: -1039676243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_144
+      name: Mini-Skeleton UPPER_145
       rect:
         serializedVersion: 2
         x: 704
-        y: 192
+        y: 194
         width: 64
         height: 64
       alignment: 0
@@ -3148,18 +3169,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f9ccbca052fa0d4a81607be3f7300c5
-      internalID: 394872780
+      spriteID: 24075ba9209578744b8ad63f59494579
+      internalID: 1355847625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_145
+      name: Mini-Skeleton UPPER_146
       rect:
         serializedVersion: 2
         x: 768
-        y: 192
+        y: 194
         width: 64
         height: 64
       alignment: 0
@@ -3169,18 +3190,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a4c91bae7955804295bcd465a89f32a
-      internalID: 134534667
+      spriteID: 082c4362e0e2a964c84ebc5204d76d14
+      internalID: 1534059314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_146
+      name: Mini-Skeleton UPPER_147
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
+        y: 130
         width: 64
         height: 64
       alignment: 0
@@ -3190,18 +3211,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed87a21f6ee3ef24bbf07abb286221e0
-      internalID: 1208679389
+      spriteID: 7ee399be2e6ce3d43a1c0c8dad5fd649
+      internalID: -668040140
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_147
+      name: Mini-Skeleton UPPER_148
       rect:
         serializedVersion: 2
         x: 64
-        y: 128
+        y: 130
         width: 64
         height: 64
       alignment: 0
@@ -3211,18 +3232,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6abfa9bd0533954ab1f84337a16b3c8
-      internalID: 289875590
+      spriteID: a2ab7da2a5f0ba848afc6a9d444844cb
+      internalID: 1938489780
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_148
+      name: Mini-Skeleton UPPER_149
       rect:
         serializedVersion: 2
         x: 128
-        y: 128
+        y: 130
         width: 64
         height: 64
       alignment: 0
@@ -3232,18 +3253,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b2420cd86213dc4db1dfb2e36a58112
-      internalID: 849966431
+      spriteID: 4fb6c247503b31848baa575db03c987e
+      internalID: 411477850
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_149
+      name: Mini-Skeleton UPPER_150
       rect:
         serializedVersion: 2
         x: 192
-        y: 128
+        y: 130
         width: 64
         height: 64
       alignment: 0
@@ -3253,18 +3274,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b55d5632c6250d49859e2117d801462
-      internalID: -162959697
+      spriteID: e6fcd1afef6784249aec582068b49252
+      internalID: 571857259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_150
+      name: Mini-Skeleton UPPER_151
       rect:
         serializedVersion: 2
         x: 256
-        y: 128
+        y: 130
         width: 64
         height: 64
       alignment: 0
@@ -3274,18 +3295,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4ca320f96ff6ec45b71fd0b6fdb2a0e
-      internalID: -1301849832
+      spriteID: 7ee59fd549a440e4db9cffe7f90f74ce
+      internalID: -713536295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_151
+      name: Mini-Skeleton UPPER_152
       rect:
         serializedVersion: 2
         x: 320
-        y: 128
+        y: 130
         width: 64
         height: 64
       alignment: 0
@@ -3295,18 +3316,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 603f8fed97f1aa6419aac7f5aa302e63
-      internalID: 105140152
+      spriteID: 5ee914ac614cce546bd301247556d57a
+      internalID: 1043081742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_152
+      name: Mini-Skeleton UPPER_153
       rect:
         serializedVersion: 2
         x: 384
-        y: 128
+        y: 130
         width: 64
         height: 64
       alignment: 0
@@ -3316,18 +3337,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16641196dea11504abdec8fa7d4ee89f
-      internalID: -493485531
+      spriteID: 6ffe1c4acb195274fa5302a5952d60d0
+      internalID: -1068797144
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_153
+      name: Mini-Skeleton UPPER_154
       rect:
         serializedVersion: 2
         x: 448
-        y: 128
+        y: 130
         width: 64
         height: 64
       alignment: 0
@@ -3337,18 +3358,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5ec29b5ebc2a1f4c8914405b57bd4ac
-      internalID: 413639595
+      spriteID: 672828bb208f1154699a0498fd1520ab
+      internalID: -817047731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_154
+      name: Mini-Skeleton UPPER_155
       rect:
         serializedVersion: 2
         x: 512
-        y: 128
+        y: 130
         width: 64
         height: 64
       alignment: 0
@@ -3358,18 +3379,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8892c462c5e59c34cb389b079807f773
-      internalID: -411292111
+      spriteID: 33aa884c8a674c940aaf542620691217
+      internalID: 2123439861
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_155
+      name: Mini-Skeleton UPPER_156
       rect:
         serializedVersion: 2
         x: 576
-        y: 128
+        y: 130
         width: 64
         height: 64
       alignment: 0
@@ -3379,18 +3400,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e07121de583a0704bb55a94681abd800
-      internalID: -1021736028
+      spriteID: 4394b1cf937ec8044bac78bd9d66e771
+      internalID: 123395632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_156
+      name: Mini-Skeleton UPPER_157
       rect:
         serializedVersion: 2
         x: 640
-        y: 128
+        y: 130
         width: 64
         height: 64
       alignment: 0
@@ -3400,18 +3421,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f91dd725658713743a5961faa2040e15
-      internalID: 920954256
+      spriteID: 70c0affc6ec94a14d9a04639307e86fa
+      internalID: -164004041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_157
+      name: Mini-Skeleton UPPER_158
       rect:
         serializedVersion: 2
         x: 704
-        y: 128
+        y: 130
         width: 64
         height: 64
       alignment: 0
@@ -3421,18 +3442,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92bd246255c9aa5439d514f4d415564d
-      internalID: 1570412538
+      spriteID: 7a165582c2ef280469afe278f7dd882e
+      internalID: 1320076582
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_158
+      name: Mini-Skeleton UPPER_159
       rect:
         serializedVersion: 2
         x: 768
-        y: 128
+        y: 130
         width: 64
         height: 64
       alignment: 0
@@ -3442,18 +3463,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55b80a9de588ef243946fe48143a2dee
-      internalID: 1161291857
+      spriteID: 2d33e1d2b4da0cb4f8e2202a679f9f3f
+      internalID: -528934004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_159
+      name: Mini-Skeleton UPPER_160
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
+        y: 66
         width: 64
         height: 64
       alignment: 0
@@ -3463,18 +3484,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45518f5492bafd54dbe63a063bece3a7
-      internalID: 812577943
+      spriteID: 4211ff260327e1c4a98aec871daa73b6
+      internalID: 902675047
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_160
+      name: Mini-Skeleton UPPER_161
       rect:
         serializedVersion: 2
         x: 64
-        y: 64
+        y: 66
         width: 64
         height: 64
       alignment: 0
@@ -3484,18 +3505,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e255a1f525794394383b256f0a36d48f
-      internalID: -483250581
+      spriteID: a184bb13acdccc0498306acc47d41cff
+      internalID: 963824521
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_161
+      name: Mini-Skeleton UPPER_162
       rect:
         serializedVersion: 2
         x: 128
-        y: 64
+        y: 66
         width: 64
         height: 64
       alignment: 0
@@ -3505,18 +3526,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23ba82e48dfc00f45a0e70a13ae67ac4
-      internalID: -322620064
+      spriteID: 35a763f3c04594f49983d0f7f2de2274
+      internalID: -1814346751
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_162
+      name: Mini-Skeleton UPPER_163
       rect:
         serializedVersion: 2
         x: 192
-        y: 64
+        y: 66
         width: 64
         height: 64
       alignment: 0
@@ -3526,18 +3547,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 140d445e0d553074d9198ddf1e7011bf
-      internalID: 1647002869
+      spriteID: 978639f4a4da27e46a4567f0be373d06
+      internalID: 1430257706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_163
+      name: Mini-Skeleton UPPER_164
       rect:
         serializedVersion: 2
         x: 256
-        y: 64
+        y: 66
         width: 64
         height: 64
       alignment: 0
@@ -3547,18 +3568,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64be63ef79a41c142825239097008e55
-      internalID: 1670384482
+      spriteID: 625a6069cabba8f479c807a306bb1908
+      internalID: 242025609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_164
+      name: Mini-Skeleton UPPER_165
       rect:
         serializedVersion: 2
         x: 320
-        y: 64
+        y: 66
         width: 64
         height: 64
       alignment: 0
@@ -3568,18 +3589,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98091b17fdbadd24cbbdbd35ec9dbb43
-      internalID: 2095075912
+      spriteID: c7c58e39c293f974597c3940235ba605
+      internalID: -1799071165
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_165
+      name: Mini-Skeleton UPPER_166
       rect:
         serializedVersion: 2
         x: 384
-        y: 64
+        y: 66
         width: 64
         height: 64
       alignment: 0
@@ -3589,18 +3610,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a7cb826839fc1d4d970e8e02c65fdc9
-      internalID: -1201548688
+      spriteID: fa4b4a25a568a9c4d8dfc8b70ce43c4f
+      internalID: -879131384
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_166
+      name: Mini-Skeleton UPPER_167
       rect:
         serializedVersion: 2
         x: 448
-        y: 64
+        y: 66
         width: 64
         height: 64
       alignment: 0
@@ -3610,18 +3631,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2a6fcd27d1295e458f3a592fd565f2d
-      internalID: 88453179
+      spriteID: 70d08962bdfd0de488976fb924dbed69
+      internalID: 862760618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_167
+      name: Mini-Skeleton UPPER_168
       rect:
         serializedVersion: 2
         x: 512
-        y: 64
+        y: 66
         width: 64
         height: 64
       alignment: 0
@@ -3631,18 +3652,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4fb8c96a9d1bb349bab1ea788781f64
-      internalID: -483797053
+      spriteID: d75eb0134212ef54e88db745dba4269a
+      internalID: -609955114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_168
+      name: Mini-Skeleton UPPER_169
       rect:
         serializedVersion: 2
         x: 576
-        y: 64
+        y: 66
         width: 64
         height: 64
       alignment: 0
@@ -3652,18 +3673,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17afa498e5454194eb0f193421e2648e
-      internalID: 1940218999
+      spriteID: 1245405da19ce624ab547d718aa362dd
+      internalID: 1811620117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_169
+      name: Mini-Skeleton UPPER_170
       rect:
         serializedVersion: 2
         x: 640
-        y: 64
+        y: 66
         width: 64
         height: 64
       alignment: 0
@@ -3673,18 +3694,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 508dd81dae7d9f54ca01b7d577efb78f
-      internalID: -852137776
+      spriteID: edd10ad04b693af48a4d42e0eeb8f8df
+      internalID: -1541609580
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_170
+      name: Mini-Skeleton UPPER_171
       rect:
         serializedVersion: 2
         x: 704
-        y: 64
+        y: 66
         width: 64
         height: 64
       alignment: 0
@@ -3694,18 +3715,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 491d1ab61c7a72841b9aa72eac7b696b
-      internalID: 545621562
+      spriteID: 23fb9d552c491f74e8234ebbd0f30d07
+      internalID: -1114097437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_171
+      name: Mini-Skeleton UPPER_172
       rect:
         serializedVersion: 2
         x: 768
-        y: 64
+        y: 66
         width: 64
         height: 64
       alignment: 0
@@ -3715,18 +3736,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c18eaf138291b442860b46087197e50
-      internalID: -534430415
+      spriteID: b5a296975c2c39a499079ab4fcbb980f
+      internalID: -585876160
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_172
+      name: Mini-Skeleton UPPER_173
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 2
         width: 64
         height: 64
       alignment: 0
@@ -3736,18 +3757,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09b1e23123e2ac54184dc2974ef82645
-      internalID: -40215973
+      spriteID: 9636a157e35781b4f9621209a7af82d7
+      internalID: 328884298
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_173
+      name: Mini-Skeleton UPPER_174
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 2
         width: 64
         height: 64
       alignment: 0
@@ -3757,18 +3778,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 335488c7526737d4fb77e4078dd11911
-      internalID: -2028588055
+      spriteID: e6f2c7c7cfd240146b0e1db506d82d47
+      internalID: 398430628
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_174
+      name: Mini-Skeleton UPPER_175
       rect:
         serializedVersion: 2
         x: 128
-        y: 0
+        y: 2
         width: 64
         height: 64
       alignment: 0
@@ -3778,18 +3799,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d386611ed673ce74487f061a6c769355
-      internalID: 1042750630
+      spriteID: 60dbac51b621b9448b87e228c5446631
+      internalID: -1820644903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_175
+      name: Mini-Skeleton UPPER_176
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
+        y: 2
         width: 64
         height: 64
       alignment: 0
@@ -3799,18 +3820,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: beb720ae29c0d9b4b81512a70f8d603a
-      internalID: 1134475098
+      spriteID: 8f215d0d87a657b4b87b7cb82948fdf1
+      internalID: -113906435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_176
+      name: Mini-Skeleton UPPER_177
       rect:
         serializedVersion: 2
         x: 256
-        y: 0
+        y: 2
         width: 64
         height: 64
       alignment: 0
@@ -3820,18 +3841,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92ba703b5bd0ddd43ad87656b7aa1e14
-      internalID: -1300848676
+      spriteID: 4e3e55c91451fe54dbde6b32034961d3
+      internalID: 261388236
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mini-Zombie_177
+      name: Mini-Skeleton UPPER_178
       rect:
         serializedVersion: 2
         x: 320
-        y: 0
+        y: 2
         width: 64
         height: 64
       alignment: 0
@@ -3841,8 +3862,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d46c84b6f9b08b94b85957f547e06880
-      internalID: 1562339205
+      spriteID: c6d8c9c6f343aa548a1976ebaf5977ef
+      internalID: 598067577
       vertices: []
       indices: 
       edges: []
@@ -3858,184 +3879,185 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Mini-Zombie_0: -54911091
-      Mini-Zombie_1: -439038969
-      Mini-Zombie_10: -2077760608
-      Mini-Zombie_100: -187871947
-      Mini-Zombie_101: 480245333
-      Mini-Zombie_102: -318887034
-      Mini-Zombie_103: -1806488868
-      Mini-Zombie_104: -1942107907
-      Mini-Zombie_105: -856958891
-      Mini-Zombie_106: -1503479478
-      Mini-Zombie_107: 1540872466
-      Mini-Zombie_108: 1854979655
-      Mini-Zombie_109: -289177593
-      Mini-Zombie_11: 625353325
-      Mini-Zombie_110: 561122517
-      Mini-Zombie_111: -1195833756
-      Mini-Zombie_112: 803931365
-      Mini-Zombie_113: -26950438
-      Mini-Zombie_114: 1879588936
-      Mini-Zombie_115: 459657721
-      Mini-Zombie_116: -1985170442
-      Mini-Zombie_117: 340228722
-      Mini-Zombie_118: -652466894
-      Mini-Zombie_119: 1318239939
-      Mini-Zombie_12: -2019363253
-      Mini-Zombie_120: -1542389075
-      Mini-Zombie_121: 1431197312
-      Mini-Zombie_122: 130657394
-      Mini-Zombie_123: -1296553083
-      Mini-Zombie_124: 648809019
-      Mini-Zombie_125: 2101053403
-      Mini-Zombie_126: 954288339
-      Mini-Zombie_127: 1219137921
-      Mini-Zombie_128: 699137285
-      Mini-Zombie_129: 452028867
-      Mini-Zombie_13: -927329914
-      Mini-Zombie_130: -1035451531
-      Mini-Zombie_131: 231742549
-      Mini-Zombie_132: -1169165819
-      Mini-Zombie_133: -369968152
-      Mini-Zombie_134: -554738658
-      Mini-Zombie_135: 1166846113
-      Mini-Zombie_136: 1998119658
-      Mini-Zombie_137: -248019176
-      Mini-Zombie_138: 684369521
-      Mini-Zombie_139: -559675611
-      Mini-Zombie_14: 2140326019
-      Mini-Zombie_140: -1638619874
-      Mini-Zombie_141: -2039170773
-      Mini-Zombie_142: 1081724571
-      Mini-Zombie_143: 511020039
-      Mini-Zombie_144: 394872780
-      Mini-Zombie_145: 134534667
-      Mini-Zombie_146: 1208679389
-      Mini-Zombie_147: 289875590
-      Mini-Zombie_148: 849966431
-      Mini-Zombie_149: -162959697
-      Mini-Zombie_15: 5526014
-      Mini-Zombie_150: -1301849832
-      Mini-Zombie_151: 105140152
-      Mini-Zombie_152: -493485531
-      Mini-Zombie_153: 413639595
-      Mini-Zombie_154: -411292111
-      Mini-Zombie_155: -1021736028
-      Mini-Zombie_156: 920954256
-      Mini-Zombie_157: 1570412538
-      Mini-Zombie_158: 1161291857
-      Mini-Zombie_159: 812577943
-      Mini-Zombie_16: -1297345838
-      Mini-Zombie_160: -483250581
-      Mini-Zombie_161: -322620064
-      Mini-Zombie_162: 1647002869
-      Mini-Zombie_163: 1670384482
-      Mini-Zombie_164: 2095075912
-      Mini-Zombie_165: -1201548688
-      Mini-Zombie_166: 88453179
-      Mini-Zombie_167: -483797053
-      Mini-Zombie_168: 1940218999
-      Mini-Zombie_169: -852137776
-      Mini-Zombie_17: 570033684
-      Mini-Zombie_170: 545621562
-      Mini-Zombie_171: -534430415
-      Mini-Zombie_172: -40215973
-      Mini-Zombie_173: -2028588055
-      Mini-Zombie_174: 1042750630
-      Mini-Zombie_175: 1134475098
-      Mini-Zombie_176: -1300848676
-      Mini-Zombie_177: 1562339205
-      Mini-Zombie_18: 1414341039
-      Mini-Zombie_19: 18842104
-      Mini-Zombie_2: 1613799721
-      Mini-Zombie_20: -1132682036
-      Mini-Zombie_21: 1310277923
-      Mini-Zombie_22: 1757693223
-      Mini-Zombie_23: 1766728995
-      Mini-Zombie_24: 1456282556
-      Mini-Zombie_25: 42155583
-      Mini-Zombie_26: -868437962
-      Mini-Zombie_27: -193278253
-      Mini-Zombie_28: 1587373331
-      Mini-Zombie_29: 530001063
-      Mini-Zombie_3: 741471543
-      Mini-Zombie_30: -1169516388
-      Mini-Zombie_31: 2050514642
-      Mini-Zombie_32: -1762224128
-      Mini-Zombie_33: 262440398
-      Mini-Zombie_34: 1767038044
-      Mini-Zombie_35: 163420302
-      Mini-Zombie_36: 1543226737
-      Mini-Zombie_37: -1902502523
-      Mini-Zombie_38: -77327096
-      Mini-Zombie_39: 775588910
-      Mini-Zombie_4: 1634374502
-      Mini-Zombie_40: 1251232278
-      Mini-Zombie_41: 841068655
-      Mini-Zombie_42: -1728459073
-      Mini-Zombie_43: -962031166
-      Mini-Zombie_44: -243974014
-      Mini-Zombie_45: 622131418
-      Mini-Zombie_46: -1969764272
-      Mini-Zombie_47: 378885995
-      Mini-Zombie_48: 2093002941
-      Mini-Zombie_49: 824784522
-      Mini-Zombie_5: -280041913
-      Mini-Zombie_50: -139398899
-      Mini-Zombie_51: -911960021
-      Mini-Zombie_52: -1883779546
-      Mini-Zombie_53: -805096321
-      Mini-Zombie_54: -1380611066
-      Mini-Zombie_55: 1725244309
-      Mini-Zombie_56: -965393915
-      Mini-Zombie_57: -1638453690
-      Mini-Zombie_58: 518700194
-      Mini-Zombie_59: 5965096
-      Mini-Zombie_6: 321265610
-      Mini-Zombie_60: -808525183
-      Mini-Zombie_61: 1054318337
-      Mini-Zombie_62: -1884926246
-      Mini-Zombie_63: 630179051
-      Mini-Zombie_64: 1202969623
-      Mini-Zombie_65: 1134221981
-      Mini-Zombie_66: 1410710842
-      Mini-Zombie_67: -413930448
-      Mini-Zombie_68: 1184862472
-      Mini-Zombie_69: -1693177260
-      Mini-Zombie_7: -1717712977
-      Mini-Zombie_70: 2003874071
-      Mini-Zombie_71: -1719672293
-      Mini-Zombie_72: 306308046
-      Mini-Zombie_73: 936414255
-      Mini-Zombie_74: 2090991163
-      Mini-Zombie_75: -453149146
-      Mini-Zombie_76: 1821817185
-      Mini-Zombie_77: -339695440
-      Mini-Zombie_78: -256652293
-      Mini-Zombie_79: -727691612
-      Mini-Zombie_8: 1181176086
-      Mini-Zombie_80: -1217747993
-      Mini-Zombie_81: 2119057229
-      Mini-Zombie_82: -1173295171
-      Mini-Zombie_83: -1012862278
-      Mini-Zombie_84: 1424021055
-      Mini-Zombie_85: -212320002
-      Mini-Zombie_86: 482466415
-      Mini-Zombie_87: 1956327206
-      Mini-Zombie_88: 38214697
-      Mini-Zombie_89: 1954518030
-      Mini-Zombie_9: 632435822
-      Mini-Zombie_90: 1781732681
-      Mini-Zombie_91: -56549060
-      Mini-Zombie_92: 476827151
-      Mini-Zombie_93: -344724932
-      Mini-Zombie_94: -2021266201
-      Mini-Zombie_95: -1961942946
-      Mini-Zombie_96: -1819778127
-      Mini-Zombie_97: -931410038
-      Mini-Zombie_98: 292464896
-      Mini-Zombie_99: -1040478382
+      Mini-Skeleton UPPER_0: -867798501
+      Mini-Skeleton UPPER_1: 1966054574
+      Mini-Skeleton UPPER_10: 1305807305
+      Mini-Skeleton UPPER_100: -1889182192
+      Mini-Skeleton UPPER_101: 1792378473
+      Mini-Skeleton UPPER_102: 2125444294
+      Mini-Skeleton UPPER_103: -1099201951
+      Mini-Skeleton UPPER_104: 1850065376
+      Mini-Skeleton UPPER_105: 1509299268
+      Mini-Skeleton UPPER_106: -1322751552
+      Mini-Skeleton UPPER_107: -222947744
+      Mini-Skeleton UPPER_108: 706048945
+      Mini-Skeleton UPPER_109: 2107518797
+      Mini-Skeleton UPPER_11: -305488792
+      Mini-Skeleton UPPER_110: 2076492679
+      Mini-Skeleton UPPER_111: 1084384035
+      Mini-Skeleton UPPER_112: -229888274
+      Mini-Skeleton UPPER_113: -1409571162
+      Mini-Skeleton UPPER_114: -792114935
+      Mini-Skeleton UPPER_115: 402978952
+      Mini-Skeleton UPPER_116: -58567514
+      Mini-Skeleton UPPER_117: 985323040
+      Mini-Skeleton UPPER_118: -1693909292
+      Mini-Skeleton UPPER_119: 662213747
+      Mini-Skeleton UPPER_12: -1390622802
+      Mini-Skeleton UPPER_120: 667172469
+      Mini-Skeleton UPPER_121: -1421759914
+      Mini-Skeleton UPPER_122: -1220007290
+      Mini-Skeleton UPPER_123: 401881516
+      Mini-Skeleton UPPER_124: -315025985
+      Mini-Skeleton UPPER_125: -1837013135
+      Mini-Skeleton UPPER_126: 1092187468
+      Mini-Skeleton UPPER_127: -1238364382
+      Mini-Skeleton UPPER_128: 1154913581
+      Mini-Skeleton UPPER_129: -368164791
+      Mini-Skeleton UPPER_13: -266125102
+      Mini-Skeleton UPPER_130: -1463915887
+      Mini-Skeleton UPPER_131: 725746291
+      Mini-Skeleton UPPER_132: -358052917
+      Mini-Skeleton UPPER_133: -1809819979
+      Mini-Skeleton UPPER_134: 1647064610
+      Mini-Skeleton UPPER_135: -1924983693
+      Mini-Skeleton UPPER_136: 1714357771
+      Mini-Skeleton UPPER_137: 1984506074
+      Mini-Skeleton UPPER_138: 74850581
+      Mini-Skeleton UPPER_139: 1709380535
+      Mini-Skeleton UPPER_14: -784443984
+      Mini-Skeleton UPPER_140: -1285180358
+      Mini-Skeleton UPPER_141: -1526974069
+      Mini-Skeleton UPPER_142: 238479871
+      Mini-Skeleton UPPER_143: 338178865
+      Mini-Skeleton UPPER_144: -1039676243
+      Mini-Skeleton UPPER_145: 1355847625
+      Mini-Skeleton UPPER_146: 1534059314
+      Mini-Skeleton UPPER_147: -668040140
+      Mini-Skeleton UPPER_148: 1938489780
+      Mini-Skeleton UPPER_149: 411477850
+      Mini-Skeleton UPPER_15: -1093845491
+      Mini-Skeleton UPPER_150: 571857259
+      Mini-Skeleton UPPER_151: -713536295
+      Mini-Skeleton UPPER_152: 1043081742
+      Mini-Skeleton UPPER_153: -1068797144
+      Mini-Skeleton UPPER_154: -817047731
+      Mini-Skeleton UPPER_155: 2123439861
+      Mini-Skeleton UPPER_156: 123395632
+      Mini-Skeleton UPPER_157: -164004041
+      Mini-Skeleton UPPER_158: 1320076582
+      Mini-Skeleton UPPER_159: -528934004
+      Mini-Skeleton UPPER_16: -168333110
+      Mini-Skeleton UPPER_160: 902675047
+      Mini-Skeleton UPPER_161: 963824521
+      Mini-Skeleton UPPER_162: -1814346751
+      Mini-Skeleton UPPER_163: 1430257706
+      Mini-Skeleton UPPER_164: 242025609
+      Mini-Skeleton UPPER_165: -1799071165
+      Mini-Skeleton UPPER_166: -879131384
+      Mini-Skeleton UPPER_167: 862760618
+      Mini-Skeleton UPPER_168: -609955114
+      Mini-Skeleton UPPER_169: 1811620117
+      Mini-Skeleton UPPER_17: -1603247670
+      Mini-Skeleton UPPER_170: -1541609580
+      Mini-Skeleton UPPER_171: -1114097437
+      Mini-Skeleton UPPER_172: -585876160
+      Mini-Skeleton UPPER_173: 328884298
+      Mini-Skeleton UPPER_174: 398430628
+      Mini-Skeleton UPPER_175: -1820644903
+      Mini-Skeleton UPPER_176: -113906435
+      Mini-Skeleton UPPER_177: 261388236
+      Mini-Skeleton UPPER_178: 598067577
+      Mini-Skeleton UPPER_18: 2088827373
+      Mini-Skeleton UPPER_19: -374068881
+      Mini-Skeleton UPPER_2: 1706099742
+      Mini-Skeleton UPPER_20: -463935938
+      Mini-Skeleton UPPER_21: 366518834
+      Mini-Skeleton UPPER_22: 1234245824
+      Mini-Skeleton UPPER_23: -1630808150
+      Mini-Skeleton UPPER_24: 1290868366
+      Mini-Skeleton UPPER_25: -1431984892
+      Mini-Skeleton UPPER_26: -543002529
+      Mini-Skeleton UPPER_27: 1195667117
+      Mini-Skeleton UPPER_28: 1995284256
+      Mini-Skeleton UPPER_29: -1341329754
+      Mini-Skeleton UPPER_3: -1997001359
+      Mini-Skeleton UPPER_30: 111970486
+      Mini-Skeleton UPPER_31: 1535402484
+      Mini-Skeleton UPPER_32: 615985478
+      Mini-Skeleton UPPER_33: -1782485608
+      Mini-Skeleton UPPER_34: 605770788
+      Mini-Skeleton UPPER_35: -1435255091
+      Mini-Skeleton UPPER_36: 1977275256
+      Mini-Skeleton UPPER_37: -1440256142
+      Mini-Skeleton UPPER_38: 97175803
+      Mini-Skeleton UPPER_39: -1310273137
+      Mini-Skeleton UPPER_4: -450259439
+      Mini-Skeleton UPPER_40: 567203847
+      Mini-Skeleton UPPER_41: -2021087936
+      Mini-Skeleton UPPER_42: 1427680173
+      Mini-Skeleton UPPER_43: 164397218
+      Mini-Skeleton UPPER_44: 1674209069
+      Mini-Skeleton UPPER_45: 1541411992
+      Mini-Skeleton UPPER_46: -1379998422
+      Mini-Skeleton UPPER_47: -811589250
+      Mini-Skeleton UPPER_48: 1438840029
+      Mini-Skeleton UPPER_49: 976689145
+      Mini-Skeleton UPPER_5: -1971026181
+      Mini-Skeleton UPPER_50: 1957579801
+      Mini-Skeleton UPPER_51: -36646019
+      Mini-Skeleton UPPER_52: 598768102
+      Mini-Skeleton UPPER_53: -1543116675
+      Mini-Skeleton UPPER_54: -1076040194
+      Mini-Skeleton UPPER_55: -1446435889
+      Mini-Skeleton UPPER_56: 1301088603
+      Mini-Skeleton UPPER_57: 401149373
+      Mini-Skeleton UPPER_58: -276916991
+      Mini-Skeleton UPPER_59: -1622100608
+      Mini-Skeleton UPPER_6: 571240740
+      Mini-Skeleton UPPER_60: -1448691921
+      Mini-Skeleton UPPER_61: 195735353
+      Mini-Skeleton UPPER_62: -772093401
+      Mini-Skeleton UPPER_63: -812369350
+      Mini-Skeleton UPPER_64: 693936873
+      Mini-Skeleton UPPER_65: -1419180627
+      Mini-Skeleton UPPER_66: -1486104550
+      Mini-Skeleton UPPER_67: 1111965796
+      Mini-Skeleton UPPER_68: -1282208028
+      Mini-Skeleton UPPER_69: -615841856
+      Mini-Skeleton UPPER_7: 1428968245
+      Mini-Skeleton UPPER_70: 1637196877
+      Mini-Skeleton UPPER_71: -1341489341
+      Mini-Skeleton UPPER_72: 1702476728
+      Mini-Skeleton UPPER_73: 1310503760
+      Mini-Skeleton UPPER_74: -1498569893
+      Mini-Skeleton UPPER_75: -737302981
+      Mini-Skeleton UPPER_76: 1158495796
+      Mini-Skeleton UPPER_77: -472848122
+      Mini-Skeleton UPPER_78: -2004967716
+      Mini-Skeleton UPPER_79: -67027707
+      Mini-Skeleton UPPER_8: -1505675290
+      Mini-Skeleton UPPER_80: -46543005
+      Mini-Skeleton UPPER_81: -744651642
+      Mini-Skeleton UPPER_82: -411200761
+      Mini-Skeleton UPPER_83: 536702061
+      Mini-Skeleton UPPER_84: -1935478310
+      Mini-Skeleton UPPER_85: -1208660499
+      Mini-Skeleton UPPER_86: -1211875713
+      Mini-Skeleton UPPER_87: -1922665972
+      Mini-Skeleton UPPER_88: 1894706642
+      Mini-Skeleton UPPER_89: 372326471
+      Mini-Skeleton UPPER_9: -1020658385
+      Mini-Skeleton UPPER_90: -353178795
+      Mini-Skeleton UPPER_91: -850888903
+      Mini-Skeleton UPPER_92: 40550173
+      Mini-Skeleton UPPER_93: -1721948133
+      Mini-Skeleton UPPER_94: 2114865047
+      Mini-Skeleton UPPER_95: 530608972
+      Mini-Skeleton UPPER_96: 944524030
+      Mini-Skeleton UPPER_97: -798240026
+      Mini-Skeleton UPPER_98: -20557582
+      Mini-Skeleton UPPER_99: 200481075
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
