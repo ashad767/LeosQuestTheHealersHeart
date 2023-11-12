@@ -8,11 +8,15 @@ public class MiniSkeletonMovement : MonoBehaviour
     private SpriteRenderer sr;
     private Animator a;
     [SerializeField] private AnimationClip[] animLength;
-    [SerializeField] private Transform MC;
+    public Transform MC;
+
+    [SerializeField] private GameObject arrowPrefab;
+
+    private MiniEnemiesSpawnManager spawnManager;
+
     private enum States { idle, walk, shoot };
 
     public bool idle = true;
-    private bool walk = false;
     private bool shoot = false;
     private bool dead = false;
 
@@ -24,6 +28,7 @@ public class MiniSkeletonMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         a = GetComponent<Animator>();
+        spawnManager = MiniEnemiesSpawnManager.Instance;
 
         StartCoroutine(follow_MC());
         StartCoroutine(dummyBossHitTester());
@@ -45,7 +50,7 @@ public class MiniSkeletonMovement : MonoBehaviour
 
         if (!idle && !dead)
         {
-            transform.position = Vector2.MoveTowards(transform.position, MC.position, 2f * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, MC.position, Random.Range(1f, 2f) * Time.deltaTime);
         }
     }
 
@@ -53,22 +58,36 @@ public class MiniSkeletonMovement : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(0.5f);
             idle = false;
 
-            walk = true;
             a.SetInteger("state", (int)States.walk);
-            yield return new WaitForSeconds(2.5f);
-            walk = false;
+            yield return new WaitForSeconds(2f);
 
             idle = true;
-            yield return new WaitForSeconds(1f);
-            shoot = true;
-            a.SetInteger("state", (int)States.shoot);
-            Debug.Log("SHOOT");
-            yield return new WaitForSeconds(animLength[0].length);
-            shoot = false;
+            yield return new WaitForSeconds(0.5f); // to have proper transition from idle to shooting arrow
+
+            // want to shoot 2 arrows
+            StartCoroutine(shootArrow());
+            yield return new WaitForSeconds(animLength[0].length); // call to 'yield return new WaitForSeconds(animLength[0].length)' from shootArrow() coroutine returns control to follow_MC(), but I want to wait for the shooting animation to finish
+
+            yield return new WaitForSeconds(0.5f); // to have proper transition from idle to shooting arrow
+
+            StartCoroutine(shootArrow());
+            yield return new WaitForSeconds(animLength[0].length); // call to 'yield return new WaitForSeconds(animLength[0].length)' from shootArrow() coroutine returns control to follow_MC(), but I want to wait for the shooting animation to finish
         }
+    }
+
+    private IEnumerator shootArrow()
+    {
+        shoot = true;
+        a.SetInteger("state", (int)States.shoot);
+        yield return new WaitForSeconds(animLength[0].length);
+
+        GameObject arrow = Instantiate(arrowPrefab, transform.position, Quaternion.identity);
+        arrow.GetComponent<Arrow>().arrowDir = MC.position - arrow.transform.position;
+
+        shoot = false;
     }
 
     private IEnumerator dummyBossHitTester()
@@ -79,7 +98,7 @@ public class MiniSkeletonMovement : MonoBehaviour
             Color hitEffect = sr.color;
 
             yield return new WaitForSeconds(2.5f);
-            health -= 10f;
+            health -= 40f;
 
             // When boss gets hit, I want to momentarily make the boss go slighlty transparent, then back to its original/angry color
             hitEffect.a = 0.2f;
@@ -92,6 +111,8 @@ public class MiniSkeletonMovement : MonoBehaviour
                 dead = true;
                 GetComponent<BoxCollider2D>().enabled = false;
                 rb.bodyType = RigidbodyType2D.Static;
+                spawnManager.MiniEnemyKilled();
+
                 a.SetTrigger("death"); // show death animation
                 //deathAudio.Play();
                 yield return new WaitForSeconds(animLength[1].length);

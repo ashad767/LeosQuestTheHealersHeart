@@ -1,0 +1,45 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Arrow : MonoBehaviour
+{
+    private Rigidbody2D rb;
+
+    private float timer = 0f;
+    public Vector2 arrowDir;
+    private float arrowSpeed = 12.5f;
+
+    private float rotation_in_Degrees;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+
+        rotation_in_Degrees = Mathf.Atan2(arrowDir.y, arrowDir.x) * Mathf.Rad2Deg; // Atan2 goes from -pi to pi (counter-clockwise starting from the left side). And since Atan2 returns in radians, I multiplied by Mathf.Rad2Deg to convert to degrees
+        transform.rotation = Quaternion.Euler(0, 0, rotation_in_Degrees); // rotate on z axis
+        rb.velocity = arrowDir.normalized * arrowSpeed;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        timer += Time.deltaTime;
+
+        // If the arrow is exiting the camera's view, destroy it
+        if (!IsWithinCameraFrustum())
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    //Check if the arrow is within the camera's view
+    bool IsWithinCameraFrustum()
+    {
+        Plane[] planes = GeometryUtility.CalculateFrustumPlanes(Camera.main);
+        BoxCollider2D arrowCollider = GetComponent<BoxCollider2D>();
+
+        return GeometryUtility.TestPlanesAABB(planes, arrowCollider.bounds);
+    }
+}

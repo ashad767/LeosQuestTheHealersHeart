@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 2063714503425143593}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.34, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -104,6 +104,7 @@ MonoBehaviour:
   - {fileID: 7400000, guid: 995174f217186884b8af20870e908c03, type: 2}
   - {fileID: 7400000, guid: 121cb518bd6f3c04daff886537344dab, type: 2}
   MC: {fileID: 0}
+  arrowPrefab: {fileID: 7685854168934731022, guid: 182324be86f30774a82304b3df3696af, type: 3}
   idle: 1
   health: 100
 --- !u!50 &1519657230927559557

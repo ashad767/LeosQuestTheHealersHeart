@@ -309,7 +309,11 @@ MonoBehaviour:
   animLength:
   - {fileID: 7400000, guid: cce0452bcca08db4384de2f85bd12b64, type: 2}
   - {fileID: 7400000, guid: 47ac4380a817e9745b55e003875a802b, type: 2}
+  - {fileID: 7400000, guid: 4e310032160a70e448d61770cff25865, type: 2}
   MC: {fileID: 646124593}
+  lightningPrefab: {fileID: 3022674361806424652, guid: b9a8cabd74996c74aa01481bc361b31a, type: 3}
+  miniZombiePrefab: {fileID: 6619434124517427929, guid: da00afa5d0ece0849a8d1bf9bf5d64a1, type: 3}
+  miniSkeletonPrefab: {fileID: 2063714503425143593, guid: 713b0d09e394ad7438d3ea41a3c18774, type: 3}
   idle: 1
   currentHealth: 100
   maxHealth: 100
@@ -548,128 +552,58 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!1001 &2464928442952807678
-PrefabInstance:
+--- !u!1 &964774173
+GameObject:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2063714503425143593, guid: 713b0d09e394ad7438d3ea41a3c18774, type: 3}
-      propertyPath: m_Name
-      value: Mini-Skeleton
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296229529175542919, guid: 713b0d09e394ad7438d3ea41a3c18774, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.34
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296229529175542919, guid: 713b0d09e394ad7438d3ea41a3c18774, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296229529175542919, guid: 713b0d09e394ad7438d3ea41a3c18774, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296229529175542919, guid: 713b0d09e394ad7438d3ea41a3c18774, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296229529175542919, guid: 713b0d09e394ad7438d3ea41a3c18774, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296229529175542919, guid: 713b0d09e394ad7438d3ea41a3c18774, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296229529175542919, guid: 713b0d09e394ad7438d3ea41a3c18774, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296229529175542919, guid: 713b0d09e394ad7438d3ea41a3c18774, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296229529175542919, guid: 713b0d09e394ad7438d3ea41a3c18774, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296229529175542919, guid: 713b0d09e394ad7438d3ea41a3c18774, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4920936129448184876, guid: 713b0d09e394ad7438d3ea41a3c18774, type: 3}
-      propertyPath: MC
-      value: 
-      objectReference: {fileID: 646124593}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 713b0d09e394ad7438d3ea41a3c18774, type: 3}
---- !u!1001 &5832881844412460344
-PrefabInstance:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 964774175}
+  - component: {fileID: 964774174}
+  m_Layer: 0
+  m_Name: MiniEnemiesSpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &964774174
+MonoBehaviour:
   m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964774173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ec98a996b1bd9448fda31263bf312d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animLength:
+  - {fileID: 7400000, guid: 4e310032160a70e448d61770cff25865, type: 2}
+  - {fileID: 7400000, guid: 910b70102262f4f43a6c0fc6e3202844, type: 2}
+  MC: {fileID: 646124593}
+  lightningPrefab: {fileID: 3022674361806424652, guid: b9a8cabd74996c74aa01481bc361b31a, type: 3}
+  miniZombiePrefab: {fileID: 6619434124517427929, guid: da00afa5d0ece0849a8d1bf9bf5d64a1, type: 3}
+  miniSkeletonPrefab: {fileID: 2063714503425143593, guid: 713b0d09e394ad7438d3ea41a3c18774, type: 3}
+  lightningExplosionPrefab: {fileID: 6823954672355252262, guid: c748cd266d309ce4787c44004c355cd6, type: 3}
+--- !u!4 &964774175
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964774173}
   serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1277549885395617208, guid: da00afa5d0ece0849a8d1bf9bf5d64a1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1277549885395617208, guid: da00afa5d0ece0849a8d1bf9bf5d64a1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1277549885395617208, guid: da00afa5d0ece0849a8d1bf9bf5d64a1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1277549885395617208, guid: da00afa5d0ece0849a8d1bf9bf5d64a1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1277549885395617208, guid: da00afa5d0ece0849a8d1bf9bf5d64a1, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1277549885395617208, guid: da00afa5d0ece0849a8d1bf9bf5d64a1, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1277549885395617208, guid: da00afa5d0ece0849a8d1bf9bf5d64a1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1277549885395617208, guid: da00afa5d0ece0849a8d1bf9bf5d64a1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1277549885395617208, guid: da00afa5d0ece0849a8d1bf9bf5d64a1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1277549885395617208, guid: da00afa5d0ece0849a8d1bf9bf5d64a1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2132862079419777484, guid: da00afa5d0ece0849a8d1bf9bf5d64a1, type: 3}
-      propertyPath: MC
-      value: 
-      objectReference: {fileID: 646124593}
-    - target: {fileID: 6619434124517427929, guid: da00afa5d0ece0849a8d1bf9bf5d64a1, type: 3}
-      propertyPath: m_Name
-      value: Mini-Zombie
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: da00afa5d0ece0849a8d1bf9bf5d64a1, type: 3}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.63100564, y: 0.10335487, z: 0.003727913}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -677,5 +611,4 @@ SceneRoots:
   - {fileID: 564549365}
   - {fileID: 646124593}
   - {fileID: 161336246}
-  - {fileID: 5832881844412460344}
-  - {fileID: 2464928442952807678}
+  - {fileID: 964774175}

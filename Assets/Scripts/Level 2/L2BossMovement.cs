@@ -210,7 +210,7 @@ public class L2BossMovement : MonoBehaviour
         mainBullet.GetComponent<SpriteRenderer>().flipX = true;
 
         Vector2 bulletDir = MC.position - mainBullet.transform.position;
-        float rotation_in_Degrees = Mathf.Atan2(bulletDir.y, bulletDir.x) * Mathf.Rad2Deg; // Atan2 goes from -pi to pi. And since Atan2 returns in radians, I multiplied by Mathf.Rad2Deg to convert to degrees
+        float rotation_in_Degrees = Mathf.Atan2(bulletDir.y, bulletDir.x) * Mathf.Rad2Deg; // Atan2 goes from -pi to pi (counter-clockwise starting from the left side). And since Atan2 returns in radians, I multiplied by Mathf.Rad2Deg to convert to degrees
         mainBullet.transform.rotation = Quaternion.Euler(0, 0, rotation_in_Degrees); // rotate on z axis
         mainBullet.GetComponent<Rigidbody2D>().velocity = bulletDir.normalized * 7.5f;
     }

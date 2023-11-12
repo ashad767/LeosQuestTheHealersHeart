@@ -11,13 +11,21 @@ public class L3BossMovement : MonoBehaviour
     [SerializeField] private AnimationClip[] animLength;
     [SerializeField] private Transform MC;
 
+    // Prefabs
+    public GameObject lightningPrefab;
+    public GameObject miniZombiePrefab;
+    public GameObject miniSkeletonPrefab;
+
+    private MiniEnemiesSpawnManager spawnManager;
+
+    // Animation states
     private enum States { idle, walk, attack };
 
     public bool idle = true;
     private bool walk = false;
     private bool attack = false;
     private bool dead = false;
-
+    
     public float currentHealth = 100f;
     public float maxHealth = 100f;
 
@@ -27,6 +35,7 @@ public class L3BossMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         a = GetComponent<Animator>();
+        spawnManager = MiniEnemiesSpawnManager.Instance;
 
         StartCoroutine(follow_MC());
         StartCoroutine(dummyBossHitTester());
@@ -54,15 +63,22 @@ public class L3BossMovement : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(2.5f);
+            yield return new WaitForSeconds(2f);
             idle = false;
 
             walk = true;
             a.SetInteger("state", (int)States.walk);
-            yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(1.5f);
             walk = false;
 
             idle = true;
+            
+            if(Random.Range(0f, 1f) <= 0.7f)
+            {
+                spawnManager.StartSpawning();
+            }
+
+            yield return new WaitForSeconds(2f);
         }
     }
 
@@ -116,4 +132,5 @@ public class L3BossMovement : MonoBehaviour
             }
         }
     }
+
 }

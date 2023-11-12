@@ -8,7 +8,11 @@ public class MiniZombieMovement : MonoBehaviour
     private SpriteRenderer sr;
     private Animator a;
     [SerializeField] private AnimationClip[] animLength;
-    [SerializeField] private Transform MC;
+    
+    public Transform MC;
+
+    private MiniEnemiesSpawnManager spawnManager;
+
     private enum States { walk, attack };
 
     public float health = 100f;
@@ -20,6 +24,7 @@ public class MiniZombieMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         a = GetComponent<Animator>();
+        spawnManager = MiniEnemiesSpawnManager.Instance;
 
         StartCoroutine(dummyBossHitTester());
     }
@@ -35,7 +40,7 @@ public class MiniZombieMovement : MonoBehaviour
 
         if(!dead)
         {
-            transform.position = Vector2.MoveTowards(transform.position, MC.position, 4f * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, MC.position, Random.Range(2f, 3.5f) * Time.deltaTime);
         }
     }
 
@@ -64,7 +69,7 @@ public class MiniZombieMovement : MonoBehaviour
             Color hitEffect = sr.color;
 
             yield return new WaitForSeconds(2.5f);
-            health -= 10f;
+            health -= 40f;
 
             // When boss gets hit, I want to momentarily make the boss go slighlty transparent, then back to its original/angry color
             hitEffect.a = 0.2f;
@@ -77,6 +82,8 @@ public class MiniZombieMovement : MonoBehaviour
                 dead = true;
                 GetComponent<BoxCollider2D>().enabled = false;
                 rb.bodyType = RigidbodyType2D.Static;
+                spawnManager.MiniEnemyKilled();
+
                 a.SetTrigger("death"); // show death animation
                 //deathAudio.Play();
                 yield return new WaitForSeconds(animLength[1].length);
