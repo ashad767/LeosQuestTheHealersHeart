@@ -12,6 +12,7 @@ public class MiniZombieMovement : MonoBehaviour
     public Transform MC;
 
     private MiniEnemiesSpawnManager spawnManager;
+    public darknessManager darknessManager; // the script
 
     private enum States { walk, attack };
 
@@ -40,7 +41,7 @@ public class MiniZombieMovement : MonoBehaviour
 
         if(!dead)
         {
-            transform.position = Vector2.MoveTowards(transform.position, MC.position, Random.Range(2f, 3.5f) * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, MC.position, Random.Range(1f, 5f) * Time.deltaTime);
         }
     }
 
@@ -83,6 +84,7 @@ public class MiniZombieMovement : MonoBehaviour
                 GetComponent<BoxCollider2D>().enabled = false;
                 rb.bodyType = RigidbodyType2D.Static;
                 spawnManager.MiniEnemyKilled();
+                darknessManager.spawnedMiniEnemies.Remove(gameObject);
 
                 a.SetTrigger("death"); // show death animation
                 //deathAudio.Play();

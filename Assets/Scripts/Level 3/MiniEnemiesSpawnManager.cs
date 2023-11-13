@@ -13,6 +13,8 @@ public class MiniEnemiesSpawnManager : MonoBehaviour
     [SerializeField] private GameObject miniSkeletonPrefab;
     [SerializeField] private GameObject lightningExplosionPrefab;
 
+    [SerializeField] private darknessManager darknessManager;
+
     private int numberOfMiniEnemies = 3;
     private int miniEnemiesRemaining = 0;
 
@@ -70,6 +72,7 @@ public class MiniEnemiesSpawnManager : MonoBehaviour
 
         spawnLightningExplosion(lightning);
 
+        // each mini-zombie or skeleton has a 50% chance of being spawned
         if (Random.Range(0f, 1f) <= 0.5f)
         {
             spawnMiniZombie(lightning);
@@ -83,15 +86,22 @@ public class MiniEnemiesSpawnManager : MonoBehaviour
     private void spawnLightningExplosion(GameObject lightning)
     {
         GameObject lightningExplosion = Instantiate(lightningExplosionPrefab, lightning.transform.position, Quaternion.identity);
+        
+        // I want to spawn the explosion at the bottom of the lightning sprite. Vector2(0, -1) seemed a pretty good localPosition
         lightningExplosion.transform.SetParent(lightning.transform);
         lightningExplosion.transform.localPosition = Vector2.down;
         lightningExplosion.transform.SetParent(null);
+        
         Destroy(lightningExplosion, animLength[1].length);
     }
 
     private void spawnMiniZombie(GameObject lightning)
     {
         GameObject miniZombie = Instantiate(miniZombiePrefab, lightning.transform.position, Quaternion.identity);
+        miniZombie.GetComponent<MiniZombieMovement>().darknessManager = darknessManager;
+        darknessManager.spawnedMiniEnemies.Add(miniZombie); // need to add this spawned mini-zombie to the darknessManager's 'spawnedMiniEnemies' list to keep track of the existing mini-zombie gameobject and whether or not to apply the darkening material. THIS GAMEOBJECT GETS REMOVED FROM THE 'spawnedMiniEnemies' LIST WHEN IT DIES (inside 'MiniZombieMovement.cs')
+
+        // I want to spawn the mini-zombie at the bottom of the lightning sprite. Vector2(0, -1) seemed a pretty good localPosition
         miniZombie.transform.SetParent(lightning.transform);
         miniZombie.transform.localPosition = Vector2.down;
         miniZombie.transform.SetParent(null);
@@ -101,6 +111,10 @@ public class MiniEnemiesSpawnManager : MonoBehaviour
     private void spawnMiniSkeleton(GameObject lightning)
     {
         GameObject miniSkeleton = Instantiate(miniSkeletonPrefab, lightning.transform.position, Quaternion.identity);
+        miniSkeleton.GetComponent<MiniSkeletonMovement>().darknessManager = darknessManager;
+        darknessManager.spawnedMiniEnemies.Add(miniSkeleton); // need to add this spawned mini-skeleton to the darknessManager's 'spawnedMiniEnemies' list to keep track of the existing mini-skeleton gameobject and whether or not to apply the darkening material. THIS GAMEOBJECT GETS REMOVED FROM THE 'spawnedMiniEnemies' LIST WHEN IT DIES (inside 'MiniSkeletonMovement.cs')
+
+        // I want to spawn the mini-skeleton at the bottom of the lightning sprite. Vector2(0, -1) seemed a pretty good localPosition
         miniSkeleton.transform.SetParent(lightning.transform);
         miniSkeleton.transform.localPosition = Vector2.down;
         miniSkeleton.transform.SetParent(null);

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
 
 public class L3BossMovement : MonoBehaviour
 {
@@ -15,8 +16,12 @@ public class L3BossMovement : MonoBehaviour
     public GameObject lightningPrefab;
     public GameObject miniZombiePrefab;
     public GameObject miniSkeletonPrefab;
+    [SerializeField] private GameObject startingDarknessPrefab;
 
     private MiniEnemiesSpawnManager spawnManager;
+    [SerializeField] private darknessManager darknessManager; // the script
+    [SerializeField] private GameObject directionalLight;
+    [SerializeField] private GameObject MC_PointLight;
 
     // Animation states
     private enum States { idle, walk, attack };
@@ -29,15 +34,21 @@ public class L3BossMovement : MonoBehaviour
     public float currentHealth = 100f;
     public float maxHealth = 100f;
 
+    private bool isDark = false;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         a = GetComponent<Animator>();
+        
         spawnManager = MiniEnemiesSpawnManager.Instance;
+        directionalLight.SetActive(false);
+        MC_PointLight.SetActive(false);
 
         StartCoroutine(follow_MC());
+        StartCoroutine(Darken());
         StartCoroutine(dummyBossHitTester());
     }
 
@@ -73,12 +84,50 @@ public class L3BossMovement : MonoBehaviour
 
             idle = true;
             
-            if(Random.Range(0f, 1f) <= 0.7f)
+            if(Random.Range(0f, 1f) <= 0.99f)
             {
                 spawnManager.StartSpawning();
             }
 
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(4f);
+        }
+    }
+    private IEnumerator Darken()
+    {
+        while (true)
+        {
+            // Because I don't want the chance of darkening the screen at the start of the game, I check if 0.1 seconds have passed since the beginning of the game, then wait 8 sec before starting the chance to darken the screen.
+            if(Time.time <= 0.1f)
+            {
+                yield return new WaitForSeconds(8f);
+            }
+            
+            // 85% chance of the screen getting dark
+            if (Random.Range(0f, 1f) <= 0.85f)
+            {
+                GameObject startingDarkness = Instantiate(startingDarknessPrefab, transform.position, Quaternion.identity);
+                startingDarkness.transform.SetParent(transform); // if the boss moves, the animation moves with it
+                Destroy(startingDarkness, animLength[3].length * 2); // playing the animation twice before destroying it
+
+                darknessManager.activateDarkness();
+                isDark = true;
+            }
+
+            // if the darkness effect gets activated, I want to wait 10 seconds before deactivating it. And since I don't want to darken the screen right away again, I wait another 7 sec.
+            if (isDark)
+            {
+                yield return new WaitForSeconds(10f);
+                darknessManager.de_activateDarkness();
+                isDark = false;
+
+                yield return new WaitForSeconds(7f);
+            }
+            
+            // if the darkness effect does NOT get activated, just wait 2 sec before giving the chance to darken the screen.
+            else
+            {
+                yield return new WaitForSeconds(2f);
+            }
         }
     }
 
@@ -112,7 +161,7 @@ public class L3BossMovement : MonoBehaviour
             Color hitEffect = sr.color;
 
             yield return new WaitForSeconds(2.5f);
-            currentHealth -= 10f;
+            currentHealth -= 5f;
 
             // When boss gets hit, I want to momentarily make the boss go slighlty transparent, then back to its original/angry color
             hitEffect.a = 0.2f;

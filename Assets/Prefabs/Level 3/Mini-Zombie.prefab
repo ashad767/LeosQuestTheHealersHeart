@@ -104,7 +104,6 @@ MonoBehaviour:
   - {fileID: 7400000, guid: bbde0425a39746345a5f43650a75d9ae, type: 2}
   - {fileID: 7400000, guid: d94d4b4df7549be49bf5c4bfb553cda3, type: 2}
   MC: {fileID: 0}
-  l3BossMovement: {fileID: 0}
   health: 100
 --- !u!50 &3853694257722199352
 Rigidbody2D:

@@ -13,6 +13,7 @@ public class MiniSkeletonMovement : MonoBehaviour
     [SerializeField] private GameObject arrowPrefab;
 
     private MiniEnemiesSpawnManager spawnManager;
+    public darknessManager darknessManager; // the script
 
     private enum States { idle, walk, shoot };
 
@@ -50,7 +51,7 @@ public class MiniSkeletonMovement : MonoBehaviour
 
         if (!idle && !dead)
         {
-            transform.position = Vector2.MoveTowards(transform.position, MC.position, Random.Range(1f, 2f) * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, MC.position, Random.Range(0.7f, 3f) * Time.deltaTime);
         }
     }
 
@@ -71,10 +72,19 @@ public class MiniSkeletonMovement : MonoBehaviour
             StartCoroutine(shootArrow());
             yield return new WaitForSeconds(animLength[0].length); // call to 'yield return new WaitForSeconds(animLength[0].length)' from shootArrow() coroutine returns control to follow_MC(), but I want to wait for the shooting animation to finish
 
-            yield return new WaitForSeconds(0.5f); // to have proper transition from idle to shooting arrow
+            yield return new WaitForSeconds(Random.Range(0.5f, 1.5f)); // to have proper transition from idle to shooting another arrow
 
             StartCoroutine(shootArrow());
             yield return new WaitForSeconds(animLength[0].length); // call to 'yield return new WaitForSeconds(animLength[0].length)' from shootArrow() coroutine returns control to follow_MC(), but I want to wait for the shooting animation to finish
+
+            yield return new WaitForSeconds(Random.Range(0.5f, 1.5f)); // to have proper transition from idle to shooting another arrow
+
+            // 60% chance of shooting a 3rd arrow
+            if (Random.Range(0f, 1f) <= 0.6f)
+            {
+                StartCoroutine(shootArrow());
+                yield return new WaitForSeconds(animLength[0].length);
+            }
         }
     }
 
@@ -112,6 +122,7 @@ public class MiniSkeletonMovement : MonoBehaviour
                 GetComponent<BoxCollider2D>().enabled = false;
                 rb.bodyType = RigidbodyType2D.Static;
                 spawnManager.MiniEnemyKilled();
+                darknessManager.spawnedMiniEnemies.Remove(gameObject);
 
                 a.SetTrigger("death"); // show death animation
                 //deathAudio.Play();
