@@ -14,6 +14,11 @@ public class MiniZombieMovement : MonoBehaviour
     private MiniEnemiesSpawnManager spawnManager;
     public darknessManager darknessManager; // the script
 
+    // Audio
+    [SerializeField] AudioSource zombieSpawnAudio;
+    [SerializeField] AudioSource zombieMoveAudio;
+    [SerializeField] AudioSource deathAudio;
+
     private enum States { walk, attack };
 
     public float health = 100f;
@@ -28,6 +33,8 @@ public class MiniZombieMovement : MonoBehaviour
         spawnManager = MiniEnemiesSpawnManager.Instance;
 
         StartCoroutine(dummyBossHitTester());
+        zombieSpawnAudio.Play();
+        Invoke("PlayZombieMoveAudio", zombieSpawnAudio.clip.length + Random.Range(0.2f, 1.2f));
     }
 
     // Update is called once per frame
@@ -41,8 +48,14 @@ public class MiniZombieMovement : MonoBehaviour
 
         if(!dead)
         {
-            transform.position = Vector2.MoveTowards(transform.position, MC.position, Random.Range(1f, 5f) * Time.deltaTime);
+            float movementSpeed = Random.Range(0f, 1f) <= 0.6f ? Random.Range(1.5f, 4.5f) : Random.Range(4.7f, 7.7f);
+            transform.position =  Vector2.MoveTowards(transform.position, MC.position, movementSpeed * Time.deltaTime);
         }
+    }
+
+    private void PlayZombieMoveAudio()
+    {
+        zombieMoveAudio.Play();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -70,7 +83,7 @@ public class MiniZombieMovement : MonoBehaviour
             Color hitEffect = sr.color;
 
             yield return new WaitForSeconds(2.5f);
-            health -= 40f;
+            health -= Random.Range(5f, 20f);
 
             // When boss gets hit, I want to momentarily make the boss go slighlty transparent, then back to its original/angry color
             hitEffect.a = 0.2f;
@@ -87,7 +100,8 @@ public class MiniZombieMovement : MonoBehaviour
                 darknessManager.spawnedMiniEnemies.Remove(gameObject);
 
                 a.SetTrigger("death"); // show death animation
-                //deathAudio.Play();
+                zombieMoveAudio.Stop();
+                deathAudio.Play();
                 yield return new WaitForSeconds(animLength[1].length);
                 Destroy(gameObject); // Destroys boss gameobject
             }

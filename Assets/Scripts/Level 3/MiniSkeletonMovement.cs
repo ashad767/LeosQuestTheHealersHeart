@@ -15,6 +15,10 @@ public class MiniSkeletonMovement : MonoBehaviour
     private MiniEnemiesSpawnManager spawnManager;
     public darknessManager darknessManager; // the script
 
+    // Audio
+    [SerializeField] AudioSource shootArrowAudio;
+    [SerializeField] AudioSource movementAudio;
+
     private enum States { idle, walk, shoot };
 
     public bool idle = true;
@@ -63,7 +67,9 @@ public class MiniSkeletonMovement : MonoBehaviour
             idle = false;
 
             a.SetInteger("state", (int)States.walk);
+            movementAudio.Play();
             yield return new WaitForSeconds(2f);
+            movementAudio.Stop();
 
             idle = true;
             yield return new WaitForSeconds(0.5f); // to have proper transition from idle to shooting arrow
@@ -72,12 +78,12 @@ public class MiniSkeletonMovement : MonoBehaviour
             StartCoroutine(shootArrow());
             yield return new WaitForSeconds(animLength[0].length); // call to 'yield return new WaitForSeconds(animLength[0].length)' from shootArrow() coroutine returns control to follow_MC(), but I want to wait for the shooting animation to finish
 
-            yield return new WaitForSeconds(Random.Range(0.5f, 1.5f)); // to have proper transition from idle to shooting another arrow
+            yield return new WaitForSeconds(Random.Range(0.5f, 2f)); // to have proper transition from idle to shooting another arrow
 
             StartCoroutine(shootArrow());
             yield return new WaitForSeconds(animLength[0].length); // call to 'yield return new WaitForSeconds(animLength[0].length)' from shootArrow() coroutine returns control to follow_MC(), but I want to wait for the shooting animation to finish
 
-            yield return new WaitForSeconds(Random.Range(0.5f, 1.5f)); // to have proper transition from idle to shooting another arrow
+            yield return new WaitForSeconds(Random.Range(0.5f, 2f)); // to have proper transition from idle to shooting another arrow
 
             // 60% chance of shooting a 3rd arrow
             if (Random.Range(0f, 1f) <= 0.6f)
@@ -96,6 +102,7 @@ public class MiniSkeletonMovement : MonoBehaviour
 
         GameObject arrow = Instantiate(arrowPrefab, transform.position, Quaternion.identity);
         arrow.GetComponent<Arrow>().arrowDir = MC.position - arrow.transform.position;
+        shootArrowAudio.Play();
 
         shoot = false;
     }
@@ -108,7 +115,7 @@ public class MiniSkeletonMovement : MonoBehaviour
             Color hitEffect = sr.color;
 
             yield return new WaitForSeconds(2.5f);
-            health -= 40f;
+            health -= Random.Range(10f, 20f);
 
             // When boss gets hit, I want to momentarily make the boss go slighlty transparent, then back to its original/angry color
             hitEffect.a = 0.2f;

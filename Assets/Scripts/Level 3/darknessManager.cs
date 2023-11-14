@@ -36,13 +36,16 @@ public class darknessManager : MonoBehaviour
         {
             for (int i = 0; i < spawnedMiniEnemies.Count; i++)
             {
-                if (isDark)
+                if(spawnedMiniEnemies[i] != null)
                 {
-                    spawnedMiniEnemies[i].GetComponent<SpriteRenderer>().material = darkenMaterial;
-                }
-                else
-                {
-                    spawnedMiniEnemies[i].GetComponent<SpriteRenderer>().material = originalMaterial;
+                    if (isDark)
+                    {
+                        spawnedMiniEnemies[i].GetComponent<SpriteRenderer>().material = darkenMaterial;
+                    }
+                    else
+                    {
+                        spawnedMiniEnemies[i].GetComponent<SpriteRenderer>().material = originalMaterial;
+                    }
                 }
             }
         }
@@ -52,14 +55,17 @@ public class darknessManager : MonoBehaviour
     {
         isDark = true;
         background.GetComponent<SpriteRenderer>().material = darkenMaterial;
-        bossSkeleton.GetComponent<SpriteRenderer>().material = darkenMaterial;
+        if(bossSkeleton != null)
+        {
+            bossSkeleton.GetComponent<SpriteRenderer>().material = darkenMaterial;
+        }
         
         directionalLight.SetActive(true);
         StartCoroutine(activateDarknessIntensity());
 
         MC_PointLight.SetActive(true);
         MC_PointLight.transform.SetParent(MC.transform);
-        MC_PointLight.GetComponent<Light>().intensity = 0.75f;
+        MC_PointLight.GetComponent<Light>().intensity = 0.7f;
     }
 
     private IEnumerator activateDarknessIntensity()
@@ -67,7 +73,7 @@ public class darknessManager : MonoBehaviour
         float timer = 0f;
         float transitionToDarknessDuration = 2.7f;
         float originalIntensity = 1f;
-        float darknessIntensity = 0.15f;
+        float darknessIntensity = 0.12f;
 
         while (timer < transitionToDarknessDuration)
         {
@@ -79,14 +85,14 @@ public class darknessManager : MonoBehaviour
 
     public void de_activateDarkness()
     {
-        StartCoroutine(de_activateDarknessIntensity()); // I have to incrementally deactivate the darkness and THEN reset the sprite material types, or else it would just instantly light up with no gradual process.
+        StartCoroutine(de_activateDarknessIntensity()); // I have to incrementally deactivate the darkness and THEN reset the sprite material types, or else it would just instantly light up with no gradual progress.
     }
 
     private IEnumerator de_activateDarknessIntensity()
     {
         float timer = 0f;
-        float transitionToOriginalDuration = 2.7f;
-        float darknessIntensity = 0.15f;
+        float transitionToOriginalDuration = 4f;
+        float darknessIntensity = 0.12f;
         float originalIntensity = 1f;
         
         while (timer < transitionToOriginalDuration)
@@ -98,7 +104,11 @@ public class darknessManager : MonoBehaviour
 
         isDark = false;
         background.GetComponent<SpriteRenderer>().material = originalMaterial;
-        bossSkeleton.GetComponent<SpriteRenderer>().material = originalMaterial;
+        if (bossSkeleton != null)
+        {
+            bossSkeleton.GetComponent<SpriteRenderer>().material = originalMaterial;
+        }
+        
         directionalLight.SetActive(false);
         MC_PointLight.SetActive(false);
     }

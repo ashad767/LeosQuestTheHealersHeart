@@ -8,9 +8,12 @@ public class Arrow : MonoBehaviour
 
     private float timer = 0f;
     public Vector2 arrowDir;
-    private float arrowSpeed = 12.5f;
+    private float arrowSpeed = 13f;
 
     private float rotation_in_Degrees;
+
+    [SerializeField] private darknessManager darknessManager;
+    [SerializeField] private GameObject firePointLight;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +22,9 @@ public class Arrow : MonoBehaviour
 
         rotation_in_Degrees = Mathf.Atan2(arrowDir.y, arrowDir.x) * Mathf.Rad2Deg; // Atan2 goes from -pi to pi (counter-clockwise starting from the left side). And since Atan2 returns in radians, I multiplied by Mathf.Rad2Deg to convert to degrees
         transform.rotation = Quaternion.Euler(0, 0, rotation_in_Degrees); // rotate on z axis
+
+        firePointLight.GetComponent<Light>().intensity = 0.5f; // for the fire to have a lighting effect in the dark
+
         rb.velocity = arrowDir.normalized * arrowSpeed;
     }
 
@@ -41,5 +47,12 @@ public class Arrow : MonoBehaviour
         BoxCollider2D arrowCollider = GetComponent<BoxCollider2D>();
 
         return GeometryUtility.TestPlanesAABB(planes, arrowCollider.bounds);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

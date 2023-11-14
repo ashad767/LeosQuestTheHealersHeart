@@ -48,7 +48,6 @@ public class BossMovement : MonoBehaviour
     float jumpDuration = 1.2f; // Adjust the duration of the jump as needed
 
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -142,11 +141,11 @@ public class BossMovement : MonoBehaviour
 
     private IEnumerator ExpandAndContractCircles(Transform pulseC, Transform donutC)
     {
-        float circleExpansionDuration = 0.17f;
+        float circleExpansionDuration = 0.12f;
         float pulseEffectDuration = 15f;
         float pulseStartTime = Time.time;
-        Vector3 maxScale = new Vector3(4.5f, 4.5f, 0);
         Vector3 initialScale = Vector3.zero;
+        Vector3 maxScale = new Vector3(5.5f, 5.5f, 0);
         Transform currentCircle = pulseC;
         pulseCircle.GetComponent<SpriteRenderer>().enabled = true;
         donutCircle.GetComponent<SpriteRenderer>().enabled = true;

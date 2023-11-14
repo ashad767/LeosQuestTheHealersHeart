@@ -15,6 +15,9 @@ public class MiniEnemiesSpawnManager : MonoBehaviour
 
     [SerializeField] private darknessManager darknessManager;
 
+    // Audio
+    [SerializeField] AudioSource lightningAudio;
+
     private int numberOfMiniEnemies = 3;
     private int miniEnemiesRemaining = 0;
 
@@ -49,7 +52,7 @@ public class MiniEnemiesSpawnManager : MonoBehaviour
             SpawnLightning();
             yield return new WaitForSeconds(0.1f);
         }
-        miniEnemiesRemaining = numberOfMiniEnemies; // resetting the 'miniEnemiesRemaining' variable so that in each iteration in follow_MC() coroutine, the 'StartSpawning()' function doesn't get called
+        miniEnemiesRemaining = numberOfMiniEnemies; // resetting the 'miniEnemiesRemaining' variable so that in each iteration in spawnMiniEnemies() coroutine (in L3BossMovement.cs), the 'StartSpawning()' function doesn't get called
     }
 
     private void SpawnLightning()
@@ -86,7 +89,8 @@ public class MiniEnemiesSpawnManager : MonoBehaviour
     private void spawnLightningExplosion(GameObject lightning)
     {
         GameObject lightningExplosion = Instantiate(lightningExplosionPrefab, lightning.transform.position, Quaternion.identity);
-        
+        lightningAudio.Play();
+
         // I want to spawn the explosion at the bottom of the lightning sprite. Vector2(0, -1) seemed a pretty good localPosition
         lightningExplosion.transform.SetParent(lightning.transform);
         lightningExplosion.transform.localPosition = Vector2.down;
