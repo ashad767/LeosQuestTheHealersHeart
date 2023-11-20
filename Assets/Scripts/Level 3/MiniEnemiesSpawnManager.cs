@@ -62,12 +62,16 @@ public class MiniEnemiesSpawnManager : MonoBehaviour
         float frustumHeight = 2.0f * mainCamera.orthographicSize; // mainCamera.orthographicSize gives HALF of the vertical size of the camera view. Multiplying by 2 gives the full height of the camera view.
         float frustumWidth = frustumHeight * mainCamera.aspect; // mainCamera.aspect is (width / height). Since we already have the frustum height from previous line, we can do -> (width / height) * frustumHeight, which cancels the heights and gives us the width of the camera view.
 
+        float mainCameraPositionX = mainCamera.transform.position.x;
+        float mainCameraPositionY = mainCamera.transform.position.y;
+
         // Calculate the position within the width of the camera's frustum and at the top of the camera frustum
         Vector2 spawnPosition = new Vector2(
-            Random.Range(-frustumWidth / 2f, frustumWidth / 2f),
-            mainCamera.transform.position.y + frustumHeight / 2f
+            Random.Range((-frustumWidth / 2f) + mainCameraPositionX, (frustumWidth / 2f) + mainCameraPositionX),
+            mainCameraPositionY + (frustumHeight / 2f)
             );
 
+        
         // Instantiate the lightning prefab at the calculated position
         GameObject lightning = Instantiate(lightningPrefab, spawnPosition, Quaternion.identity);
         lightning.transform.localScale = new Vector3(4f, Random.Range(0.5f, 9.5f), 1f); // take a random y-scale for the lightning

@@ -10,6 +10,7 @@ TagManager:
   - miniZombie
   - miniSkeleton
   - arrow
+  - startFireBallRain
   layers:
   - Default
   - TransparentFX

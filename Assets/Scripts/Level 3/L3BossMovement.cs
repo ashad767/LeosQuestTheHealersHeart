@@ -114,15 +114,10 @@ public class L3BossMovement : MonoBehaviour
     private IEnumerator Darken()
     {
         float chanceOfDarkness = 0.65f;
+        yield return new WaitForSeconds(8f); // Wait 8 sec before giving the chance to darken screen
 
         while (true)
         {
-            // Because I don't want the chance of darkening the screen at the start of the game, I check if 0.1 seconds have passed since the beginning of the game, then wait 8 sec before starting the chance to darken the screen or activate bone shield.
-            if(Time.time <= 0.1f)
-            {
-                yield return new WaitForSeconds(8f);
-            }
-            
             // 65% chance of the screen getting dark on every other iteration (starts from 65%, then if dark, stay at 65%. If shield gets activated instead, chance of darkness is 25% on next iteration)
             if (!dead && (Random.Range(0f, 1f) <= chanceOfDarkness))
             {
@@ -134,7 +129,7 @@ public class L3BossMovement : MonoBehaviour
                 darknessManager.activateDarkness();
             }
 
-            // if the darkness effect gets activated, I want to wait 37 seconds before deactivating it. And since I don't want to darken the screen right away again, I wait another 6 sec.
+            // if the darkness effect gets activated, I want to wait 35 seconds before deactivating it. And since I don't want to darken the screen right away again, I wait another 5 sec.
             if (darknessManager.isDark)
             {
                 StartCoroutine(PlayInsideDarknessAudio());
@@ -144,8 +139,8 @@ public class L3BossMovement : MonoBehaviour
                 chanceOfDarkness = 0.25f;
                 yield return new WaitForSeconds(5f);
             }
-            
-            // if the darkness effect does NOT get activated, just wait 2 sec before giving the chance to darken the screen.
+
+            // if the darkness effect does NOT get activated, then activate bone shield and set the chanceOfDarkness to 65%
             else
             {
                 StartCoroutine(activateBoneShield());
@@ -229,7 +224,7 @@ public class L3BossMovement : MonoBehaviour
 
     private void OnDestroy()
     {
-        // Find all active shadow clone prefabs in the scene and destroy them
+        // Find all active mini-zombies/skeleton and arrow prefabs in the scene and destroy them
         GameObject[] miniZombiesToDestroy = GameObject.FindGameObjectsWithTag("miniZombie");
         GameObject[] miniSkeletonsToDestroy = GameObject.FindGameObjectsWithTag("miniSkeleton");
         GameObject[] arrowsToDestroy = GameObject.FindGameObjectsWithTag("arrow");
