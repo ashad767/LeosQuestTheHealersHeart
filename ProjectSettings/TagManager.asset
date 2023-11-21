@@ -11,6 +11,9 @@ TagManager:
   - miniSkeleton
   - arrow
   - startFireBallRain
+  - fireballCircle
+  - fireball
+  - rocks
   layers:
   - Default
   - TransparentFX

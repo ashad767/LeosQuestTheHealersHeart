@@ -26,7 +26,7 @@ public class rocksFallManager : MonoBehaviour
 
     private IEnumerator spawnRocksFunc()
     {
-        int howManyRocksToDrop = (int)Random.Range(5f, 7f);
+        int howManyRocksToDrop = (int)Random.Range(5f, 10f);
 
         for (int i = 0; i < howManyRocksToDrop; i++)
         {
@@ -56,7 +56,7 @@ public class rocksFallManager : MonoBehaviour
 
         // Calculate the position within the width of the camera's frustum and at the top of the camera frustum
         return new Vector2(
-            Random.Range((-frustumWidth / 2f) + mainCameraPositionX, (frustumWidth / 2f) + mainCameraPositionX),
+            Random.Range((-frustumWidth / 2.7f) + mainCameraPositionX, (frustumWidth / 2.7f) + mainCameraPositionX),
             mainCameraPositionY + (frustumHeight / 1.5f)
             );
 

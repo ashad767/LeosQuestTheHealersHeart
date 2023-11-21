@@ -47,7 +47,7 @@ public class FireBallRain : MonoBehaviour
         for (int i = 0; i < numberOfFireballs; i++)
         {
             StartCoroutine(shootFireBall());
-            yield return new WaitForSeconds(Random.Range(0.15f, 0.4f));
+            yield return new WaitForSeconds(Random.Range(0.15f, 0.3f));
         }
 
         StartCoroutine(endFireBallRain());
@@ -58,7 +58,7 @@ public class FireBallRain : MonoBehaviour
         GameObject startFireBallRain = Instantiate(fireBallPrefab, transform.position, Quaternion.identity);
 
         float timer = 0f;
-        float fireBallRainDuration = 1.1f;
+        float fireBallRainDuration = 1.15f;
         Vector2 startPosition = transform.position;
         Vector2 endPosition = getRandomEndPosition();
         float jumpHeight = Random.Range(2f, 9f);
@@ -113,7 +113,7 @@ public class FireBallRain : MonoBehaviour
             float newScale = Mathf.Lerp(maxScale, originalScale, percentageDone);
             float newOffsetY = Mathf.Lerp(maxOffsetY, originalOffsetY, percentageDone);
 
-            transform.localScale = new Vector3(newScale / 1.5f, newScale, 1f);
+            transform.localScale = new Vector3(newScale / 1.1f, newScale, 1f);
             transform.localPosition = new Vector2(0f, newOffsetY);
             timer += Time.deltaTime;
             yield return null;

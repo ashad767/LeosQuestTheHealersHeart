@@ -35,13 +35,14 @@ public class rocksFallLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0, 0, 720 * Time.deltaTime); // rotate the rock 2x per second
+        transform.Rotate(0, 0, 720 * Time.deltaTime); // rotate the rock 2x per second (360 * 2)
 
         // Trigger rock impact & explosion animations when the rock's y position dips below the randomly generated y-value from 'impactPos' variable
         if (transform.position.y <= impactPos)
         {
-            GameObject rockImpact = Instantiate(rockImpactPrefab, transform.position + new Vector3(0, -0.55f, 0), Quaternion.identity);
-            GameObject rockExplosion = Instantiate(rockExplosionPrefab, transform.position + new Vector3(-0.49f, 0.67f, 0), Quaternion.identity);
+            // Got the instantiated positions of the prefabs by testing them in the scene view with the rock prefab(s)
+            GameObject rockImpact = Instantiate(rockImpactPrefab, transform.position + new Vector3(0, -0.55f), Quaternion.identity);
+            GameObject rockExplosion = Instantiate(rockExplosionPrefab, transform.position + new Vector3(-0.49f, 0.67f), Quaternion.identity);
 
             // Trigger screen shake when the rock lands
             Camera.main.GetComponent<ScreenShake>().Shake();
