@@ -15,7 +15,10 @@ public class L4BossMovement : MonoBehaviour
 
     public bool idle = true;
     private bool walk = false;
-    private bool attack = false;
+
+    private bool attack = false; // Used to control animation states
+    private bool attackInProgress = false; // Used as a flag in case of repeated sword attacks by the bos
+
     private bool expandFireCircleAnim = false;
     private bool rocksFallAnim = false;
     private bool dead = false;
@@ -34,7 +37,7 @@ public class L4BossMovement : MonoBehaviour
     private float rotationSpeed = 80f; // Rotation speed in degrees per second
     private float yOffset = 0.5f; // used to slightly lower the y-position of the fireballs relative to the boss' position
     
-    // Declare a reference to the RotateFireballs coroutine
+    // Declare a reference to the RotateFireballs() coroutine
     private Coroutine rotateFireballsCoroutine;
 
     // Health
@@ -42,11 +45,14 @@ public class L4BossMovement : MonoBehaviour
     public float maxHealth = 100f;
 
     // Audio
-    [SerializeField] AudioSource swingAudio;
-    [SerializeField] AudioSource maceDragAudio;
-    [SerializeField] AudioSource startingDarknessAudio;
-    [SerializeField] AudioSource insideDarknessAudio;
-    [SerializeField] AudioSource boneShieldAudio;
+    [SerializeField] AudioSource swordClingAudio;
+    [SerializeField] AudioSource randomScreamAudio;
+    [SerializeField] AudioSource roarAudio;
+    [SerializeField] AudioSource spawnFireballAudio;
+    [SerializeField] AudioSource fireShieldActivatedAudio;
+    [SerializeField] AudioSource fireShieldNoiseAudio;
+    [SerializeField] AudioSource fireCircleAboutToExplodeAudio;
+    [SerializeField] AudioSource fireCircleExplosionAudio;
     [SerializeField] AudioSource deathAudio;
 
     // Start is called before the first frame update
@@ -104,25 +110,35 @@ public class L4BossMovement : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            attack = true;
-            a.SetInteger("state", (int)States.attack);
-            StartCoroutine(attackFunc());
-        }
-    }
     // Same steps as 'OnTriggerEnter2D()'
     private void OnTriggerStay2D(Collider2D collision)
     {
         OnTriggerEnter2D(collision);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            if (!attackInProgress)
+            {
+                attack = true; // Used to control animation states
+                attackInProgress = true; // Used as a flag in case of repeated sword attacks by the boss
+                a.SetInteger("state", (int)States.attack);
+
+                StartCoroutine(attackFunc());
+            }
+        }
+    }
+    
     private IEnumerator attackFunc()
     {
-        // swingAudio.Play();
+        swordClingAudio.Play();
+
         yield return new WaitForSeconds(animLength[0].length);
+        attackInProgress = false; // Reset the attack flag to let the next attack audio & animation play (if any)
     }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -132,9 +148,8 @@ public class L4BossMovement : MonoBehaviour
     }
     private IEnumerator LetAttackAnimationFinish()
     {
-        // if player quickly enters and exits boss' box collider, it first triggers 'OnTriggerEnter2D()' which plays the attack animation, but I have to add this delay when exiting or else the attack animation would get interrupted by the walk/idle animation
-        yield return new WaitForSeconds(animLength[0].length / 1.4f);
-
+        // if player quickly enters and exits boss' box collider, it first triggers 'OnTriggerEnter2D()' which plays the attack animation, but I have to add this delay when exiting or else the attack animation would instantly get interrupted by the walk/idle animation
+        yield return new WaitForSeconds(animLength[0].length / 1.45f);
         attack = false;
 
         // If the boss was walking before the attack, transition back to walking animation
@@ -161,6 +176,8 @@ public class L4BossMovement : MonoBehaviour
                 startFireBallRainPrefabInstance = GameObject.FindWithTag("startFireBallRain");
             }
 
+            // The 'Start Fireball Rain Prefab' is the fire that grows/shrinks from the boss' head, which in turn shoots fireballs
+            // The 'Start Fireball Rain Prefab Instance' gets destroyed in 'FireBallRain.cs' script, which only then can this if-statement run
             if (startFireBallRainPrefabInstance == null)
             {
                 startFireBallRainIsActive = false;
@@ -190,9 +207,12 @@ public class L4BossMovement : MonoBehaviour
     private IEnumerator rocksFallAnimFunction()
     {
         rocksFallAnim = true;
+        
         StartCoroutine(rocksFall());
         a.SetInteger("state", (int)States.rocksFallState);
+        roarAudio.Play();
         yield return new WaitForSeconds(animLength[2].length);
+        
         rocksFallAnim = false;
 
         // If the boss was walking before this animation, transition back to walking animation
@@ -204,6 +224,7 @@ public class L4BossMovement : MonoBehaviour
 
     private IEnumerator rocksFall()
     {
+        // Want to start spawning the rocks a bit after halfway through the animation
         yield return new WaitForSeconds(animLength[2].length / 1.5f);
         rFM.spawnRocks();
     }
@@ -235,7 +256,6 @@ public class L4BossMovement : MonoBehaviour
                 yield return new WaitForSeconds(10f);
             }
 
-
         }
     }
 
@@ -250,6 +270,7 @@ public class L4BossMovement : MonoBehaviour
 
             GameObject fireball = Instantiate(fireballPrefab, spawnPosition, Quaternion.identity);
             fireball.transform.SetParent(transform);
+            spawnFireballAudio.Play();
 
             currentFireballs.Add(fireball);
             
@@ -258,6 +279,8 @@ public class L4BossMovement : MonoBehaviour
 
         GameObject fireShield = Instantiate(fireShieldPrefab, transform.position + new Vector3(-0.05f, -0.9f), Quaternion.identity);
         fireShield.transform.SetParent(transform);
+        fireShieldActivatedAudio.Play();
+        fireShieldNoiseAudio.Play();
 
         rotateFireballsCoroutine = StartCoroutine(RotateFireballs(fireShield, currentFireballs));
     }
@@ -274,8 +297,11 @@ public class L4BossMovement : MonoBehaviour
     private IEnumerator RotateFireballs(GameObject fireShield, List<GameObject> currentFireballs)
     {
         float timer = 0f;
-        float triggerExpansion = 8f;
+        float triggerExpansion = Random.Range(8f, 12f);
         float resetTimer = -100f;
+
+        float timeToWaitBeforeStartingfireCircleAboutToExplodeAudio = triggerExpansion - fireCircleAboutToExplodeAudio.clip.length;
+        StartCoroutine(playFireCircleAboutToExplodeAudio(timeToWaitBeforeStartingfireCircleAboutToExplodeAudio));
 
         while (true)
         {
@@ -301,7 +327,6 @@ public class L4BossMovement : MonoBehaviour
             timer += Time.deltaTime;
             yield return null;
         }
-
     }
 
     private void RotateAroundBoss(GameObject fireball)
@@ -321,6 +346,12 @@ public class L4BossMovement : MonoBehaviour
         fireball.transform.position = new Vector2(newX, newY);
     }
 
+    
+    private IEnumerator playFireCircleAboutToExplodeAudio(float timeToWait)
+    {
+        yield return new WaitForSeconds(timeToWait);
+        fireCircleAboutToExplodeAudio.Play();
+    }
     private IEnumerator expandShield(GameObject fireShield)
     {
         float timer = 0f;
@@ -332,6 +363,10 @@ public class L4BossMovement : MonoBehaviour
 
         Color currentShieldColor = fireShield.GetComponent<SpriteRenderer>().color; // 'fireShield' game object gets instantiated inside 'SpawnFireballs()' coroutine
 
+        randomScreamAudio.Play();
+        fireShieldNoiseAudio.Stop();
+        fireCircleExplosionAudio.Play();
+        
         StartCoroutine(expandFireCircleAnimFunction());
 
         while (timer < transitionToExpand)

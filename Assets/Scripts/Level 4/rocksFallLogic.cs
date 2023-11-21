@@ -14,9 +14,15 @@ public class rocksFallLogic : MonoBehaviour
     // For the prefab animations
     [SerializeField] private AnimationClip[] animLength;
 
+    //Audio
+    [SerializeField] AudioSource rockWhooshAudio;
+    [SerializeField] AudioSource rockImpactAudio;
+
     // Start is called before the first frame update
     void Start()
     {
+        rockWhooshAudio.Play();
+
         Camera mainCamera = Camera.main;
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = Vector2.down * 15f;
@@ -24,12 +30,12 @@ public class rocksFallLogic : MonoBehaviour
         float mainCameraPositionY = mainCamera.transform.position.y;
         float frustumHeight = 2.0f * mainCamera.orthographicSize;
 
-        // When dividing frustumHeight by a number, the closer to 1 or less (0.9, 0.5, 0.2, 0.01, etc...), the higher/lower down it goes.
+        // Need a random y-position within the camera's view
+        // Also, when dividing frustumHeight by a number, the closer to 1 or less (0.9, 0.5, 0.2, 0.01, etc...), the higher/lower down it goes.
         // The further away from 1 (2, 5, 10), the less higher/lower it goes.
         impactPos = Random.Range(mainCameraPositionY + (-frustumHeight / 2f), 
                                  mainCameraPositionY + (frustumHeight / 2.5f)
                                 );
-
     }
 
     // Update is called once per frame
@@ -43,6 +49,8 @@ public class rocksFallLogic : MonoBehaviour
             // Got the instantiated positions of the prefabs by testing them in the scene view with the rock prefab(s)
             GameObject rockImpact = Instantiate(rockImpactPrefab, transform.position + new Vector3(0, -0.55f), Quaternion.identity);
             GameObject rockExplosion = Instantiate(rockExplosionPrefab, transform.position + new Vector3(-0.49f, 0.67f), Quaternion.identity);
+
+            AudioSource.PlayClipAtPoint(rockImpactAudio.clip, Camera.main.transform.position, 0.5f); // Play impact audio without interruption
 
             // Trigger screen shake when the rock lands
             Camera.main.GetComponent<ScreenShake>().Shake();

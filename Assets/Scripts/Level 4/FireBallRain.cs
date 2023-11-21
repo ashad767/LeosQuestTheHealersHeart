@@ -7,10 +7,18 @@ public class FireBallRain : MonoBehaviour
 {
     [SerializeField] private GameObject fireBallPrefab;
 
+    // Audio
+    [SerializeField] AudioSource fireballRainStartAudio;
+    [SerializeField] AudioSource fireballRainMiddleAudio;
+    [SerializeField] AudioSource fireballRainEndAudio;
+    [SerializeField] AudioSource shootFireballAudio;
+
     // Start is called before the first frame update
     void Start()
     {
+        fireballRainStartAudio.Play();
         StartCoroutine(startFireBallRain());
+        fireballRainMiddleAudio.Play();
     }
 
 
@@ -56,6 +64,7 @@ public class FireBallRain : MonoBehaviour
     private IEnumerator shootFireBall()
     {
         GameObject startFireBallRain = Instantiate(fireBallPrefab, transform.position, Quaternion.identity);
+        shootFireballAudio.Play();
 
         float timer = 0f;
         float fireBallRainDuration = 1.15f;
@@ -119,6 +128,8 @@ public class FireBallRain : MonoBehaviour
             yield return null;
         }
 
+        fireballRainMiddleAudio.Stop();
+        fireballRainEndAudio.Play();
         Destroy(gameObject);
     }
 }
