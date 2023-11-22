@@ -37,7 +37,10 @@ public class L3BossMovement : MonoBehaviour
 
     public bool idle = true;
     private bool walk = false;
-    private bool attack = false;
+
+    private bool attack = false; // Used to control animation states
+    private bool attackInProgress = false; // Used as a flag in case of repeated sword attacks by the boss
+    
     private bool dead = false;
     
     public float currentHealth = 100f;
@@ -72,7 +75,7 @@ public class L3BossMovement : MonoBehaviour
         }
 
         // Make the boss move towards MC when MC is NOT idle
-        if (!idle && !dead)
+        if (!idle && !attack && !dead)
         {
             transform.position = Vector2.MoveTowards(transform.position, MC.position, 2.7f * Time.deltaTime);
         }
@@ -86,8 +89,13 @@ public class L3BossMovement : MonoBehaviour
             idle = false;
 
             walk = true;
-            a.SetInteger("state", (int)States.walk);
-            maceDragAudio.Play();
+            
+            // walk animation gets activated after attack animation ends
+            if (!attack)
+            {
+                a.SetInteger("state", (int)States.walk);
+                maceDragAudio.Play();
+            }
             yield return new WaitForSeconds(3f);
             maceDragAudio.Stop();
             walk = false;
@@ -158,23 +166,51 @@ public class L3BossMovement : MonoBehaviour
         insideDarknessAudio.Play();
     }
 
+
+    // Same steps as 'OnTriggerEnter2D()'
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        OnTriggerEnter2D(collision);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            attack = true;
-            maceDragAudio.Stop();
-            a.SetInteger("state", (int)States.attack);
-            StartCoroutine(attackFunc());
+            if (!attackInProgress)
+            {
+                attack = true; // Used to control animation states
+                attackInProgress = true; // Used as a flag in case of repeated sword attacks by the boss
+                a.SetInteger("state", (int)States.attack);
+                maceDragAudio.Stop();
+
+                StartCoroutine(attackFunc());
+            }
         }
     }
+
     private IEnumerator attackFunc()
     {
         swingAudio.Play();
+
         yield return new WaitForSeconds(animLength[0].length);
+        attackInProgress = false; // Reset the attack flag to let the next attack audio & animation play (if any)
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            StartCoroutine(LetAttackAnimationFinish());
+        }
+    }
+    private IEnumerator LetAttackAnimationFinish()
+    {
+        // if player quickly enters and exits boss' box collider, it first triggers 'OnTriggerEnter2D()' which plays the attack animation, but I have to add this delay when exiting or else the attack animation would instantly get interrupted by the walk/idle animation
+        yield return new WaitForSeconds(animLength[0].length / 1.5f);
         attack = false;
 
-        // because walking is a looped animation, if boss attacks midway of the walking animation, I want to return back to the walking animation
+        // If the boss was walking before the attack, transition back to walking animation
         if (walk)
         {
             a.SetInteger("state", (int)States.walk);
@@ -200,7 +236,7 @@ public class L3BossMovement : MonoBehaviour
             Color hitEffect = sr.color;
 
             yield return new WaitForSeconds(2f);
-            currentHealth -= 10f;
+            currentHealth -= 1f;
 
             // When boss gets hit, I want to momentarily make the boss go slighlty transparent, then back to its original/angry color
             hitEffect.a = 0.2f;
@@ -217,6 +253,12 @@ public class L3BossMovement : MonoBehaviour
                 deathAudio.Play();
                 
                 yield return new WaitForSeconds(deathAudio.clip.length);
+
+                if (darknessManager.isDark)
+                {
+                    darknessManager.de_activateDarkness();
+                }
+
                 Destroy(gameObject); // Destroys boss gameobject
             }
         }

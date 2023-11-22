@@ -14,9 +14,10 @@ public class BossMovement : MonoBehaviour
     public float currentHealth = 100f;
     public float maxHealth = 100f;
 
-
     [SerializeField] AnimationClip[] anim; // Some of the boss animations. Using it to access their lengths
     [SerializeField] Transform MC;
+
+    // Prefabs
     [SerializeField] GameObject sawPrefab;
     [SerializeField] GameObject landingSmokePrefab;
     [SerializeField] GameObject powerUpPrefab;
@@ -35,7 +36,10 @@ public class BossMovement : MonoBehaviour
     // for animation control
     private bool idle = true;
     private bool walk = false;
-    private bool attack = false;
+    
+    private bool attack = false; // Used to control animation states
+    private bool attackInProgress = false; // Used as a flag in case of repeated sword attacks by the boss
+    
     private bool jump = false;
     private bool activateBuff = false;
     private bool buffRunning = false;
@@ -77,7 +81,7 @@ public class BossMovement : MonoBehaviour
         }
 
         float movementSpeed = buffRunning ? 5.5f : 4f;
-        if (!idle && !jump && !activateBuff && !dead)
+        if (!idle && !jump && !attack && !activateBuff && !dead)
         {
             transform.position = Vector2.MoveTowards(transform.position, MC.position, movementSpeed * Time.deltaTime);
         }
@@ -92,7 +96,12 @@ public class BossMovement : MonoBehaviour
             idle = false; // start walking
 
             walk = true;
-            a.SetInteger("state", (int)States.walk);
+            
+            // walk animation gets activated after attack animation ends
+            if (!attack)
+            {
+                a.SetInteger("state", (int)States.walk);
+            }
             yield return new WaitForSeconds(Random.Range(2.5f, 5.5f)); // follow player for some time
             walk = false;
 
@@ -117,6 +126,55 @@ public class BossMovement : MonoBehaviour
                 }
             }
             idle = true;
+        }
+    }
+
+    // Same steps as 'OnTriggerEnter2D()'
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        OnTriggerEnter2D(collision);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player") && !jump)
+        {
+            if (!attackInProgress)
+            {
+                attack = true; // Used to control animation states
+                attackInProgress = true; // Used as a flag in case of repeated sword attacks by the boss
+                a.SetInteger("state", (int)States.attack);
+
+                StartCoroutine(attackFunc());
+            }
+        }
+    }
+
+    private IEnumerator attackFunc()
+    {
+        swordSwing.Play();
+
+        yield return new WaitForSeconds(anim[1].length);
+        attackInProgress = false; // Reset the attack flag to let the next attack audio & animation play (if any)
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            StartCoroutine(LetAttackAnimationFinish());
+        }
+    }
+    private IEnumerator LetAttackAnimationFinish()
+    {
+        // if player quickly enters and exits boss' box collider, it first triggers 'OnTriggerEnter2D()' which plays the attack animation, but I have to add this delay when exiting or else the attack animation would instantly get interrupted by the walk/idle animation
+        yield return new WaitForSeconds(anim[1].length);
+        attack = false;
+
+        // If the boss was walking before the attack, transition back to walking animation
+        if (walk)
+        {
+            a.SetInteger("state", (int)States.walk);
         }
     }
 
@@ -190,29 +248,6 @@ public class BossMovement : MonoBehaviour
     private void SetSortingLayerOrder(Transform circle, int sortingOrder)
     {
         circle.GetComponent<SpriteRenderer>().sortingOrder = sortingOrder;
-    }
-
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.name == "MC" && !jump) // don't wanna attack while jumping
-        {
-            attack = true;
-            a.SetInteger("state", (int)States.attack);
-            swordSwing.Play();
-            StartCoroutine(attackFunc());
-        }
-    }
-    private IEnumerator attackFunc()
-    {
-        yield return new WaitForSeconds(anim[1].length);
-        attack = false;
-        
-        // because walking is a looped animation, if boss attacks midway of the walking animation, I want to return back to the walking animation
-        if (walk)
-        {
-            a.SetInteger("state", (int)States.walk);
-        }
     }
 
 

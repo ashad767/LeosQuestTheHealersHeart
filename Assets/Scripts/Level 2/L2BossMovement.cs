@@ -131,14 +131,14 @@ public class L2BossMovement : MonoBehaviour
     {
         // I want the boss to lunge at the MC based on the MC's distance and direction.
         // So I first take the direction in which the boss has to lunge towards (-1 or 1, in X or Y direction)
-        // Then multiply by the distance between the boss and MC. But that would be too fast,so I divided the distance by either 1.5 or 2 to make it slower
+        // Then multiply by the distance between the boss and MC. But that would be too fast,so I divided the distance by either 1.5 or 1.7 to make it slower
         // I then put those X & Y values as the velocity for the boss 
         float whereIsMC_X = Mathf.Sign(MC.position.x);
         float whereIsMC_Y = Mathf.Sign(MC.position.y);
         float lungeSpeedX = Mathf.Abs(MC.position.x - transform.position.x);
         float lungeSpeedY = Mathf.Abs(MC.position.y - transform.position.y);
 
-        float lungeSpeedController = isAngry ? 1.5f : 2f;
+        float lungeSpeedController = isAngry ? 1.5f : 1.7f;
         rb.velocity = new Vector2(whereIsMC_X * (lungeSpeedX / lungeSpeedController), whereIsMC_Y * (lungeSpeedY / lungeSpeedController));
 
         lunge = true;
@@ -212,7 +212,9 @@ public class L2BossMovement : MonoBehaviour
         Vector2 bulletDir = MC.position - mainBullet.transform.position;
         float rotation_in_Degrees = Mathf.Atan2(bulletDir.y, bulletDir.x) * Mathf.Rad2Deg; // Atan2 goes from -pi to pi (counter-clockwise starting from the left side). And since Atan2 returns in radians, I multiplied by Mathf.Rad2Deg to convert to degrees
         mainBullet.transform.rotation = Quaternion.Euler(0, 0, rotation_in_Degrees); // rotate on z axis
-        mainBullet.GetComponent<Rigidbody2D>().velocity = bulletDir.normalized * 7.5f;
+
+        float bulletSpeed = isAngry ? 15.5f : 11f;
+        mainBullet.GetComponent<Rigidbody2D>().velocity = bulletDir.normalized * bulletSpeed;
     }
 
     private IEnumerator regenFunction()
@@ -229,7 +231,7 @@ public class L2BossMovement : MonoBehaviour
             }
 
             regen = true;
-            currentHealth += Random.Range(10f, 20f);
+            currentHealth += isAngry ? Random.Range(15f, 27f) : Random.Range(10f, 20f);
             a.SetInteger("state", (int)States.regen);
             regenAudio.Play();
             yield return new WaitForSeconds(animLength[1].length + 0.1f);
@@ -244,7 +246,7 @@ public class L2BossMovement : MonoBehaviour
         {
             Color hitEffect = sr.color;
 
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(2f);
             currentHealth -= 5f;
 
             // When boss gets hit, I want to momentarily make the boss go slighlty transparent, then back to its original/angry color
