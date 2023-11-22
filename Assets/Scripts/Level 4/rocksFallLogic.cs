@@ -46,19 +46,32 @@ public class rocksFallLogic : MonoBehaviour
         // Trigger rock impact & explosion animations when the rock's y position dips below the randomly generated y-value from 'impactPos' variable
         if (transform.position.y <= impactPos)
         {
-            // Got the instantiated positions of the prefabs by testing them in the scene view with the rock prefab(s)
-            GameObject rockImpact = Instantiate(rockImpactPrefab, transform.position + new Vector3(0, -0.55f), Quaternion.identity);
-            GameObject rockExplosion = Instantiate(rockExplosionPrefab, transform.position + new Vector3(-0.49f, 0.67f), Quaternion.identity);
-
-            AudioSource.PlayClipAtPoint(rockImpactAudio.clip, Camera.main.transform.position, 0.5f); // Play impact audio without interruption
-
-            // Trigger screen shake when the rock lands
-            Camera.main.GetComponent<ScreenShake>().Shake();
-
-            Destroy(gameObject);
-            Destroy(rockImpact, animLength[0].length);
-            Destroy(rockExplosion, animLength[1].length);
+            destroyRock();
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            destroyRock();
+        }
+    }
+
+    private void destroyRock()
+    {
+        // Got the instantiated positions of the prefabs by testing them in the scene view with the rock prefab(s)
+        GameObject rockImpact = Instantiate(rockImpactPrefab, transform.position + new Vector3(0, -0.55f), Quaternion.identity);
+        GameObject rockExplosion = Instantiate(rockExplosionPrefab, transform.position + new Vector3(-0.49f, 0.67f), Quaternion.identity);
+
+        AudioSource.PlayClipAtPoint(rockImpactAudio.clip, Camera.main.transform.position, 0.45f); // Play impact audio without interruption
+
+        // Trigger screen shake when the rock lands
+        Camera.main.GetComponent<ScreenShake>().Shake();
+
+        Destroy(gameObject);
+        Destroy(rockImpact, animLength[0].length);
+        Destroy(rockExplosion, animLength[1].length);
     }
 
 }

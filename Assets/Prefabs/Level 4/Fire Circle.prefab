@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6539946362531644059}
   - component: {fileID: 6593685667626685563}
   - component: {fileID: 990867394816011392}
+  - component: {fileID: 1047330248388300282}
   - component: {fileID: 4972437448834629090}
   m_Layer: 0
   m_Name: Fire Circle
@@ -115,7 +116,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0070824027, y: -0.3121525}
@@ -131,6 +132,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5275483, y: 0.7090285}
   m_EdgeRadius: 0
+--- !u!114 &1047330248388300282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7158060173138300392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14a76aff7591631408cd39ee6034377e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &4972437448834629090
 Animator:
   serializedVersion: 5

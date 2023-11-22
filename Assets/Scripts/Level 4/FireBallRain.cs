@@ -6,6 +6,7 @@ using UnityEngine.Experimental.GlobalIllumination;
 public class FireBallRain : MonoBehaviour
 {
     [SerializeField] private GameObject fireBallPrefab;
+    private List<GameObject> fireballsList = new List<GameObject>();
 
     // Audio
     [SerializeField] AudioSource fireballRainStartAudio;
@@ -50,7 +51,7 @@ public class FireBallRain : MonoBehaviour
 
     private IEnumerator fireBallRain()
     {
-        int numberOfFireballs = (int)Random.Range(50f, 100f);
+        int numberOfFireballs = (int)Random.Range(50f, 80f);
 
         for (int i = 0; i < numberOfFireballs; i++)
         {
@@ -63,7 +64,7 @@ public class FireBallRain : MonoBehaviour
 
     private IEnumerator shootFireBall()
     {
-        GameObject startFireBallRain = Instantiate(fireBallPrefab, transform.position, Quaternion.identity);
+        GameObject fireBallPrefabInstance = Instantiate(fireBallPrefab, transform.position, Quaternion.identity);
         shootFireballAudio.Play();
 
         float timer = 0f;
@@ -72,18 +73,28 @@ public class FireBallRain : MonoBehaviour
         Vector2 endPosition = getRandomEndPosition();
         float jumpHeight = Random.Range(2f, 9f);
 
-        while (timer < fireBallRainDuration)
+        while (timer < fireBallRainDuration && fireBallPrefabInstance != null)
         {
             float percentageElapsed = timer / fireBallRainDuration;
             float yOffset = Mathf.Sin(Mathf.PI * percentageElapsed) * jumpHeight;
             Vector2 parabolicPosition = Vector2.Lerp(startPosition, endPosition, percentageElapsed) + Vector2.up * yOffset;
-            startFireBallRain.transform.position = parabolicPosition;
+            fireBallPrefabInstance.transform.position = parabolicPosition;
 
             timer += Time.deltaTime;
+
+            // Check for collision with the player and destroy the fireball
+            // 'parabolicPosition' is the same as 'fireBallPrefabInstance.transform.position'
+            Collider2D collider = Physics2D.OverlapCircle(parabolicPosition, fireBallPrefabInstance.GetComponent<CircleCollider2D>().radius);
+
+            if (collider != null && collider.gameObject.CompareTag("Player"))
+            {
+                Destroy(fireBallPrefabInstance);
+            }
+
             yield return null; // Let the physics update. Just goes to next frame to render the boss' position incrementally.
         }
 
-        Destroy(startFireBallRain);
+        Destroy(fireBallPrefabInstance);
     }
 
     private Vector2 getRandomEndPosition()
@@ -101,9 +112,8 @@ public class FireBallRain : MonoBehaviour
             Random.Range((-frustumWidth / 2f) + mainCameraPositionX, (frustumWidth / 2f) + mainCameraPositionX),
             Random.Range((-frustumHeight / 2f) + mainCameraPositionY, (frustumHeight / 2f) + mainCameraPositionY)
             );
-        
     }
-
+    
 
     private IEnumerator endFireBallRain()
     {

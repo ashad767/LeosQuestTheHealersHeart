@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3187693865348753859}
   - component: {fileID: 1530774783568378228}
-  - component: {fileID: 7959535005194620182}
   - component: {fileID: 4007245186598198029}
+  - component: {fileID: 7959535005194620182}
   - component: {fileID: -3476519956636433169}
   - component: {fileID: -5354078178164262955}
   - component: {fileID: 8885200333252102029}
@@ -90,6 +90,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4007245186598198029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5018142768146605432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc44b19343b723147baaa92004ff8623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireBallPrefab: {fileID: 5532919033880659257, guid: 1c7a00045ba26d746bc26cfe7ae48016, type: 3}
+  fireballRainStartAudio: {fileID: -3476519956636433169}
+  fireballRainMiddleAudio: {fileID: -5354078178164262955}
+  fireballRainEndAudio: {fileID: 8885200333252102029}
+  shootFireballAudio: {fileID: 3442908413387914584}
 --- !u!95 &7959535005194620182
 Animator:
   serializedVersion: 5
@@ -111,23 +128,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &4007245186598198029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5018142768146605432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc44b19343b723147baaa92004ff8623, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fireBallPrefab: {fileID: 5532919033880659257, guid: 1c7a00045ba26d746bc26cfe7ae48016, type: 3}
-  fireballRainStartAudio: {fileID: -3476519956636433169}
-  fireballRainMiddleAudio: {fileID: -5354078178164262955}
-  fireballRainEndAudio: {fileID: 8885200333252102029}
-  shootFireballAudio: {fileID: 3442908413387914584}
 --- !u!82 &-3476519956636433169
 AudioSource:
   m_ObjectHideFlags: 0

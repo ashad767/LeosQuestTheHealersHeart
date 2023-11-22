@@ -17,7 +17,7 @@ public class L4BossMovement : MonoBehaviour
     private bool walk = false;
 
     private bool attack = false; // Used to control animation states
-    private bool attackInProgress = false; // Used as a flag in case of repeated sword attacks by the bos
+    private bool attackInProgress = false; // Used as a flag in case of repeated sword attacks by the boss
 
     private bool expandFireCircleAnim = false;
     private bool rocksFallAnim = false;
@@ -27,18 +27,9 @@ public class L4BossMovement : MonoBehaviour
     [SerializeField] private GameObject startFireBallRainPrefab;
     GameObject startFireBallRainPrefabInstance; // used in fireBallRain() coroutine
     
-    [SerializeField] private rocksFallManager rFM;
-    [SerializeField] private GameObject fireballPrefab;
-    [SerializeField] private GameObject fireShieldPrefab;
 
-    // Variables for my fire circle
-    private int numberOfFireballs = 12;
-    private float fireCircleRadius = 2.36f;
-    private float rotationSpeed = 80f; // Rotation speed in degrees per second
-    private float yOffset = 0.5f; // used to slightly lower the y-position of the fireballs relative to the boss' position
-    
-    // Declare a reference to the RotateFireballs() coroutine
-    private Coroutine rotateFireballsCoroutine;
+    [SerializeField] private rocksFallManager rFM;
+    [SerializeField] private fireCircleManager fCM;
 
     // Health
     public float currentHealth = 100f;
@@ -46,13 +37,7 @@ public class L4BossMovement : MonoBehaviour
 
     // Audio
     [SerializeField] AudioSource swordClingAudio;
-    [SerializeField] AudioSource randomScreamAudio;
     [SerializeField] AudioSource roarAudio;
-    [SerializeField] AudioSource spawnFireballAudio;
-    [SerializeField] AudioSource fireShieldActivatedAudio;
-    [SerializeField] AudioSource fireShieldNoiseAudio;
-    [SerializeField] AudioSource fireCircleAboutToExplodeAudio;
-    [SerializeField] AudioSource fireCircleExplosionAudio;
     [SerializeField] AudioSource deathAudio;
 
     // Start is called before the first frame update
@@ -186,17 +171,17 @@ public class L4BossMovement : MonoBehaviour
 
             // Since I'm not yielding a return value in any of the if-statements, if I don't put this line, the game will freeze as it would not update to the next game frame.
             yield return null;
-
         }
     }
 
-    private IEnumerator expandFireCircleAnimFunction()
+    // Called in 'fireCircleManager.cs' script
+    public IEnumerator expandFireCircleAnimFunction()
     {
         expandFireCircleAnim = true;
         a.SetInteger("state", (int)States.expandFireCircleState);
         yield return new WaitForSeconds(animLength[1].length);
         expandFireCircleAnim = false;
-        
+
         // If the boss was walking before this animation, transition back to walking animation
         if (walk)
         {
@@ -237,17 +222,8 @@ public class L4BossMovement : MonoBehaviour
         {
             if(Random.Range(0f, 1f) <= 0.5f)
             {
-                // Create a new list for each call to SpawnFireballs
-                List<GameObject> currentFireballs = new List<GameObject>();
-
-                // Stop the previous RotateFireballs coroutine (if any)
-                if (rotateFireballsCoroutine != null)
-                {
-                    StopCoroutine(rotateFireballsCoroutine);
-                }
-
-                StartCoroutine(SpawnFireballs(currentFireballs));
-                yield return new WaitForSeconds(15f);
+                fCM.spawnFireCircle();
+                yield return new WaitForSeconds(17f);
             }
 
             else
@@ -257,166 +233,6 @@ public class L4BossMovement : MonoBehaviour
             }
 
         }
-    }
-
-    private IEnumerator SpawnFireballs(List<GameObject> currentFireballs)
-    {
-        float angleIncrement = 360f / numberOfFireballs;
-
-        for (int i = 0; i < numberOfFireballs; i++)
-        {
-            float angle = i * angleIncrement;
-            Vector2 spawnPosition = GetSpawnPosition(angle, fireCircleRadius);
-
-            GameObject fireball = Instantiate(fireballPrefab, spawnPosition, Quaternion.identity);
-            fireball.transform.SetParent(transform);
-            spawnFireballAudio.Play();
-
-            currentFireballs.Add(fireball);
-            
-            yield return new WaitForSeconds(0.06f); // Add a slight delay between instantiations
-        }
-
-        GameObject fireShield = Instantiate(fireShieldPrefab, transform.position + new Vector3(-0.05f, -0.9f), Quaternion.identity);
-        fireShield.transform.SetParent(transform);
-        fireShieldActivatedAudio.Play();
-        fireShieldNoiseAudio.Play();
-
-        rotateFireballsCoroutine = StartCoroutine(RotateFireballs(fireShield, currentFireballs));
-    }
-
-    private Vector2 GetSpawnPosition(float angle, float radius)
-    {
-        float radians = angle * Mathf.Deg2Rad;
-        float x = transform.position.x + radius * Mathf.Cos(radians);
-        float y = transform.position.y + radius * Mathf.Sin(radians) - 0.5f;
-
-        return new Vector2(x, y);
-    }
-
-    private IEnumerator RotateFireballs(GameObject fireShield, List<GameObject> currentFireballs)
-    {
-        float timer = 0f;
-        float triggerExpansion = Random.Range(8f, 12f);
-        float resetTimer = -100f;
-
-        float timeToWaitBeforeStartingfireCircleAboutToExplodeAudio = triggerExpansion - fireCircleAboutToExplodeAudio.clip.length;
-        StartCoroutine(playFireCircleAboutToExplodeAudio(timeToWaitBeforeStartingfireCircleAboutToExplodeAudio));
-
-        while (true)
-        {
-            foreach (GameObject fireball in currentFireballs)
-            {
-                RotateAroundBoss(fireball);
-            }
-
-            // Check if it's time to expand shield and fire circle
-            if (timer >= triggerExpansion)
-            {
-                Camera.main.GetComponent<ScreenShake>().Shake();
-
-                // Call the coroutines
-                
-                StartCoroutine(expandShield(fireShield));
-                StartCoroutine(expandFireCircle(currentFireballs));
-
-                // Reset the timer
-                timer = resetTimer;
-            }
-
-            timer += Time.deltaTime;
-            yield return null;
-        }
-    }
-
-    private void RotateAroundBoss(GameObject fireball)
-    {
-        // Need to add the y-position of the fireball prefab by the y-offset (in this case 0.5f) because I need to perform the direction and angle calculations based on this position, not on the y-direction where the y-offset (0.5f) has been subtracted.
-        // Doing math operations on the subtracted y-offset gives odd results. This happens because in each iteration, I keep taking away 0.5f from the y-position and falsely calculating the distance on the 'Vector2 direction' variable, which in turn gives a false angle value, which then messes up the whole thing.
-        // So I need to bring the fireball prefab's y-position back up by 0.5f and doing operations using this position
-        Vector2 fireballPositionWith_yOffset = fireball.transform.position + new Vector3(0, yOffset);
-        Vector2 bossPosition = transform.position;
-
-        Vector2 direction = fireballPositionWith_yOffset - bossPosition;
-        float angle = Mathf.Atan2(direction.y, direction.x) + (rotationSpeed * Mathf.Deg2Rad * Time.deltaTime);
-
-        float newX = bossPosition.x + fireCircleRadius * Mathf.Cos(angle);
-        float newY = bossPosition.y + (fireCircleRadius * Mathf.Sin(angle)) - yOffset;
-
-        fireball.transform.position = new Vector2(newX, newY);
-    }
-
-    
-    private IEnumerator playFireCircleAboutToExplodeAudio(float timeToWait)
-    {
-        yield return new WaitForSeconds(timeToWait);
-        fireCircleAboutToExplodeAudio.Play();
-    }
-    private IEnumerator expandShield(GameObject fireShield)
-    {
-        float timer = 0f;
-        
-        float transitionToExpand = 0.25f;
-
-        float originalScale = 1f;
-        float maxScale = 4f;
-
-        Color currentShieldColor = fireShield.GetComponent<SpriteRenderer>().color; // 'fireShield' game object gets instantiated inside 'SpawnFireballs()' coroutine
-
-        randomScreamAudio.Play();
-        fireShieldNoiseAudio.Stop();
-        fireCircleExplosionAudio.Play();
-        
-        StartCoroutine(expandFireCircleAnimFunction());
-
-        while (timer < transitionToExpand)
-        {
-            float percentageDone = timer / transitionToExpand;
-            
-            float newScale = Mathf.Lerp(originalScale, maxScale, percentageDone);
-            currentShieldColor.a = Mathf.Lerp(1, 0, percentageDone);
-
-            fireShield.transform.localScale = new Vector3(newScale, newScale, 1f);
-            fireShield.GetComponent<SpriteRenderer>().color = currentShieldColor;
-            
-            timer += Time.deltaTime;
-            yield return null;
-        }
-
-        Destroy(fireShield);
-    }
-
-    private IEnumerator expandFireCircle(List<GameObject> currentFireballs)
-    {
-        float timer = 0f;
-
-        float transitionToExpand = 1.5f;
-
-        float originalRadius = fireCircleRadius;
-        float maxRadius = 12f;
-
-
-        while (timer < transitionToExpand)
-        {
-            float percentageDone = timer / transitionToExpand;
-
-            float newRadius = Mathf.Lerp(originalRadius, maxRadius, percentageDone);
-            fireCircleRadius = newRadius;
-
-            timer += Time.deltaTime;
-            yield return null;
-        }
-
-        GameObject[] fireballsToDestroy = GameObject.FindGameObjectsWithTag("fireballCircle");
-
-        foreach (GameObject fireball in fireballsToDestroy)
-        {
-            Destroy(fireball);
-        }
-
-        currentFireballs.Clear();
-
-        fireCircleRadius = originalRadius; // have to reset fireCircleRadius for the next wave of fire circle
     }
 
     private IEnumerator dummyBossHitTester()
