@@ -1,0 +1,655 @@
+fileFormatVersion: 2
+guid: 7f8eed1afb36c3041956f7760c59bad1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Minotaur (LOWER)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 197
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d4fcb50e047cc449549db0fdf822ef
+      internalID: -1549962486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur (LOWER)_1
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 576
+        width: 197
+        height: 192
+      alignment: 9
+      pivot: {x: 0.47470543, y: 0.50000066}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af39d341cd327c142acc0cf40bccf4dd
+      internalID: 1890786068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur (LOWER)_2
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 576
+        width: 197
+        height: 192
+      alignment: 9
+      pivot: {x: 0.44439435, y: 0.49831358}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b9df22bf84f1a342b45df54670c4aae
+      internalID: 860053409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur (LOWER)_3
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 576
+        width: 197
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4310724, y: 0.49692884}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb9b9cf03f84f284f9fc6a821d9d6be2
+      internalID: -1791328217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur (LOWER)_4
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 576
+        width: 197
+        height: 192
+      alignment: 9
+      pivot: {x: 0.41041464, y: 0.49692884}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 640cb2aabd5e7714189bbfd89c0935ec
+      internalID: 1558845913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur (LOWER)_5
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 576
+        width: 197
+        height: 192
+      alignment: 9
+      pivot: {x: 0.38444528, y: 0.4976212}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42038990defb8204f8a08ca2fd011694
+      internalID: -1680724931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur (LOWER)_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 197
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 744c0fe5c6732cb4eabce240b8abb611
+      internalID: 1407003114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur (LOWER)_7
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 384
+        width: 197
+        height: 192
+      alignment: 9
+      pivot: {x: 0.46755284, y: 0.49394688}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb232049f175c741b2fe7039226e6a3
+      internalID: -1888714940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur (LOWER)_8
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 384
+        width: 197
+        height: 192
+      alignment: 9
+      pivot: {x: 0.443955, y: 0.5030265}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44b2bbac1908f949b18b3f8d0314244
+      internalID: 576942639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur (LOWER)_9
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 384
+        width: 197
+        height: 192
+      alignment: 9
+      pivot: {x: 0.411508, y: 0.5030265}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24dd1987e8b1b294da08ac09612aed0e
+      internalID: -808858429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur (LOWER)_10
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 384
+        width: 197
+        height: 192
+      alignment: 9
+      pivot: {x: 0.38201067, y: 0.5030265}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fefa86d24f930ca4697544cbd4dcb70c
+      internalID: -952180844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur (LOWER)_11
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 384
+        width: 197
+        height: 192
+      alignment: 9
+      pivot: {x: 0.35841268, y: 0.5030265}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0868a84d36f466e4abf020d5cbbde4c5
+      internalID: -1746301275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur (LOWER)_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 197
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f4ab82387dc9a7469f3593b8e3268ad
+      internalID: 416624474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur (LOWER)_13
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 192
+        width: 197
+        height: 192
+      alignment: 9
+      pivot: {x: 0.47558686, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6e8936c01f2dc34e8a53e888828f5b4
+      internalID: 1176659405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur (LOWER)_14
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 192
+        width: 197
+        height: 192
+      alignment: 9
+      pivot: {x: 0.44419822, y: 0.4892645}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358cf86362ac30d48b8e2edd38e2290d
+      internalID: -2143025118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur (LOWER)_15
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 192
+        width: 197
+        height: 192
+      alignment: 9
+      pivot: {x: 0.43722302, y: 0.492843}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f09760fe9ae99bb49992e9fc7bea2236
+      internalID: -1370601208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur (LOWER)_16
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 192
+        width: 197
+        height: 192
+      alignment: 9
+      pivot: {x: 0.41629726, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a8851c07e50884ebf201b93bfb21de
+      internalID: -155450973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur (LOWER)_17
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 192
+        width: 197
+        height: 192
+      alignment: 9
+      pivot: {x: 0.3953715, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45156c7b9fc1d5840a1d3963938a4133
+      internalID: 96452572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur (LOWER)_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 197
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7467c41de090f9c4cbe697ba5c0f6f33
+      internalID: -47556596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur (LOWER)_19
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 0
+        width: 197
+        height: 192
+      alignment: 9
+      pivot: {x: 0.48831037, y: 0.4904048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff0e54b6d65b74a40ae3fc496cc4b4ad
+      internalID: 2017341480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur (LOWER)_20
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 0
+        width: 197
+        height: 192
+      alignment: 9
+      pivot: {x: 0.46259195, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd91a004881d5de4bbddce9ea22cac19
+      internalID: 255754377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur (LOWER)_21
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 0
+        width: 197
+        height: 192
+      alignment: 9
+      pivot: {x: 0.43687385, y: 0.50239897}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b94bfdbf8401b35418d57c3398a2c4e5
+      internalID: -387913301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur (LOWER)_22
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 0
+        width: 197
+        height: 192
+      alignment: 9
+      pivot: {x: 0.41816983, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e716daf1613c7349b9841a865f59d4f
+      internalID: 654610162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur (LOWER)_23
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 0
+        width: 197
+        height: 192
+      alignment: 9
+      pivot: {x: 0.39478964, y: 0.50239897}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6539e9938135df7468b2bd292c343d0d
+      internalID: -1347591254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Minotaur (LOWER)_0: -1549962486
+      Minotaur (LOWER)_1: 1890786068
+      Minotaur (LOWER)_10: -952180844
+      Minotaur (LOWER)_11: -1746301275
+      Minotaur (LOWER)_12: 416624474
+      Minotaur (LOWER)_13: 1176659405
+      Minotaur (LOWER)_14: -2143025118
+      Minotaur (LOWER)_15: -1370601208
+      Minotaur (LOWER)_16: -155450973
+      Minotaur (LOWER)_17: 96452572
+      Minotaur (LOWER)_18: -47556596
+      Minotaur (LOWER)_19: 2017341480
+      Minotaur (LOWER)_2: 860053409
+      Minotaur (LOWER)_20: 255754377
+      Minotaur (LOWER)_21: -387913301
+      Minotaur (LOWER)_22: 654610162
+      Minotaur (LOWER)_23: -1347591254
+      Minotaur (LOWER)_3: -1791328217
+      Minotaur (LOWER)_4: 1558845913
+      Minotaur (LOWER)_5: -1680724931
+      Minotaur (LOWER)_6: 1407003114
+      Minotaur (LOWER)_7: -1888714940
+      Minotaur (LOWER)_8: 576942639
+      Minotaur (LOWER)_9: -808858429
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

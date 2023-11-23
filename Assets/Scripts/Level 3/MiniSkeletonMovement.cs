@@ -74,16 +74,16 @@ public class MiniSkeletonMovement : MonoBehaviour
             idle = true;
             yield return new WaitForSeconds(0.5f); // to have proper transition from idle to shooting arrow
 
-            // want to shoot 2 arrows
+            // want to shoot 2 arrows when becoming idle
             StartCoroutine(shootArrow());
             yield return new WaitForSeconds(animLength[0].length); // call to 'yield return new WaitForSeconds(animLength[0].length)' from shootArrow() coroutine returns control to follow_MC(), but I want to wait for the shooting animation to finish
 
-            yield return new WaitForSeconds(Random.Range(0.5f, 2f)); // to have proper transition from idle to shooting another arrow
+            yield return new WaitForSeconds(Random.Range(0.5f, 2f)); // wait before shooting another arrow
 
             StartCoroutine(shootArrow());
             yield return new WaitForSeconds(animLength[0].length); // call to 'yield return new WaitForSeconds(animLength[0].length)' from shootArrow() coroutine returns control to follow_MC(), but I want to wait for the shooting animation to finish
 
-            yield return new WaitForSeconds(Random.Range(0.5f, 2f)); // to have proper transition from idle to shooting another arrow
+            yield return new WaitForSeconds(Random.Range(0.5f, 2f)); // wait before shooting another arrow
 
             // 60% chance of shooting a 3rd arrow
             if (Random.Range(0f, 1f) <= 0.6f)

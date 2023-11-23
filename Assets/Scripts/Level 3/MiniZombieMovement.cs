@@ -21,8 +21,15 @@ public class MiniZombieMovement : MonoBehaviour
 
     private enum States { walk, attack };
 
-    public float health = 100f;
+    private bool isWalkingSlow = true;
+    private float currentSpeed;
+    private float walkTimer;
+
+    private bool attack = false; // Used to control animation states
+    private bool attackInProgress = false; // Used as a flag in case of repeated sword attacks by the mini-zombie
     private bool dead = false;
+
+    public float health = 100f;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +38,10 @@ public class MiniZombieMovement : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         a = GetComponent<Animator>();
         spawnManager = MiniEnemiesSpawnManager.Instance;
+
+        // Initialize timers
+        walkTimer = Random.Range(3f, 6f); // Adjust the initial walk duration
+        SetNewSpeed();
 
         StartCoroutine(dummyBossHitTester());
         zombieSpawnAudio.Play();
@@ -46,10 +57,20 @@ public class MiniZombieMovement : MonoBehaviour
         a.SetFloat("dirX", dir.x);
         a.SetFloat("dirY", dir.y);
 
-        if(!dead)
+        if(!attack && !dead)
         {
-            float movementSpeed = Random.Range(0f, 1f) <= 0.6f ? Random.Range(1.5f, 4.5f) : Random.Range(4.7f, 7.7f);
-            transform.position =  Vector2.MoveTowards(transform.position, MC.position, movementSpeed * Time.deltaTime);
+            // Update timer
+            walkTimer -= Time.deltaTime;
+
+            // Check if the walk duration is over
+            if (walkTimer <= 0f)
+            {
+                // Reset the timer
+                walkTimer = Random.Range(2f, 7f);
+                SetNewSpeed();
+            }
+
+            transform.position = Vector2.MoveTowards(transform.position, MC.position, currentSpeed * Time.deltaTime);
         }
     }
 
@@ -58,23 +79,66 @@ public class MiniZombieMovement : MonoBehaviour
         zombieMoveAudio.Play();
     }
 
+    // Function to set a new speed based on the current pace
+    private void SetNewSpeed()
+    {
+        if (isWalkingSlow)
+        {
+            currentSpeed = Random.Range(1.5f, 2.5f);
+        }
+        else
+        {
+            currentSpeed = Random.Range(4.5f, 6.5f);
+        }
+
+        isWalkingSlow = !isWalkingSlow; // Switch the pace for next call
+    }
+
+    // Same steps as 'OnTriggerEnter2D()'
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        OnTriggerEnter2D(collision);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            a.SetInteger("state", (int)States.attack);
-            //swordSwing.Play();
-            StartCoroutine(attackFunc());
+            if (!attackInProgress)
+            {
+                attack = true;
+                attackInProgress = true; // Used as a flag in case of repeated sword attacks by the boss
+                a.SetInteger("state", (int)States.attack);
+
+                StartCoroutine(attackFunc());
+            }
         }
     }
 
     private IEnumerator attackFunc()
     {
         yield return new WaitForSeconds(animLength[0].length);
-
-        a.SetInteger("state", (int)States.walk);
+        attackInProgress = false; // Reset the attack flag to let the next attack audio & animation play (if any)
     }
 
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            StartCoroutine(LetAttackAnimationFinish());
+        }
+    }
+    private IEnumerator LetAttackAnimationFinish()
+    {
+        // if player quickly enters and exits boss' box collider, it first triggers 'OnTriggerEnter2D()' which plays the attack animation, but I have to add this delay when exiting or else the attack animation would instantly get interrupted by the walk/idle animation
+        yield return new WaitForSeconds(animLength[0].length / 1.5f);
+        attack = false;
+
+        a.SetInteger("state", (int)States.walk);
+
+    }
+
+    
     private IEnumerator dummyBossHitTester()
     {
         while (true)

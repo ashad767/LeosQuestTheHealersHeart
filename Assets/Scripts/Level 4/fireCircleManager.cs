@@ -172,7 +172,7 @@ public class fireCircleManager : MonoBehaviour
     {
         float timer = 0f;
 
-        float transitionToExpand = 1.5f;
+        float transitionToExpand = 1f;
 
         float originalRadius = fireCircleRadius;
         float maxRadius = 12f;

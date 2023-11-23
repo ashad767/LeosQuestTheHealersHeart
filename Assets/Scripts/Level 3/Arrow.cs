@@ -8,7 +8,7 @@ public class Arrow : MonoBehaviour
 
     private float timer = 0f;
     public Vector2 arrowDir;
-    private float arrowSpeed = 13f;
+    private float arrowSpeed = 15f;
 
     private float rotation_in_Degrees;
 
