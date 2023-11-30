@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : Entity
 {
     #region Stats
 
@@ -13,8 +13,6 @@ public class Player : MonoBehaviour
 
     [Space]
 
-    public float MaxHealth;
-    protected float currentHealth;
     public float MaxEnergy;
     protected float currentEnergy;
     public float MaxShield;
@@ -98,16 +96,18 @@ public class Player : MonoBehaviour
         StatsInit();
     }
 
-    void Start()
+    protected override void Start()
     {
+        base.Start();
         anim = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
         stateMachine.Initialize(idleState);
     }
 
-    void Update()
+    protected override void Update()
     {
+        base.Update();
         stateMachine.currentState.Update();
 
         UpdateCooldowns();
@@ -172,7 +172,7 @@ public class Player : MonoBehaviour
     private void UpdateUI()
     {
         playerStats.SetText(
-            "Health: " + currentHealth +
+            "Health: " + CurrentHealth +
             "\nShield: " + currentShield +
             "\nEnergy: " + currentEnergy +
             "\nWeapon: " + currentWeapon.name 
@@ -207,7 +207,6 @@ public class Player : MonoBehaviour
 
     private void StatsInit()
     {
-        currentHealth = MaxHealth;
         currentEnergy = MaxEnergy;
         currentShield = MaxShield;
     }
@@ -222,7 +221,6 @@ public class Player : MonoBehaviour
             currentEnergy = 0;
         }
     }
-
     public void RegenEnergy()
     {
         if(currentEnergy < MaxEnergy) 

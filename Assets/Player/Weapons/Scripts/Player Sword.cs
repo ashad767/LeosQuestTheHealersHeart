@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerSword : PlayerWeapon
 {
+    public float damage;
     public PlayerSword(Sprite _weaponImage, string _weaponName) : base(_weaponImage, _weaponName)
     {
     }
@@ -11,8 +12,13 @@ public class PlayerSword : PlayerWeapon
     public virtual void Attack(List<GameObject> hitTargets)
     {
         foreach (GameObject target in hitTargets)
-        {
-            Debug.Log("Hit " + target.name + " with " + weaponName);
+        {   
+            Entity current = target.GetComponentInChildren<Entity>();
+
+            if (current != null && !target.CompareTag("Player"))
+            {
+                current.TakeDamage(damage);
+            }
         }
     }
 }
