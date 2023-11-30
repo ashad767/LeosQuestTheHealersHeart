@@ -1,0 +1,1562 @@
+fileFormatVersion: 2
+guid: f74f1be4152dce140a7d9f3696257b5a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: playerRanged_127
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9df91593636c174cb41c3f00809dee2
+      internalID: 1986460025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_128
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6c2d35a9bba98488be0bcec0c2ffda
+      internalID: 945959264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_129
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c7f3e6a8673fb48a462a581095bc9a
+      internalID: -2092154033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_130
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f2c26dcc39c7649a487bd765d7e6ac
+      internalID: -182434980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_131
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d96119c09ca423743b7421f2269782eb
+      internalID: -1928604027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_132
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6aa2bc60db45254da71fb6fc871af8d
+      internalID: -813357359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_133
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbbf92272a0cd574cb84490fd6bb91bf
+      internalID: -399793009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_134
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc60b955830ae064da0227bcdf1fee52
+      internalID: 46348887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_135
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4438d20b6a1f8eb448d179bcf71ce26e
+      internalID: 954034985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_136
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 987ab09b8e77fcb4c97874b85ed23d11
+      internalID: 962499268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_137
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d61c3e32f0d09fc47a0a8e14b6c9a83d
+      internalID: -763384514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_138
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c6ea84de25c8e44195007bc2fbb14ef
+      internalID: 1885924228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_139
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d90db54ad646b547be51240b8cbb573
+      internalID: -912142598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_140
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4f6ada6383ef9419575b5138e5936f
+      internalID: -1033746974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_141
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd115e5063e1f548844e5eaca8214e3
+      internalID: 870199112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_142
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcad0104544a55840b66a95ae88585c0
+      internalID: 1555397906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_143
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42fd3a225dca80b4188693ca79fea832
+      internalID: 770114059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_144
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7888a351106ed4db99c453b44a5591
+      internalID: 38816362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_145
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc1b92712b3d2db49999d98c55410d99
+      internalID: -1645900906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_146
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a87946a5ea4668c49bad5fd7215ebeed
+      internalID: -1097752109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_147
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a64c67ee5b180454883280418871b424
+      internalID: -1581233521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_148
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7ab59ae99256844ac23e0a8ea84bb7
+      internalID: -1243985611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_149
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1fb7037dab79d48916873983fc4bea
+      internalID: 52105065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_150
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01187342590d4fd4bb308c7397aedeb2
+      internalID: 2104137995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_151
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e8bbc7c7d690754ead597f380654e88
+      internalID: -170030319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_152
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 497aa665e8b9ce745a5b887c33415b33
+      internalID: 1795747656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_153
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21bedd89930c929488ca6cecc6acaeb7
+      internalID: 1362477919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_154
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 364225fbfbe037e4cb3c1b6e4c67e267
+      internalID: 409229264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_155
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c82b27290f7f44a9e5bb9bb25feecf
+      internalID: 1299704866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_156
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79876d1695511244e838644c0acca866
+      internalID: 63679956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_157
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e94f2bc0e57a89c459d2b390fd86f2e3
+      internalID: 1844330070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_158
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad06c51dd29b9943b6f06b7ba6fb1e1
+      internalID: -2071919348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_159
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d339dc98452248341828b03c044aa8f9
+      internalID: -1038170360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_160
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 709036bf350779642aac305df9085e2d
+      internalID: -997964451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_161
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afab4dc16e76ce14bac9af1834fe66e6
+      internalID: 1931398624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_162
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194cc3dcf91f7b848bd32d6732bc3dbb
+      internalID: 503634777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_163
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9206275071dce514cbdb8ae64daf2c73
+      internalID: 2101103162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_164
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6878f099b27fdd94e9601ed341fdc92c
+      internalID: 638231847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_165
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9706b2da448f0b34fbb97c19c5201547
+      internalID: 558798198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_166
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4eac676f08c01d4c800353ad2909c6e
+      internalID: -1000071368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_167
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2fdd3e9bf4bcc04c93f06b45c43030a
+      internalID: -2029040067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_168
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07dafe7edab7704e99ca7e9b9f7f0d3
+      internalID: 1655366538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_169
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6445dc149a08504cae8664603f98381
+      internalID: -239368863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_170
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13053bf816cb6c148a95db32163be394
+      internalID: -515348203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_171
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c314bdbdbf141ad4b8e401f685c35be7
+      internalID: -564176168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_172
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c2beb4a6cd852c499c4dc36da5cc951
+      internalID: 1064954935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_173
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4cd02c2e1619a4d926f37377bf801f
+      internalID: 1753036348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_174
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c8aa31234439949bebc82e6e6dd165
+      internalID: 1126651237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_175
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 555672f1dd53a3f4fb77b08af64d49c6
+      internalID: -1871922648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_176
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b25e41dfe7b78b7479e718bc8a650bf6
+      internalID: -1314150742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_177
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049658e9f83d5484ca90a76bf84390ba
+      internalID: -1711882004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerRanged_178
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c2e398d6760f44aab3faa38cdaea06
+      internalID: 2022924978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      playerRanged_0: -831077010
+      playerRanged_1: 31312962
+      playerRanged_10: -1216957437
+      playerRanged_100: -2139395836
+      playerRanged_101: -1942053017
+      playerRanged_102: -1833308260
+      playerRanged_103: 218995095
+      playerRanged_104: 542769903
+      playerRanged_105: -1645024074
+      playerRanged_106: 308855252
+      playerRanged_107: 1629375132
+      playerRanged_108: 1693103656
+      playerRanged_109: 1483923043
+      playerRanged_11: -2029867278
+      playerRanged_110: 274267721
+      playerRanged_111: -1924163952
+      playerRanged_112: 923659064
+      playerRanged_113: -28592777
+      playerRanged_114: -63480565
+      playerRanged_115: -2058430548
+      playerRanged_116: 29985566
+      playerRanged_117: -1639044050
+      playerRanged_118: 113691507
+      playerRanged_119: -738105722
+      playerRanged_12: -1101970693
+      playerRanged_120: -1415919010
+      playerRanged_121: -133965208
+      playerRanged_122: -754166251
+      playerRanged_123: 40913630
+      playerRanged_124: -893507734
+      playerRanged_125: -841267850
+      playerRanged_126: -539925367
+      playerRanged_127: 1986460025
+      playerRanged_128: 945959264
+      playerRanged_129: -2092154033
+      playerRanged_13: 749958224
+      playerRanged_130: -182434980
+      playerRanged_131: -1928604027
+      playerRanged_132: -813357359
+      playerRanged_133: -399793009
+      playerRanged_134: 46348887
+      playerRanged_135: 954034985
+      playerRanged_136: 962499268
+      playerRanged_137: -763384514
+      playerRanged_138: 1885924228
+      playerRanged_139: -912142598
+      playerRanged_14: -1386862046
+      playerRanged_140: -1033746974
+      playerRanged_141: 870199112
+      playerRanged_142: 1555397906
+      playerRanged_143: 770114059
+      playerRanged_144: 38816362
+      playerRanged_145: -1645900906
+      playerRanged_146: -1097752109
+      playerRanged_147: -1581233521
+      playerRanged_148: -1243985611
+      playerRanged_149: 52105065
+      playerRanged_15: -711621733
+      playerRanged_150: 2104137995
+      playerRanged_151: -170030319
+      playerRanged_152: 1795747656
+      playerRanged_153: 1362477919
+      playerRanged_154: 409229264
+      playerRanged_155: 1299704866
+      playerRanged_156: 63679956
+      playerRanged_157: 1844330070
+      playerRanged_158: -2071919348
+      playerRanged_159: -1038170360
+      playerRanged_16: 1607166294
+      playerRanged_160: -997964451
+      playerRanged_161: 1931398624
+      playerRanged_162: 503634777
+      playerRanged_163: 2101103162
+      playerRanged_164: 638231847
+      playerRanged_165: 558798198
+      playerRanged_166: -1000071368
+      playerRanged_167: -2029040067
+      playerRanged_168: 1655366538
+      playerRanged_169: -239368863
+      playerRanged_17: -130955075
+      playerRanged_170: -515348203
+      playerRanged_171: -564176168
+      playerRanged_172: 1064954935
+      playerRanged_173: 1753036348
+      playerRanged_174: 1126651237
+      playerRanged_175: -1871922648
+      playerRanged_176: -1314150742
+      playerRanged_177: -1711882004
+      playerRanged_178: 2022924978
+      playerRanged_179: 36854662
+      playerRanged_18: 1947856433
+      playerRanged_180: -213109300
+      playerRanged_181: -1745150417
+      playerRanged_182: 780158072
+      playerRanged_183: 1041193480
+      playerRanged_184: -2012982996
+      playerRanged_185: 25731324
+      playerRanged_186: 441074061
+      playerRanged_187: 64509900
+      playerRanged_188: -183830061
+      playerRanged_189: 1837850543
+      playerRanged_19: 2100244484
+      playerRanged_190: -2097528046
+      playerRanged_191: 45985775
+      playerRanged_192: -2020959002
+      playerRanged_193: 360955037
+      playerRanged_194: 739532138
+      playerRanged_195: 1793826497
+      playerRanged_196: 1147570143
+      playerRanged_197: 163681145
+      playerRanged_198: -882916965
+      playerRanged_199: -53335821
+      playerRanged_2: 339359572
+      playerRanged_20: 768151575
+      playerRanged_200: -1597302904
+      playerRanged_201: 927494883
+      playerRanged_202: 1428320550
+      playerRanged_203: 790040071
+      playerRanged_204: -1846236287
+      playerRanged_205: 2043168541
+      playerRanged_206: -700224191
+      playerRanged_207: 2054963478
+      playerRanged_208: 290071694
+      playerRanged_209: 175822409
+      playerRanged_21: -1032976032
+      playerRanged_210: 1662296703
+      playerRanged_211: -1453264607
+      playerRanged_212: 472040651
+      playerRanged_213: 1155920435
+      playerRanged_214: 1611026614
+      playerRanged_215: -394907910
+      playerRanged_216: 1029046495
+      playerRanged_217: -429427307
+      playerRanged_218: -705060903
+      playerRanged_219: 590269680
+      playerRanged_22: -364983301
+      playerRanged_220: 132055247
+      playerRanged_221: -679303496
+      playerRanged_222: 314861210
+      playerRanged_223: 60415134
+      playerRanged_224: 184351082
+      playerRanged_225: 363522474
+      playerRanged_226: -165983825
+      playerRanged_227: 511003921
+      playerRanged_228: -1771235078
+      playerRanged_229: 1242986362
+      playerRanged_23: 780364773
+      playerRanged_230: 348065187
+      playerRanged_231: 1086976446
+      playerRanged_232: 1851950008
+      playerRanged_233: 1732791516
+      playerRanged_234: -143052342
+      playerRanged_235: -82672783
+      playerRanged_236: -1123372989
+      playerRanged_237: 1320488720
+      playerRanged_238: -472810140
+      playerRanged_239: 731949474
+      playerRanged_24: -245756535
+      playerRanged_240: 1249992198
+      playerRanged_241: -474599486
+      playerRanged_242: -258486537
+      playerRanged_243: -1263042768
+      playerRanged_244: -1318739600
+      playerRanged_245: 798840325
+      playerRanged_246: -1313563254
+      playerRanged_247: 1038934877
+      playerRanged_248: 1868435840
+      playerRanged_249: -240386980
+      playerRanged_25: 712923340
+      playerRanged_250: -806153142
+      playerRanged_251: 1995202298
+      playerRanged_252: 1766644065
+      playerRanged_253: 1213350446
+      playerRanged_254: -305875828
+      playerRanged_255: 729700412
+      playerRanged_256: -505114946
+      playerRanged_257: 221250845
+      playerRanged_258: 491558665
+      playerRanged_259: 1622939750
+      playerRanged_26: -771371965
+      playerRanged_260: -1369997247
+      playerRanged_261: 928553060
+      playerRanged_262: 830356803
+      playerRanged_263: -519937145
+      playerRanged_264: -1131203785
+      playerRanged_265: 1468304440
+      playerRanged_266: 1910335776
+      playerRanged_267: -1098408916
+      playerRanged_268: 461983795
+      playerRanged_269: 73880712
+      playerRanged_27: -269869087
+      playerRanged_270: 1479936911
+      playerRanged_271: -1681167795
+      playerRanged_272: -418224312
+      playerRanged_273: -418990361
+      playerRanged_274: 1045152202
+      playerRanged_275: 1693936885
+      playerRanged_276: 1157070631
+      playerRanged_277: -1499253577
+      playerRanged_278: 2026463792
+      playerRanged_279: 2128098791
+      playerRanged_28: -131671866
+      playerRanged_280: 1357602878
+      playerRanged_281: 842029632
+      playerRanged_282: 1022228614
+      playerRanged_283: -546044910
+      playerRanged_284: 432840349
+      playerRanged_285: -1109995648
+      playerRanged_286: -73401418
+      playerRanged_287: 1313135093
+      playerRanged_288: 141131083
+      playerRanged_289: -824027717
+      playerRanged_29: 912337104
+      playerRanged_290: 1404171588
+      playerRanged_291: -1101446008
+      playerRanged_292: -813560493
+      playerRanged_293: -164946062
+      playerRanged_294: -554559100
+      playerRanged_295: 1558365367
+      playerRanged_296: 573626673
+      playerRanged_297: -101568227
+      playerRanged_298: 1533144636
+      playerRanged_299: -99136768
+      playerRanged_3: -1324352276
+      playerRanged_30: -1269456418
+      playerRanged_300: -1217523864
+      playerRanged_301: -1599677799
+      playerRanged_302: -80826854
+      playerRanged_303: -1373910317
+      playerRanged_304: -829685663
+      playerRanged_305: -1997620229
+      playerRanged_306: -1280809139
+      playerRanged_307: 103485864
+      playerRanged_308: -1878386141
+      playerRanged_309: -1656567906
+      playerRanged_31: -1216725285
+      playerRanged_310: -640784191
+      playerRanged_311: 1615463991
+      playerRanged_312: 216155643
+      playerRanged_313: -2006127091
+      playerRanged_314: 262114170
+      playerRanged_315: 693915051
+      playerRanged_316: -421843179
+      playerRanged_317: 211509465
+      playerRanged_318: 1810357962
+      playerRanged_319: 543361125
+      playerRanged_32: -2067140319
+      playerRanged_320: 697031805
+      playerRanged_321: 424698069
+      playerRanged_322: -733162282
+      playerRanged_323: 410639162
+      playerRanged_324: 587590761
+      playerRanged_325: -758657295
+      playerRanged_326: -1913812433
+      playerRanged_327: -319794673
+      playerRanged_328: 240117427
+      playerRanged_329: -1083341797
+      playerRanged_33: -700562465
+      playerRanged_34: 803850359
+      playerRanged_35: 1337926702
+      playerRanged_36: 1291705096
+      playerRanged_37: 1315541581
+      playerRanged_38: -1051892975
+      playerRanged_39: 816615978
+      playerRanged_4: -1587771417
+      playerRanged_40: -1396022421
+      playerRanged_41: 4042188
+      playerRanged_42: -1188838459
+      playerRanged_43: 1218059009
+      playerRanged_44: 1872130286
+      playerRanged_45: -1640722141
+      playerRanged_46: -378427411
+      playerRanged_47: -1370688153
+      playerRanged_48: 1652199747
+      playerRanged_49: -6123957
+      playerRanged_5: -93757051
+      playerRanged_50: -569155465
+      playerRanged_51: -860931959
+      playerRanged_52: -1478161607
+      playerRanged_53: 1866635187
+      playerRanged_54: -2100599446
+      playerRanged_55: -1886923242
+      playerRanged_56: -519909358
+      playerRanged_57: 511464380
+      playerRanged_58: -1956284501
+      playerRanged_59: -1189948413
+      playerRanged_6: 383072053
+      playerRanged_60: 1276725535
+      playerRanged_61: -76657065
+      playerRanged_62: -1606792379
+      playerRanged_63: -734850058
+      playerRanged_64: -233432394
+      playerRanged_65: -1571825164
+      playerRanged_66: -954267376
+      playerRanged_67: 396367988
+      playerRanged_68: 1491025656
+      playerRanged_69: -893658088
+      playerRanged_7: 772576309
+      playerRanged_70: 389396450
+      playerRanged_71: 1713845213
+      playerRanged_72: -366671311
+      playerRanged_73: -1895425466
+      playerRanged_74: -862632557
+      playerRanged_75: 1179487471
+      playerRanged_76: 1596416977
+      playerRanged_77: -1876865828
+      playerRanged_78: 92812974
+      playerRanged_79: -922379678
+      playerRanged_8: -1938961804
+      playerRanged_80: 47864525
+      playerRanged_81: 1720075049
+      playerRanged_82: -1156375762
+      playerRanged_83: 1104091949
+      playerRanged_84: -621329711
+      playerRanged_85: 1481580173
+      playerRanged_86: -1477596576
+      playerRanged_87: -1941392521
+      playerRanged_88: 1578299317
+      playerRanged_89: 2122823371
+      playerRanged_9: 2061379136
+      playerRanged_90: -1872976281
+      playerRanged_91: 15746470
+      playerRanged_92: 1763527311
+      playerRanged_93: -541792900
+      playerRanged_94: 1806025748
+      playerRanged_95: 500300227
+      playerRanged_96: -333007989
+      playerRanged_97: -311272573
+      playerRanged_98: 524309471
+      playerRanged_99: -520242939
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
