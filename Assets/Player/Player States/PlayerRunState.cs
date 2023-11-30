@@ -25,7 +25,9 @@ public class PlayerRunState : PlayerGroundState
 
         base.Update();
 
-        if (xInput == 0 && yInput == 0)
+        player.UseEnergy(Time.deltaTime * 5);
+
+        if ((xInput == 0 && yInput == 0) || player.GetEnergy() <= 0)
         {
             stateMachine.ChangeState(player.idleState);
         }

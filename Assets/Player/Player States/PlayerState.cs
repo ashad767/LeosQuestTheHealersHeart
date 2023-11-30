@@ -40,7 +40,9 @@ public class PlayerState
 
     public virtual void Update()
     {
-
+        if(animBoolName != "Run" && animBoolName != "Dash")
+            player.RegenEnergy();
+       
         stateTimer -= Time.deltaTime;
         mousePosition = Input.mousePosition;
 

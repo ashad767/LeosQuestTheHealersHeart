@@ -30,7 +30,7 @@ public class PlayerMoveState : PlayerGroundState
             stateMachine.ChangeState(player.idleState);
         }
 
-        else if(Input.GetKey(KeyCode.LeftShift))
+        else if(Input.GetKey(KeyCode.LeftShift) && player.GetEnergy() >= 5)
         {
             stateMachine.ChangeState(player.runState);
         }

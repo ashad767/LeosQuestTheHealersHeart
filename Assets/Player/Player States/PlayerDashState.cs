@@ -12,10 +12,12 @@ public class PlayerDashState : PlayerState
     {
         base.Enter();
         stateTimer = player.playerDashDuration;
+        player.UseEnergy(player.playerDashCost);
     }
 
     public override void Exit()
     {
+        player.dashTimer = player.playerDashCooldown;
         player.SetVelocity(0, 0, 0);
         base.Exit();
     }

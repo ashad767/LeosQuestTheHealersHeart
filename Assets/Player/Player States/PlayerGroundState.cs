@@ -22,6 +22,35 @@ public class PlayerGroundState : PlayerState
     {
         base.Update();
 
+        InputAndAnims();
+        CheckStateTransitionInputs();
+    }
+
+    private void CheckStateTransitionInputs()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (player.currentWeapon is PlayerMagic)
+            {
+                if(player.healTimer <= 0)
+                    stateMachine.ChangeState(player.magicState);
+            }
+
+            else
+            {
+                if(player.attackTimer <= 0)
+                    stateMachine.ChangeState(player.attackState);
+            }
+        }
+
+        else if (Input.GetKeyDown(KeyCode.LeftControl) && player.CanDash())
+        {
+            stateMachine.ChangeState(player.dashState);
+        }
+    }
+
+    private void InputAndAnims()
+    {
         xInput = Input.GetAxisRaw("Horizontal");
         yInput = Input.GetAxisRaw("Vertical");
 
@@ -31,18 +60,5 @@ public class PlayerGroundState : PlayerState
         facingDirection = GetFacingDirection();
         player.anim.SetFloat("FacingDirection", facingDirection);
         player.attackState.facingDirection = facingDirection;
-
-
-        if (Input.GetMouseButtonDown(0))
-        {
-            stateMachine.ChangeState(player.attackState);
-            Debug.Log("Attacking");
-        }
-
-        else if(Input.GetKeyDown(KeyCode.LeftControl) && player.CanDash())
-        {
-            player.dashTimer = player.playerDashCooldown;
-            stateMachine.ChangeState(player.dashState);
-        }
     }
 }

@@ -8,7 +8,7 @@ using UnityEngine.UIElements;
 public class PlayerBow : PlayerWeapon
 {
     public GameObject arrow;
-    public Camera camera;
+    public new Camera camera;
 
     public PlayerBow(Sprite _weaponImage, string _weaponName) : base(_weaponImage, _weaponName)
     {
@@ -18,8 +18,6 @@ public class PlayerBow : PlayerWeapon
         target.z = 1;
 
         Vector3 mousePos = camera.ScreenToWorldPoint(target);
-
-
 
         var tarX = mousePos.x - transform.position.x;
         var tarY = mousePos.y - transform.position.y;

@@ -30,16 +30,13 @@ public class PlayerAttackState : PlayerState
             playerSword.Attack(facingDirToHitbox[facingDirection].hitEnimies);
         }
 
-        else if (player.currentWeapon is PlayerMagic)
-        {
-            PlayerMagic playerMagic = player.currentWeapon as PlayerMagic;
-            playerMagic.Attack(player.transform);
-        }
+        player.attackTimer = player.playerAttackCooldown;
     }
 
     public override void Update()
     {
         base.Update();
+
         BowAttackChecks();
     }
 

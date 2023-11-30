@@ -18,7 +18,6 @@ public class StaticAnimFunctions : MonoBehaviour
 
     public void EndBowAttack()
     {
-        Debug.Log("Ended bow");
         player.ResetBowState();
         EndAttack();
     }
