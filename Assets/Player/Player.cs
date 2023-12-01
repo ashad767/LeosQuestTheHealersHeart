@@ -163,9 +163,9 @@ public class Player : Entity
         if(Input.GetAxis("Mouse ScrollWheel") != 0)
         {
             if (currentWeaponIndex < 0)
-                currentWeaponIndex = weapons.Length - 1;
+                currentWeaponIndex = 2;
 
-            else if (currentWeaponIndex > weapons.Length - 1)
+            else if (currentWeaponIndex > 2)
                 currentWeaponIndex = 0;
 
             currentWeapon = weapons[currentWeaponIndex, indexToWeaponLevel[currentWeaponIndex]];

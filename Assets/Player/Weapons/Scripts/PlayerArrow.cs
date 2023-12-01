@@ -16,7 +16,7 @@ public class PlayerArrow : MonoBehaviour
         boxCollider2D = GetComponent<BoxCollider2D>();
     }
 
-    void Update()
+    void LateUpdate()
     {
         Despawn();
         if(rb != null)
