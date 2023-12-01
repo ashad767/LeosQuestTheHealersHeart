@@ -118,7 +118,10 @@ public class L4BossMovement : MonoBehaviour
     
     private IEnumerator attackFunc()
     {
-        swordClingAudio.Play();
+        if(!expandFireCircleAnim && !rocksFallAnim)
+        {
+            swordClingAudio.Play();
+        }
 
         yield return new WaitForSeconds(animLength[0].length);
         attackInProgress = false; // Reset the attack flag to let the next attack audio & animation play (if any)

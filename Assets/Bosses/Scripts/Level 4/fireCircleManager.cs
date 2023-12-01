@@ -16,6 +16,7 @@ public class fireCircleManager : MonoBehaviour
     private float fireCircleRadius = 2.36f;
     private float rotationSpeed = 80f; // Rotation speed in degrees per second
     private float yOffset = 0.5f; // Used to slightly lower the y-position of the fireballs relative to the boss' position
+    private bool isExploding = false;
 
     // Declare a reference to the RotateFireballsManager() coroutine
     private Coroutine rotateFireballsManagerCoroutine;
@@ -96,6 +97,7 @@ public class fireCircleManager : MonoBehaviour
             if (timer >= triggerExpansion)
             {
                 Camera.main.GetComponent<ScreenShake>().Shake();
+                isExploding = true;
 
                 // Call the coroutines
                 StartCoroutine(expandShield(fireShield));
@@ -117,6 +119,7 @@ public class fireCircleManager : MonoBehaviour
         // So I need to bring the fireball prefab's y-position back up by 0.5f and doing operations using this position
         Vector2 fireballPositionWith_yOffset = fireball.transform.position + new Vector3(0, yOffset);
         Vector2 bossPosition = Boss.position;
+        rotationSpeed = isExploding ? 135f : 80f;
 
         Vector2 direction = fireballPositionWith_yOffset - bossPosition;
         float angle = Mathf.Atan2(direction.y, direction.x) + (rotationSpeed * Mathf.Deg2Rad * Time.deltaTime);
@@ -205,5 +208,6 @@ public class fireCircleManager : MonoBehaviour
         currentFireballs.Clear();
 
         fireCircleRadius = originalRadius; // Have to reset fireCircleRadius for the next fire circle (if called)
+        isExploding = false;
     }
 }
