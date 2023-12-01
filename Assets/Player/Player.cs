@@ -128,7 +128,7 @@ public class Player : Entity
 
         UpdateCooldowns();
         CheckWeaponSwap();
-        UpdateUI();
+        //UpdateUI();
 
         TestInputs();
 

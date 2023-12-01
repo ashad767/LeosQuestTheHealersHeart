@@ -14,6 +14,7 @@ TagManager:
   - fireballCircle
   - fireball
   - rocks
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -50,4 +51,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: PlayerEffects
+    uniqueID: 1649719079
     locked: 0
