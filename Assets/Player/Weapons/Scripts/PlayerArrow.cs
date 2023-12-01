@@ -6,24 +6,24 @@ public class PlayerArrow : MonoBehaviour
 {
     public float speed;
     public float damage;
-    private Rigidbody2D rb;
-    private BoxCollider2D boxCollider2D;
-    private float distance = 10;
+    protected Rigidbody2D rb;
+    protected BoxCollider2D boxCollider2D;
+    protected float distance = 10;
 
-    private void Start()
+    protected virtual void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         boxCollider2D = GetComponent<BoxCollider2D>();
     }
 
-    void LateUpdate()
+    protected virtual void Update()
     {
         Despawn();
         if(rb != null)
             rb.velocity = transform.right * speed;
     }
 
-    private void Despawn()
+    protected virtual void Despawn()
     {
         distance -= Time.deltaTime;
         if (distance < 0)
@@ -32,19 +32,24 @@ public class PlayerArrow : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
         Entity hitObject = collision.GetComponentInParent<Entity>();
 
-
-        if(hitObject != null && !hitObject.CompareTag("Player"))
+        if (!collision.CompareTag("Player"))
         {
-            hitObject.TakeDamage(damage);
             rb.velocity = Vector2.zero;
             Destroy(rb);
             transform.parent = collision.transform;
             distance = 4;
             Destroy(boxCollider2D);
+            if (hitObject != null)
+            {
+                hitObject.TakeDamage(damage);
+
+            }
+
         }
+        
     }
 }

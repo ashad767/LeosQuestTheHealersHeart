@@ -87,6 +87,10 @@ public class Player : Entity
     public PlayerBow basicBow;
     [Space]
     public PlayerBow intermediateBow;
+    [Space]
+    public PlayerBow advancedBow;
+    [Space]
+    public PlayerBow expertBow;
 
     private PlayerWeapon[,] weapons = new PlayerWeapon[3,4];
     #endregion
@@ -220,11 +224,11 @@ public class Player : Entity
         weapons[2, 1] = basicMagic;
 
         weapons[0, 2] = basicSword;
-        weapons[1, 2] = basicBow;
+        weapons[1, 2] = advancedBow;
         weapons[2, 2] = basicMagic;
 
         weapons[0, 3] = basicSword;
-        weapons[1, 3] = basicBow;
+        weapons[1, 3] = expertBow;
         weapons[2, 3] = basicMagic;
 
         currentWeaponIndex = 0;
