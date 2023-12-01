@@ -16,7 +16,7 @@ public class Entity : MonoBehaviour
 
     protected virtual void Update()
     {
-        Debug.Log(gameObject.name + "'s health: " + CurrentHealth);
+        
     }
 
     public virtual float GetHealth()

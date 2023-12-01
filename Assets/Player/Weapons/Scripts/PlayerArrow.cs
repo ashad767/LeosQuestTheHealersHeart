@@ -7,16 +7,20 @@ public class PlayerArrow : MonoBehaviour
     public float speed;
     public float damage;
     private Rigidbody2D rb;
+    private BoxCollider2D boxCollider2D;
     private float distance = 10;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        boxCollider2D = GetComponent<BoxCollider2D>();
     }
+
     void Update()
     {
         Despawn();
-        rb.velocity = transform.right * speed;
+        if(rb != null)
+            rb.velocity = transform.right * speed;
     }
 
     private void Despawn()
@@ -36,7 +40,11 @@ public class PlayerArrow : MonoBehaviour
         if(hitObject != null && !hitObject.CompareTag("Player"))
         {
             hitObject.TakeDamage(damage);
-            Destroy(gameObject);
+            rb.velocity = Vector2.zero;
+            Destroy(rb);
+            transform.parent = collision.transform;
+            distance = 4;
+            Destroy(boxCollider2D);
         }
     }
 }

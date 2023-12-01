@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -36,6 +37,13 @@ public class Player : Entity
     public float playerHealCooldown;
     [HideInInspector]public int bowChargeState = 0;
 
+
+    private int swordLevel;
+    private int bowLevel;
+    private int magicLevel;
+    private Dictionary<int, int> indexToWeaponLevel = new Dictionary<int, int>() {};
+
+
     #endregion
 
     #region Components
@@ -72,11 +80,15 @@ public class Player : Entity
     public PlayerWeapon currentWeapon;
     [HideInInspector] public int currentWeaponIndex;
 
-    [HideInInspector] public PlayerBasicSword basicSword;
-    [HideInInspector] public PlayerBasicMagic basicMagic;
-    [HideInInspector] public PlayerBasicBow basicBow;
+    [Space]
 
-    private PlayerWeapon[] weapons = new PlayerWeapon[3];
+    public PlayerSword basicSword;
+    public PlayerMagic basicMagic;
+    public PlayerBow basicBow;
+    [Space]
+    public PlayerBow intermediateBow;
+
+    private PlayerWeapon[,] weapons = new PlayerWeapon[3,4];
     #endregion
 
     #region Hitboxes
@@ -113,6 +125,8 @@ public class Player : Entity
         UpdateCooldowns();
         CheckWeaponSwap();
         UpdateUI();
+
+        TestInputs();
 
         anim.SetFloat("BowChargeState", bowChargeState);
     }
@@ -154,7 +168,7 @@ public class Player : Entity
             else if (currentWeaponIndex > weapons.Length - 1)
                 currentWeaponIndex = 0;
 
-            currentWeapon = weapons[currentWeaponIndex];
+            currentWeapon = weapons[currentWeaponIndex, indexToWeaponLevel[currentWeaponIndex]];
             anim.SetInteger("Weapon", currentWeaponIndex);
         }
     }
@@ -193,16 +207,28 @@ public class Player : Entity
 
     private void WeaponsInit()
     {
-        basicSword = GetComponentInChildren<PlayerBasicSword>();
-        basicMagic = GetComponentInChildren<PlayerBasicMagic>();
-        basicBow = GetComponentInChildren<PlayerBasicBow>();
+        indexToWeaponLevel.Add(0, swordLevel);
+        indexToWeaponLevel.Add(1, bowLevel);
+        indexToWeaponLevel.Add(2, magicLevel);
 
-        weapons[0] = basicSword;
-        weapons[1] = basicBow;
-        weapons[2] = basicMagic;
-        
+        weapons[0, 0] = basicSword;
+        weapons[1, 0] = basicBow;
+        weapons[2, 0] = basicMagic;
+
+        weapons[0, 1] = basicSword;
+        weapons[1, 1] = intermediateBow;
+        weapons[2, 1] = basicMagic;
+
+        weapons[0, 2] = basicSword;
+        weapons[1, 2] = basicBow;
+        weapons[2, 2] = basicMagic;
+
+        weapons[0, 3] = basicSword;
+        weapons[1, 3] = basicBow;
+        weapons[2, 3] = basicMagic;
+
         currentWeaponIndex = 0;
-        currentWeapon = weapons[currentWeaponIndex];
+        currentWeapon = weapons[currentWeaponIndex, indexToWeaponLevel[currentWeaponIndex]];
     }
 
     private void StatsInit()
@@ -212,6 +238,7 @@ public class Player : Entity
     }
 
     public float GetEnergy() => currentEnergy;
+
     public void UseEnergy(float energy)
     {
         currentEnergy -= energy;
@@ -221,6 +248,7 @@ public class Player : Entity
             currentEnergy = 0;
         }
     }
+
     public void RegenEnergy()
     {
         if(currentEnergy < MaxEnergy) 
@@ -228,5 +256,17 @@ public class Player : Entity
 
         if(currentEnergy > MaxEnergy)
             currentEnergy = MaxEnergy;
+    }
+
+    public void TestInputs()
+    {
+        if (Input.GetKeyDown(KeyCode.PageUp))
+        {
+            bowLevel = Math.Min(bowLevel + 1, 3);
+            indexToWeaponLevel.Remove(1);
+            indexToWeaponLevel.Add(1, bowLevel);
+            
+            currentWeapon = weapons[currentWeaponIndex, indexToWeaponLevel[currentWeaponIndex]];
+        }
     }
 }
