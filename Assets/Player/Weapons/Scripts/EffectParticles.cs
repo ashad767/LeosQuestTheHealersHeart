@@ -6,13 +6,27 @@ public class EffectParticles : MonoBehaviour
 {
     public string effectName;
     public float effectDuration;
+    
+
+    private SpriteRenderer spriteRenderer;
+    private SpriteRenderer parentSpriteRenderer;
+
+    private void Start()
+    {
+        parentSpriteRenderer = transform.parent.GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();    
+    }
+
     private void Update()
     {
-        Debug.Log(name + " has effect " + effectName);
-
         effectDuration -= Time.deltaTime;
+        spriteRenderer.sprite = parentSpriteRenderer.sprite;
+        transform.position = transform.parent.position;
 
-        if(effectDuration <= 0)
+        Debug.Log(spriteRenderer.material);
+        Debug.Log(parentSpriteRenderer.material);
+
+        if (effectDuration <= 0)
         {
             Destroy(gameObject);
         }

@@ -39,7 +39,7 @@ public class Player : Entity
 
 
     private int swordLevel;
-    private int bowLevel;
+    private int bowLevel = 3;
     private int magicLevel;
     private Dictionary<int, int> indexToWeaponLevel = new Dictionary<int, int>() {};
 
