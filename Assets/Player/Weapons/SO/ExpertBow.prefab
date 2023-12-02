@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea422689405a5c4498ba4f0aacd45eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponImage: {fileID: 0}
+  weaponImage: {fileID: 754330913, guid: f06501cd5fe771543bc9a782fd8af9e3, type: 3}
   weaponName: Player Expert Bow
   arrow: {fileID: 3914580574512550301, guid: 1dea7e2d1e1caf84286b4a0e9a6cb27b, type: 3}

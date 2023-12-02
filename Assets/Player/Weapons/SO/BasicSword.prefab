@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f1fb849a04bb044698330835c273dbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponImage: {fileID: 0}
+  weaponImage: {fileID: -1784336292, guid: f06501cd5fe771543bc9a782fd8af9e3, type: 3}
   weaponName: Basic Player Sword
   damage: 10

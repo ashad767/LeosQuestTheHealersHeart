@@ -15,6 +15,7 @@ TagManager:
   - fireball
   - rocks
   - Enemy
+  - WALL
   layers:
   - Default
   - TransparentFX

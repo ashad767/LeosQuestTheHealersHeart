@@ -37,7 +37,7 @@ public class PlayerArrow : MonoBehaviour
     {
         Entity hitObject = collision.GetComponentInParent<Entity>();
 
-        if (collision.CompareTag("Enemy") || !collision.CompareTag("Player"))
+        if (collision.CompareTag("Enemy") || collision.CompareTag("WALL"))
         {
             arrowVelocity = rb.velocity;
             rb.velocity = Vector2.zero;
@@ -48,7 +48,6 @@ public class PlayerArrow : MonoBehaviour
             if (hitObject != null)
             {
                 hitObject.TakeDamage(damage);
-
             }
         }
     }

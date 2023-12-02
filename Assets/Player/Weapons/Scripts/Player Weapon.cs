@@ -7,7 +7,7 @@ public class PlayerWeapon : MonoBehaviour
     #region Weapon Info
 
     [Header("Weapon Information")]
-    [SerializeField] protected Sprite weaponImage;
+    [SerializeField] public Sprite weaponImage;
     [SerializeField] protected string weaponName;
 
     #endregion

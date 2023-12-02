@@ -41,7 +41,7 @@ public class Player : Entity
     private int swordLevel;
     private int bowLevel;
     private int magicLevel;
-    private Dictionary<int, int> indexToWeaponLevel = new Dictionary<int, int>() {};
+    public Dictionary<int, int> indexToWeaponLevel = new Dictionary<int, int>() {};
 
 
     #endregion
@@ -50,6 +50,7 @@ public class Player : Entity
 
     public Animator anim { get; private set; }
     public Rigidbody2D rb { get; private set; }
+    public UIManager playerUIManager;
 
     #endregion
 
@@ -92,7 +93,7 @@ public class Player : Entity
     [Space]
     public PlayerBow expertBow;
 
-    private PlayerWeapon[,] weapons = new PlayerWeapon[3,4];
+    public PlayerWeapon[,] weapons = new PlayerWeapon[3,4];
     #endregion
 
     #region Hitboxes
@@ -128,7 +129,6 @@ public class Player : Entity
 
         UpdateCooldowns();
         CheckWeaponSwap();
-        //UpdateUI();
 
         TestInputs();
 
@@ -174,6 +174,7 @@ public class Player : Entity
 
             currentWeapon = weapons[currentWeaponIndex, indexToWeaponLevel[currentWeaponIndex]];
             anim.SetInteger("Weapon", currentWeaponIndex);
+            playerUIManager.UpdatePlayerUI();
         }
     }
 
@@ -186,17 +187,6 @@ public class Player : Entity
     {
         bowChargeState = 0;
     }
-
-    private void UpdateUI()
-    {
-        playerStats.SetText(
-            "Health: " + CurrentHealth +
-            "\nShield: " + currentShield +
-            "\nEnergy: " + currentEnergy +
-            "\nWeapon: " + currentWeapon.name 
-        );
-    }
-
     private void StateMachineInit()
     {
         stateMachine = new PlayerStateMachine();
@@ -233,6 +223,8 @@ public class Player : Entity
 
         currentWeaponIndex = 0;
         currentWeapon = weapons[currentWeaponIndex, indexToWeaponLevel[currentWeaponIndex]];
+
+        playerUIManager.UpdatePlayerUI();
     }
 
     private void StatsInit()
@@ -271,6 +263,7 @@ public class Player : Entity
             indexToWeaponLevel.Add(1, bowLevel);
             
             currentWeapon = weapons[currentWeaponIndex, indexToWeaponLevel[currentWeaponIndex]];
+            playerUIManager.UpdatePlayerUI();
         }
     }
 }

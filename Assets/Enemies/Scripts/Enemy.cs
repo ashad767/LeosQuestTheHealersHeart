@@ -65,7 +65,7 @@ public class Enemy : Entity
     }
 
     // Update is called once per frame
-    private void Update()
+    protected override void Update()
     {
         enemySM.CurrentEnemyState.FrameUpdate();
         Debug.Log(enemySM.CurrentEnemyState);
