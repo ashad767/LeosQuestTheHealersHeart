@@ -877,9 +877,14 @@ MonoBehaviour:
   playerDashDuration: 0.15
   playerDashSpeed: 10
   playerDashCost: 20
+  playerComboScalingDamage: 5
   playerAttackCooldown: 0.3
   playerHealCooldown: 15
+  playerComboGrace: 1
   bowChargeState: 0
+  playerComboCounter: 0
+  playerComboTimer: 0
+  swordLevel: 0
   playerUIManager: {fileID: 786439123}
   dashTimer: 0
   attackTimer: 0
@@ -889,6 +894,7 @@ MonoBehaviour:
   basicSword: {fileID: 1208544785415172675, guid: d28cba37d931e4244899116795120565, type: 3}
   basicMagic: {fileID: 705821811642882355, guid: 947c925232901c94e916df9fec903183, type: 3}
   basicBow: {fileID: 5629439051310554519, guid: 53624b58ef8bbba4eba0f6171df2ea0b, type: 3}
+  intermediateSword: {fileID: 6255484771440678672, guid: b2dab9d418fce73478b5caa3ac10bf14, type: 3}
   intermediateBow: {fileID: 1081882631471017696, guid: 12f8c3af134cc0545a7e7f659aad7a97, type: 3}
   advancedBow: {fileID: 1081882631471017696, guid: 4b5fae817e95b194280d1d2fab32ae2d, type: 3}
   expertBow: {fileID: 1081882631471017696, guid: 1199e936a479e194581c01b046505d82, type: 3}

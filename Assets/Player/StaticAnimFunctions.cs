@@ -9,6 +9,17 @@ public class StaticAnimFunctions : MonoBehaviour
     public void EndAttack()
     {
         player.stateMachine.ChangeState(player.idleState);
+
+        if (player.playerComboCounter != 2)
+        {
+            player.playerComboCounter++;
+        }
+        else
+        {
+            player.playerComboCounter = 0;
+        }
+
+        player.playerComboTimer = player.playerComboGrace;
     }
 
     public void BowStateEnd()

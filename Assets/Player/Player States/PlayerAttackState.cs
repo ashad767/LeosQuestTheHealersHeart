@@ -27,7 +27,7 @@ public class PlayerAttackState : PlayerState
         if (player.currentWeapon is PlayerSword)
         {
             PlayerSword playerSword = player.currentWeapon as PlayerSword;
-            playerSword.Attack(facingDirToHitbox[facingDirection].hitEnimies);
+            playerSword.Attack(facingDirToHitbox[facingDirection].hitEnimies, Mathf.Min(1, player.swordLevel) * player.playerComboCounter * player.playerComboScalingDamage);
         }
 
         player.attackTimer = player.playerAttackCooldown;

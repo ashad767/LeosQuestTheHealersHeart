@@ -33,12 +33,19 @@ public class Player : Entity
 
     [Space]
 
+    public int playerComboScalingDamage;
     public float playerAttackCooldown;
     public float playerHealCooldown;
-    [HideInInspector]public int bowChargeState = 0;
+    public float playerComboGrace;
+
+    [Space]
+
+    public int bowChargeState = 0;
+    public int playerComboCounter;
+    [HideInInspector]public float playerComboTimer;
 
 
-    private int swordLevel;
+    [HideInInspector]public int swordLevel;
     private int bowLevel;
     private int magicLevel;
     public Dictionary<int, int> indexToWeaponLevel = new Dictionary<int, int>() {};
@@ -87,6 +94,7 @@ public class Player : Entity
     public PlayerMagic basicMagic;
     public PlayerBow basicBow;
     [Space]
+    public PlayerSword intermediateSword;
     public PlayerBow intermediateBow;
     [Space]
     public PlayerBow advancedBow;
@@ -133,6 +141,8 @@ public class Player : Entity
         TestInputs();
 
         anim.SetFloat("BowChargeState", bowChargeState);
+        if(swordLevel > 0)
+            anim.SetFloat("ComboCounter", playerComboCounter);
     }
 
     public void SetVelocity(float xVelocity, float yVelocity, float multiplier)
@@ -150,6 +160,8 @@ public class Player : Entity
         dashTimer -= Time.deltaTime;
         attackTimer -= Time.deltaTime;
         healTimer -= Time.deltaTime;
+
+        playerComboTimer -= Time.deltaTime;
     }
 
     private void CheckWeaponSwap()
@@ -209,15 +221,15 @@ public class Player : Entity
         weapons[1, 0] = basicBow;
         weapons[2, 0] = basicMagic;
 
-        weapons[0, 1] = basicSword;
+        weapons[0, 1] = intermediateSword;
         weapons[1, 1] = intermediateBow;
         weapons[2, 1] = basicMagic;
 
-        weapons[0, 2] = basicSword;
+        weapons[0, 2] = intermediateSword;
         weapons[1, 2] = advancedBow;
         weapons[2, 2] = basicMagic;
 
-        weapons[0, 3] = basicSword;
+        weapons[0, 3] = intermediateSword;
         weapons[1, 3] = expertBow;
         weapons[2, 3] = basicMagic;
 
@@ -256,7 +268,18 @@ public class Player : Entity
 
     public void TestInputs()
     {
-        if (Input.GetKeyDown(KeyCode.PageUp))
+
+        if (Input.GetKeyDown(KeyCode.Insert))
+        {
+            swordLevel = Math.Min(swordLevel + 1, 3);
+            indexToWeaponLevel.Remove(0);
+            indexToWeaponLevel.Add(0, swordLevel);
+
+            currentWeapon = weapons[currentWeaponIndex, indexToWeaponLevel[currentWeaponIndex]];
+            playerUIManager.UpdatePlayerUI();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Home))
         {
             bowLevel = Math.Min(bowLevel + 1, 3);
             indexToWeaponLevel.Remove(1);

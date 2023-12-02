@@ -24,6 +24,9 @@ public class PlayerGroundState : PlayerState
 
         InputAndAnims();
         CheckStateTransitionInputs();
+
+        if ((player.playerComboTimer <= 0 && player.playerComboCounter > 0))
+            player.playerComboCounter = 0;
     }
 
     private void CheckStateTransitionInputs()
