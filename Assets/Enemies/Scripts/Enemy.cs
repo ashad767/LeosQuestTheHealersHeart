@@ -19,6 +19,7 @@ public class Enemy : Entity
     public EnemyAttack AttackState { get; set; }
     public EnemyWalk WalkState { get; set; }
     public EnemyChase ChaseState { get; set; }
+    public EnemyDead DeadState { get; set; }
 
     #endregion
 
@@ -51,6 +52,7 @@ public class Enemy : Entity
         AttackState = new EnemyAttack(this, enemySM, "Attack");
         WalkState = new EnemyWalk(this, enemySM, "Walk");
         ChaseState = new EnemyChase(this, enemySM, "Chase");
+        DeadState = new EnemyDead(this, enemySM, "Dead");
 
         Player = GameObject.FindGameObjectWithTag("Player");
     }
@@ -68,8 +70,10 @@ public class Enemy : Entity
     protected override void Update()
     {
         enemySM.CurrentEnemyState.FrameUpdate();
-        Debug.Log(enemySM.CurrentEnemyState);
-        Debug.Log("Strike: " + IsStrike);
+        if(CurrentHealth == 0)
+        {
+            enemySM.ChangeState(DeadState);
+        }
     }
 
     private void FixedUpdate()
