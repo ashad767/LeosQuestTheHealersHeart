@@ -1236,7 +1236,7 @@ MonoBehaviour:
   - {fileID: 7400000, guid: 2a129dbcbb29a6a45884215e37b49447, type: 2}
   - {fileID: 7400000, guid: 02d003c0733b89c469f88a74e76c91f4, type: 2}
   - {fileID: 7400000, guid: eb9d2ffa9111eea428ae142a356e19e4, type: 2}
-  MC: {fileID: 1897605484}
+  MC: {fileID: 1534046229}
   sawPrefab: {fileID: 7079232138470733261, guid: efec66243ded3294f9def98d91881a99, type: 3}
   landingSmokePrefab: {fileID: 9124855507736244874, guid: 2c5cd35d5e6bf954cba6993dd6007a7b, type: 3}
   powerUpPrefab: {fileID: 5564996270217504275, guid: 8e28c695e25931248b199240b6576d4e, type: 3}

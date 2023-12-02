@@ -8,7 +8,7 @@ public class AdvancedPlayerArrow : PlayerArrow
     {
         Rigidbody2D hitObject = collision.GetComponentInParent<Rigidbody2D>();
 
-        if (!collision.CompareTag("Player") && hitObject != null)
+        if (collision.CompareTag("Enemy") && hitObject != null)
         {
             hitObject.AddForce(rb.velocity * 2);
         }
