@@ -9,6 +9,7 @@ public class PlayerArrow : MonoBehaviour
     protected Rigidbody2D rb;
     protected BoxCollider2D boxCollider2D;
     protected float distance = 10;
+    protected Vector2 arrowVelocity;
 
     protected virtual void Start()
     {
@@ -38,6 +39,7 @@ public class PlayerArrow : MonoBehaviour
 
         if (collision.CompareTag("Enemy"))
         {
+            arrowVelocity = rb.velocity;
             rb.velocity = Vector2.zero;
             Destroy(rb);
             transform.parent = collision.transform;
@@ -48,8 +50,6 @@ public class PlayerArrow : MonoBehaviour
                 hitObject.TakeDamage(damage);
 
             }
-
         }
-        
     }
 }

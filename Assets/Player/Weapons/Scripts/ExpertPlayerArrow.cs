@@ -10,7 +10,7 @@ public class ExpertPlayerArrow : AdvancedPlayerArrow
     {
         Entity hitObject = collision.GetComponentInParent<Entity>();
 
-        if (!collision.CompareTag("Player") && hitObject != null)
+        if (collision.CompareTag("Enemy") && hitObject != null)
         {
             GameObject addedEffect = Instantiate(effect);
             addedEffect.transform.SetParent(collision.transform);

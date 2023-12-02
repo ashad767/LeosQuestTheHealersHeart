@@ -27,11 +27,13 @@ public class EnemyAttack : EnemyState
 
         enemy.MoveEnemy(Vector2.zero);
         enemy.RB.constraints = RigidbodyConstraints2D.FreezePositionY;
+        enemy.RB.constraints = RigidbodyConstraints2D.FreezeRotation;
 
-        if(!enemy.IsStrike)
+        if (!enemy.IsStrike)
         {
             enemy.enemySM.ChangeState(enemy.ChaseState);
             enemy.RB.constraints = RigidbodyConstraints2D.None;
+            enemy.RB.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
     }
 }

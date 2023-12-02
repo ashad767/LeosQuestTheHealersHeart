@@ -13,7 +13,7 @@ public class EffectParticles : MonoBehaviour
 
     private void Start()
     {
-        parentSpriteRenderer = transform.parent.GetComponent<SpriteRenderer>();
+        parentSpriteRenderer = transform.parent.GetComponentInChildren<SpriteRenderer>();
         spriteRenderer = GetComponent<SpriteRenderer>();    
     }
 

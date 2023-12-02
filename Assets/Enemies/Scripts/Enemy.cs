@@ -2,11 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy : Entity
 {
     [SerializeField]
-    public float MaxHP { get; set; } = 100f;
-    public float CurrentHP { get; set; }
     public Rigidbody2D RB { get; set; }
     [HideInInspector]
     public Animator animator { get; private set; }
@@ -48,9 +46,9 @@ public class Enemy : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    private void Start()
+    protected override void Start()
     {
-        CurrentHP = MaxHP;
+        base.Start();
         RB = GetComponent<Rigidbody2D>();
         enemySM.Initialize(WalkState);
     }
