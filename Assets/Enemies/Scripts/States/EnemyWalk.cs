@@ -39,6 +39,11 @@ public class EnemyWalk : EnemyState
         }
     }
 
+    public override void AnimationTriggerEvent(AudioClip audioClip)
+    {
+        base.AnimationTriggerEvent(audioClip);
+    }
+
     private Vector3 GetRandomPoint()
     {
         return enemy.transform.position + (Vector3)UnityEngine.Random.insideUnitCircle * enemy.MovementRange;

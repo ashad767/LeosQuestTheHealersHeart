@@ -36,4 +36,9 @@ public class EnemyAttack : EnemyState
             enemy.RB.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
     }
+
+    public override void AnimationTriggerEvent(AudioClip audioClip)
+    {
+        base.AnimationTriggerEvent(audioClip);
+    }
 }

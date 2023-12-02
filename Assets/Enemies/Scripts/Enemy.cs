@@ -8,8 +8,10 @@ public class Enemy : Entity
     public Rigidbody2D RB { get; set; }
     [HideInInspector]
     public Animator animator { get; private set; }
-    public bool IsFacingRight { get; set; } = true;
     public GameObject Player { get; set; }
+    public HitBox[] hitboxes;
+    private Vector2 direction; 
+
 
     #region SM Variables
 
@@ -27,10 +29,18 @@ public class Enemy : Entity
 
     #endregion
 
-    #region
+    #region Radius
 
     public bool IsAggro { get; set; }
     public bool IsStrike { get; set; }
+
+    #endregion
+
+    #region Sound Clips
+
+    public AudioSource audioSource;
+    public AudioClip WalkSound;
+    public AudioClip AttackSound;
 
     #endregion
 
@@ -50,6 +60,7 @@ public class Enemy : Entity
     {
         base.Start();
         RB = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
         enemySM.Initialize(WalkState);
     }
 
@@ -66,7 +77,7 @@ public class Enemy : Entity
         enemySM.CurrentEnemyState.PhysicsUpdate();
     }
 
-    private void AnimationTriggerEvent(AnimationTriggerType type)
+    /*private void AnimationTriggerEvent(AnimationTriggerType type)
     {
         enemySM.CurrentEnemyState.AnimationTriggerEvent(type);
     }
@@ -74,35 +85,51 @@ public class Enemy : Entity
     public enum AnimationTriggerType
     {
         EnemyDamaged,
-        Footsteps
-    } 
+        Footsteps,
+        Die
+    } */
 
     public void MoveEnemy(Vector2 velocity)
     {
         RB.velocity = velocity;
-        CheckLeftOrRight(velocity);
+        CheckDirection();
         animator.SetFloat("xInput", velocity.x);
         animator.SetFloat("yInput", velocity.y);
-        Vector2 direction = (Player.transform.position - transform.position).normalized * MovementSpeed;
+
+        direction = (Player.transform.position - transform.position).normalized;
         animator.SetFloat("xPInput", direction.x);
         animator.SetFloat("yPInput", direction.y);
     }
 
-    public void CheckLeftOrRight(Vector2 velocity)
+    public void EnemyAttack(List<GameObject> entities)
     {
-        /*if(IsFacingRight && velocity.x < 0f)
+        foreach (GameObject obj in entities)
         {
-            Vector3 rotate = new Vector3(transform.rotation.x, 180f, transform.rotation.z);
-            transform.rotation = Quaternion.Euler(rotate);
-            IsFacingRight = !IsFacingRight;
+            Player ply = obj.GetComponent<Player>();
 
+            if (ply != null)
+            {
+                ply.TakeDamage(3);
+            }
         }
-        else if(!IsFacingRight && velocity.x > 0f)
+    }
+
+    public int CheckDirection()
+    {
+        if(direction.x < direction.y)
         {
-            Vector3 rotate = new Vector3(transform.rotation.x, 0f, transform.rotation.z);
-            transform.rotation = Quaternion.Euler(rotate);
-            IsFacingRight = !IsFacingRight;
-        }*/
+            if (direction.y < 0f)
+                return 3;
+            else
+                return 1;
+        }
+        else
+        {
+            if (direction.x < 0f)
+                return 4;
+            else
+                return 2;
+        }
     }
 
     public void SetAggroStatus(bool isAggro)

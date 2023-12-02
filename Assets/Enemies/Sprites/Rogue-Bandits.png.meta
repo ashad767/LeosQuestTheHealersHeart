@@ -3,7 +3,7 @@ guid: 65d12156917bba040b52623264f97a4f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -47,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -110,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -4053,196 +4060,195 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Rogue-Bandits_143: 2032334723
-      Rogue-Bandits_45: -1373829533
-      Rogue-Bandits_66: 1026289866
-      Rogue-Bandits_157: -1645518265
-      Rogue-Bandits_163: 1676527897
-      Rogue-Bandits_53: -345042578
-      Rogue-Bandits_150: -1246691787
-      Rogue-Bandits_57: -2093987324
-      Rogue-Bandits_69: 306059698
-      Rogue-Bandits_140: -850601708
-      Rogue-Bandits_142: 228036224
-      Rogue-Bandits_133: 26408007
-      Rogue-Bandits_75: -56682863
-      Rogue-Bandits_16: -231587749
-      Rogue-Bandits_7: -508717750
-      Rogue-Bandits_41: -322186488
-      Rogue-Bandits_99: 1737528540
-      Rogue-Bandits_148: 2094887489
-      Rogue-Bandits_29: -250475543
-      Rogue-Bandits_178: -900426286
-      Rogue-Bandits_156: -1740371713
-      Rogue-Bandits_117: -2018853279
-      Rogue-Bandits_104: 291052710
-      Rogue-Bandits_168: 816791867
-      Rogue-Bandits_37: -434625518
-      Rogue-Bandits_169: -1848694607
-      Rogue-Bandits_33: -1588204841
-      Rogue-Bandits_160: -2072213265
-      Rogue-Bandits_82: -1263870896
-      Rogue-Bandits_146: -1352513455
-      Rogue-Bandits_167: 1511413322
-      Rogue-Bandits_9: 1460042899
-      Rogue-Bandits_64: 825298198
-      Rogue-Bandits_179: 729319154
-      Rogue-Bandits_13: 1059265696
-      Rogue-Bandits_77: -305319388
-      Rogue-Bandits_91: 546310237
-      Rogue-Bandits_186: 180265780
-      Rogue-Bandits_80: -897762393
-      Rogue-Bandits_8: -794580963
-      Rogue-Bandits_135: 1181290436
-      Rogue-Bandits_23: 2121091507
-      Rogue-Bandits_72: -1830225248
-      Rogue-Bandits_153: -965945414
-      Rogue-Bandits_94: -544569454
-      Rogue-Bandits_93: 810738004
-      Rogue-Bandits_70: 1661091039
-      Rogue-Bandits_83: -1037256605
-      Rogue-Bandits_3: -1639032603
-      Rogue-Bandits_122: -916966393
-      Rogue-Bandits_151: 1492692705
-      Rogue-Bandits_81: -2034301369
-      Rogue-Bandits_144: 1709666178
-      Rogue-Bandits_85: 1328304415
-      Rogue-Bandits_43: -416767191
-      Rogue-Bandits_38: 1457475502
-      Rogue-Bandits_24: -1593863385
-      Rogue-Bandits_56: 177184194
-      Rogue-Bandits_27: -2007121170
-      Rogue-Bandits_35: -732638103
-      Rogue-Bandits_123: -1427970230
-      Rogue-Bandits_28: -1598523193
-      Rogue-Bandits_141: 367721628
-      Rogue-Bandits_136: -1737647012
-      Rogue-Bandits_102: -956981524
-      Rogue-Bandits_181: -1705134145
-      Rogue-Bandits_145: -1172398734
-      Rogue-Bandits_58: 1440820873
-      Rogue-Bandits_107: -270569278
-      Rogue-Bandits_31: -485484448
-      Rogue-Bandits_161: -2140912780
-      Rogue-Bandits_63: -1591311292
-      Rogue-Bandits_166: -163023835
-      Rogue-Bandits_159: 1745519549
-      Rogue-Bandits_14: -1491956892
-      Rogue-Bandits_113: -1544700555
-      Rogue-Bandits_137: -740139741
-      Rogue-Bandits_42: 567077055
-      Rogue-Bandits_86: -60744365
-      Rogue-Bandits_183: 1508720593
-      Rogue-Bandits_95: 1517619549
-      Rogue-Bandits_177: 540368721
-      Rogue-Bandits_165: -2134432250
-      Rogue-Bandits_46: 1109127069
-      Rogue-Bandits_97: 1246097483
-      Rogue-Bandits_71: 1823209517
-      Rogue-Bandits_30: 1771503959
-      Rogue-Bandits_79: -1601068569
-      Rogue-Bandits_171: 1942098175
-      Rogue-Bandits_12: 1625642702
-      Rogue-Bandits_10: 699123291
-      Rogue-Bandits_176: -1203400890
-      Rogue-Bandits_90: -169197506
-      Rogue-Bandits_62: -241938995
-      Rogue-Bandits_98: -892733427
-      Rogue-Bandits_19: 227405337
-      Rogue-Bandits_18: 1598124077
-      Rogue-Bandits_60: 1176223994
-      Rogue-Bandits_87: 264111991
-      Rogue-Bandits_68: -1864673142
-      Rogue-Bandits_2: 189409791
+      Rogue-Bandits_0: -604925600
       Rogue-Bandits_1: 1427207018
-      Rogue-Bandits_149: -420021420
-      Rogue-Bandits_180: 1294612908
+      Rogue-Bandits_10: 699123291
+      Rogue-Bandits_100: 2082647032
       Rogue-Bandits_101: -500954972
-      Rogue-Bandits_173: 946588177
-      Rogue-Bandits_126: -555914943
-      Rogue-Bandits_96: 1282199382
+      Rogue-Bandits_102: -956981524
+      Rogue-Bandits_103: 1426279575
+      Rogue-Bandits_104: 291052710
+      Rogue-Bandits_105: -315480952
+      Rogue-Bandits_106: 667960055
+      Rogue-Bandits_107: -270569278
+      Rogue-Bandits_108: -502578812
+      Rogue-Bandits_109: 1936969429
+      Rogue-Bandits_11: -897554047
+      Rogue-Bandits_110: -435626068
+      Rogue-Bandits_111: 1820561646
+      Rogue-Bandits_112: -1697105247
+      Rogue-Bandits_113: -1544700555
+      Rogue-Bandits_114: -201851287
       Rogue-Bandits_115: -1760135563
       Rogue-Bandits_116: -1017073392
-      Rogue-Bandits_52: 49928988
-      Rogue-Bandits_20: -1529240331
-      Rogue-Bandits_127: 1481769269
-      Rogue-Bandits_182: 1037112611
-      Rogue-Bandits_40: -1894480061
-      Rogue-Bandits_120: 801440026
-      Rogue-Bandits_48: 418614325
-      Rogue-Bandits_184: 141962293
-      Rogue-Bandits_100: 2082647032
-      Rogue-Bandits_155: -1600188780
-      Rogue-Bandits_32: -1782123288
-      Rogue-Bandits_6: -57313340
-      Rogue-Bandits_108: -502578812
-      Rogue-Bandits_174: -155894268
-      Rogue-Bandits_36: 1757502256
-      Rogue-Bandits_21: 999918675
-      Rogue-Bandits_164: -26788455
-      Rogue-Bandits_109: 1936969429
-      Rogue-Bandits_49: 95943121
-      Rogue-Bandits_59: -1155414503
-      Rogue-Bandits_26: -82223222
-      Rogue-Bandits_139: -193275803
-      Rogue-Bandits_106: 667960055
-      Rogue-Bandits_124: -1085085784
-      Rogue-Bandits_0: -604925600
-      Rogue-Bandits_170: -464955300
-      Rogue-Bandits_147: 1469092733
-      Rogue-Bandits_110: -435626068
-      Rogue-Bandits_84: 113268713
-      Rogue-Bandits_103: 1426279575
-      Rogue-Bandits_22: -1450172601
-      Rogue-Bandits_162: -4760898
-      Rogue-Bandits_78: 426147080
-      Rogue-Bandits_172: 290176677
-      Rogue-Bandits_158: -1979758862
-      Rogue-Bandits_121: 1650125816
-      Rogue-Bandits_132: -1209603769
-      Rogue-Bandits_55: -1498589833
-      Rogue-Bandits_67: -1620159283
+      Rogue-Bandits_117: -2018853279
       Rogue-Bandits_118: 1073427304
-      Rogue-Bandits_44: -14622136
-      Rogue-Bandits_73: -422168987
-      Rogue-Bandits_105: -315480952
-      Rogue-Bandits_11: -897554047
-      Rogue-Bandits_154: -1759227399
-      Rogue-Bandits_185: -559970385
-      Rogue-Bandits_89: -1204121241
-      Rogue-Bandits_61: 158701171
-      Rogue-Bandits_54: -650363537
-      Rogue-Bandits_76: 681909264
-      Rogue-Bandits_39: -2078855911
-      Rogue-Bandits_74: -727958084
-      Rogue-Bandits_125: -60904879
-      Rogue-Bandits_88: 184176119
-      Rogue-Bandits_134: 1996415589
-      Rogue-Bandits_47: 1384855697
-      Rogue-Bandits_25: 2015385291
-      Rogue-Bandits_111: 1820561646
-      Rogue-Bandits_65: 1821512159
-      Rogue-Bandits_15: 77390736
-      Rogue-Bandits_112: -1697105247
-      Rogue-Bandits_152: -806419643
-      Rogue-Bandits_130: 1984437762
-      Rogue-Bandits_114: -201851287
-      Rogue-Bandits_129: -209952806
-      Rogue-Bandits_34: 405412777
-      Rogue-Bandits_138: -1069898371
-      Rogue-Bandits_175: 1304653403
-      Rogue-Bandits_50: 1378382866
-      Rogue-Bandits_128: -1486732330
-      Rogue-Bandits_51: 1793141077
-      Rogue-Bandits_131: -336611489
-      Rogue-Bandits_92: -914823247
-      Rogue-Bandits_4: -34241852
-      Rogue-Bandits_5: 135901311
-      Rogue-Bandits_17: -1378596733
       Rogue-Bandits_119: 1305328080
-  spritePackingTag: 
+      Rogue-Bandits_12: 1625642702
+      Rogue-Bandits_120: 801440026
+      Rogue-Bandits_121: 1650125816
+      Rogue-Bandits_122: -916966393
+      Rogue-Bandits_123: -1427970230
+      Rogue-Bandits_124: -1085085784
+      Rogue-Bandits_125: -60904879
+      Rogue-Bandits_126: -555914943
+      Rogue-Bandits_127: 1481769269
+      Rogue-Bandits_128: -1486732330
+      Rogue-Bandits_129: -209952806
+      Rogue-Bandits_13: 1059265696
+      Rogue-Bandits_130: 1984437762
+      Rogue-Bandits_131: -336611489
+      Rogue-Bandits_132: -1209603769
+      Rogue-Bandits_133: 26408007
+      Rogue-Bandits_134: 1996415589
+      Rogue-Bandits_135: 1181290436
+      Rogue-Bandits_136: -1737647012
+      Rogue-Bandits_137: -740139741
+      Rogue-Bandits_138: -1069898371
+      Rogue-Bandits_139: -193275803
+      Rogue-Bandits_14: -1491956892
+      Rogue-Bandits_140: -850601708
+      Rogue-Bandits_141: 367721628
+      Rogue-Bandits_142: 228036224
+      Rogue-Bandits_143: 2032334723
+      Rogue-Bandits_144: 1709666178
+      Rogue-Bandits_145: -1172398734
+      Rogue-Bandits_146: -1352513455
+      Rogue-Bandits_147: 1469092733
+      Rogue-Bandits_148: 2094887489
+      Rogue-Bandits_149: -420021420
+      Rogue-Bandits_15: 77390736
+      Rogue-Bandits_150: -1246691787
+      Rogue-Bandits_151: 1492692705
+      Rogue-Bandits_152: -806419643
+      Rogue-Bandits_153: -965945414
+      Rogue-Bandits_154: -1759227399
+      Rogue-Bandits_155: -1600188780
+      Rogue-Bandits_156: -1740371713
+      Rogue-Bandits_157: -1645518265
+      Rogue-Bandits_158: -1979758862
+      Rogue-Bandits_159: 1745519549
+      Rogue-Bandits_16: -231587749
+      Rogue-Bandits_160: -2072213265
+      Rogue-Bandits_161: -2140912780
+      Rogue-Bandits_162: -4760898
+      Rogue-Bandits_163: 1676527897
+      Rogue-Bandits_164: -26788455
+      Rogue-Bandits_165: -2134432250
+      Rogue-Bandits_166: -163023835
+      Rogue-Bandits_167: 1511413322
+      Rogue-Bandits_168: 816791867
+      Rogue-Bandits_169: -1848694607
+      Rogue-Bandits_17: -1378596733
+      Rogue-Bandits_170: -464955300
+      Rogue-Bandits_171: 1942098175
+      Rogue-Bandits_172: 290176677
+      Rogue-Bandits_173: 946588177
+      Rogue-Bandits_174: -155894268
+      Rogue-Bandits_175: 1304653403
+      Rogue-Bandits_176: -1203400890
+      Rogue-Bandits_177: 540368721
+      Rogue-Bandits_178: -900426286
+      Rogue-Bandits_179: 729319154
+      Rogue-Bandits_18: 1598124077
+      Rogue-Bandits_180: 1294612908
+      Rogue-Bandits_181: -1705134145
+      Rogue-Bandits_182: 1037112611
+      Rogue-Bandits_183: 1508720593
+      Rogue-Bandits_184: 141962293
+      Rogue-Bandits_185: -559970385
+      Rogue-Bandits_186: 180265780
+      Rogue-Bandits_19: 227405337
+      Rogue-Bandits_2: 189409791
+      Rogue-Bandits_20: -1529240331
+      Rogue-Bandits_21: 999918675
+      Rogue-Bandits_22: -1450172601
+      Rogue-Bandits_23: 2121091507
+      Rogue-Bandits_24: -1593863385
+      Rogue-Bandits_25: 2015385291
+      Rogue-Bandits_26: -82223222
+      Rogue-Bandits_27: -2007121170
+      Rogue-Bandits_28: -1598523193
+      Rogue-Bandits_29: -250475543
+      Rogue-Bandits_3: -1639032603
+      Rogue-Bandits_30: 1771503959
+      Rogue-Bandits_31: -485484448
+      Rogue-Bandits_32: -1782123288
+      Rogue-Bandits_33: -1588204841
+      Rogue-Bandits_34: 405412777
+      Rogue-Bandits_35: -732638103
+      Rogue-Bandits_36: 1757502256
+      Rogue-Bandits_37: -434625518
+      Rogue-Bandits_38: 1457475502
+      Rogue-Bandits_39: -2078855911
+      Rogue-Bandits_4: -34241852
+      Rogue-Bandits_40: -1894480061
+      Rogue-Bandits_41: -322186488
+      Rogue-Bandits_42: 567077055
+      Rogue-Bandits_43: -416767191
+      Rogue-Bandits_44: -14622136
+      Rogue-Bandits_45: -1373829533
+      Rogue-Bandits_46: 1109127069
+      Rogue-Bandits_47: 1384855697
+      Rogue-Bandits_48: 418614325
+      Rogue-Bandits_49: 95943121
+      Rogue-Bandits_5: 135901311
+      Rogue-Bandits_50: 1378382866
+      Rogue-Bandits_51: 1793141077
+      Rogue-Bandits_52: 49928988
+      Rogue-Bandits_53: -345042578
+      Rogue-Bandits_54: -650363537
+      Rogue-Bandits_55: -1498589833
+      Rogue-Bandits_56: 177184194
+      Rogue-Bandits_57: -2093987324
+      Rogue-Bandits_58: 1440820873
+      Rogue-Bandits_59: -1155414503
+      Rogue-Bandits_6: -57313340
+      Rogue-Bandits_60: 1176223994
+      Rogue-Bandits_61: 158701171
+      Rogue-Bandits_62: -241938995
+      Rogue-Bandits_63: -1591311292
+      Rogue-Bandits_64: 825298198
+      Rogue-Bandits_65: 1821512159
+      Rogue-Bandits_66: 1026289866
+      Rogue-Bandits_67: -1620159283
+      Rogue-Bandits_68: -1864673142
+      Rogue-Bandits_69: 306059698
+      Rogue-Bandits_7: -508717750
+      Rogue-Bandits_70: 1661091039
+      Rogue-Bandits_71: 1823209517
+      Rogue-Bandits_72: -1830225248
+      Rogue-Bandits_73: -422168987
+      Rogue-Bandits_74: -727958084
+      Rogue-Bandits_75: -56682863
+      Rogue-Bandits_76: 681909264
+      Rogue-Bandits_77: -305319388
+      Rogue-Bandits_78: 426147080
+      Rogue-Bandits_79: -1601068569
+      Rogue-Bandits_8: -794580963
+      Rogue-Bandits_80: -897762393
+      Rogue-Bandits_81: -2034301369
+      Rogue-Bandits_82: -1263870896
+      Rogue-Bandits_83: -1037256605
+      Rogue-Bandits_84: 113268713
+      Rogue-Bandits_85: 1328304415
+      Rogue-Bandits_86: -60744365
+      Rogue-Bandits_87: 264111991
+      Rogue-Bandits_88: 184176119
+      Rogue-Bandits_89: -1204121241
+      Rogue-Bandits_9: 1460042899
+      Rogue-Bandits_90: -169197506
+      Rogue-Bandits_91: 546310237
+      Rogue-Bandits_92: -914823247
+      Rogue-Bandits_93: 810738004
+      Rogue-Bandits_94: -544569454
+      Rogue-Bandits_95: 1517619549
+      Rogue-Bandits_96: 1282199382
+      Rogue-Bandits_97: 1246097483
+      Rogue-Bandits_98: -892733427
+      Rogue-Bandits_99: 1737528540
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

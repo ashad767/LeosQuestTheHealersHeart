@@ -34,8 +34,9 @@ public class EnemyState
 
     }
 
-    public virtual void AnimationTriggerEvent(Enemy.AnimationTriggerType type)
+    public virtual void AnimationTriggerEvent(AudioClip audioClip)
     {
-
+        enemy.audioSource.clip = audioClip;
+        enemy.audioSource.Play();
     }
 }
