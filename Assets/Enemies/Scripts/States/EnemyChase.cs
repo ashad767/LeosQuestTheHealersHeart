@@ -30,9 +30,14 @@ public class EnemyChase : EnemyState
         enemy.MoveEnemy(direction * MoveSpeed);
 
         if (enemy.IsStrike)
-           enemy.enemySM.ChangeState(enemy.AttackState);
+        {
+            if(!enemy.isRanged)
+                enemy.enemySM.ChangeState(enemy.AttackState);
+            else
+                enemy.enemySM.ChangeState(enemy.AttackRangedState);
+        }
 
-        if(!enemy.IsAggro)
+        if (!enemy.IsAggro)
             enemy.enemySM.ChangeState(enemy.WalkState);
     }
 }
