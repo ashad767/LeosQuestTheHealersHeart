@@ -97,6 +97,7 @@ public class Player : Entity
     public PlayerSword intermediateSword;
     public PlayerBow intermediateBow;
     [Space]
+    public PlayerSword advancedSword;
     public PlayerBow advancedBow;
     [Space]
     public PlayerBow expertBow;
@@ -144,7 +145,7 @@ public class Player : Entity
         TestInputs();
 
         anim.SetFloat("BowChargeState", bowChargeState);
-        if(swordLevel > 0)
+        if(swordLevel > 1)
             anim.SetFloat("ComboCounter", playerComboCounter);
     }
 
@@ -228,11 +229,11 @@ public class Player : Entity
         weapons[1, 1] = intermediateBow;
         weapons[2, 1] = basicMagic;
 
-        weapons[0, 2] = intermediateSword;
+        weapons[0, 2] = advancedSword;
         weapons[1, 2] = advancedBow;
         weapons[2, 2] = basicMagic;
 
-        weapons[0, 3] = intermediateSword;
+        weapons[0, 3] = advancedSword;
         weapons[1, 3] = expertBow;
         weapons[2, 3] = basicMagic;
 
