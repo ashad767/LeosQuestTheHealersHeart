@@ -13,6 +13,7 @@ public class AnimFunctions : MonoBehaviour
 
     public void OnAttack()
     {
+        Debug.Log(enemy.CheckDirection() - 1);
         List<GameObject> entities = enemy.hitboxes[enemy.CheckDirection()-1].hitEnimies;
 
         enemy.EnemyAttack(entities);
@@ -26,5 +27,23 @@ public class AnimFunctions : MonoBehaviour
     public void OnAttackSound()
     {
         enemy.enemySM.CurrentEnemyState.AnimationTriggerEvent(enemy.AttackSound);
+    }
+
+    public void OnDead()
+    {
+        Destroy(enemy.gameObject);
+    }
+
+    public void CheckAttack()
+    {
+        if (!enemy.IsStrike)
+        {
+            enemy.enemySM.ChangeState(enemy.ChaseState);
+        }
+    }
+
+    public void RangedAttack()
+    {
+        enemy.enemySM.CurrentEnemyState.RangedAttack(enemy.gameObject.name);
     }
 }

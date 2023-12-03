@@ -20,6 +20,7 @@ public class Enemy : Entity
     public EnemyWalk WalkState { get; set; }
     public EnemyChase ChaseState { get; set; }
     public EnemyDead DeadState { get; set; }
+    public EnemyRangedAttack AttackRangedState { get; set; }
 
     #endregion
 
@@ -45,6 +46,13 @@ public class Enemy : Entity
 
     #endregion
 
+    #region Ranged Enemies
+
+    public bool isRanged = false;
+    public Rigidbody2D MM_Projectile;
+
+    #endregion
+
     private void Awake()
     {
         enemySM = new EnemySM();
@@ -53,6 +61,7 @@ public class Enemy : Entity
         WalkState = new EnemyWalk(this, enemySM, "Walk");
         ChaseState = new EnemyChase(this, enemySM, "Chase");
         DeadState = new EnemyDead(this, enemySM, "Dead");
+        AttackRangedState = new EnemyRangedAttack(this, enemySM, "RangedAttack");
 
         Player = GameObject.FindGameObjectWithTag("Player");
     }
@@ -74,6 +83,7 @@ public class Enemy : Entity
         {
             enemySM.ChangeState(DeadState);
         }
+        Debug.Log(enemySM.CurrentEnemyState);
     }
 
     private void FixedUpdate()
@@ -120,7 +130,7 @@ public class Enemy : Entity
 
     public int CheckDirection()
     {
-        if(direction.x < direction.y)
+        if(Mathf.Abs(direction.x) < Mathf.Abs(direction.y))
         {
             if (direction.y < 0f)
                 return 3;

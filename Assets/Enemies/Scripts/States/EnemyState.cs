@@ -39,4 +39,8 @@ public class EnemyState
         enemy.audioSource.clip = audioClip;
         enemy.audioSource.Play();
     }
+
+    public virtual void RangedAttack(string name)
+    {
+    }
 }

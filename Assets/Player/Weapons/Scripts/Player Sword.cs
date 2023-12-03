@@ -14,11 +14,14 @@ public class PlayerSword : PlayerWeapon
     {
         foreach (GameObject target in hitTargets)
         {   
-            Entity current = target.GetComponentInChildren<Entity>();
-
-            if (current != null && !target.CompareTag("Player"))
+            if( target != null)
             {
-                current.TakeDamage(damage + extraDamage);
+                Entity current = target.GetComponentInChildren<Entity>();
+
+                if (current != null && !target.CompareTag("Player"))
+                {
+                    current.TakeDamage(damage + extraDamage);
+                }
             }
         }
     }

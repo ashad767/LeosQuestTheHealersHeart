@@ -21,6 +21,8 @@ public class EnemyDead : EnemyState
     public override void FrameUpdate()
     {
         base.FrameUpdate();
+
+        
     }
 
     public override void AnimationTriggerEvent(AudioClip audioClip)
