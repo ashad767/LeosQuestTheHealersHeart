@@ -100,6 +100,7 @@ public class Player : Entity
     public PlayerSword advancedSword;
     public PlayerBow advancedBow;
     [Space]
+    public PlayerSword expertSword;
     public PlayerBow expertBow;
 
     public PlayerWeapon[,] weapons = new PlayerWeapon[3,4];
@@ -233,7 +234,7 @@ public class Player : Entity
         weapons[1, 2] = advancedBow;
         weapons[2, 2] = basicMagic;
 
-        weapons[0, 3] = advancedSword;
+        weapons[0, 3] = expertSword;
         weapons[1, 3] = expertBow;
         weapons[2, 3] = basicMagic;
 
