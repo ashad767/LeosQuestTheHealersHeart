@@ -136,7 +136,10 @@ public class Player : Entity
         stateMachine.currentState.Update();
 
         UpdateCooldowns();
-        CheckWeaponSwap();
+        if (stateMachine.currentState is PlayerGroundState)
+        {
+            CheckWeaponSwap();
+        }
 
         TestInputs();
 

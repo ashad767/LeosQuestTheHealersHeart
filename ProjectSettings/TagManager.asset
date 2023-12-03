@@ -16,6 +16,13 @@ TagManager:
   - rocks
   - Enemy
   - WALL
+  - frontTilemap
+  - groundTilemap
+  - decoration2Tilemap
+  - collisionTilemap
+  - miniMapPlayer
+  - decoration1Tilemap
+  - FrontFront
   layers:
   - Default
   - TransparentFX
@@ -50,12 +57,36 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Arrows
-    uniqueID: 1993489113
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground
+    uniqueID: 115835981
+    locked: 0
+  - name: Front
+    uniqueID: 283903081
+    locked: 0
+  - name: Ground Decoration 1
+    uniqueID: 4116821695
+    locked: 0
+  - name: Ground Decoration 2
+    uniqueID: 3858122539
+    locked: 0
+  - name: Arrows
+    uniqueID: 1993489113
+    locked: 0
+  - name: Instances
+    uniqueID: 1752717529
+    locked: 0
   - name: PlayerEffects
     uniqueID: 1649719079
+    locked: 0
+  - name: FrontFront
+    uniqueID: 1475843367
+    locked: 0
+  - name: Collision
+    uniqueID: 3968434089
+    locked: 0
+  - name: minimap
+    uniqueID: 1347769603
     locked: 0
