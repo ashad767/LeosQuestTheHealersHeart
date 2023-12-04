@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class PlayerAttackState : PlayerState
@@ -27,7 +28,20 @@ public class PlayerAttackState : PlayerState
         if (player.currentWeapon is PlayerSword)
         {
             PlayerSword playerSword = player.currentWeapon as PlayerSword;
-            playerSword.Attack(facingDirToHitbox[facingDirection].hitEnimies);
+
+            if (player.currentWeapon is PlayerIntermediateSword)
+            {
+                Debug.Log("Add Shield" + facingDirToHitbox[facingDirection].hitEnimies.Count);
+            }
+
+            if(player.currentWeapon is PlayerAdvancedSword)
+            {
+                playerSword.Attack(facingDirToHitbox[facingDirection].hitEnimies, Mathf.Min(1, player.swordLevel) * player.playerComboCounter * player.playerComboScalingDamage);
+            }
+            else
+            {
+                playerSword.Attack(facingDirToHitbox[facingDirection].hitEnimies, 0);
+            }
         }
 
         player.attackTimer = player.playerAttackCooldown;

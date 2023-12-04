@@ -17,7 +17,7 @@ public class Player : Entity
     public float MaxEnergy;
     protected float currentEnergy;
     public float MaxShield;
-    protected float currentShield;
+    public float currentShield;
 
     [Space]
 
@@ -33,15 +33,22 @@ public class Player : Entity
 
     [Space]
 
+    public int playerComboScalingDamage;
     public float playerAttackCooldown;
     public float playerHealCooldown;
-    [HideInInspector]public int bowChargeState = 0;
+    public float playerComboGrace;
+
+    [Space]
+
+    public int bowChargeState = 0;
+    public int playerComboCounter;
+    [HideInInspector]public float playerComboTimer;
 
 
-    private int swordLevel;
+    [HideInInspector]public int swordLevel;
     private int bowLevel;
     private int magicLevel;
-    private Dictionary<int, int> indexToWeaponLevel = new Dictionary<int, int>() {};
+    public Dictionary<int, int> indexToWeaponLevel = new Dictionary<int, int>() {};
 
 
     #endregion
@@ -50,6 +57,7 @@ public class Player : Entity
 
     public Animator anim { get; private set; }
     public Rigidbody2D rb { get; private set; }
+    public UIManager playerUIManager;
 
     #endregion
 
@@ -86,9 +94,16 @@ public class Player : Entity
     public PlayerMagic basicMagic;
     public PlayerBow basicBow;
     [Space]
+    public PlayerSword intermediateSword;
     public PlayerBow intermediateBow;
+    [Space]
+    public PlayerSword advancedSword;
+    public PlayerBow advancedBow;
+    [Space]
+    public PlayerSword expertSword;
+    public PlayerBow expertBow;
 
-    private PlayerWeapon[,] weapons = new PlayerWeapon[3,4];
+    public PlayerWeapon[,] weapons = new PlayerWeapon[3,4];
     #endregion
 
     #region Hitboxes
@@ -123,12 +138,17 @@ public class Player : Entity
         stateMachine.currentState.Update();
 
         UpdateCooldowns();
-        CheckWeaponSwap();
-        UpdateUI();
+        playerUIManager.UpdatePlayerUI();
+        if (stateMachine.currentState is PlayerGroundState)
+        {
+            CheckWeaponSwap();
+        }
 
         TestInputs();
 
         anim.SetFloat("BowChargeState", bowChargeState);
+        if(swordLevel > 1)
+            anim.SetFloat("ComboCounter", playerComboCounter);
     }
 
     public void SetVelocity(float xVelocity, float yVelocity, float multiplier)
@@ -146,6 +166,8 @@ public class Player : Entity
         dashTimer -= Time.deltaTime;
         attackTimer -= Time.deltaTime;
         healTimer -= Time.deltaTime;
+
+        playerComboTimer -= Time.deltaTime;
     }
 
     private void CheckWeaponSwap()
@@ -163,13 +185,14 @@ public class Player : Entity
         if(Input.GetAxis("Mouse ScrollWheel") != 0)
         {
             if (currentWeaponIndex < 0)
-                currentWeaponIndex = weapons.Length - 1;
+                currentWeaponIndex = 2;
 
-            else if (currentWeaponIndex > weapons.Length - 1)
+            else if (currentWeaponIndex > 2)
                 currentWeaponIndex = 0;
 
             currentWeapon = weapons[currentWeaponIndex, indexToWeaponLevel[currentWeaponIndex]];
             anim.SetInteger("Weapon", currentWeaponIndex);
+            playerUIManager.UpdatePlayerUI();
         }
     }
 
@@ -182,17 +205,6 @@ public class Player : Entity
     {
         bowChargeState = 0;
     }
-
-    private void UpdateUI()
-    {
-        playerStats.SetText(
-            "Health: " + CurrentHealth +
-            "\nShield: " + currentShield +
-            "\nEnergy: " + currentEnergy +
-            "\nWeapon: " + currentWeapon.name 
-        );
-    }
-
     private void StateMachineInit()
     {
         stateMachine = new PlayerStateMachine();
@@ -215,20 +227,22 @@ public class Player : Entity
         weapons[1, 0] = basicBow;
         weapons[2, 0] = basicMagic;
 
-        weapons[0, 1] = basicSword;
+        weapons[0, 1] = intermediateSword;
         weapons[1, 1] = intermediateBow;
         weapons[2, 1] = basicMagic;
 
-        weapons[0, 2] = basicSword;
-        weapons[1, 2] = basicBow;
+        weapons[0, 2] = advancedSword;
+        weapons[1, 2] = advancedBow;
         weapons[2, 2] = basicMagic;
 
-        weapons[0, 3] = basicSword;
-        weapons[1, 3] = basicBow;
+        weapons[0, 3] = expertSword;
+        weapons[1, 3] = expertBow;
         weapons[2, 3] = basicMagic;
 
         currentWeaponIndex = 0;
         currentWeapon = weapons[currentWeaponIndex, indexToWeaponLevel[currentWeaponIndex]];
+
+        playerUIManager.UpdatePlayerUI();
     }
 
     private void StatsInit()
@@ -260,13 +274,35 @@ public class Player : Entity
 
     public void TestInputs()
     {
-        if (Input.GetKeyDown(KeyCode.PageUp))
+
+        if (Input.GetKeyDown(KeyCode.Insert))
+        {
+            swordLevel = Math.Min(swordLevel + 1, 3);
+            indexToWeaponLevel.Remove(0);
+            indexToWeaponLevel.Add(0, swordLevel);
+
+            currentWeapon = weapons[currentWeaponIndex, indexToWeaponLevel[currentWeaponIndex]];
+            playerUIManager.UpdatePlayerUI();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Home))
         {
             bowLevel = Math.Min(bowLevel + 1, 3);
             indexToWeaponLevel.Remove(1);
             indexToWeaponLevel.Add(1, bowLevel);
             
             currentWeapon = weapons[currentWeaponIndex, indexToWeaponLevel[currentWeaponIndex]];
+            playerUIManager.UpdatePlayerUI();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Delete))
+        {
+            TakeDamage(5);
+        }
+
+        if (Input.GetKeyDown(KeyCode.End))
+        {
+            currentShield -= 1;
         }
     }
 }
