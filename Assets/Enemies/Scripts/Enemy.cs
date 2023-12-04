@@ -86,7 +86,6 @@ public class Enemy : Entity
         {
             enemySM.ChangeState(DeadState);
         }
-        Debug.Log(enemySM.CurrentEnemyState);
     }
 
     private void FixedUpdate()
@@ -109,13 +108,15 @@ public class Enemy : Entity
     public void MoveEnemy(Vector2 velocity)
     {
         RB.velocity = velocity;
-        CheckDirection();
+        //CheckDirection();
         animator.SetFloat("xInput", velocity.x);
         animator.SetFloat("yInput", velocity.y);
 
         direction = (Player.transform.position - transform.position).normalized;
-        animator.SetFloat("xPInput", direction.x);
-        animator.SetFloat("yPInput", direction.y);
+        //animator.SetFloat("xPInput", direction.x);
+        //animator.SetFloat("yPInput", direction.y);
+
+        animator.SetFloat("direction", CheckDirection());
     }
 
     public void EnemyAttack(List<GameObject> entities)

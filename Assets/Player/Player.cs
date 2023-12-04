@@ -166,14 +166,22 @@ public class Player : Entity
 
     private void UpdateCooldowns()
     {
+        TimersUpdate();
+        ShieldUpdate();
+    }
+
+    private void TimersUpdate()
+    {
         dashTimer -= Time.deltaTime;
         attackTimer -= Time.deltaTime;
         healTimer -= Time.deltaTime;
-
         playerComboTimer -= Time.deltaTime;
+    }
 
-        currentShield -= Time.deltaTime/4;
-        if(currentShield < 0)
+    private void ShieldUpdate()
+    {
+        currentShield -= Time.deltaTime / 4;
+        if (currentShield < 0)
             currentShield = 0;
     }
 
