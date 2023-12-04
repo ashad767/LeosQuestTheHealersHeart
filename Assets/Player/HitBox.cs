@@ -21,6 +21,6 @@ public class HitBox : MonoBehaviour
 
     private void OnDisable()
     {
-        Debug.Log(hitEnimies.Count);
+        
     }
 }

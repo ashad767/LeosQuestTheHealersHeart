@@ -30,6 +30,7 @@ public class MushroomStrikeCheck : MonoBehaviour
             dmg = true;
             anim.SetBool("Explode", true);
             audioSource.Play();
+            player = col.gameObject.GetComponent<Player>();
         }
     }
 }

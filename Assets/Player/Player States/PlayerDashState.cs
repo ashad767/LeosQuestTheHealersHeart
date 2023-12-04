@@ -13,17 +13,41 @@ public class PlayerDashState : PlayerState
         base.Enter();
         stateTimer = player.playerDashDuration;
         player.UseEnergy(player.playerDashCost);
+        player.invincibleTimer = 1;
+
+        if (player.anim.GetFloat("xVelocity") == 0 && player.anim.GetFloat("yVelocity") == 0)
+        {
+            facingDirection = player.idleState.facingDirection;
+            if(facingDirection == 1)
+            {
+                player.anim.SetFloat("yVelocity", 1);
+            }
+            else if (facingDirection == 2)
+            {
+                player.anim.SetFloat("xVelocity", 1);
+            }
+            else if (facingDirection == 3)
+            {
+                player.anim.SetFloat("yVelocity", -1);
+            }
+            else if (facingDirection == 4)
+            {
+                player.anim.SetFloat("xVelocity", -1);
+            }
+        }
     }
 
     public override void Exit()
     {
         player.dashTimer = player.playerDashCooldown;
         player.SetVelocity(0, 0, 0);
+        player.invincibleTimer = 0;
         base.Exit();
     }
 
     public override void Update()
     {
+        player.invincibleTimer = 1;
         stateTimer -= Time.deltaTime;
         mousePosition = Input.mousePosition;
 

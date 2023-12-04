@@ -32,7 +32,6 @@ public class PlayerAttackState : PlayerState
             if (player.currentWeapon is PlayerIntermediateSword)
             {
                 player.AddShield(facingDirToHitbox[facingDirection].hitEnimies.Count * 1);
-                Debug.Log("Add Shield " + facingDirToHitbox[facingDirection].hitEnimies.Count);
             }
 
             if(player.currentWeapon is PlayerAdvancedSword)

@@ -45,11 +45,16 @@ public class Player : Entity
     [HideInInspector]public float playerComboTimer;
 
 
-    [HideInInspector]public int swordLevel;
-    private int bowLevel;
-    private int magicLevel;
+    [HideInInspector] public int swordLevel;
+    [HideInInspector] public int bowLevel;
+    [HideInInspector] public int magicLevel;
     public Dictionary<int, int> indexToWeaponLevel = new Dictionary<int, int>() {};
 
+
+    [HideInInspector] public int skillPoints;
+    [HideInInspector] public int coins;
+
+    public float invincibleTimer;
 
     #endregion
 
@@ -91,17 +96,20 @@ public class Player : Entity
     [Space]
 
     public PlayerSword basicSword;
-    public PlayerMagic basicMagic;
     public PlayerBow basicBow;
+    public PlayerMagic basicMagic;
     [Space]
     public PlayerSword intermediateSword;
     public PlayerBow intermediateBow;
+    public PlayerMagic intermediateMagic;
     [Space]
     public PlayerSword advancedSword;
     public PlayerBow advancedBow;
+    public PlayerMagic advancedMagic;
     [Space]
     public PlayerSword expertSword;
     public PlayerBow expertBow;
+    public PlayerMagic expertMagic;
 
     public PlayerWeapon[,] weapons = new PlayerWeapon[3,4];
     #endregion
@@ -147,8 +155,8 @@ public class Player : Entity
         TestInputs();
 
         playerUIManager.UpdatePlayerUI();
-        
 
+        anim.SetInteger("Weapon", currentWeaponIndex);
         anim.SetFloat("BowChargeState", bowChargeState);
         if(swordLevel > 1)
             anim.SetFloat("ComboCounter", playerComboCounter);
@@ -176,6 +184,7 @@ public class Player : Entity
         attackTimer -= Time.deltaTime;
         healTimer -= Time.deltaTime;
         playerComboTimer -= Time.deltaTime;
+        invincibleTimer -= Time.deltaTime;
     }
 
     private void ShieldUpdate()
@@ -245,15 +254,15 @@ public class Player : Entity
 
         weapons[0, 1] = intermediateSword;
         weapons[1, 1] = intermediateBow;
-        weapons[2, 1] = basicMagic;
+        weapons[2, 1] = intermediateMagic;
 
         weapons[0, 2] = advancedSword;
         weapons[1, 2] = advancedBow;
-        weapons[2, 2] = basicMagic;
+        weapons[2, 2] = advancedMagic;
 
         weapons[0, 3] = expertSword;
         weapons[1, 3] = expertBow;
-        weapons[2, 3] = basicMagic;
+        weapons[2, 3] = expertMagic;
 
         currentWeaponIndex = 0;
         currentWeapon = weapons[currentWeaponIndex, indexToWeaponLevel[currentWeaponIndex]];
@@ -288,6 +297,16 @@ public class Player : Entity
         }
     }
 
+    public void Heal(int ammount)
+    {
+        CurrentHealth += ammount;
+
+        if (CurrentHealth > maxHealth)
+        {
+            CurrentHealth = maxHealth;
+        }
+    }
+
     public void RegenEnergy()
     {
         if(currentEnergy < MaxEnergy) 
@@ -299,56 +318,85 @@ public class Player : Entity
 
     public override void TakeDamage(float damage)
     {
-        if(currentShield > 0)
+        if(invincibleTimer < 0)
         {
-            if(currentShield >= damage)
+            if (currentShield > 0)
             {
-                currentShield -= damage;
+                if (currentShield >= damage)
+                {
+                    currentShield -= damage;
+                }
+                else
+                {
+                    base.TakeDamage(damage - currentShield);
+                    currentShield = 0;
+                }
             }
             else
             {
-                base.TakeDamage(damage - currentShield);
-                currentShield = 0;
+                base.TakeDamage(damage);
             }
-        }
-        else
-        {
-            base.TakeDamage(damage);
         }
 
     }
 
+    public void UpgradeSkill(int skill)
+    {
+        if(skillPoints > 0)
+        {
+            
+            if(skill == 0 && swordLevel != 3)
+            {
+                swordLevel = Math.Min(swordLevel + 1, 3);
+                indexToWeaponLevel.Remove(0);
+                indexToWeaponLevel.Add(0, swordLevel);
+                skillPoints--;
+            }
+
+            else if(skill == 1 && bowLevel != 3)
+            {
+                bowLevel = Math.Min(bowLevel + 1, 3);
+                indexToWeaponLevel.Remove(1);
+                indexToWeaponLevel.Add(1, bowLevel);
+                skillPoints--;
+            }
+
+            else if (skill == 2 && magicLevel != 3)
+            {
+                magicLevel = Math.Min(magicLevel + 1, 3);
+                indexToWeaponLevel.Remove(2);
+                indexToWeaponLevel.Add(2, magicLevel);
+                skillPoints--;
+            }
+
+            currentWeapon = weapons[currentWeaponIndex, indexToWeaponLevel[currentWeaponIndex]];
+            playerUIManager.UpdatePlayerUI();
+        }
+    }
+
+    public void AddCoins(int amt)
+    {
+        coins += amt;
+    }
+
+    public bool RemoveCoins(int amt)
+    {
+        if(coins < amt)
+        {
+            return false;
+        }
+
+        coins -= amt;
+        return true;
+    }
+
     public void TestInputs()
     {
-
-        if (Input.GetKeyDown(KeyCode.Insert))
-        {
-            swordLevel = Math.Min(swordLevel + 1, 3);
-            indexToWeaponLevel.Remove(0);
-            indexToWeaponLevel.Add(0, swordLevel);
-
-            currentWeapon = weapons[currentWeaponIndex, indexToWeaponLevel[currentWeaponIndex]];
-            playerUIManager.UpdatePlayerUI();
-        }
-
-        if (Input.GetKeyDown(KeyCode.Home))
-        {
-            bowLevel = Math.Min(bowLevel + 1, 3);
-            indexToWeaponLevel.Remove(1);
-            indexToWeaponLevel.Add(1, bowLevel);
-            
-            currentWeapon = weapons[currentWeaponIndex, indexToWeaponLevel[currentWeaponIndex]];
-            playerUIManager.UpdatePlayerUI();
-        }
-
-        if (Input.GetKeyDown(KeyCode.Delete))
-        {
+        if (Input.GetKeyDown(KeyCode.PageUp))
+            skillPoints++;
+        if (Input.GetKeyDown(KeyCode.PageDown))
+            AddCoins(1);
+        if (Input.GetKeyDown(KeyCode.KeypadMinus))
             TakeDamage(5);
-        }
-
-        if (Input.GetKeyDown(KeyCode.End))
-        {
-            currentShield -= 1;
-        }
     }
 }

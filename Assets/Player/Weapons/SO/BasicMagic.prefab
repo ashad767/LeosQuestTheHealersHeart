@@ -46,4 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponImage: {fileID: -1585712656, guid: f06501cd5fe771543bc9a782fd8af9e3, type: 3}
   weaponName: Basic Player Magic
-  healField: {fileID: 7221770408604753345, guid: 4f88ca9b6b1cda44abc260fdb64e7d1f, type: 3}
+  healField: {fileID: 2896408627580352491, guid: 4f88ca9b6b1cda44abc260fdb64e7d1f, type: 3}
