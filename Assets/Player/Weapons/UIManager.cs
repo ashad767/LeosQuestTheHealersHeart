@@ -27,9 +27,18 @@ public class UIManager : MonoBehaviour
         foreach (Image img in borders)
             img.enabled = false;
         borders[player.currentWeaponIndex].enabled = true;
+
+        if(player.currentShield > 0)
+        {
+            shieldBar.gameObject.SetActive(true);
+            shieldBar.rectTransform.sizeDelta = new Vector2(player.currentShield / player.MaxShield * 93, 46.5929f);
+        }
+        else
+        {
+            shieldBar.gameObject.SetActive(false);
+        }
         
         healthBar.rectTransform.sizeDelta= new Vector2(player.GetHealth() / player.maxHealth * 327, 46.5929f);
-        shieldBar.rectTransform.sizeDelta = new Vector2(player.currentShield / player.MaxShield * 93, 46.5929f);
         energyBar.rectTransform.sizeDelta = new Vector2(player.GetEnergy() / player.MaxEnergy * 327, 46.6839f);
     }
 
