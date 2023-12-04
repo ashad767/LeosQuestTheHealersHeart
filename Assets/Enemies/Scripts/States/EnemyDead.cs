@@ -22,7 +22,7 @@ public class EnemyDead : EnemyState
     {
         base.FrameUpdate();
 
-        
+        enemy.MoveEnemy(Vector2.zero);
     }
 
     public override void AnimationTriggerEvent(AudioClip audioClip)
