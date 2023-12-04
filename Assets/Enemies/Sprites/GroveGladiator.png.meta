@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2d8d3b4fbcf34ad4bb2db5844ce1bc06
+guid: 7d37b43d056b5c640a627fc0c293e4bf
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -65,7 +65,7 @@ TextureImporter:
   ignorePngGamma: 0
   applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 1
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -106,30 +106,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Download49003_0
+      name: GroveGladiator_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2048
-        width: 64
-        height: 64
+        x: 15
+        y: 2049
+        width: 33
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4088f82f83f82cb46876165074fe823b
-      internalID: -642937067
+      spriteID: bfff94de4d1efd440864f768649328e4
+      internalID: 827639013
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_1
+      name: GroveGladiator_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 2048
-        width: 64
-        height: 64
+        x: 80
+        y: 2049
+        width: 31
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6797f0de1c7f064899e4230aa6ea93f
-      internalID: -1849960501
+      spriteID: c506d732aa3ec8c46935b81a94ec54d4
+      internalID: -445319759
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_2
+      name: GroveGladiator_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 2048
-        width: 64
-        height: 64
+        x: 145
+        y: 2049
+        width: 29
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6fc1eae070717843bd5914b5da5dd75
-      internalID: -331297077
+      spriteID: a403ec4342891054199835b8372bd9ca
+      internalID: 1228261056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_3
+      name: GroveGladiator_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 2048
-        width: 64
-        height: 64
+        x: 205
+        y: 2049
+        width: 37
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66b987d9c1ab7324eab1b9d87bc96e27
-      internalID: -658369949
+      spriteID: 0a8f0e46188bf4b45a559ad5db044ee2
+      internalID: -1695936299
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_4
+      name: GroveGladiator_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 2048
-        width: 64
-        height: 64
+        x: 262
+        y: 2049
+        width: 52
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ca014d7e8d9ebe45ad012d74e64d164
-      internalID: 1125129003
+      spriteID: df78c3c7bad23fd49bd66fafe6676af2
+      internalID: -1768124743
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_5
+      name: GroveGladiator_5
       rect:
         serializedVersion: 2
-        x: 320
-        y: 2048
-        width: 64
-        height: 64
+        x: 327
+        y: 2049
+        width: 49
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47c96da37f54c0a46b66b36e85e463f4
-      internalID: -666554859
+      spriteID: d0fc7f2c8e2995042b3c6fb3ddfa8d33
+      internalID: -1569308242
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_6
+      name: GroveGladiator_6
       rect:
         serializedVersion: 2
-        x: 384
-        y: 2048
-        width: 64
-        height: 64
+        x: 397
+        y: 2049
+        width: 37
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3dac6ac20ae769498cbc4385c43fd83
-      internalID: 1454246432
+      spriteID: c1698310e80992c41b3e2f70646d150c
+      internalID: 1524657289
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_7
+      name: GroveGladiator_7
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1984
-        width: 64
-        height: 64
+        x: 23
+        y: 1985
+        width: 20
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,20 +271,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f66d945487ec8f4e90c44f606d8a067
-      internalID: 1350310442
+      spriteID: ecec306ef37427345adfd29128d12a2b
+      internalID: 1072459986
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_8
+      name: GroveGladiator_8
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1984
-        width: 64
-        height: 64
+        x: 85
+        y: 1985
+        width: 23
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,20 +292,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 330330ca333d8a04e81c844970b76174
-      internalID: 793980565
+      spriteID: 9bb77731361c5a44290efed7ff61b527
+      internalID: -1817232557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_9
+      name: GroveGladiator_9
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1984
-        width: 64
-        height: 64
+        x: 150
+        y: 1985
+        width: 22
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,20 +313,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26e1b24a02d780044880d59481d0b4f1
-      internalID: -643508346
+      spriteID: 95bc4adffb9b76e489856cf2ebedf7f5
+      internalID: -1196049316
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_10
+      name: GroveGladiator_10
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1984
-        width: 64
-        height: 64
+        x: 211
+        y: 1985
+        width: 27
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,20 +334,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e85bc90997f423148a7e8964807c7a15
-      internalID: 1272061607
+      spriteID: 2955ca872e945b648a6025e66486c229
+      internalID: 2137560326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_11
+      name: GroveGladiator_11
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1984
-        width: 64
-        height: 64
+        x: 273
+        y: 1985
+        width: 34
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,20 +355,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83602764afa1e10419951053d1ac57e8
-      internalID: -386620494
+      spriteID: b41cd57384ee5e548ad6d71f8c9d3002
+      internalID: 718072735
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_12
+      name: GroveGladiator_12
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1984
-        width: 64
-        height: 64
+        x: 337
+        y: 1985
+        width: 34
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -389,20 +376,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a342b03f75b242a4d91fbda4de5be9f1
-      internalID: -1485243999
+      spriteID: a553afc05b0364845a0daaf18b674dcd
+      internalID: 47003390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_13
+      name: GroveGladiator_13
       rect:
         serializedVersion: 2
-        x: 384
-        y: 1984
-        width: 64
-        height: 64
+        x: 403
+        y: 1985
+        width: 30
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -410,20 +397,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c44a893f4ebefd489316ab1686f48b6
-      internalID: -189767107
+      spriteID: 029c7334a38c1a743a50ed9c60c086ff
+      internalID: -731221957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_14
+      name: GroveGladiator_14
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1920
-        width: 64
-        height: 64
+        x: 15
+        y: 1921
+        width: 33
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -431,20 +418,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe6fb93792a7dd340bc91155267bf993
-      internalID: -23445656
+      spriteID: 6d670444fc053834ab9d14d7ea9f1b93
+      internalID: -1997582955
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_15
+      name: GroveGladiator_15
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1920
-        width: 64
-        height: 64
+        x: 79
+        y: 1921
+        width: 33
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -452,20 +439,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 902308cbfbc72374fa5d0516c98225f2
-      internalID: 88499605
+      spriteID: c1dd39f70b5f57645b7c7607096c4dde
+      internalID: -806446891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_16
+      name: GroveGladiator_16
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1920
-        width: 64
-        height: 64
+        x: 145
+        y: 1921
+        width: 29
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -473,20 +460,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5749c8a35f8f003409de964533148c67
-      internalID: 932567783
+      spriteID: db359f0c944670a4ca304c0661c3d3d5
+      internalID: 1815720602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_17
+      name: GroveGladiator_17
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1920
-        width: 64
-        height: 64
+        x: 205
+        y: 1921
+        width: 37
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -494,20 +481,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 470079b8d0ea1b2489c3882bcf693137
-      internalID: -1939303147
+      spriteID: c8fbbadc96a946f49bcc90bd5a431a7d
+      internalID: -966591091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_18
+      name: GroveGladiator_18
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1920
-        width: 64
-        height: 64
+        x: 262
+        y: 1921
+        width: 52
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -515,20 +502,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ab99fb3cf82fe14283bbb7f1ad6952a
-      internalID: 174349234
+      spriteID: bdb83d7970161a54cb27dabcb6e7cb0d
+      internalID: 577476703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_19
+      name: GroveGladiator_19
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1920
-        width: 64
-        height: 64
+        x: 327
+        y: 1921
+        width: 49
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -536,20 +523,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56b894247e410ab41a6aa6d8a460ffca
-      internalID: -1567413335
+      spriteID: f449e6871abf8314db259899f157de5b
+      internalID: -313298748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_20
+      name: GroveGladiator_20
       rect:
         serializedVersion: 2
-        x: 384
-        y: 1920
-        width: 64
-        height: 64
+        x: 398
+        y: 1921
+        width: 35
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -557,20 +544,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff3ac3a455aa1a84aa5d1934014c9a2a
-      internalID: 530088036
+      spriteID: 544e4921ee2483e419fa2448c134907e
+      internalID: -1615306090
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_21
+      name: GroveGladiator_21
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1856
-        width: 64
-        height: 64
+        x: 21
+        y: 1857
+        width: 20
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -578,20 +565,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea66e74329dcb8c4faa5aa4e5933382c
-      internalID: 979918602
+      spriteID: a98a93c429a93e64cbd9807230c0c533
+      internalID: 1338076367
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_22
+      name: GroveGladiator_22
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1856
-        width: 64
-        height: 64
+        x: 84
+        y: 1857
+        width: 23
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -599,20 +586,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 478c004dcd09a9946be9da9b8dadf5a6
-      internalID: -1819610290
+      spriteID: 3b9706e2ee3571b41b043ef39b8d53ed
+      internalID: 503052221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_23
+      name: GroveGladiator_23
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1856
-        width: 64
-        height: 64
+        x: 147
+        y: 1857
+        width: 23
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -620,20 +607,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63fb9c9ac5463ae42816fcecff2c0ae6
-      internalID: -1627216025
+      spriteID: 102026206b7eec54c9c21049f5f60384
+      internalID: -560660392
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_24
+      name: GroveGladiator_24
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1856
-        width: 64
-        height: 64
+        x: 209
+        y: 1857
+        width: 27
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -641,20 +628,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4cca54a5dc2e48c498eac1905113d5ad
-      internalID: 1730037225
+      spriteID: 93818f2df9d018e4cbc9c80645d4520b
+      internalID: 1939192034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_25
+      name: GroveGladiator_25
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1856
-        width: 64
-        height: 64
+        x: 268
+        y: 1857
+        width: 34
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -662,20 +649,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 681735064327a9042850b03805be3035
-      internalID: 126856480
+      spriteID: 63b84b489e30b0845a53b76d38175e87
+      internalID: 1192130421
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_26
+      name: GroveGladiator_26
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1856
-        width: 64
-        height: 64
+        x: 332
+        y: 1857
+        width: 35
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -683,20 +670,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc1db60c3f28e2d44be95a3df98726f4
-      internalID: -2081715669
+      spriteID: 1f98795f4ae43b6498844ad7910a1032
+      internalID: 2118868933
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_27
+      name: GroveGladiator_27
       rect:
         serializedVersion: 2
-        x: 384
-        y: 1856
-        width: 64
-        height: 64
+        x: 399
+        y: 1857
+        width: 30
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -704,20 +691,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c13bb48dbebd943468e453cd99a7444c
-      internalID: -1986710496
+      spriteID: 1d91aa1a28181f448a8de3a7becbb51a
+      internalID: -2065820268
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_28
+      name: GroveGladiator_28
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1792
-        width: 64
-        height: 64
+        x: 9
+        y: 1793
+        width: 39
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -725,20 +712,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e090e37079ef7944bc1be9fdad0ab85
-      internalID: 1591740484
+      spriteID: a27aedc516061bd4aaf1ac350a05904c
+      internalID: 1704281033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_29
+      name: GroveGladiator_29
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1792
-        width: 64
-        height: 64
+        x: 76
+        y: 1791
+        width: 34
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -746,20 +733,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5b12a70621bbad4bb7be8c541fd24c6
-      internalID: -876211983
+      spriteID: 2988509f797f5a94d84d9497ac06b164
+      internalID: -1550165746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_30
+      name: GroveGladiator_30
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1792
-        width: 64
-        height: 64
+        x: 144
+        y: 1791
+        width: 28
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -767,20 +754,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d5464cba9e635643bc49b1cb9409e54
-      internalID: -949136640
+      spriteID: 37ea393ebfeb60942ac4957f4728d41c
+      internalID: 659251442
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_31
+      name: GroveGladiator_31
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1792
-        width: 64
-        height: 64
+        x: 210
+        y: 1791
+        width: 26
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -788,20 +775,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c95b561dd75452d4789321a4e2fb5e39
-      internalID: -1676084548
+      spriteID: c169c60017f767e48bb4a5f386c4c130
+      internalID: -152707675
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_32
+      name: GroveGladiator_32
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1792
-        width: 64
-        height: 64
+        x: 276
+        y: 1791
+        width: 26
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -809,20 +796,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 127291ee5ae43d74a923b221e61bb776
-      internalID: 1404174756
+      spriteID: de6a45350dc280f4e8a18b3eaa156fc2
+      internalID: -1650245339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_33
+      name: GroveGladiator_33
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1792
-        width: 64
-        height: 64
+        x: 341
+        y: 1791
+        width: 25
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -830,20 +817,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c37550314b0a11743ac33cd9adad2f8e
-      internalID: 500879589
+      spriteID: 1a7695f34ee2dcc4282966cc10237e72
+      internalID: -771421494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_34
+      name: GroveGladiator_34
       rect:
         serializedVersion: 2
-        x: 384
-        y: 1792
-        width: 64
-        height: 64
+        x: 404
+        y: 1791
+        width: 26
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -851,20 +838,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ba6e1c7e6c17054fbe0865a25f574f2
-      internalID: 857700986
+      spriteID: 90f941b56b624c041a6d222f860f5f4e
+      internalID: 181502950
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_35
+      name: GroveGladiator_35
       rect:
         serializedVersion: 2
-        x: 448
-        y: 1792
-        width: 64
-        height: 64
+        x: 466
+        y: 1791
+        width: 27
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -872,20 +859,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 044e64ba050490b448a15ea8d15e253d
-      internalID: 82592345
+      spriteID: 3d1ecd687bb02194ebe75a5ab4477d3a
+      internalID: -1679208595
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_36
+      name: GroveGladiator_36
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1728
-        width: 64
-        height: 64
+        x: 23
+        y: 1729
+        width: 29
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -893,20 +880,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa9226739f3a1504e99aaf23bf99c2ad
-      internalID: -2018147082
+      spriteID: 97fd92a3c0ee1f6438cee297f3ab621b
+      internalID: 90689697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_37
+      name: GroveGladiator_37
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1728
-        width: 64
-        height: 64
+        x: 83
+        y: 1729
+        width: 34
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -914,20 +901,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b150af92b3553394f95b15c4d6c5c99e
-      internalID: 2096718434
+      spriteID: 9232708a620fccb439b57a93e0a41e5d
+      internalID: -1616059334
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_38
+      name: GroveGladiator_38
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1728
-        width: 64
-        height: 64
+        x: 146
+        y: 1729
+        width: 37
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -935,20 +922,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29ea34b521d984342a2757d13a4663be
-      internalID: -2069392943
+      spriteID: 246041a55a2b82e418dbfc7a2ed570f0
+      internalID: 49796776
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_39
+      name: GroveGladiator_39
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1728
-        width: 64
-        height: 64
+        x: 213
+        y: 1729
+        width: 33
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -956,20 +943,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5f0d869004ce614ab903bef85ea8f29
-      internalID: 532510091
+      spriteID: 9464cc97c5ca427448e52a5d7558b5b8
+      internalID: -981082678
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_40
+      name: GroveGladiator_40
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1728
-        width: 64
-        height: 64
+        x: 270
+        y: 1729
+        width: 32
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -977,20 +964,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2f709d442ae8a3419d277a015e08cf7
-      internalID: 94197203
+      spriteID: b8f4fd0fdedfeed45a73210c7851b460
+      internalID: -1766432300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_41
+      name: GroveGladiator_41
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1728
-        width: 64
-        height: 64
+        x: 331
+        y: 1729
+        width: 33
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -998,20 +985,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03f6a5b37d510a3489bd1acced2d5336
-      internalID: 1346253913
+      spriteID: 827e0be65fa54374e8c2d13db9104698
+      internalID: -2064034320
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_42
+      name: GroveGladiator_42
       rect:
         serializedVersion: 2
-        x: 384
-        y: 1728
-        width: 64
-        height: 64
+        x: 398
+        y: 1729
+        width: 32
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1019,20 +1006,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06e500a821aa140499b0136b5c670e3e
-      internalID: 459634162
+      spriteID: 5441ef46c0d243c4bb90fd0af29298cb
+      internalID: 1051046981
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_43
+      name: GroveGladiator_43
       rect:
         serializedVersion: 2
-        x: 448
-        y: 1728
-        width: 64
-        height: 64
+        x: 469
+        y: 1729
+        width: 33
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1040,20 +1027,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34f531fb9cd22f440a51a55040399333
-      internalID: -912217222
+      spriteID: 9dc336d6eac40bb4084476aca08b7c03
+      internalID: -169271575
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_44
+      name: GroveGladiator_44
       rect:
         serializedVersion: 2
-        x: 640
-        y: 1728
-        width: 64
-        height: 64
+        x: 15
+        y: 1665
+        width: 38
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1061,20 +1048,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0865b260aa293414fb61aa43aa752281
-      internalID: 2022678483
+      spriteID: 46379a9d6e214184781b023711a3176d
+      internalID: -1807265288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_45
+      name: GroveGladiator_45
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1664
-        width: 64
-        height: 64
+        x: 81
+        y: 1667
+        width: 33
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1082,20 +1069,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ab80476217652d41a3e0df7f9cb5796
-      internalID: 692414090
+      spriteID: 685aad00ccb2ef043a334e623fee73ff
+      internalID: -1932438250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_46
+      name: GroveGladiator_46
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1664
-        width: 64
-        height: 64
+        x: 147
+        y: 1667
+        width: 27
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1103,20 +1090,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 801e5a4b0b8bbc74d85f08cdfa2f006c
-      internalID: 226834910
+      spriteID: 73159099e2607e64b910393e9e9e4a1c
+      internalID: -1011871973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_47
+      name: GroveGladiator_47
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1664
-        width: 64
-        height: 64
+        x: 209
+        y: 1667
+        width: 28
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1124,20 +1111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9fca06f796ba22b41970a48c4fde57d7
-      internalID: 973498781
+      spriteID: 2d55eed43a21e9d429477f861c611e90
+      internalID: -719075718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_48
+      name: GroveGladiator_48
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1664
-        width: 64
-        height: 64
+        x: 276
+        y: 1667
+        width: 27
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1145,20 +1132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1998920dfdc4ca746b36791738d1f44a
-      internalID: 1151214655
+      spriteID: 62f243ff918ab36428a5a6fe0a62cb13
+      internalID: -323809067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_49
+      name: GroveGladiator_49
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1664
-        width: 64
-        height: 64
+        x: 340
+        y: 1667
+        width: 27
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1166,20 +1153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8261e6495b33c648855034dd2216946
-      internalID: 1466601331
+      spriteID: 0b82287f690d9e541805fc434ee4f9b5
+      internalID: 1411507079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_50
+      name: GroveGladiator_50
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1664
-        width: 64
-        height: 64
+        x: 404
+        y: 1667
+        width: 29
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1187,20 +1174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7b0a5845242fc243bbcf84533a49423
-      internalID: 384077579
+      spriteID: f0e8f5d19f855c540834f30c03eb4e33
+      internalID: 643858298
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_51
+      name: GroveGladiator_51
       rect:
         serializedVersion: 2
-        x: 384
-        y: 1664
-        width: 64
-        height: 64
+        x: 465
+        y: 1667
+        width: 29
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1208,20 +1195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 239aa96d79996bc48965f52bb5065e47
-      internalID: 204885814
+      spriteID: 491697c3c8d5f3240b386efd85f371bc
+      internalID: -979200608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_52
+      name: GroveGladiator_52
       rect:
         serializedVersion: 2
-        x: 448
-        y: 1664
-        width: 64
-        height: 64
+        x: 12
+        y: 1602
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1229,20 +1216,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbdec4b6abe1f4f4895fd647bd817357
-      internalID: 477581650
+      spriteID: 36b0930e0e12c344d8a16a8787e950c3
+      internalID: 1528207302
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_53
+      name: GroveGladiator_53
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1600
-        width: 64
-        height: 64
+        x: 75
+        y: 1602
+        width: 34
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1250,20 +1237,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a875af7e3f245ff45b00bc4b63275814
-      internalID: -1535276450
+      spriteID: 9dec81cd17a30ab4d8810d61ada58704
+      internalID: 1675326863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_54
+      name: GroveGladiator_54
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1600
-        width: 64
-        height: 64
+        x: 137
+        y: 1602
+        width: 36
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1271,20 +1258,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81f161044a58b154bbd8c105c72f4560
-      internalID: -703327337
+      spriteID: 43fc0bbb43c55684b8132e42fb13c1aa
+      internalID: 1205402400
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_55
+      name: GroveGladiator_55
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1600
-        width: 64
-        height: 64
+        x: 201
+        y: 1602
+        width: 34
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1292,20 +1279,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f67a15d422f1085469ae2d5f50552e5e
-      internalID: 400201178
+      spriteID: 134f4f0d0ca0efd4a9025038c88d5934
+      internalID: -1534800085
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_56
+      name: GroveGladiator_56
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1600
-        width: 64
-        height: 64
+        x: 274
+        y: 1602
+        width: 31
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1313,20 +1300,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7ee298e7b41f4c44bcd1d9147321eeb
-      internalID: 1266802785
+      spriteID: 6a5f5bb10c763164aa9f99b2a0953a71
+      internalID: 154313286
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_57
+      name: GroveGladiator_57
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1600
-        width: 64
-        height: 64
+        x: 340
+        y: 1602
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1334,20 +1321,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3f9fb5a013824a43ba1a84b7e900d0d
-      internalID: -1660825394
+      spriteID: f7e9047a28fefd947bb45f0131d46418
+      internalID: 799324177
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_58
+      name: GroveGladiator_58
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1600
-        width: 64
-        height: 64
+        x: 402
+        y: 1602
+        width: 31
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1355,20 +1342,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9ba4e42a0128b0408712832b2f6ca77
-      internalID: -427648387
+      spriteID: 82304289ccfe6c4408f4f51b8c3f2f91
+      internalID: 751659564
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_59
+      name: GroveGladiator_59
       rect:
         serializedVersion: 2
-        x: 384
-        y: 1600
-        width: 64
-        height: 64
+        x: 457
+        y: 1602
+        width: 34
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1376,20 +1363,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 634a1546f6e3c35409423638773e21fe
-      internalID: -1893875490
+      spriteID: 51dc2b4ed83b8dc419d7ec552350fe70
+      internalID: 1810754923
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_60
+      name: GroveGladiator_60
       rect:
         serializedVersion: 2
-        x: 448
-        y: 1600
-        width: 64
-        height: 64
+        x: 9
+        y: 1539
+        width: 44
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1397,20 +1384,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac2b24c25fbb34f4baedd3182ac20c1d
-      internalID: 1458155842
+      spriteID: e3eb168e7321d0a41a789750689bc138
+      internalID: 1878749770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_61
+      name: GroveGladiator_61
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1536
-        width: 64
-        height: 64
+        x: 73
+        y: 1539
+        width: 41
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1418,20 +1405,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd0925dfc09d76144b96d9dd6f2ccdf9
-      internalID: -1849695758
+      spriteID: 35eb83c1721ac484a80ba2bc87e5a8be
+      internalID: 355732074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_62
+      name: GroveGladiator_62
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1536
-        width: 64
-        height: 64
+        x: 137
+        y: 1538
+        width: 43
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1439,20 +1426,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4037f8c01593f63468e31d195bd87392
-      internalID: -522190898
+      spriteID: 99264e357a46fda438c557d4f1f5c9ea
+      internalID: -2001971142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_63
+      name: GroveGladiator_63
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1536
-        width: 64
-        height: 64
+        x: 201
+        y: 1537
+        width: 43
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1460,20 +1447,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37d3f886f1d249742a19b1aa49d78078
-      internalID: 2057688598
+      spriteID: caee1e4fba7dc7f4983cf3b7f5bc0e4d
+      internalID: 913602277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_64
+      name: GroveGladiator_64
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1536
-        width: 64
-        height: 64
+        x: 266
+        y: 1538
+        width: 42
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1481,20 +1468,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81457101c6541cb4e9541e7dcad8da76
-      internalID: -1633805122
+      spriteID: 91dbf9b3939d370489d17b0c5fc3b9c0
+      internalID: -1220465743
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_65
+      name: GroveGladiator_65
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1536
-        width: 64
-        height: 64
+        x: 330
+        y: 1539
+        width: 42
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1502,20 +1489,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e200706d87e2f54dbcc4aa2e1c7a746
-      internalID: -376819028
+      spriteID: 042d3f848df1b5b49803460cf694b75b
+      internalID: -123591278
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_66
+      name: GroveGladiator_66
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1536
-        width: 64
-        height: 64
+        x: 394
+        y: 1538
+        width: 40
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1523,20 +1510,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a87ee0cac01ad4942b2609cd442da8f3
-      internalID: 899027824
+      spriteID: a597ea874c79e304f8b7165a7c7f335b
+      internalID: -251693862
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_67
+      name: GroveGladiator_67
       rect:
         serializedVersion: 2
-        x: 384
-        y: 1536
-        width: 64
-        height: 64
+        x: 459
+        y: 1537
+        width: 40
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1544,20 +1531,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16e0701c81e03654caadb97b1b65345c
-      internalID: -162598648
+      spriteID: 2b6d3eebf2092154c8a2ca38a6a96ca6
+      internalID: 689680099
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_68
+      name: GroveGladiator_68
       rect:
         serializedVersion: 2
-        x: 448
-        y: 1536
-        width: 64
-        height: 64
+        x: 522
+        y: 1538
+        width: 41
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1565,20 +1552,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce5e352bb9ac05d49991027052d013a5
-      internalID: -1587168353
+      spriteID: 9edf03300ae3fb34481ef8911559fe03
+      internalID: 145274400
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_69
+      name: GroveGladiator_69
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1536
-        width: 64
-        height: 64
+        x: 5
+        y: 1474
+        width: 46
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1586,20 +1573,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cda41e31a11700e498617add5a5d3baf
-      internalID: -720022034
+      spriteID: bc7337e27a1bfdc4bb33a96b6e75099d
+      internalID: 1716855089
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_70
+      name: GroveGladiator_70
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1472
-        width: 64
-        height: 64
+        x: 83
+        y: 1474
+        width: 31
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1607,20 +1594,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f4bdee8fc30e0047aa92be1ad79f88f
-      internalID: 2131243479
+      spriteID: 99585131224589d4682a7d5366ae8d50
+      internalID: 9723903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_71
+      name: GroveGladiator_71
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1472
-        width: 64
-        height: 64
+        x: 147
+        y: 1475
+        width: 31
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1628,20 +1615,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0ee65fb18679324cbcfac56a6e2f618
-      internalID: -1460138133
+      spriteID: 526bd2876272cdb44abec526d029a81b
+      internalID: 565553982
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_72
+      name: GroveGladiator_72
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1472
-        width: 64
-        height: 64
+        x: 205
+        y: 1475
+        width: 38
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1649,20 +1636,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66c4e10e7ca36ff4293b51e5c62c7b11
-      internalID: -2101918473
+      spriteID: 54ee8cdef3b2c9648aaee577deeeeddf
+      internalID: 1699564251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_73
+      name: GroveGladiator_73
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1472
-        width: 64
-        height: 64
+        x: 263
+        y: 1474
+        width: 45
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1670,20 +1657,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f9d454f140d9c547b954aba0b968970
-      internalID: -68514758
+      spriteID: 8f611d240625fdf499eff20f7b8c1ab1
+      internalID: 67531578
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_74
+      name: GroveGladiator_74
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1472
-        width: 64
-        height: 64
+        x: 326
+        y: 1474
+        width: 47
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1691,20 +1678,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68ae78eb67f1f854c8f20aee372b29dd
-      internalID: 1607452343
+      spriteID: de8eebb655f2e7340913b3beb5ca0687
+      internalID: -1174666281
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_75
+      name: GroveGladiator_75
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1472
-        width: 64
-        height: 64
+        x: 391
+        y: 1474
+        width: 46
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1712,20 +1699,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2e84d7d299ab7a4f95abb0958320172
-      internalID: 330896133
+      spriteID: 9699a5ebda518bf4a956d84b07371418
+      internalID: 1977370090
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_76
+      name: GroveGladiator_76
       rect:
         serializedVersion: 2
-        x: 384
-        y: 1472
-        width: 64
-        height: 64
+        x: 461
+        y: 1474
+        width: 39
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1733,20 +1720,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57f0fba01cdbe3142bf4cf8c3bc2369c
-      internalID: -1288896279
+      spriteID: cbb239fc81161a14b8ed265cd4a4024a
+      internalID: 1384520462
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_77
+      name: GroveGladiator_77
       rect:
         serializedVersion: 2
-        x: 448
-        y: 1472
-        width: 64
-        height: 64
+        x: 531
+        y: 1474
+        width: 33
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1754,20 +1741,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e48c212fa5877b74a97dfaac87f64402
-      internalID: 927655062
+      spriteID: 87fc8fffe7f618b49bd6f84194e76066
+      internalID: -1305397918
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_78
+      name: GroveGladiator_78
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1472
-        width: 64
-        height: 64
+        x: 11
+        y: 1410
+        width: 37
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1775,20 +1762,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32bd178134964354d896dab95a4923b8
-      internalID: 27969856
+      spriteID: 1c591c74a89ba8544a75872b5ebd980c
+      internalID: -1158758314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_79
+      name: GroveGladiator_79
       rect:
         serializedVersion: 2
-        x: 0
+        x: 76
+        y: 1410
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 977a4b7f417192841b6c5be85a7229fa
+      internalID: 955238137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroveGladiator_80
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1409
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 386b305b6ccbe6642b511ab118031711
+      internalID: 1237449682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroveGladiator_81
+      rect:
+        serializedVersion: 2
+        x: 203
         y: 1408
-        width: 64
-        height: 64
+        width: 36
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1796,20 +1825,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f8da84c0cce4f244994f19ed2d08da1
-      internalID: 1850985884
+      spriteID: 3dc5783656eb8f84bae34a70f4cf489d
+      internalID: 2018073154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_80
+      name: GroveGladiator_82
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1408
-        width: 64
-        height: 64
+        x: 267
+        y: 1409
+        width: 36
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1817,20 +1846,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8889f3fdfcca63c4087032f4ff6e6cf8
-      internalID: -916936512
+      spriteID: 8e205af1b2cfe1f43a675cec5fe6a10b
+      internalID: -1039339615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_81
+      name: GroveGladiator_83
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1408
-        width: 64
-        height: 64
+        x: 330
+        y: 1410
+        width: 38
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1838,20 +1867,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38f4e8c5baf3f75428578318c3d8eff3
-      internalID: -1998655174
+      spriteID: 90ab1174e8b2bea4dbdcc658f560bc7d
+      internalID: -1084161979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_82
+      name: GroveGladiator_84
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1408
-        width: 64
-        height: 64
+        x: 395
+        y: 1409
+        width: 38
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1859,20 +1888,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43eac4774781bee4b8a847a6a711da32
-      internalID: 631091877
+      spriteID: 9cdfb401d3fbd4742a17e115b1a05953
+      internalID: 1328639193
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_83
+      name: GroveGladiator_85
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1408
-        width: 64
-        height: 64
+        x: 459
+        y: 1409
+        width: 37
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1880,20 +1909,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e045463f22848a84bbe2e27cb2f3974c
-      internalID: 2041832088
+      spriteID: 9e8d5270566f9f7498c335caad6ac70e
+      internalID: 163779071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_84
+      name: GroveGladiator_86
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1408
-        width: 64
-        height: 64
+        x: 523
+        y: 1409
+        width: 37
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1901,20 +1930,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e28a282cd21242449b25a16d4cda6850
-      internalID: 1752332938
+      spriteID: 3d1e84ee6118f36449e02f3fcd1d01c2
+      internalID: -1673539271
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_85
+      name: GroveGladiator_87
       rect:
         serializedVersion: 2
-        x: 384
-        y: 1408
-        width: 64
-        height: 64
+        x: 13
+        y: 1346
+        width: 46
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1922,20 +1951,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de9c1679472e92643b7c330927eae681
-      internalID: 1377675664
+      spriteID: ed7f21a68f830e14ab794bb0c4133d82
+      internalID: 1825236000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_86
+      name: GroveGladiator_88
       rect:
         serializedVersion: 2
-        x: 448
-        y: 1408
-        width: 64
-        height: 64
+        x: 77
+        y: 1346
+        width: 32
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1943,20 +1972,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ece6f081884f37847af2eed6a5271092
-      internalID: 114678679
+      spriteID: 152091f4c882d6e4aa9842d8474ad5fd
+      internalID: 480761727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_87
+      name: GroveGladiator_89
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1408
-        width: 64
-        height: 64
+        x: 141
+        y: 1347
+        width: 31
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1964,20 +1993,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17cd38493ff2d0b4ca4b4eac3722f994
-      internalID: -967843999
+      spriteID: a9e2516478a067b4c960699b4529ecf3
+      internalID: -683018179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_88
+      name: GroveGladiator_90
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1344
-        width: 64
-        height: 64
+        x: 204
+        y: 1347
+        width: 38
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1985,20 +2014,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70aeb53d2807e0048b1bd1092d8da15e
-      internalID: 1096751307
+      spriteID: 939cffb7bc413e343b5f1adf7ffff4ad
+      internalID: 379381846
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_89
+      name: GroveGladiator_91
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1344
-        width: 64
-        height: 64
+        x: 267
+        y: 1346
+        width: 45
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2006,20 +2035,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cfa2784d79681d449a6ab8739219745
-      internalID: 1741671455
+      spriteID: 6737f0ddf00049f4ea37ad76b95ecd98
+      internalID: -1373879316
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_90
+      name: GroveGladiator_92
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1344
-        width: 64
-        height: 64
+        x: 330
+        y: 1346
+        width: 47
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2027,20 +2056,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68287ddffd2fb424084bc12d4b655617
-      internalID: -832280307
+      spriteID: f5f86ccb7057df843b953cd7cc275815
+      internalID: -1519010361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_91
+      name: GroveGladiator_93
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1344
-        width: 64
-        height: 64
+        x: 394
+        y: 1346
+        width: 46
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2048,20 +2077,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16adadac3225a31448298c88a95391ba
-      internalID: 916536656
+      spriteID: d4ca1a0116f917647a28e706acc59eb3
+      internalID: -198680631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_92
+      name: GroveGladiator_94
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1344
-        width: 64
-        height: 64
+        x: 459
+        y: 1346
+        width: 40
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2069,20 +2098,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 880bac71e8e1c8a42b9da1732eb756d8
-      internalID: 1338839822
+      spriteID: b94527736ac2991428b529843fbadbf6
+      internalID: 1070089224
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_93
+      name: GroveGladiator_95
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1344
-        width: 64
-        height: 64
+        x: 524
+        y: 1346
+        width: 33
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2090,20 +2119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59d17052fcc3cfe418b30db40a164286
-      internalID: 1672414779
+      spriteID: 9dc44a46cd53e3e4c8e8772464eb2f84
+      internalID: 1203609395
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_94
+      name: GroveGladiator_96
       rect:
         serializedVersion: 2
-        x: 384
-        y: 1344
-        width: 64
-        height: 64
+        x: 9
+        y: 1282
+        width: 39
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2111,20 +2140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89913d9795bb8be48a902001f9f711cc
-      internalID: -1352459618
+      spriteID: 73cc8172db05f67448b8771427905671
+      internalID: 994408896
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_95
+      name: GroveGladiator_97
       rect:
         serializedVersion: 2
-        x: 448
-        y: 1344
-        width: 64
-        height: 64
+        x: 76
+        y: 1281
+        width: 34
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2132,20 +2161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8991e11a72927304e80b97a9138bda20
-      internalID: -518978616
+      spriteID: 10bef397cb41c1c408ba467d7556dd0c
+      internalID: -759938930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_96
+      name: GroveGladiator_98
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1344
-        width: 64
-        height: 64
+        x: 140
+        y: 1281
+        width: 33
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2153,20 +2182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d0dcdb114d7a6249b983d53cca3ffac
-      internalID: -962683227
+      spriteID: cd85e48ab9178b74e8c676bb7ea51f19
+      internalID: -104701722
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_97
+      name: GroveGladiator_99
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1280
-        width: 64
-        height: 64
+        x: 203
+        y: 1281
+        width: 36
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2174,20 +2203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0545f0d207b5dc24483474c502785263
-      internalID: 637602868
+      spriteID: 28e63ac280b72754c9ddc38aa0648639
+      internalID: 162736756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_98
+      name: GroveGladiator_100
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1280
-        width: 64
-        height: 64
+        x: 268
+        y: 1281
+        width: 42
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2195,20 +2224,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52de8b47ee92e374282748289ff36786
-      internalID: 403223860
+      spriteID: 7a80260cb6ac25c4da0254541cd73af5
+      internalID: -1663818088
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_99
+      name: GroveGladiator_101
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1280
-        width: 64
-        height: 64
+        x: 332
+        y: 1281
+        width: 45
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2216,20 +2245,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f172f46da98ac041a996b32ce174541
-      internalID: -1480911663
+      spriteID: a65d18bb304c3bb4ab5d5872bf5d0d69
+      internalID: -1763832176
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_100
+      name: GroveGladiator_102
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1280
-        width: 64
-        height: 64
+        x: 23
+        y: 1217
+        width: 28
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2237,20 +2266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1fc0f0ec53911a4c856e0d68e6dfae9
-      internalID: -792306517
+      spriteID: 42b952aa803533845af14cad8bcea887
+      internalID: 2089444813
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_101
+      name: GroveGladiator_103
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1280
-        width: 64
-        height: 64
+        x: 80
+        y: 1217
+        width: 34
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2258,20 +2287,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 931aa77533c4c114ab158a6928aea2be
-      internalID: -846710250
+      spriteID: 2651a9f3f670ee8479c214817d025ede
+      internalID: 904486169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_102
+      name: GroveGladiator_104
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1280
-        width: 64
-        height: 64
+        x: 147
+        y: 1217
+        width: 31
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2279,20 +2308,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86327ac59b3042347b85fad11ce81f54
-      internalID: 993072451
+      spriteID: a034cc31bb57ec44791290a751bf26be
+      internalID: -1030830497
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_103
+      name: GroveGladiator_105
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1216
-        width: 64
-        height: 64
+        x: 202
+        y: 1217
+        width: 41
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2300,20 +2329,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 842273477d7159c4eb45f5e605adc646
-      internalID: -443431111
+      spriteID: fc6e59e4d615aa04988d7d2dfaa41ac5
+      internalID: 1596347068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_104
+      name: GroveGladiator_106
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1216
-        width: 64
-        height: 64
+        x: 263
+        y: 1217
+        width: 45
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2321,20 +2350,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bec2b7e89ede964ca02635b592ee444
-      internalID: -389767452
+      spriteID: a14c15de3978a8b48bd72538effcfc6e
+      internalID: 1569278223
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_105
+      name: GroveGladiator_107
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1216
-        width: 64
-        height: 64
+        x: 330
+        y: 1217
+        width: 43
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2342,20 +2371,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c2f945075cad3c4ba1953801e57cada
-      internalID: 59221661
+      spriteID: 2b9871f66fdf9c041997bb9ed293bc75
+      internalID: 158350868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_106
+      name: GroveGladiator_108
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1216
-        width: 64
-        height: 64
+        x: 11
+        y: 1153
+        width: 37
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2363,20 +2392,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 929fd7b533ec86b4081eb60955a55c26
-      internalID: -946958013
+      spriteID: 54bfae3b366f91b4da868dbe6ab98dc3
+      internalID: -86725043
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_107
+      name: GroveGladiator_109
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1216
-        width: 64
-        height: 64
+        x: 75
+        y: 1153
+        width: 35
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2384,20 +2413,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efb6a319b3a11ba4aa63c396f9e08228
-      internalID: -666941976
+      spriteID: ca856095367d25a48969d4f60b92fe55
+      internalID: -195286529
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_108
+      name: GroveGladiator_110
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1216
-        width: 64
-        height: 64
+        x: 138
+        y: 1153
+        width: 35
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2405,20 +2434,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae8b3707f5d7eaa418d309c98dea852d
-      internalID: 676143712
+      spriteID: 598ef0ba75513024da90ebae79e2b21d
+      internalID: -1908371504
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_109
+      name: GroveGladiator_111
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1152
-        width: 64
-        height: 64
+        x: 205
+        y: 1153
+        width: 34
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2426,20 +2455,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc7a30473d7044d4c932be1cbee0ad8b
-      internalID: 1538664376
+      spriteID: bf5822ca275445549bf1449aeff7c7b5
+      internalID: -1879756690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_110
+      name: GroveGladiator_112
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1152
-        width: 64
-        height: 64
+        x: 270
+        y: 1153
+        width: 41
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2447,20 +2476,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3b02ec3f7d833f46b90f2447d703184
-      internalID: 648609082
+      spriteID: 4f22a068f487ec94985eb9f575c1cf41
+      internalID: -1663801927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_111
+      name: GroveGladiator_113
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1152
-        width: 64
-        height: 64
+        x: 334
+        y: 1153
+        width: 44
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2468,20 +2497,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 350c629fec3d3e84a838ea143d15bd96
-      internalID: 86905904
+      spriteID: 83202ab37e7e3d04f88837d07c8b8410
+      internalID: -2045433397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_112
+      name: GroveGladiator_114
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1152
-        width: 64
-        height: 64
+        x: 13
+        y: 1089
+        width: 28
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2489,20 +2518,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 839b6f0bc1044944ba5953b1e42e6850
-      internalID: 1917497373
+      spriteID: b1e6227921980084d8627ac436345bb2
+      internalID: -823191689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_113
+      name: GroveGladiator_115
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1152
-        width: 64
-        height: 64
+        x: 77
+        y: 1089
+        width: 34
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2510,20 +2539,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df131b633f1f5c74c967f120f62e5172
-      internalID: -1884406967
+      spriteID: b8263a854be10b74fafa6cdff3507bb2
+      internalID: 495450799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_114
+      name: GroveGladiator_116
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1152
-        width: 64
-        height: 64
+        x: 141
+        y: 1089
+        width: 31
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2531,20 +2560,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2de7df20a129f0143ba18930257974f1
-      internalID: 2047614389
+      spriteID: e9aa262970b26d349ba729e584e3d9c4
+      internalID: 1835886060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_115
+      name: GroveGladiator_117
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1088
-        width: 64
-        height: 64
+        x: 204
+        y: 1089
+        width: 41
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2552,20 +2581,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba4c44db5d5a8414fbdbd748a34552e6
-      internalID: -1289619949
+      spriteID: 855f28632ada561489fdc83db9acba26
+      internalID: -844480103
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_116
+      name: GroveGladiator_118
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1088
-        width: 64
-        height: 64
+        x: 267
+        y: 1089
+        width: 45
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2573,20 +2602,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: facd51edc8e3b4e428a9e053f523831c
-      internalID: 485325426
+      spriteID: c90253d0cf7858142a2d402396fa63a3
+      internalID: 1678830499
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_117
+      name: GroveGladiator_119
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1088
-        width: 64
-        height: 64
+        x: 330
+        y: 1089
+        width: 43
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2594,20 +2623,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76895b87d3c7a5f4bb7f6f5ed7fd636f
-      internalID: -940837620
+      spriteID: ec7eac56bc9b8244497eaedfc0184d72
+      internalID: -565163867
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_118
+      name: GroveGladiator_120
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1088
-        width: 64
-        height: 64
+        x: 15
+        y: 1041
+        width: 31
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2615,20 +2644,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 039d2931d2224ff4f980e498e5477260
-      internalID: -570152400
+      spriteID: 5e62f318ee495a540ab2c99188cdeedd
+      internalID: -61043377
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_119
+      name: GroveGladiator_121
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1088
-        width: 64
-        height: 64
+        x: 83
+        y: 1036
+        width: 25
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2636,20 +2665,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df3b4908c60ba154e95e093cea3253d1
-      internalID: 229391565
+      spriteID: 75fe45cc497b3cb4ea305406acb0ef19
+      internalID: -86356237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_120
+      name: GroveGladiator_122
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1088
-        width: 64
-        height: 64
+        x: 149
+        y: 1038
+        width: 22
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2657,20 +2686,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a30ec7792ad3acc4e9391fa99471d9db
-      internalID: 1239790719
+      spriteID: 7c141617077295840b88fefe6eb07ed1
+      internalID: 1250101301
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_121
+      name: GroveGladiator_123
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1024
-        width: 64
-        height: 64
+        x: 211
+        y: 1038
+        width: 24
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2678,20 +2707,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0c415036c2691c48b5d5a16563a271f
-      internalID: 1502330298
+      spriteID: 422a1819b9f1c6140a2ec96d0ddb192c
+      internalID: -181453417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_122
+      name: GroveGladiator_124
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1024
-        width: 64
-        height: 64
+        x: 275
+        y: 1040
+        width: 28
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2699,20 +2728,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9befd60f217de264592dec9e8e4427cf
-      internalID: -1259188754
+      spriteID: bffdc983becd6cf4eb2e1cb1a3741b21
+      internalID: -138476536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_123
+      name: GroveGladiator_125
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1024
-        width: 64
-        height: 64
+        x: 339
+        y: 1043
+        width: 27
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2720,20 +2749,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 310f3481250b3f74692a7aeccf004892
-      internalID: 1737682935
+      spriteID: 83acd3d624368b64ba1758a6c500f61f
+      internalID: 2012702713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_124
+      name: GroveGladiator_126
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1024
-        width: 64
-        height: 64
+        x: 403
+        y: 1044
+        width: 28
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2741,20 +2770,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6263f5a20a6d5f4aa0a98a84cbb067e
-      internalID: -1605730920
+      spriteID: 9608c9ca413672b4a9d9bf2dc5e5e477
+      internalID: -1748389833
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_125
+      name: GroveGladiator_127
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1024
-        width: 64
-        height: 64
+        x: 467
+        y: 1043
+        width: 29
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2762,20 +2791,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd62d433026118048b1ff36bf479eafe
-      internalID: 259053420
+      spriteID: 4f7f9d1663db48c4bbf0dbed2bd2df83
+      internalID: 653489519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_126
+      name: GroveGladiator_128
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1024
-        width: 64
-        height: 64
+        x: 531
+        y: 1043
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2783,20 +2812,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9973905b821c29458614d82eee771ba
-      internalID: 1413749485
+      spriteID: 44593107cf58f3440a4afc89d4c04c3c
+      internalID: 568283365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_127
+      name: GroveGladiator_129
       rect:
         serializedVersion: 2
-        x: 384
-        y: 1024
-        width: 64
-        height: 64
+        x: 595
+        y: 1040
+        width: 29
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2804,20 +2833,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d85c86f7b5ff36446ae96fdb80480263
-      internalID: 1160755956
+      spriteID: 8e3c64cb3e464b643b4f9c376e78f2d2
+      internalID: -244941686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_128
+      name: GroveGladiator_130
       rect:
         serializedVersion: 2
-        x: 448
-        y: 1024
-        width: 64
-        height: 64
+        x: 659
+        y: 1038
+        width: 24
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2825,20 +2854,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b0ce37d4d1ac08449f37dce097189f2
-      internalID: -1536249951
+      spriteID: bbd4f3808be43fb4b906c76e66816960
+      internalID: -2016282394
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_129
+      name: GroveGladiator_131
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1024
-        width: 64
-        height: 64
+        x: 723
+        y: 1038
+        width: 24
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2846,20 +2875,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dee86792df8e242458893a15623ad987
-      internalID: 30337355
+      spriteID: b0c57480a597df74f82366688558ef5d
+      internalID: 531306398
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_130
+      name: GroveGladiator_132
       rect:
         serializedVersion: 2
-        x: 576
-        y: 1024
-        width: 64
-        height: 64
+        x: 787
+        y: 1038
+        width: 24
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2867,20 +2896,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 864fc9aba4614af448458205cf9ce4f8
-      internalID: -2075491590
+      spriteID: 671e59c0da39beb48a7417ec19d9e7d1
+      internalID: -1967954302
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_131
+      name: GroveGladiator_133
       rect:
         serializedVersion: 2
-        x: 640
-        y: 1024
-        width: 64
-        height: 64
+        x: 24
+        y: 977
+        width: 20
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2888,20 +2917,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 870da595cded6644c8f601a73c7dc098
-      internalID: 710029787
+      spriteID: 6e2cb9c15b3341740b5bda29c32a4a88
+      internalID: 1282295071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_132
+      name: GroveGladiator_134
       rect:
         serializedVersion: 2
-        x: 704
-        y: 1024
-        width: 64
-        height: 64
+        x: 88
+        y: 977
+        width: 21
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2909,20 +2938,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6aa489549ac6aa44b9b6519e21a73a9c
-      internalID: -1857178094
+      spriteID: d49189a95b714604c8fca5e2cc1c7258
+      internalID: 2082932460
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_133
+      name: GroveGladiator_135
       rect:
         serializedVersion: 2
-        x: 768
-        y: 1024
-        width: 64
-        height: 64
+        x: 147
+        y: 977
+        width: 28
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2930,20 +2959,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36c84fe9fe3a11a42a0da9f29db7ebfe
-      internalID: -752880069
+      spriteID: 18c1fca7e04a0cd44b77cd5177bde8c0
+      internalID: -1586315520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_134
+      name: GroveGladiator_136
       rect:
         serializedVersion: 2
-        x: 0
-        y: 960
-        width: 64
-        height: 64
+        x: 209
+        y: 979
+        width: 31
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2951,20 +2980,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11d67a277cdae2b45b38c1247a997800
-      internalID: -571669732
+      spriteID: d845c247207b6b349b9174cb0d1603bb
+      internalID: 1413128782
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_135
+      name: GroveGladiator_137
       rect:
         serializedVersion: 2
-        x: 64
-        y: 960
-        width: 64
-        height: 64
+        x: 274
+        y: 983
+        width: 30
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2972,20 +3001,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42f3e4198b9853c41837339f587052b1
-      internalID: 1638516444
+      spriteID: ceb8cfefade5c9b46a5b01cb356214b1
+      internalID: 1339267835
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_136
+      name: GroveGladiator_138
       rect:
         serializedVersion: 2
-        x: 128
-        y: 960
-        width: 64
-        height: 64
+        x: 337
+        y: 984
+        width: 10
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2993,20 +3022,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 152d2c5b18909a44285a9c50646081e5
-      internalID: 766657360
+      spriteID: db8dbf74bf94f654e91d5aaf9292d914
+      internalID: -1076063811
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_137
+      name: GroveGladiator_139
       rect:
         serializedVersion: 2
-        x: 192
-        y: 960
-        width: 64
-        height: 64
+        x: 343
+        y: 984
+        width: 22
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3014,20 +3043,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9c8dfad065c24247bec9affa3b61834
-      internalID: 880883418
+      spriteID: bdb63fb680d8c6c46b69564327151ffe
+      internalID: 356836107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_138
+      name: GroveGladiator_140
       rect:
         serializedVersion: 2
-        x: 256
-        y: 960
-        width: 64
-        height: 64
+        x: 401
+        y: 984
+        width: 30
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3035,20 +3064,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0b929e3143e60543aa7998a8f6fccdd
-      internalID: -1607114128
+      spriteID: 70a859f6fa336914caf6ac57de370d92
+      internalID: 990844741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_139
+      name: GroveGladiator_141
       rect:
         serializedVersion: 2
-        x: 320
-        y: 960
-        width: 64
-        height: 64
+        x: 466
+        y: 984
+        width: 32
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3056,20 +3085,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7cef62b3f5435349ad24b64d16d2f9c
-      internalID: -10228334
+      spriteID: 9b294257ba1b11b4d8b1b9b0701d7645
+      internalID: 353050040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_140
+      name: GroveGladiator_142
       rect:
         serializedVersion: 2
-        x: 384
-        y: 960
-        width: 64
-        height: 64
+        x: 530
+        y: 984
+        width: 34
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3077,20 +3106,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08cf4f5d32853334f9c6af97e4b16b65
-      internalID: -837703370
+      spriteID: df59e0fa0a473a44aa885437190d7769
+      internalID: -348597166
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_141
+      name: GroveGladiator_143
       rect:
         serializedVersion: 2
-        x: 448
-        y: 960
-        width: 64
-        height: 64
+        x: 594
+        y: 983
+        width: 31
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3098,20 +3127,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54ac1ba4b40c8354794fd28159f2b3ee
-      internalID: -233608892
+      spriteID: cb808be47a8e7804592fd6514408e078
+      internalID: -305178442
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_142
+      name: GroveGladiator_144
       rect:
         serializedVersion: 2
-        x: 512
-        y: 960
-        width: 64
-        height: 64
+        x: 658
+        y: 979
+        width: 30
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3119,20 +3148,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4482b6d2f7d466a4d8472038f6ae3787
-      internalID: 336229621
+      spriteID: b6813ed3e4b6b81419f77a47ad4ec9af
+      internalID: -529407530
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_143
+      name: GroveGladiator_145
       rect:
         serializedVersion: 2
-        x: 576
-        y: 960
-        width: 64
-        height: 64
+        x: 722
+        y: 976
+        width: 26
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3140,20 +3169,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4eb7f5e630d9e7342b5689d5eb2c326f
-      internalID: 541710843
+      spriteID: 1f342b76fa8c72a458bb2bf56824a6c9
+      internalID: -738344283
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_144
+      name: GroveGladiator_146
       rect:
         serializedVersion: 2
-        x: 640
-        y: 960
-        width: 64
-        height: 64
+        x: 786
+        y: 979
+        width: 30
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3161,20 +3190,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f85221c640d1fa14681a76186d19a4ee
-      internalID: 1572187951
+      spriteID: 8ac7f006727146543b2f8c1b771abb8a
+      internalID: 1292934119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_145
+      name: GroveGladiator_147
       rect:
         serializedVersion: 2
-        x: 704
-        y: 960
-        width: 64
-        height: 64
+        x: 87
+        y: 979
+        width: 5
+        height: 4
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3182,20 +3211,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc71baf41603e1049a622cf24415d737
-      internalID: -2027176908
+      spriteID: b2128e983a0bd7043a114ad06f132c03
+      internalID: -1939606459
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_146
+      name: GroveGladiator_148
       rect:
         serializedVersion: 2
-        x: 768
-        y: 960
-        width: 64
-        height: 64
+        x: 15
+        y: 914
+        width: 31
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3203,20 +3232,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69c52faf0beb4564faadc640226895d0
-      internalID: -121856249
+      spriteID: 20d6bc45d365a694198f5f58e77d5cec
+      internalID: -686751844
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_147
+      name: GroveGladiator_149
       rect:
         serializedVersion: 2
-        x: 0
-        y: 896
-        width: 64
-        height: 64
+        x: 81
+        y: 914
+        width: 27
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3224,20 +3253,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b2210e767e8d334aba015d6f59f081a
-      internalID: 67701656
+      spriteID: 5e36c567d9e3c3b4ba57123917b8dd1b
+      internalID: 1856580874
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_148
+      name: GroveGladiator_150
       rect:
         serializedVersion: 2
-        x: 64
-        y: 896
-        width: 64
-        height: 64
+        x: 147
+        y: 914
+        width: 24
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3245,20 +3274,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0524b4baf88203845b1f868f250350d2
-      internalID: 638071740
+      spriteID: ec90c3a3ffc38384285298845504c363
+      internalID: 1843201118
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_149
+      name: GroveGladiator_151
       rect:
         serializedVersion: 2
-        x: 128
-        y: 896
-        width: 64
-        height: 64
+        x: 211
+        y: 913
+        width: 24
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3266,20 +3295,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c86ba530ae2b7274888d2a8fad45d4b9
-      internalID: 2050170788
+      spriteID: 9a925cc60f29ad743b4284ac6498472a
+      internalID: -312760532
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_150
+      name: GroveGladiator_152
       rect:
         serializedVersion: 2
-        x: 192
-        y: 896
-        width: 64
-        height: 64
+        x: 274
+        y: 914
+        width: 25
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3287,20 +3316,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ead3878e0a655754785a9dfeed35f25a
-      internalID: -1837305477
+      spriteID: eae7a19fac8f010448fb776f4d02961c
+      internalID: -61208548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_151
+      name: GroveGladiator_153
       rect:
         serializedVersion: 2
-        x: 256
-        y: 896
-        width: 64
-        height: 64
+        x: 338
+        y: 917
+        width: 25
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3308,20 +3337,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75706a2b7f7c93045ade141d9dbe3edf
-      internalID: 123138156
+      spriteID: b7601d06266e64e44afb614d50606bdc
+      internalID: -949845508
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_152
+      name: GroveGladiator_154
       rect:
         serializedVersion: 2
-        x: 320
-        y: 896
-        width: 64
-        height: 64
+        x: 402
+        y: 917
+        width: 25
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3329,20 +3358,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4288f4646d27b654bb0f07a20567d35d
-      internalID: 2032972797
+      spriteID: 174e08c4dbd4b8147892d77494c4827f
+      internalID: -16148590
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_153
+      name: GroveGladiator_155
       rect:
         serializedVersion: 2
-        x: 384
-        y: 896
-        width: 64
-        height: 64
+        x: 465
+        y: 918
+        width: 26
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3350,20 +3379,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed23d69ef80c09945a81e9b781bedfa8
-      internalID: -1532852536
+      spriteID: 6da27a591f5d1f042ba8f9145020bf23
+      internalID: 370449816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_154
+      name: GroveGladiator_156
       rect:
         serializedVersion: 2
-        x: 448
-        y: 896
-        width: 64
-        height: 64
+        x: 529
+        y: 914
+        width: 26
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3371,20 +3400,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cfcef4887a7d2848bfe7d158fed3baa
-      internalID: -123782811
+      spriteID: 4be295c6d5549f54f832c555e61b7fde
+      internalID: 2104889420
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_155
+      name: GroveGladiator_157
       rect:
         serializedVersion: 2
-        x: 512
-        y: 896
-        width: 64
-        height: 64
+        x: 594
+        y: 914
+        width: 25
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3392,20 +3421,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db1e5309e9fd26247a3dfd96ba6a5cf8
-      internalID: 1176108391
+      spriteID: 3cd553116d7fefa46a2473fb041f695e
+      internalID: 1162281695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_156
+      name: GroveGladiator_158
       rect:
         serializedVersion: 2
-        x: 576
-        y: 896
-        width: 64
-        height: 64
+        x: 659
+        y: 914
+        width: 24
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3413,20 +3442,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b297ebdf500aa9a4f9b913994688b090
-      internalID: -1262892035
+      spriteID: 7f4a6d13175d2bb4faab5a17d84b1a41
+      internalID: -1973762828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_157
+      name: GroveGladiator_159
       rect:
         serializedVersion: 2
-        x: 640
-        y: 896
-        width: 64
-        height: 64
+        x: 723
+        y: 914
+        width: 24
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3434,20 +3463,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3250198632972c843a5486477ef09323
-      internalID: 756650028
+      spriteID: e4cdbbc489a00ad4dba0dc0019668db9
+      internalID: -237952450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_158
+      name: GroveGladiator_160
       rect:
         serializedVersion: 2
-        x: 704
-        y: 896
-        width: 64
-        height: 64
+        x: 787
+        y: 914
+        width: 24
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3455,20 +3484,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdb9a8b3e4d02d74eb8d05b24c21b658
-      internalID: -670978128
+      spriteID: 504bad7cc07179d4d93c17d21661518c
+      internalID: -716004475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_159
+      name: GroveGladiator_161
       rect:
         serializedVersion: 2
-        x: 768
-        y: 896
-        width: 64
-        height: 64
+        x: 20
+        y: 849
+        width: 20
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3476,20 +3505,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b5893ad403950648bec6641534b7698
-      internalID: 388776439
+      spriteID: 8de08294e2edf9f4db2bcabe20bf6adb
+      internalID: 599836549
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_160
+      name: GroveGladiator_162
       rect:
         serializedVersion: 2
-        x: 0
-        y: 832
-        width: 64
-        height: 64
+        x: 83
+        y: 849
+        width: 21
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3497,20 +3526,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34578eb7fcbba594cb9a0a498e656964
-      internalID: 1952105932
+      spriteID: 282fd31354216d74cbe5474719f4fd05
+      internalID: -458470478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_161
+      name: GroveGladiator_163
       rect:
         serializedVersion: 2
-        x: 64
-        y: 832
-        width: 64
-        height: 64
+        x: 144
+        y: 849
+        width: 28
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3518,20 +3547,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b9d06341c8dd154b9386fad8711731d
-      internalID: -1469974442
+      spriteID: be3900b48dea7f244958cca5976af952
+      internalID: -361363926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_162
+      name: GroveGladiator_164
       rect:
         serializedVersion: 2
-        x: 128
-        y: 832
-        width: 64
-        height: 64
+        x: 207
+        y: 851
+        width: 31
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3539,20 +3568,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1247166f29aeaf64e9795187e3059bc2
-      internalID: 1845852791
+      spriteID: 902d26d35ab8f064a9fc822bf4e172fb
+      internalID: -257364147
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_163
+      name: GroveGladiator_165
       rect:
         serializedVersion: 2
-        x: 192
-        y: 832
-        width: 64
-        height: 64
+        x: 271
+        y: 854
+        width: 31
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3560,20 +3589,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 985233471b074494a96911e5fc050723
-      internalID: 948848729
+      spriteID: b208160acaf0d13469dc65c9c802881c
+      internalID: 1614465905
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_164
+      name: GroveGladiator_166
       rect:
         serializedVersion: 2
-        x: 256
-        y: 832
-        width: 64
-        height: 64
+        x: 339
+        y: 855
+        width: 28
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3581,20 +3610,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4596901fb2788ed4194278e4c1a01eb7
-      internalID: 1173046806
+      spriteID: 2ea591d289026a6448e9ddeb12c079d6
+      internalID: -1993263673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_165
+      name: GroveGladiator_167
       rect:
         serializedVersion: 2
-        x: 320
-        y: 832
-        width: 64
-        height: 64
+        x: 401
+        y: 855
+        width: 30
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3602,20 +3631,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03bb39eb2bbccfd4c8d6e07b2f0828f1
-      internalID: 1839740076
+      spriteID: a4bdb150a17192e4395d55ae425b7393
+      internalID: -816746549
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_166
+      name: GroveGladiator_168
       rect:
         serializedVersion: 2
-        x: 384
-        y: 832
-        width: 64
-        height: 64
+        x: 462
+        y: 855
+        width: 32
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3623,20 +3652,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62aa5c99803d73a47975aa722736e270
-      internalID: 189786903
+      spriteID: dcba68d944d5acc49aca27e9b016184a
+      internalID: -142385813
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_167
+      name: GroveGladiator_169
       rect:
         serializedVersion: 2
-        x: 448
-        y: 832
-        width: 64
-        height: 64
+        x: 524
+        y: 855
+        width: 34
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3644,20 +3673,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7848c9b5447657f49982f8e2e9270509
-      internalID: -1951726948
+      spriteID: 58088cf70827cef499786ea4cb648df5
+      internalID: 1505853048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_168
+      name: GroveGladiator_170
       rect:
         serializedVersion: 2
-        x: 512
-        y: 832
-        width: 64
-        height: 64
+        x: 591
+        y: 854
+        width: 31
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3665,20 +3694,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc8a8ae1c9bf8f049bdbf9819d848822
-      internalID: 1090216060
+      spriteID: ec4db8b9a2f8cab4ba63b2b00f6403ea
+      internalID: 577679403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_169
+      name: GroveGladiator_171
       rect:
         serializedVersion: 2
-        x: 576
-        y: 832
-        width: 64
-        height: 64
+        x: 656
+        y: 851
+        width: 30
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3686,20 +3715,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87ba6d1d7c533a34b889580daaa12f6f
-      internalID: -800941102
+      spriteID: 47a2c77ea125b2b47b6a4e0daab87ada
+      internalID: 354245687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_170
+      name: GroveGladiator_172
       rect:
         serializedVersion: 2
-        x: 640
-        y: 832
-        width: 64
-        height: 64
+        x: 724
+        y: 848
+        width: 26
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3707,20 +3736,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cca31703f4964649b81d125a40d9bba
-      internalID: -1475314134
+      spriteID: 81a572e3ea2032c4ca9b406cc754916c
+      internalID: -1534154506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_171
+      name: GroveGladiator_173
       rect:
         serializedVersion: 2
-        x: 704
-        y: 832
-        width: 64
-        height: 64
+        x: 784
+        y: 851
+        width: 30
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3728,20 +3757,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a3b3fa169eef4a44baf3fd4cee6987b
-      internalID: -1147802273
+      spriteID: 8d0b80ff1b2a89d4a98e676a0493d0d0
+      internalID: 845609251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_172
+      name: GroveGladiator_174
       rect:
         serializedVersion: 2
-        x: 768
-        y: 832
-        width: 64
-        height: 64
+        x: 100
+        y: 851
+        width: 5
+        height: 4
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3749,20 +3778,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb86732d23ba86b4099120208a60801b
-      internalID: -603319124
+      spriteID: 64a987865ced9da49ad3212857422937
+      internalID: -1064067621
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_173
+      name: GroveGladiator_175
       rect:
         serializedVersion: 2
-        x: 0
+        x: 15
+        y: 769
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f15eac774e0a8d4fa26181a193bfe89
+      internalID: 114733151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroveGladiator_176
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 767
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe6c66ee830295845946a2eabf44b367
+      internalID: 686053817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroveGladiator_177
+      rect:
+        serializedVersion: 2
+        x: 146
         y: 768
-        width: 64
-        height: 64
+        width: 31
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3770,20 +3841,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e943c29362f8024ab21ce7b94611b88
-      internalID: -1546014466
+      spriteID: b8a9cadb5c259b545951c52dc1980265
+      internalID: -1640672265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_174
+      name: GroveGladiator_178
       rect:
         serializedVersion: 2
-        x: 64
+        x: 210
+        y: 767
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f5062fec6e7c349a47c1b932514b04
+      internalID: 1426231075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroveGladiator_179
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 767
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da50d0e82dc6bb4439350d94dd383240
+      internalID: -1033948799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroveGladiator_180
+      rect:
+        serializedVersion: 2
+        x: 324
         y: 768
-        width: 64
-        height: 64
+        width: 48
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3791,20 +3904,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd68e973f33d8ed47a3c753633ac8158
-      internalID: -1160729114
+      spriteID: 79ffe937dd2bec6408a39a5a91995e2d
+      internalID: 343622399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_175
+      name: GroveGladiator_181
       rect:
         serializedVersion: 2
-        x: 128
-        y: 768
-        width: 64
-        height: 64
+        x: 73
+        y: 641
+        width: 39
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3812,335 +3925,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd0e4ab4bc8fb164994629d60cbe842c
-      internalID: -1405191059
+      spriteID: 4d2719f1ae3719045bc6a5ff079034fb
+      internalID: -1768074889
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_176
+      name: GroveGladiator_182
       rect:
         serializedVersion: 2
-        x: 192
-        y: 768
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8cdcdc5581beef5408ab6bf41906d6e6
-      internalID: 1616582817
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_177
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 768
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f1b12e3a176b04a46a69549c9698a863
-      internalID: 1818491333
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_178
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 768
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e533623229ba0c247a3f33136e628c9c
-      internalID: -2037099295
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_179
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 768
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c3e0e8c63944f841aa45830704a1cf3
-      internalID: -682274142
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_180
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 768
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 899ec1dc65e4a35428806de5bee484df
-      internalID: 746751599
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_181
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 768
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e47789bb9d5df744bf0cdbd11d140f0
-      internalID: 329216105
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_182
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 768
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2ff0e56906dfc23469ba28adbb6d0b2c
-      internalID: 851637407
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_183
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 768
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c2388c996c43b640b164e4bc2a5bf1a
-      internalID: -662410444
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_184
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 768
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 94afb2ee23fdce346a6b8bb0173c2030
-      internalID: 260072104
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_185
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 768
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 676e426fd749a5546b5ebbfce0aaffc7
-      internalID: 1854983379
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_186
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 704
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 95b13cd70ce18f8459c175cfb06311c7
-      internalID: 527173903
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_187
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 704
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5843ff1bb0a6bd4a9a30916ccaaac6c
-      internalID: 1086658959
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_188
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 704
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0cf8fcd2ac8e61a4c9a9703dba12b761
-      internalID: -1995075027
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_189
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 704
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 95b0a6bc3ca45fe4386c103bf1811353
-      internalID: -1668837706
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_190
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 704
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce611765616f8a6479dc6ce09c3336a2
-      internalID: -3745608
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_191
-      rect:
-        serializedVersion: 2
-        x: 64
+        x: 268
         y: 640
-        width: 64
-        height: 64
+        width: 34
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4148,20 +3946,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 051cc0002ba21f24187c5f26a408cba5
-      internalID: -425188683
+      spriteID: 54d8a048b9068e4419a237360a982731
+      internalID: -957581753
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_192
+      name: GroveGladiator_183
       rect:
         serializedVersion: 2
-        x: 256
+        x: 455
         y: 640
-        width: 64
-        height: 64
+        width: 39
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4169,20 +3967,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9a970f0e34797c4383efd9dfd20ea45
-      internalID: 1405305280
+      spriteID: 47f278ba66470cf408330f767019721d
+      internalID: 854804821
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_193
+      name: GroveGladiator_184
       rect:
         serializedVersion: 2
-        x: 448
+        x: 652
         y: 640
-        width: 64
-        height: 64
+        width: 36
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4190,20 +3988,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87454aaa0fc5a5e4aa761122a727a855
-      internalID: -324872320
+      spriteID: e3e7cf8521d0aa543b16daab98208ede
+      internalID: -2027386078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_194
+      name: GroveGladiator_185
       rect:
         serializedVersion: 2
-        x: 640
+        x: 845
         y: 640
-        width: 64
-        height: 64
+        width: 56
+        height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4211,20 +4009,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6dd6840c833ea4f4aa3f461bcc191359
-      internalID: 1080271864
+      spriteID: 23628517b421af3419e5fcd71be27584
+      internalID: 859796893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_195
+      name: GroveGladiator_186
       rect:
         serializedVersion: 2
-        x: 832
+        x: 1036
         y: 640
-        width: 64
-        height: 64
+        width: 62
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4232,20 +4030,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1416849b6f1077546a67bb1a97063d03
-      internalID: 1954785788
+      spriteID: 1fa7f25b9adf63349827d108f7ba03ef
+      internalID: 1936648918
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_196
+      name: GroveGladiator_187
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 640
-        width: 64
-        height: 64
+        x: 69
+        y: 450
+        width: 45
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4253,20 +4051,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85953c2b82123214eaca254094030a7e
-      internalID: -310273297
+      spriteID: d219d243552c40040ae160b59bf79ff0
+      internalID: 1021806437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_197
+      name: GroveGladiator_188
       rect:
         serializedVersion: 2
-        x: 1216
-        y: 640
-        width: 64
-        height: 64
+        x: 272
+        y: 450
+        width: 34
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4274,20 +4072,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a170c6b3cc8ff642bf36dc9d890c55d
-      internalID: 1212884646
+      spriteID: 3f46c9cdb106cfb4ba58a121606d3bfd
+      internalID: 703090189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_198
+      name: GroveGladiator_189
       rect:
         serializedVersion: 2
-        x: 1408
-        y: 640
-        width: 64
-        height: 64
+        x: 467
+        y: 450
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4295,20 +4093,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32bd97de06329bb4ba2c7c3703275b8b
-      internalID: 1188112544
+      spriteID: d19c45279776b8d4a95087a9c448c7f3
+      internalID: 1652916510
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_199
+      name: GroveGladiator_190
       rect:
         serializedVersion: 2
-        x: 64
-        y: 576
-        width: 64
-        height: 64
+        x: 651
+        y: 450
+        width: 41
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4316,20 +4114,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 213b7b0113406a848b43e32d6958b20a
-      internalID: -1040148243
+      spriteID: 845702886fa02b7449403d097b95d1da
+      internalID: -1959308387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_200
+      name: GroveGladiator_191
       rect:
         serializedVersion: 2
-        x: 256
-        y: 576
-        width: 64
-        height: 64
+        x: 818
+        y: 450
+        width: 67
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4337,20 +4135,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fbcf04906b758d4dbc9122013f1637d
-      internalID: -731421874
+      spriteID: 6ed45ce5b5cc0f841ba967b94ffb467d
+      internalID: -1417907532
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_201
+      name: GroveGladiator_192
       rect:
         serializedVersion: 2
-        x: 448
-        y: 576
-        width: 64
-        height: 64
+        x: 1022
+        y: 450
+        width: 56
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4358,20 +4156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5082bed5bc5c6174cb434d725f1cb7cd
-      internalID: 1021493459
+      spriteID: 924e6621c466a2c438a0abfbb5740bef
+      internalID: 1953390357
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_202
+      name: GroveGladiator_193
       rect:
         serializedVersion: 2
-        x: 640
-        y: 576
-        width: 64
-        height: 64
+        x: 75
+        y: 258
+        width: 37
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4379,20 +4177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8922ae064672d1646bbcdb95716e5aee
-      internalID: -1152375611
+      spriteID: 680f7ddc8ec500947bcc71387046127b
+      internalID: -1409804542
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_203
+      name: GroveGladiator_194
       rect:
         serializedVersion: 2
-        x: 832
-        y: 576
-        width: 64
-        height: 64
+        x: 267
+        y: 258
+        width: 35
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4400,20 +4198,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e3b5faf20b30b242baf33bee172912c
-      internalID: 1992629877
+      spriteID: f921495c2272da24290b792c6251ff50
+      internalID: -484671867
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_204
+      name: GroveGladiator_195
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 576
-        width: 64
-        height: 64
+        x: 452
+        y: 258
+        width: 42
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4421,20 +4219,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cabb1b465d896be4489509af3801df1c
-      internalID: 346258206
+      spriteID: 99ed69754c0bda34cbb455587390f52c
+      internalID: 1429761866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_205
+      name: GroveGladiator_196
       rect:
         serializedVersion: 2
-        x: 1216
-        y: 576
-        width: 64
-        height: 64
+        x: 653
+        y: 258
+        width: 35
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4442,20 +4240,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa7c5278d8e89d1488f27ebd83bc3980
-      internalID: 1530535895
+      spriteID: 3cb2a71c57069044bb7537541f8a569d
+      internalID: -1798198164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_206
+      name: GroveGladiator_197
       rect:
         serializedVersion: 2
-        x: 1408
-        y: 576
-        width: 64
-        height: 64
+        x: 847
+        y: 257
+        width: 55
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4463,20 +4261,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 779e2cfd68ba68b4d9ca9c026e1198d4
-      internalID: 1388018882
+      spriteID: 87b94c8d646555b4c90311153890c1b7
+      internalID: 158750225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_207
+      name: GroveGladiator_198
       rect:
         serializedVersion: 2
-        x: 64
-        y: 448
-        width: 64
-        height: 64
+        x: 1039
+        y: 258
+        width: 65
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4484,20 +4282,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eaef850f208182c4a9b372513be8daba
-      internalID: -36953227
+      spriteID: 5629e6512ae4e754497d161e85cf1ccf
+      internalID: 481292879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_208
+      name: GroveGladiator_199
       rect:
         serializedVersion: 2
-        x: 256
-        y: 448
-        width: 64
-        height: 64
+        x: 77
+        y: 65
+        width: 46
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4505,20 +4303,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e2aaa8a6c1a93741b798acdff43cac6
-      internalID: -15553888
+      spriteID: 83ad9f7eaf45a1e4eb8f81569f2745d6
+      internalID: 1037511885
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_209
+      name: GroveGladiator_200
       rect:
         serializedVersion: 2
-        x: 448
-        y: 448
-        width: 64
-        height: 64
+        x: 269
+        y: 65
+        width: 34
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4526,20 +4324,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cba201d7cc19ef940819a0b61b7d731e
-      internalID: -576081807
+      spriteID: 85b95cd3b1ef16542ba616134df1d3f5
+      internalID: -2066486811
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_210
+      name: GroveGladiator_201
       rect:
         serializedVersion: 2
-        x: 640
-        y: 448
-        width: 64
-        height: 64
+        x: 461
+        y: 65
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4547,20 +4345,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db320ea25a11d3f4a88c5f475cddf44b
-      internalID: 996307083
+      spriteID: d681e95264762704089219f92e1d7c37
+      internalID: -959602619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_211
+      name: GroveGladiator_202
       rect:
         serializedVersion: 2
-        x: 768
-        y: 448
-        width: 64
-        height: 64
+        x: 653
+        y: 65
+        width: 41
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4568,20 +4366,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5aae8cb4dcfe3014192aa0981556c897
-      internalID: -98508520
+      spriteID: 98c46bc6dd9a2af4fa22401e287a838a
+      internalID: 1543572729
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_212
+      name: GroveGladiator_203
       rect:
         serializedVersion: 2
-        x: 832
-        y: 448
-        width: 64
-        height: 64
+        x: 844
+        y: 65
+        width: 66
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4589,20 +4387,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3cf0c10cbe47ae44b3cf7d10f86cce9
-      internalID: -1053574780
+      spriteID: 4d07c78f2ef3a70409f61a3301736b06
+      internalID: 486802038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Download49003_213
+      name: GroveGladiator_204
       rect:
         serializedVersion: 2
-        x: 960
-        y: 448
-        width: 64
-        height: 64
+        x: 1034
+        y: 65
+        width: 56
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4610,722 +4408,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09cf955533ee2c141a25eb8fc808b116
-      internalID: 1007870562
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_214
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 448
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9041ef61f51729f43a908adbcc547e17
-      internalID: 727601729
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_215
-      rect:
-        serializedVersion: 2
-        x: 1152
-        y: 448
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 663433fe3334d954aba77e365d6bc761
-      internalID: -1101459150
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_216
-      rect:
-        serializedVersion: 2
-        x: 1216
-        y: 448
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5ece94450de5c1d418a16e09941a0f11
-      internalID: -1865534395
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_217
-      rect:
-        serializedVersion: 2
-        x: 1408
-        y: 448
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7accf4d2ad0b72a4d8435a1cd2914d02
-      internalID: 442746893
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_218
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 256
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca334ee83e8db9249958d004d9e709af
-      internalID: 1609018591
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_219
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 256
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c1144bf1f2e214b4ba8dcec11e0f6ae9
-      internalID: 2094669373
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_220
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 256
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2396f7f15319c264aafa238a2f5fbb4a
-      internalID: 1194346679
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_221
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 256
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1faf7a747c293df4085cc1bfffd7035a
-      internalID: 978730741
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_222
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 256
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a87d6479978ff84b8298ed03d6b3079
-      internalID: -937905928
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_223
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 256
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d8f76be804dd5e44bb22b44f3f70971
-      internalID: 1571034920
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_224
-      rect:
-        serializedVersion: 2
-        x: 1216
-        y: 256
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d863635e3645e9546927587e6f319257
-      internalID: -356872142
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_225
-      rect:
-        serializedVersion: 2
-        x: 1408
-        y: 256
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2a113293804dac34ba7928a4c605e843
-      internalID: 404703553
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_226
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 192
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dfacdda5485ff254a9f79864e830866f
-      internalID: 57489353
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_227
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 192
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f1271b8050f55ee46be0762dc7ab54a0
-      internalID: -421685260
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_228
-      rect:
-        serializedVersion: 2
-        x: 1216
-        y: 192
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cea9bdb63c860384c85bfa84ea789e35
-      internalID: 1190789405
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_229
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f560c9397ae0ed24d80ddf40dbc43c1a
-      internalID: 1917198056
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_230
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa831b3322e1cac48bce8e5ab923157e
-      internalID: 825648362
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_231
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99cd637a274b54745bb9ab4c01761505
-      internalID: -154063370
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_232
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 89e5fec912a4d7b459eef10f5057de3c
-      internalID: 1304848789
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_233
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb36d10fde0017e4d911273333312b72
-      internalID: -2062358868
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_234
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5dddaf63a37d3334eaec751f407de8d5
-      internalID: 1453754569
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_235
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5074d9cad7f92974b969d5cdf5c9bcc8
-      internalID: -125675020
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_236
-      rect:
-        serializedVersion: 2
-        x: 1088
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b12073ba1a6b4d4b8fea2dc6496b08d
-      internalID: 1420309756
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_237
-      rect:
-        serializedVersion: 2
-        x: 1216
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 505d0778e341b5343ab7ad5d8aa4fedb
-      internalID: -486677448
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_238
-      rect:
-        serializedVersion: 2
-        x: 1280
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c812ed3586c16f1438f53975e3b3c0c7
-      internalID: 2019953285
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_239
-      rect:
-        serializedVersion: 2
-        x: 1408
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc5ced501bb49b3488f78048bf0eb430
-      internalID: -551804213
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_240
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f0ff32d3bb700a14ea383e16b012f6b8
-      internalID: -2073570123
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_241
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99abca753c53f4e42925adfc3d252882
-      internalID: -2039920769
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_242
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 07959fc3373a26047a9fa55ebb09ae72
-      internalID: 144532347
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_243
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d8a30bcc26605794fa35a103c11de41d
-      internalID: 471508732
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_244
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 09b130bf34f8f2746b5f19ed8d83a873
-      internalID: -374278507
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_245
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f2878d690a59d9141bf42ce71d56d2e9
-      internalID: -1783605873
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_246
-      rect:
-        serializedVersion: 2
-        x: 1216
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 14079acc28dcc2b44b3984f5844462a7
-      internalID: 2004915459
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Download49003_247
-      rect:
-        serializedVersion: 2
-        x: 1408
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5f2df77d51d30fd4cbfe64713bcaed03
-      internalID: -2100064069
+      spriteID: 5a26d2f941b88a349a28337f5a301ce0
+      internalID: -759684899
       vertices: []
       indices: 
       edges: []
@@ -5341,254 +4425,211 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Download49003_0: -642937067
-      Download49003_1: -1849960501
-      Download49003_10: 1272061607
-      Download49003_100: -792306517
-      Download49003_101: -846710250
-      Download49003_102: 993072451
-      Download49003_103: -443431111
-      Download49003_104: -389767452
-      Download49003_105: 59221661
-      Download49003_106: -946958013
-      Download49003_107: -666941976
-      Download49003_108: 676143712
-      Download49003_109: 1538664376
-      Download49003_11: -386620494
-      Download49003_110: 648609082
-      Download49003_111: 86905904
-      Download49003_112: 1917497373
-      Download49003_113: -1884406967
-      Download49003_114: 2047614389
-      Download49003_115: -1289619949
-      Download49003_116: 485325426
-      Download49003_117: -940837620
-      Download49003_118: -570152400
-      Download49003_119: 229391565
-      Download49003_12: -1485243999
-      Download49003_120: 1239790719
-      Download49003_121: 1502330298
-      Download49003_122: -1259188754
-      Download49003_123: 1737682935
-      Download49003_124: -1605730920
-      Download49003_125: 259053420
-      Download49003_126: 1413749485
-      Download49003_127: 1160755956
-      Download49003_128: -1536249951
-      Download49003_129: 30337355
-      Download49003_13: -189767107
-      Download49003_130: -2075491590
-      Download49003_131: 710029787
-      Download49003_132: -1857178094
-      Download49003_133: -752880069
-      Download49003_134: -571669732
-      Download49003_135: 1638516444
-      Download49003_136: 766657360
-      Download49003_137: 880883418
-      Download49003_138: -1607114128
-      Download49003_139: -10228334
-      Download49003_14: -23445656
-      Download49003_140: -837703370
-      Download49003_141: -233608892
-      Download49003_142: 336229621
-      Download49003_143: 541710843
-      Download49003_144: 1572187951
-      Download49003_145: -2027176908
-      Download49003_146: -121856249
-      Download49003_147: 67701656
-      Download49003_148: 638071740
-      Download49003_149: 2050170788
-      Download49003_15: 88499605
-      Download49003_150: -1837305477
-      Download49003_151: 123138156
-      Download49003_152: 2032972797
-      Download49003_153: -1532852536
-      Download49003_154: -123782811
-      Download49003_155: 1176108391
-      Download49003_156: -1262892035
-      Download49003_157: 756650028
-      Download49003_158: -670978128
-      Download49003_159: 388776439
-      Download49003_16: 932567783
-      Download49003_160: 1952105932
-      Download49003_161: -1469974442
-      Download49003_162: 1845852791
-      Download49003_163: 948848729
-      Download49003_164: 1173046806
-      Download49003_165: 1839740076
-      Download49003_166: 189786903
-      Download49003_167: -1951726948
-      Download49003_168: 1090216060
-      Download49003_169: -800941102
-      Download49003_17: -1939303147
-      Download49003_170: -1475314134
-      Download49003_171: -1147802273
-      Download49003_172: -603319124
-      Download49003_173: -1546014466
-      Download49003_174: -1160729114
-      Download49003_175: -1405191059
-      Download49003_176: 1616582817
-      Download49003_177: 1818491333
-      Download49003_178: -2037099295
-      Download49003_179: -682274142
-      Download49003_18: 174349234
-      Download49003_180: 746751599
-      Download49003_181: 329216105
-      Download49003_182: 851637407
-      Download49003_183: -662410444
-      Download49003_184: 260072104
-      Download49003_185: 1854983379
-      Download49003_186: 527173903
-      Download49003_187: 1086658959
-      Download49003_188: -1995075027
-      Download49003_189: -1668837706
-      Download49003_19: -1567413335
-      Download49003_190: -3745608
-      Download49003_191: -425188683
-      Download49003_192: 1405305280
-      Download49003_193: -324872320
-      Download49003_194: 1080271864
-      Download49003_195: 1954785788
-      Download49003_196: -310273297
-      Download49003_197: 1212884646
-      Download49003_198: 1188112544
-      Download49003_199: -1040148243
-      Download49003_2: -331297077
-      Download49003_20: 530088036
-      Download49003_200: -731421874
-      Download49003_201: 1021493459
-      Download49003_202: -1152375611
-      Download49003_203: 1992629877
-      Download49003_204: 346258206
-      Download49003_205: 1530535895
-      Download49003_206: 1388018882
-      Download49003_207: -36953227
-      Download49003_208: -15553888
-      Download49003_209: -576081807
-      Download49003_21: 979918602
-      Download49003_210: 996307083
-      Download49003_211: -98508520
-      Download49003_212: -1053574780
-      Download49003_213: 1007870562
-      Download49003_214: 727601729
-      Download49003_215: -1101459150
-      Download49003_216: -1865534395
-      Download49003_217: 442746893
-      Download49003_218: 1609018591
-      Download49003_219: 2094669373
-      Download49003_22: -1819610290
-      Download49003_220: 1194346679
-      Download49003_221: 978730741
-      Download49003_222: -937905928
-      Download49003_223: 1571034920
-      Download49003_224: -356872142
-      Download49003_225: 404703553
-      Download49003_226: 57489353
-      Download49003_227: -421685260
-      Download49003_228: 1190789405
-      Download49003_229: 1917198056
-      Download49003_23: -1627216025
-      Download49003_230: 825648362
-      Download49003_231: -154063370
-      Download49003_232: 1304848789
-      Download49003_233: -2062358868
-      Download49003_234: 1453754569
-      Download49003_235: -125675020
-      Download49003_236: 1420309756
-      Download49003_237: -486677448
-      Download49003_238: 2019953285
-      Download49003_239: -551804213
-      Download49003_24: 1730037225
-      Download49003_240: -2073570123
-      Download49003_241: -2039920769
-      Download49003_242: 144532347
-      Download49003_243: 471508732
-      Download49003_244: -374278507
-      Download49003_245: -1783605873
-      Download49003_246: 2004915459
-      Download49003_247: -2100064069
-      Download49003_25: 126856480
-      Download49003_26: -2081715669
-      Download49003_27: -1986710496
-      Download49003_28: 1591740484
-      Download49003_29: -876211983
-      Download49003_3: -658369949
-      Download49003_30: -949136640
-      Download49003_31: -1676084548
-      Download49003_32: 1404174756
-      Download49003_33: 500879589
-      Download49003_34: 857700986
-      Download49003_35: 82592345
-      Download49003_36: -2018147082
-      Download49003_37: 2096718434
-      Download49003_38: -2069392943
-      Download49003_39: 532510091
-      Download49003_4: 1125129003
-      Download49003_40: 94197203
-      Download49003_41: 1346253913
-      Download49003_42: 459634162
-      Download49003_43: -912217222
-      Download49003_44: 2022678483
-      Download49003_45: 692414090
-      Download49003_46: 226834910
-      Download49003_47: 973498781
-      Download49003_48: 1151214655
-      Download49003_49: 1466601331
-      Download49003_5: -666554859
-      Download49003_50: 384077579
-      Download49003_51: 204885814
-      Download49003_52: 477581650
-      Download49003_53: -1535276450
-      Download49003_54: -703327337
-      Download49003_55: 400201178
-      Download49003_56: 1266802785
-      Download49003_57: -1660825394
-      Download49003_58: -427648387
-      Download49003_59: -1893875490
-      Download49003_6: 1454246432
-      Download49003_60: 1458155842
-      Download49003_61: -1849695758
-      Download49003_62: -522190898
-      Download49003_63: 2057688598
-      Download49003_64: -1633805122
-      Download49003_65: -376819028
-      Download49003_66: 899027824
-      Download49003_67: -162598648
-      Download49003_68: -1587168353
-      Download49003_69: -720022034
-      Download49003_7: 1350310442
-      Download49003_70: 2131243479
-      Download49003_71: -1460138133
-      Download49003_72: -2101918473
-      Download49003_73: -68514758
-      Download49003_74: 1607452343
-      Download49003_75: 330896133
-      Download49003_76: -1288896279
-      Download49003_77: 927655062
-      Download49003_78: 27969856
-      Download49003_79: 1850985884
-      Download49003_8: 793980565
-      Download49003_80: -916936512
-      Download49003_81: -1998655174
-      Download49003_82: 631091877
-      Download49003_83: 2041832088
-      Download49003_84: 1752332938
-      Download49003_85: 1377675664
-      Download49003_86: 114678679
-      Download49003_87: -967843999
-      Download49003_88: 1096751307
-      Download49003_89: 1741671455
-      Download49003_9: -643508346
-      Download49003_90: -832280307
-      Download49003_91: 916536656
-      Download49003_92: 1338839822
-      Download49003_93: 1672414779
-      Download49003_94: -1352459618
-      Download49003_95: -518978616
-      Download49003_96: -962683227
-      Download49003_97: 637602868
-      Download49003_98: 403223860
-      Download49003_99: -1480911663
+      GroveGladiator_0: 827639013
+      GroveGladiator_1: -445319759
+      GroveGladiator_10: 2137560326
+      GroveGladiator_100: -1663818088
+      GroveGladiator_101: -1763832176
+      GroveGladiator_102: 2089444813
+      GroveGladiator_103: 904486169
+      GroveGladiator_104: -1030830497
+      GroveGladiator_105: 1596347068
+      GroveGladiator_106: 1569278223
+      GroveGladiator_107: 158350868
+      GroveGladiator_108: -86725043
+      GroveGladiator_109: -195286529
+      GroveGladiator_11: 718072735
+      GroveGladiator_110: -1908371504
+      GroveGladiator_111: -1879756690
+      GroveGladiator_112: -1663801927
+      GroveGladiator_113: -2045433397
+      GroveGladiator_114: -823191689
+      GroveGladiator_115: 495450799
+      GroveGladiator_116: 1835886060
+      GroveGladiator_117: -844480103
+      GroveGladiator_118: 1678830499
+      GroveGladiator_119: -565163867
+      GroveGladiator_12: 47003390
+      GroveGladiator_120: -61043377
+      GroveGladiator_121: -86356237
+      GroveGladiator_122: 1250101301
+      GroveGladiator_123: -181453417
+      GroveGladiator_124: -138476536
+      GroveGladiator_125: 2012702713
+      GroveGladiator_126: -1748389833
+      GroveGladiator_127: 653489519
+      GroveGladiator_128: 568283365
+      GroveGladiator_129: -244941686
+      GroveGladiator_13: -731221957
+      GroveGladiator_130: -2016282394
+      GroveGladiator_131: 531306398
+      GroveGladiator_132: -1967954302
+      GroveGladiator_133: 1282295071
+      GroveGladiator_134: 2082932460
+      GroveGladiator_135: -1586315520
+      GroveGladiator_136: 1413128782
+      GroveGladiator_137: 1339267835
+      GroveGladiator_138: -1076063811
+      GroveGladiator_139: 356836107
+      GroveGladiator_14: -1997582955
+      GroveGladiator_140: 990844741
+      GroveGladiator_141: 353050040
+      GroveGladiator_142: -348597166
+      GroveGladiator_143: -305178442
+      GroveGladiator_144: -529407530
+      GroveGladiator_145: -738344283
+      GroveGladiator_146: 1292934119
+      GroveGladiator_147: -1939606459
+      GroveGladiator_148: -686751844
+      GroveGladiator_149: 1856580874
+      GroveGladiator_15: -806446891
+      GroveGladiator_150: 1843201118
+      GroveGladiator_151: -312760532
+      GroveGladiator_152: -61208548
+      GroveGladiator_153: -949845508
+      GroveGladiator_154: -16148590
+      GroveGladiator_155: 370449816
+      GroveGladiator_156: 2104889420
+      GroveGladiator_157: 1162281695
+      GroveGladiator_158: -1973762828
+      GroveGladiator_159: -237952450
+      GroveGladiator_16: 1815720602
+      GroveGladiator_160: -716004475
+      GroveGladiator_161: 599836549
+      GroveGladiator_162: -458470478
+      GroveGladiator_163: -361363926
+      GroveGladiator_164: -257364147
+      GroveGladiator_165: 1614465905
+      GroveGladiator_166: -1993263673
+      GroveGladiator_167: -816746549
+      GroveGladiator_168: -142385813
+      GroveGladiator_169: 1505853048
+      GroveGladiator_17: -966591091
+      GroveGladiator_170: 577679403
+      GroveGladiator_171: 354245687
+      GroveGladiator_172: -1534154506
+      GroveGladiator_173: 845609251
+      GroveGladiator_174: -1064067621
+      GroveGladiator_175: 114733151
+      GroveGladiator_176: 686053817
+      GroveGladiator_177: -1640672265
+      GroveGladiator_178: 1426231075
+      GroveGladiator_179: -1033948799
+      GroveGladiator_18: 577476703
+      GroveGladiator_180: 343622399
+      GroveGladiator_181: -1768074889
+      GroveGladiator_182: -957581753
+      GroveGladiator_183: 854804821
+      GroveGladiator_184: -2027386078
+      GroveGladiator_185: 859796893
+      GroveGladiator_186: 1936648918
+      GroveGladiator_187: 1021806437
+      GroveGladiator_188: 703090189
+      GroveGladiator_189: 1652916510
+      GroveGladiator_19: -313298748
+      GroveGladiator_190: -1959308387
+      GroveGladiator_191: -1417907532
+      GroveGladiator_192: 1953390357
+      GroveGladiator_193: -1409804542
+      GroveGladiator_194: -484671867
+      GroveGladiator_195: 1429761866
+      GroveGladiator_196: -1798198164
+      GroveGladiator_197: 158750225
+      GroveGladiator_198: 481292879
+      GroveGladiator_199: 1037511885
+      GroveGladiator_2: 1228261056
+      GroveGladiator_20: -1615306090
+      GroveGladiator_200: -2066486811
+      GroveGladiator_201: -959602619
+      GroveGladiator_202: 1543572729
+      GroveGladiator_203: 486802038
+      GroveGladiator_204: -759684899
+      GroveGladiator_21: 1338076367
+      GroveGladiator_22: 503052221
+      GroveGladiator_23: -560660392
+      GroveGladiator_24: 1939192034
+      GroveGladiator_25: 1192130421
+      GroveGladiator_26: 2118868933
+      GroveGladiator_27: -2065820268
+      GroveGladiator_28: 1704281033
+      GroveGladiator_29: -1550165746
+      GroveGladiator_3: -1695936299
+      GroveGladiator_30: 659251442
+      GroveGladiator_31: -152707675
+      GroveGladiator_32: -1650245339
+      GroveGladiator_33: -771421494
+      GroveGladiator_34: 181502950
+      GroveGladiator_35: -1679208595
+      GroveGladiator_36: 90689697
+      GroveGladiator_37: -1616059334
+      GroveGladiator_38: 49796776
+      GroveGladiator_39: -981082678
+      GroveGladiator_4: -1768124743
+      GroveGladiator_40: -1766432300
+      GroveGladiator_41: -2064034320
+      GroveGladiator_42: 1051046981
+      GroveGladiator_43: -169271575
+      GroveGladiator_44: -1807265288
+      GroveGladiator_45: -1932438250
+      GroveGladiator_46: -1011871973
+      GroveGladiator_47: -719075718
+      GroveGladiator_48: -323809067
+      GroveGladiator_49: 1411507079
+      GroveGladiator_5: -1569308242
+      GroveGladiator_50: 643858298
+      GroveGladiator_51: -979200608
+      GroveGladiator_52: 1528207302
+      GroveGladiator_53: 1675326863
+      GroveGladiator_54: 1205402400
+      GroveGladiator_55: -1534800085
+      GroveGladiator_56: 154313286
+      GroveGladiator_57: 799324177
+      GroveGladiator_58: 751659564
+      GroveGladiator_59: 1810754923
+      GroveGladiator_6: 1524657289
+      GroveGladiator_60: 1878749770
+      GroveGladiator_61: 355732074
+      GroveGladiator_62: -2001971142
+      GroveGladiator_63: 913602277
+      GroveGladiator_64: -1220465743
+      GroveGladiator_65: -123591278
+      GroveGladiator_66: -251693862
+      GroveGladiator_67: 689680099
+      GroveGladiator_68: 145274400
+      GroveGladiator_69: 1716855089
+      GroveGladiator_7: 1072459986
+      GroveGladiator_70: 9723903
+      GroveGladiator_71: 565553982
+      GroveGladiator_72: 1699564251
+      GroveGladiator_73: 67531578
+      GroveGladiator_74: -1174666281
+      GroveGladiator_75: 1977370090
+      GroveGladiator_76: 1384520462
+      GroveGladiator_77: -1305397918
+      GroveGladiator_78: -1158758314
+      GroveGladiator_79: 955238137
+      GroveGladiator_8: -1817232557
+      GroveGladiator_80: 1237449682
+      GroveGladiator_81: 2018073154
+      GroveGladiator_82: -1039339615
+      GroveGladiator_83: -1084161979
+      GroveGladiator_84: 1328639193
+      GroveGladiator_85: 163779071
+      GroveGladiator_86: -1673539271
+      GroveGladiator_87: 1825236000
+      GroveGladiator_88: 480761727
+      GroveGladiator_89: -683018179
+      GroveGladiator_9: -1196049316
+      GroveGladiator_90: 379381846
+      GroveGladiator_91: -1373879316
+      GroveGladiator_92: -1519010361
+      GroveGladiator_93: -198680631
+      GroveGladiator_94: 1070089224
+      GroveGladiator_95: 1203609395
+      GroveGladiator_96: 994408896
+      GroveGladiator_97: -759938930
+      GroveGladiator_98: -104701722
+      GroveGladiator_99: 162736756
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

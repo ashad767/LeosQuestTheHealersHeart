@@ -1,0 +1,4593 @@
+fileFormatVersion: 2
+guid: f559ecccf4e513c4f8d8eebfed27b203
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ShadowImp_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 2047
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 574b88e604774ed41ac4317b71a8d011
+      internalID: -1367204421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_1
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 2047
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41aaea23eb09a9409d9fa6806ae60c2
+      internalID: 595077980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_2
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 2047
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf98db5e9ecc8c44b228e57a08c36fc
+      internalID: 1874395836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_3
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 2047
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94dcf59735c37b040a6494c91aed5b88
+      internalID: -152960873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_4
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 2047
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff57920c8666397419367bf519c3fbc5
+      internalID: -214561689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_5
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 2047
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8134210d21506c4493ed0cbeb6405b3
+      internalID: -169570274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_6
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 2047
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 281aa43f31403584fbe88ca5d97f14db
+      internalID: -532152609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_7
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 2076
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa57336ed3f5e243a286a7af0c13ed5
+      internalID: 447245089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_8
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1983
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ef3f5cb229af447a7f7606eced47c0
+      internalID: 1889907425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_9
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1983
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0349bf33fd3a5847b9110ed5372b3bd
+      internalID: -268147830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_10
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1983
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cfb1005b158823408a8c12bb092fb69
+      internalID: 1598316117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_11
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1983
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba506a2c60a1e1c4b99f5536a9256735
+      internalID: 1666220332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_12
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 1983
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c60074351a687841b5784afdf7d8e31
+      internalID: 930295500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_13
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1983
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa07cfbf7afd6742a76197591971453
+      internalID: -366463454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_14
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1983
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19ad797299a1a142bc9ee33f4facd83
+      internalID: 1467694193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_15
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1919
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bba4a25f2c064e43992cd87132bd063
+      internalID: 1569642964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_16
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1919
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54302b2f1996f245bbfec34e8ea8949
+      internalID: 521419867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_17
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1919
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb601c3d76b6c84fa4ba31073be57bc
+      internalID: -2114543227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_18
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1919
+        width: 43
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7180bae52904384690d89748d2d025d
+      internalID: -1620937812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_19
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1919
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5334395432c577b43bd69d158ef1d19c
+      internalID: 218151149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_20
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1919
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e96a8b261563f4e8b3ab591b7325e9
+      internalID: 875503634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_21
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1919
+        width: 60
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c992604ae683b4f86fbe11a7a6c208
+      internalID: -1695503366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_22
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1855
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ebe75ab37903684ab14007f6d795b5a
+      internalID: -2122406522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_23
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1855
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded15de1caf6d9242a379f622d6404e0
+      internalID: -659771467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_24
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1855
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3586bb169619ffb439a37204a7cee9d8
+      internalID: -1873221333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_25
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 1855
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b8c868b2838b24a97834ed2e3a517b
+      internalID: -749509868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_26
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 1855
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b68d5cdfb3881d74db359385ea956019
+      internalID: 1023927307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_27
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1855
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc301559079a034caa3b9ddfe0b1b34
+      internalID: 2014298260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_28
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 1855
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 629943e9d59a52c4e81bbeb85d7b626f
+      internalID: -891078896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_29
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1791
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5db6ef3f1dc93534d819fbaf571b7392
+      internalID: -28351652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_30
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1791
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb78a88138e38149becc1045643df5a
+      internalID: -1977411840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_31
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1791
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140c765cb63ec6d488d0dded7348a9ce
+      internalID: -1862810215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_32
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1791
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822e87cdf6036fc428b5c0070451ec83
+      internalID: 1516671269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_33
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 1791
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08ca9eb02acc534488b2a33f5110015
+      internalID: -2132711923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_34
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1791
+        width: 41
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d238867d4fa704847967ef474c847f6f
+      internalID: -612507790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_35
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 1791
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42ed31a36f3a46499b1582f3757b0be
+      internalID: 1490914007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_36
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 1791
+        width: 41
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efdb08f02cb21d6419259ed6c6c1744c
+      internalID: 2005880173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_37
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1727
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b63e71d0b8840f40a24c9c0fdcdc27e
+      internalID: 819026454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_38
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1727
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e42cfcb06db8254db5436e531a2540a
+      internalID: -1787335127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_39
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1727
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e064a230f20d9b04e9e7eabdad872c2c
+      internalID: 145308997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_40
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1727
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dedfc6a5130d0e448e6ea6b96ac1df9
+      internalID: 1755340367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_41
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1727
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78c5dd8690f44c4b9499fd950932b83
+      internalID: -1227220730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_42
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1727
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190ea571e9d4804489287c8e604f1c4f
+      internalID: 1243372277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_43
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 1727
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9aa15216d5d95f4693329cc2b7692a9
+      internalID: -359330820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_44
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 1727
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d094ce7c032eb4085e214fa728cd2f
+      internalID: 554861326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_45
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1663
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77bc2be954aeba43aab2af176841eb5
+      internalID: 53770062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_46
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1663
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ec6d4c1580fd4419593b2b4a9ab929
+      internalID: -2019617553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_47
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1663
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdcd487dcecfacc4d92eb4fda273723f
+      internalID: 1832619880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_48
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1664
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b33a2fc6202894640acf04d5d152b1b6
+      internalID: 559452600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_49
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1664
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77fd4a581c67a7446b3145d54bedb474
+      internalID: 718042448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_50
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1663
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc6fab6d193f216478912fee4c82da2a
+      internalID: -629034670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_51
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1664
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed7fba8abd077664395ca7c766722e88
+      internalID: -1526797692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_52
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1664
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4154070a018705d4e99b49ed6a798fb5
+      internalID: 853005172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_53
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1599
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f681ce9c18df2f947b2ece0d8b3e4300
+      internalID: -1190430959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_54
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1599
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5eaf1b112e444c49b0503e8cfbda190
+      internalID: 1430077551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_55
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1599
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae8ab9eaa23ac542a53c1295c7ab15e
+      internalID: 271174791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_56
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 1599
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 816e4e2a51c115449bd2fdc428d0f6b0
+      internalID: 1736262450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_57
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1599
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92c786d4647b55443911d255cad6e12a
+      internalID: 214382072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_58
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1599
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 414fe192e5dc417459c226c63f41e3c7
+      internalID: -31373528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_59
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1599
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22c81e8d327868c40a4d6bb2b0caa38f
+      internalID: -1987521750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_60
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 1599
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d11677914fb7764086e121b3b364ea3
+      internalID: 1208539555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_61
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1536
+        width: 53
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 465493e9ed68fc044b9b681bd663eff5
+      internalID: -1539362541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_62
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1536
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a762d07155bce4445bf559cbbd56f869
+      internalID: -698036115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_63
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1536
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6714654623d5c144090477858b0ece1f
+      internalID: -1683884316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_64
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1536
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c677caf3dd4d9c488163c5f3ddc04c7
+      internalID: 1795156453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_65
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 1536
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a458daf459ed53f48a06add95f6b4e9e
+      internalID: -658719726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_66
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1536
+        width: 53
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5a7faaadbd50e41ba0815ee7e4ba64
+      internalID: -799789795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_67
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1536
+        width: 53
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53b0077afadbd1b41a8bf9e21e2d64a1
+      internalID: -1633577702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_68
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 1536
+        width: 53
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c3fe20d196cf84439032dd171933741
+      internalID: 314091532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_69
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 1536
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085a3cca53207d24db308c2a9b409c0b
+      internalID: -1131233243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_70
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1472
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90607fee42972064eb227b2c98cdcad3
+      internalID: -62458802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_71
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 1472
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b35473228849d419186e92e3c23969
+      internalID: 633857996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_72
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1472
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa974816b13c8fb4a9527860f399c5bf
+      internalID: -1042726452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_73
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1472
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54287939031b52e4fbd8f1f5b999742c
+      internalID: -2114881087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_74
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 1472
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4628adf0cb25fa54cbb313311102642e
+      internalID: 849159349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_75
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1472
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc451135b4a2a0418669294888c1e8e
+      internalID: 1441323089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_76
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1472
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054f4d86940f22248bc381dc3f23ea29
+      internalID: 1622565354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_77
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 1472
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de711fb6c8284f48afdc63770949fb8
+      internalID: -1765309683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_78
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 1472
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 689d961c3a318814dafd3195ed55b330
+      internalID: -2127656822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_79
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1408
+        width: 53
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d718d5e723a072847b791d1f7fda5817
+      internalID: 930345999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_80
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1408
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66ca948b4b159b041aa9d4189dd9b0af
+      internalID: 2052386958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_81
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1408
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95f137ebe1ad1f440bef0af457ea63bb
+      internalID: 38514774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_82
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1408
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc9c378201670041acda6d91f1ebc2f
+      internalID: -268468157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_83
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 1408
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0171ed12af7af6448e9f425573f5343
+      internalID: 1364155258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_84
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1408
+        width: 53
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a795d78eb55a9c45858d8b262da2702
+      internalID: -1009129620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_85
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1408
+        width: 53
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36cb89f63fdde6a4aa976a4db3686192
+      internalID: 151094477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_86
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 1408
+        width: 51
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15893e9d7c3547e4ab29c455408a68a0
+      internalID: -478853876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_87
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 1408
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300f6d2d092378f4b8209e06d256104c
+      internalID: 881898477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_88
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1344
+        width: 47
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca26e81d4aaa5df449c580d3e2def9fb
+      internalID: -1502549870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_89
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1344
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 947d0e6c39e5297408475f9ea93e2180
+      internalID: -1504774260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_90
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1344
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d5adbd0ef7d0b4bb77e7f154a7c762
+      internalID: 1851861491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_91
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 1344
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f8acdf9665f99048983f8fa1940bd8d
+      internalID: -1639525897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_92
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 1344
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4726c8b11dd4d346bfb69b8aca8e759
+      internalID: 1901178086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_93
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1344
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 640c085b3fc3da2449a0cda38b3af9c2
+      internalID: 1617393105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_94
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 1344
+        width: 47
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a1d5420f0a9b0246aa6d60acbf4a72a
+      internalID: 1261147507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_95
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 1344
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb0c7f798267e44fbe6fb8dd784ea94
+      internalID: -53081252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_96
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 1344
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa5bf26b1934d044db5edd34a921ead0
+      internalID: 2107106360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_97
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1280
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ddc2a776a1c39649aed2842df302e6c
+      internalID: 126349219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_98
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1280
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba9c19e6068caa04e8e8ca45bc9d21c9
+      internalID: 773409762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_99
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1280
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f393964c14e5147b89fd54b74d3556
+      internalID: -291831609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_100
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 1280
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05b64b596349324ca5247672182dad6
+      internalID: 1241775659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_101
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 1280
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5beab07f14c3ab942934cbd53ebbd64d
+      internalID: -820342823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_102
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1280
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a96e9c3bec9bb646829b6b8ee182898
+      internalID: 1447087989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_103
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1216
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5dcdc238f15fb4191e54e95d9c4554
+      internalID: 326816643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_104
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1216
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d43716ab5079f87459b44ef92ce6bb30
+      internalID: 540461719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_105
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 1216
+        width: 37
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ae3c7ae54938149a4d7c70c8943c24
+      internalID: 1211464331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_106
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1216
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37b45ecf2da13524195e49a9c3beef9f
+      internalID: 2078081452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_107
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1216
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92b0c71304873c49817467489cf3cbb
+      internalID: -958765977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_108
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1216
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bafb3564cfd94a6418fae5527a810566
+      internalID: -626122343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_109
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1151
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13907bf09baf17458b7576047792fa4
+      internalID: 768697921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_110
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1151
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71260f2faf089ff4fa46b35f83b307f1
+      internalID: 415337650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_111
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1151
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36032240f79e95647917413f93c96e3e
+      internalID: 1336567930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_112
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 1151
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099ab6cd7390c02469ad86d22b66c16c
+      internalID: -777414277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_113
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 1151
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e376aa0c109d94ebcb2e0d7bb44ed2
+      internalID: -1750157494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_114
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1151
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b853bc18a929f74bbfce1a15359a3e5
+      internalID: 1179101752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_115
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1087
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d93ce4f0909802247b367c7b25f20baa
+      internalID: -1167832439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_116
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 1087
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1964434d01d82b043825e66ab0e0837d
+      internalID: -1769419671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_117
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 1087
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e6a47a609442f4b8babb41017d107d
+      internalID: 2102014547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_118
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1087
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3f947c5a0f5e24458a5a4500424bb2d
+      internalID: -930876022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_119
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1087
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299e2498a66d9a44990446a97bf49a5d
+      internalID: 1328773618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_120
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1087
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a6b1fa6c0edba42968726e781d487d
+      internalID: 81242438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_121
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1023
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83f5bf0d1db7ee54bbf2d2afde8a0043
+      internalID: 1899534363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_122
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1023
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1de90a50d2be444699934a835f66f29
+      internalID: 326936302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_123
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1023
+        width: 41
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e7e38c9a063a5445b8def2c76bb5bec
+      internalID: 1893240970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_124
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 1023
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64df95db3b7bb234a9bf2aa6fecef765
+      internalID: 1193269064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_125
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1023
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b07cb70e2ece44b97dca7e006647cc
+      internalID: -563816715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_126
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1023
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a608833bff0824298b76851d28bdd6
+      internalID: -672279649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_127
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 1023
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc1510960622854b82853281c45e91e
+      internalID: -1685210195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_128
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 1023
+        width: 41
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ff674ff01d3b34bb14b49c3e8fabf5
+      internalID: -424864630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_129
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1023
+        width: 41
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e94505db89c82214ba288c9dcc88d1c7
+      internalID: 1004759173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_130
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 1023
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3a4344766366741b797f96d26e39e7
+      internalID: 1469743380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_131
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1023
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ee8785338caf94898ed8766274a63e
+      internalID: -1910769226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_132
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 1023
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0dcc76a90448f44927fcd563e7045b
+      internalID: -1362093260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_133
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1023
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d08c1574451a3104b999748044ffdaf8
+      internalID: -75902434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_134
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 959
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 586df8eb064e37143add6875ece79bc9
+      internalID: -115714824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_135
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 959
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e87715158ac9e484a89b634538c55968
+      internalID: -833167713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_136
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 959
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90fe3eb31ab620e4cbe1860150aae7fa
+      internalID: 576493981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_137
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 959
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 086b82b6a0b7559469512e3e766428f5
+      internalID: 1308710883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_138
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 959
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e23b35e2751d0fb48b91731de8455447
+      internalID: -1546526785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_139
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 959
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f45ee265522e82542a41d6d3fc45cd3b
+      internalID: 2141524627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_140
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 959
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 546eaa4644151194fbd0dab1c71367c6
+      internalID: 1660984794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_141
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 959
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 163c74648e687b644ab1168cee87ede8
+      internalID: 1929411023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_142
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 959
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3171ac306646bb249a2953aefd9e4cdd
+      internalID: -1613822021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_143
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 959
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36701b8250d866542b578663cdc47e8d
+      internalID: -1798843948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_144
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 959
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c18ceb7afd3530458a48c997b3385bb
+      internalID: 1350950015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_145
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 959
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c10316c70df10b4f8149281202c6ae9
+      internalID: -1340130768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_146
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 959
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b2e9f4e3f6d54419323878755dcf74
+      internalID: -677692727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_147
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 895
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c25caf1dfaaf1e4a81e8100e975eb30
+      internalID: 1544241385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_148
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 895
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 724223c3682ba724e83868d2c4abddba
+      internalID: 2110627879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_149
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 895
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ecbcb3ddf2e27c47a83fc581bcc889b
+      internalID: -814760110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_150
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 895
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9dc6169e36afbf46b3fb3370edcebac
+      internalID: 1716129449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_151
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 895
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d238c95e614be6a4999c8d6d65117184
+      internalID: -587056236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_152
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 895
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf98b4e3c227f946a5e14921a6bf64f
+      internalID: 1691712987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_153
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 895
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b78a8e7df3a45446a35c5381fe58882
+      internalID: -1240464609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_154
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 895
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd1a749183b925f42b97854682a12037
+      internalID: -1262701795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_155
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 895
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab59355647b208447ac99caba309f55e
+      internalID: -371223441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_156
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 895
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7c543cbe9052e4f9a45abc7c9a20b3
+      internalID: 795829326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_157
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 895
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ac6c46b1b880b4a824a8c595106e60
+      internalID: -1280970787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_158
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 895
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d666e671b71db944ba6c72902e2233af
+      internalID: 1586842767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_159
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 895
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a588666d68dc654cb06d35a30c44181
+      internalID: 182557317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_160
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 831
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c3bed3808d0364fbbb1927616a64ca
+      internalID: -64932740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_161
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 831
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50521fba09edff04d8861d789e8201c1
+      internalID: 832399161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_162
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 831
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6929e682a8ef0b94e8370e31ce5fe5a6
+      internalID: -754537490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_163
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 831
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c98a64c33f4da24481ef52c73b5fc72
+      internalID: -23904384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_164
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 831
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a43513c890cad0a4c9994835f95f398b
+      internalID: -1710551256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_165
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 831
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e8c5cfa9b6ef048888a29bfe85b31b
+      internalID: 1960444368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_166
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 831
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564dc12776168f94d9cce70b3c06f7a3
+      internalID: 1222319924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_167
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 831
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32d09d8000e22f40a9d00005dadef99
+      internalID: 1580860916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_168
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 831
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d468bb65abd2ac3448d3e3b8ec2bea66
+      internalID: 1138797913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_169
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 831
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f86a3877fb757749810dc74d8a079c6
+      internalID: 192976842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_170
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 831
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac650b5cc2c5e445851e2eb130ed77f
+      internalID: 430261063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_171
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 831
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c07233ffa48ccf468c149ddc7d391ee
+      internalID: -847636067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_172
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 831
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c57d13223a6244793a0741c8129fbc
+      internalID: 1115055387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_173
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 767
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87999a5dde20cf4cb11c12fb6bb134d
+      internalID: 929116661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_174
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 767
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6368dd729c4b25a4690661de1826011c
+      internalID: 205923192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_175
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 767
+        width: 53
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89139c7e3a6a64c40b4ccc3eeb972b7b
+      internalID: -729927011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_176
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 767
+        width: 53
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a006ecc471a3544a917c28b180a48e8
+      internalID: 2047980946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_177
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 768
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de7d02307a72ac940b83eb42af5733c7
+      internalID: -732665516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_178
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 767
+        width: 52
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dce533c6612c7c46bb245567fbfe13f
+      internalID: -969430303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_179
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 639
+        width: 54
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfbf1139e11e7274681772ab91bcfafc
+      internalID: -1068900042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_180
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 639
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1a4012c7ecdc14094a66ddada39fb4
+      internalID: 491903308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_181
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 639
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 087cadd5c2dd0ed459f15446f62a5128
+      internalID: 1064507130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_182
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 639
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 914cef804d38029448ea9b88d15bb620
+      internalID: 285915288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_183
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 639
+        width: 63
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f930c10cdbcc7ac4682ce8f4735f2de6
+      internalID: -597703257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_184
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 639
+        width: 71
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae554d029fdee543ba73a14c767f4a7
+      internalID: 1486081679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_185
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 448
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dbdd3d253762c24eb5fe0535f90234a
+      internalID: -1524169668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_186
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 448
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2764f798688a3458d48523b07d1369
+      internalID: 1940616524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_187
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 448
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c322df305a21c7e4882958a9f6988876
+      internalID: -731427562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_188
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 448
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8419550e233c50f4c8424f38ed17bdd5
+      internalID: -453258472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_189
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 448
+        width: 71
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e70f3a2339fbc0740aa7180ca5d47fd3
+      internalID: 500829127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_190
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 448
+        width: 62
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dacee310a231ba4d9d87ac1fbf97977
+      internalID: 241520671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_191
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 256
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ab4a76d74fce048a819de42cc5d0d9
+      internalID: 1395718611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_192
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 256
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a11b9f042821b1b4b8b4a89609bd213d
+      internalID: 1756458063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_193
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 256
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d41a9cbf8e4964c952da9784fe3141
+      internalID: 23775174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_194
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 253
+        width: 43
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fcc353a8b4b48c4cb7a659636e56ea3
+      internalID: -1772291088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_195
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 256
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25787bc4cc065448818b00ada0c683d
+      internalID: 885222525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_196
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 256
+        width: 62
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af3712fb41469764780ca2257e4d8dd2
+      internalID: -1258819406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_197
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 63
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb359485beb016e4fb4124327c872d69
+      internalID: 1147139827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_198
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 63
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f8f4ffb361f3c43a0abadcf6a46673
+      internalID: -169760227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_199
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 63
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 345bbac94d029fa44a464d9c37f6c751
+      internalID: -32205852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_200
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 63
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a366a92e0f28aa4e99b9e775cbeb4a0
+      internalID: -1241491482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_201
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 63
+        width: 70
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e6e92acd2dc5404c8cb4388592a5267
+      internalID: 620519866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowImp_202
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 63
+        width: 60
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48aed0cb968025d4bb68c71f0c8efb6b
+      internalID: 1113437658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ShadowImp_0: -1367204421
+      ShadowImp_1: 595077980
+      ShadowImp_10: 1598316117
+      ShadowImp_100: 1241775659
+      ShadowImp_101: -820342823
+      ShadowImp_102: 1447087989
+      ShadowImp_103: 326816643
+      ShadowImp_104: 540461719
+      ShadowImp_105: 1211464331
+      ShadowImp_106: 2078081452
+      ShadowImp_107: -958765977
+      ShadowImp_108: -626122343
+      ShadowImp_109: 768697921
+      ShadowImp_11: 1666220332
+      ShadowImp_110: 415337650
+      ShadowImp_111: 1336567930
+      ShadowImp_112: -777414277
+      ShadowImp_113: -1750157494
+      ShadowImp_114: 1179101752
+      ShadowImp_115: -1167832439
+      ShadowImp_116: -1769419671
+      ShadowImp_117: 2102014547
+      ShadowImp_118: -930876022
+      ShadowImp_119: 1328773618
+      ShadowImp_12: 930295500
+      ShadowImp_120: 81242438
+      ShadowImp_121: 1899534363
+      ShadowImp_122: 326936302
+      ShadowImp_123: 1893240970
+      ShadowImp_124: 1193269064
+      ShadowImp_125: -563816715
+      ShadowImp_126: -672279649
+      ShadowImp_127: -1685210195
+      ShadowImp_128: -424864630
+      ShadowImp_129: 1004759173
+      ShadowImp_13: -366463454
+      ShadowImp_130: 1469743380
+      ShadowImp_131: -1910769226
+      ShadowImp_132: -1362093260
+      ShadowImp_133: -75902434
+      ShadowImp_134: -115714824
+      ShadowImp_135: -833167713
+      ShadowImp_136: 576493981
+      ShadowImp_137: 1308710883
+      ShadowImp_138: -1546526785
+      ShadowImp_139: 2141524627
+      ShadowImp_14: 1467694193
+      ShadowImp_140: 1660984794
+      ShadowImp_141: 1929411023
+      ShadowImp_142: -1613822021
+      ShadowImp_143: -1798843948
+      ShadowImp_144: 1350950015
+      ShadowImp_145: -1340130768
+      ShadowImp_146: -677692727
+      ShadowImp_147: 1544241385
+      ShadowImp_148: 2110627879
+      ShadowImp_149: -814760110
+      ShadowImp_15: 1569642964
+      ShadowImp_150: 1716129449
+      ShadowImp_151: -587056236
+      ShadowImp_152: 1691712987
+      ShadowImp_153: -1240464609
+      ShadowImp_154: -1262701795
+      ShadowImp_155: -371223441
+      ShadowImp_156: 795829326
+      ShadowImp_157: -1280970787
+      ShadowImp_158: 1586842767
+      ShadowImp_159: 182557317
+      ShadowImp_16: 521419867
+      ShadowImp_160: -64932740
+      ShadowImp_161: 832399161
+      ShadowImp_162: -754537490
+      ShadowImp_163: -23904384
+      ShadowImp_164: -1710551256
+      ShadowImp_165: 1960444368
+      ShadowImp_166: 1222319924
+      ShadowImp_167: 1580860916
+      ShadowImp_168: 1138797913
+      ShadowImp_169: 192976842
+      ShadowImp_17: -2114543227
+      ShadowImp_170: 430261063
+      ShadowImp_171: -847636067
+      ShadowImp_172: 1115055387
+      ShadowImp_173: 929116661
+      ShadowImp_174: 205923192
+      ShadowImp_175: -729927011
+      ShadowImp_176: 2047980946
+      ShadowImp_177: -732665516
+      ShadowImp_178: -969430303
+      ShadowImp_179: -1068900042
+      ShadowImp_18: -1620937812
+      ShadowImp_180: 491903308
+      ShadowImp_181: 1064507130
+      ShadowImp_182: 285915288
+      ShadowImp_183: -597703257
+      ShadowImp_184: 1486081679
+      ShadowImp_185: -1524169668
+      ShadowImp_186: 1940616524
+      ShadowImp_187: -731427562
+      ShadowImp_188: -453258472
+      ShadowImp_189: 500829127
+      ShadowImp_19: 218151149
+      ShadowImp_190: 241520671
+      ShadowImp_191: 1395718611
+      ShadowImp_192: 1756458063
+      ShadowImp_193: 23775174
+      ShadowImp_194: -1772291088
+      ShadowImp_195: 885222525
+      ShadowImp_196: -1258819406
+      ShadowImp_197: 1147139827
+      ShadowImp_198: -169760227
+      ShadowImp_199: -32205852
+      ShadowImp_2: 1874395836
+      ShadowImp_20: 875503634
+      ShadowImp_200: -1241491482
+      ShadowImp_201: 620519866
+      ShadowImp_202: 1113437658
+      ShadowImp_21: -1695503366
+      ShadowImp_22: -2122406522
+      ShadowImp_23: -659771467
+      ShadowImp_24: -1873221333
+      ShadowImp_25: -749509868
+      ShadowImp_26: 1023927307
+      ShadowImp_27: 2014298260
+      ShadowImp_28: -891078896
+      ShadowImp_29: -28351652
+      ShadowImp_3: -152960873
+      ShadowImp_30: -1977411840
+      ShadowImp_31: -1862810215
+      ShadowImp_32: 1516671269
+      ShadowImp_33: -2132711923
+      ShadowImp_34: -612507790
+      ShadowImp_35: 1490914007
+      ShadowImp_36: 2005880173
+      ShadowImp_37: 819026454
+      ShadowImp_38: -1787335127
+      ShadowImp_39: 145308997
+      ShadowImp_4: -214561689
+      ShadowImp_40: 1755340367
+      ShadowImp_41: -1227220730
+      ShadowImp_42: 1243372277
+      ShadowImp_43: -359330820
+      ShadowImp_44: 554861326
+      ShadowImp_45: 53770062
+      ShadowImp_46: -2019617553
+      ShadowImp_47: 1832619880
+      ShadowImp_48: 559452600
+      ShadowImp_49: 718042448
+      ShadowImp_5: -169570274
+      ShadowImp_50: -629034670
+      ShadowImp_51: -1526797692
+      ShadowImp_52: 853005172
+      ShadowImp_53: -1190430959
+      ShadowImp_54: 1430077551
+      ShadowImp_55: 271174791
+      ShadowImp_56: 1736262450
+      ShadowImp_57: 214382072
+      ShadowImp_58: -31373528
+      ShadowImp_59: -1987521750
+      ShadowImp_6: -532152609
+      ShadowImp_60: 1208539555
+      ShadowImp_61: -1539362541
+      ShadowImp_62: -698036115
+      ShadowImp_63: -1683884316
+      ShadowImp_64: 1795156453
+      ShadowImp_65: -658719726
+      ShadowImp_66: -799789795
+      ShadowImp_67: -1633577702
+      ShadowImp_68: 314091532
+      ShadowImp_69: -1131233243
+      ShadowImp_7: 447245089
+      ShadowImp_70: -62458802
+      ShadowImp_71: 633857996
+      ShadowImp_72: -1042726452
+      ShadowImp_73: -2114881087
+      ShadowImp_74: 849159349
+      ShadowImp_75: 1441323089
+      ShadowImp_76: 1622565354
+      ShadowImp_77: -1765309683
+      ShadowImp_78: -2127656822
+      ShadowImp_79: 930345999
+      ShadowImp_8: 1889907425
+      ShadowImp_80: 2052386958
+      ShadowImp_81: 38514774
+      ShadowImp_82: -268468157
+      ShadowImp_83: 1364155258
+      ShadowImp_84: -1009129620
+      ShadowImp_85: 151094477
+      ShadowImp_86: -478853876
+      ShadowImp_87: 881898477
+      ShadowImp_88: -1502549870
+      ShadowImp_89: -1504774260
+      ShadowImp_9: -268147830
+      ShadowImp_90: 1851861491
+      ShadowImp_91: -1639525897
+      ShadowImp_92: 1901178086
+      ShadowImp_93: 1617393105
+      ShadowImp_94: 1261147507
+      ShadowImp_95: -53081252
+      ShadowImp_96: 2107106360
+      ShadowImp_97: 126349219
+      ShadowImp_98: 773409762
+      ShadowImp_99: -291831609
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
