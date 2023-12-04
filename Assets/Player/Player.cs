@@ -289,7 +289,7 @@ public class Player : Entity
             currentEnergy = MaxEnergy;
     }
 
-    public override void TakeDamage(float damage)
+    /*public override void TakeDamage(float damage)
     {
         if(currentShield > 0)
         {
@@ -308,7 +308,7 @@ public class Player : Entity
             base.TakeDamage(damage);
         }
 
-    }
+    }*/
 
     public void TestInputs()
     {

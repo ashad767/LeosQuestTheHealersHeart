@@ -113,10 +113,10 @@ TextureImporter:
       name: GroveGladiator_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 2049
-        width: 33
-        height: 48
+        x: 0
+        y: 2048
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: GroveGladiator_1
       rect:
         serializedVersion: 2
-        x: 80
-        y: 2049
-        width: 31
-        height: 48
+        x: 64
+        y: 2048
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: GroveGladiator_2
       rect:
         serializedVersion: 2
-        x: 145
-        y: 2049
-        width: 29
-        height: 48
+        x: 128
+        y: 2048
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: GroveGladiator_3
       rect:
         serializedVersion: 2
-        x: 205
-        y: 2049
-        width: 37
-        height: 48
+        x: 192
+        y: 2048
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: GroveGladiator_4
       rect:
         serializedVersion: 2
-        x: 262
-        y: 2049
-        width: 52
-        height: 48
+        x: 256
+        y: 2048
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +218,10 @@ TextureImporter:
       name: GroveGladiator_5
       rect:
         serializedVersion: 2
-        x: 327
-        y: 2049
-        width: 49
-        height: 48
+        x: 320
+        y: 2048
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +239,10 @@ TextureImporter:
       name: GroveGladiator_6
       rect:
         serializedVersion: 2
-        x: 397
-        y: 2049
-        width: 37
-        height: 48
+        x: 384
+        y: 2048
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,10 +260,10 @@ TextureImporter:
       name: GroveGladiator_7
       rect:
         serializedVersion: 2
-        x: 23
-        y: 1985
-        width: 20
-        height: 49
+        x: 0
+        y: 1984
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +281,10 @@ TextureImporter:
       name: GroveGladiator_8
       rect:
         serializedVersion: 2
-        x: 85
-        y: 1985
-        width: 23
-        height: 49
+        x: 64
+        y: 1984
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +302,10 @@ TextureImporter:
       name: GroveGladiator_9
       rect:
         serializedVersion: 2
-        x: 150
-        y: 1985
-        width: 22
-        height: 49
+        x: 128
+        y: 1984
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,10 +323,10 @@ TextureImporter:
       name: GroveGladiator_10
       rect:
         serializedVersion: 2
-        x: 211
-        y: 1985
-        width: 27
-        height: 49
+        x: 192
+        y: 1984
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,10 +344,10 @@ TextureImporter:
       name: GroveGladiator_11
       rect:
         serializedVersion: 2
-        x: 273
-        y: 1985
-        width: 34
-        height: 49
+        x: 256
+        y: 1984
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,10 +365,10 @@ TextureImporter:
       name: GroveGladiator_12
       rect:
         serializedVersion: 2
-        x: 337
-        y: 1985
-        width: 34
-        height: 49
+        x: 320
+        y: 1984
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,10 +386,10 @@ TextureImporter:
       name: GroveGladiator_13
       rect:
         serializedVersion: 2
-        x: 403
-        y: 1985
-        width: 30
-        height: 49
+        x: 384
+        y: 1984
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -407,10 +407,10 @@ TextureImporter:
       name: GroveGladiator_14
       rect:
         serializedVersion: 2
-        x: 15
-        y: 1921
-        width: 33
-        height: 49
+        x: 0
+        y: 1920
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,10 +428,10 @@ TextureImporter:
       name: GroveGladiator_15
       rect:
         serializedVersion: 2
-        x: 79
-        y: 1921
-        width: 33
-        height: 49
+        x: 64
+        y: 1920
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -449,10 +449,10 @@ TextureImporter:
       name: GroveGladiator_16
       rect:
         serializedVersion: 2
-        x: 145
-        y: 1921
-        width: 29
-        height: 49
+        x: 128
+        y: 1920
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,10 +470,10 @@ TextureImporter:
       name: GroveGladiator_17
       rect:
         serializedVersion: 2
-        x: 205
-        y: 1921
-        width: 37
-        height: 49
+        x: 192
+        y: 1920
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -491,10 +491,10 @@ TextureImporter:
       name: GroveGladiator_18
       rect:
         serializedVersion: 2
-        x: 262
-        y: 1921
-        width: 52
-        height: 49
+        x: 256
+        y: 1920
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -512,10 +512,10 @@ TextureImporter:
       name: GroveGladiator_19
       rect:
         serializedVersion: 2
-        x: 327
-        y: 1921
-        width: 49
-        height: 49
+        x: 320
+        y: 1920
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -533,10 +533,10 @@ TextureImporter:
       name: GroveGladiator_20
       rect:
         serializedVersion: 2
-        x: 398
-        y: 1921
-        width: 35
-        height: 49
+        x: 384
+        y: 1920
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -554,10 +554,10 @@ TextureImporter:
       name: GroveGladiator_21
       rect:
         serializedVersion: 2
-        x: 21
-        y: 1857
-        width: 20
-        height: 49
+        x: 0
+        y: 1856
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -575,10 +575,10 @@ TextureImporter:
       name: GroveGladiator_22
       rect:
         serializedVersion: 2
-        x: 84
-        y: 1857
-        width: 23
-        height: 49
+        x: 64
+        y: 1856
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -596,10 +596,10 @@ TextureImporter:
       name: GroveGladiator_23
       rect:
         serializedVersion: 2
-        x: 147
-        y: 1857
-        width: 23
-        height: 49
+        x: 128
+        y: 1856
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -617,10 +617,10 @@ TextureImporter:
       name: GroveGladiator_24
       rect:
         serializedVersion: 2
-        x: 209
-        y: 1857
-        width: 27
-        height: 49
+        x: 192
+        y: 1856
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -638,10 +638,10 @@ TextureImporter:
       name: GroveGladiator_25
       rect:
         serializedVersion: 2
-        x: 268
-        y: 1857
-        width: 34
-        height: 49
+        x: 256
+        y: 1856
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -659,10 +659,10 @@ TextureImporter:
       name: GroveGladiator_26
       rect:
         serializedVersion: 2
-        x: 332
-        y: 1857
-        width: 35
-        height: 49
+        x: 320
+        y: 1856
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -680,10 +680,10 @@ TextureImporter:
       name: GroveGladiator_27
       rect:
         serializedVersion: 2
-        x: 399
-        y: 1857
-        width: 30
-        height: 49
+        x: 384
+        y: 1856
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -701,10 +701,10 @@ TextureImporter:
       name: GroveGladiator_28
       rect:
         serializedVersion: 2
-        x: 9
-        y: 1793
-        width: 39
-        height: 48
+        x: 0
+        y: 1792
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -722,10 +722,10 @@ TextureImporter:
       name: GroveGladiator_29
       rect:
         serializedVersion: 2
-        x: 76
-        y: 1791
-        width: 34
-        height: 49
+        x: 64
+        y: 1792
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -743,10 +743,10 @@ TextureImporter:
       name: GroveGladiator_30
       rect:
         serializedVersion: 2
-        x: 144
-        y: 1791
-        width: 28
-        height: 50
+        x: 128
+        y: 1792
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -764,10 +764,10 @@ TextureImporter:
       name: GroveGladiator_31
       rect:
         serializedVersion: 2
-        x: 210
-        y: 1791
-        width: 26
-        height: 50
+        x: 192
+        y: 1792
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -785,10 +785,10 @@ TextureImporter:
       name: GroveGladiator_32
       rect:
         serializedVersion: 2
-        x: 276
-        y: 1791
-        width: 26
-        height: 49
+        x: 256
+        y: 1792
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -806,10 +806,10 @@ TextureImporter:
       name: GroveGladiator_33
       rect:
         serializedVersion: 2
-        x: 341
-        y: 1791
-        width: 25
-        height: 49
+        x: 320
+        y: 1792
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -827,10 +827,10 @@ TextureImporter:
       name: GroveGladiator_34
       rect:
         serializedVersion: 2
-        x: 404
-        y: 1791
-        width: 26
-        height: 49
+        x: 384
+        y: 1792
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -848,10 +848,10 @@ TextureImporter:
       name: GroveGladiator_35
       rect:
         serializedVersion: 2
-        x: 466
-        y: 1791
-        width: 27
-        height: 50
+        x: 448
+        y: 1792
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -869,10 +869,10 @@ TextureImporter:
       name: GroveGladiator_36
       rect:
         serializedVersion: 2
-        x: 23
-        y: 1729
-        width: 29
-        height: 49
+        x: 0
+        y: 1728
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -890,10 +890,10 @@ TextureImporter:
       name: GroveGladiator_37
       rect:
         serializedVersion: 2
-        x: 83
-        y: 1729
-        width: 34
-        height: 49
+        x: 64
+        y: 1728
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -911,10 +911,10 @@ TextureImporter:
       name: GroveGladiator_38
       rect:
         serializedVersion: 2
-        x: 146
-        y: 1729
-        width: 37
-        height: 49
+        x: 128
+        y: 1728
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -932,10 +932,10 @@ TextureImporter:
       name: GroveGladiator_39
       rect:
         serializedVersion: 2
-        x: 213
-        y: 1729
-        width: 33
-        height: 49
+        x: 192
+        y: 1728
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -953,10 +953,10 @@ TextureImporter:
       name: GroveGladiator_40
       rect:
         serializedVersion: 2
-        x: 270
-        y: 1729
-        width: 32
-        height: 49
+        x: 256
+        y: 1728
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -974,10 +974,10 @@ TextureImporter:
       name: GroveGladiator_41
       rect:
         serializedVersion: 2
-        x: 331
-        y: 1729
-        width: 33
-        height: 49
+        x: 320
+        y: 1728
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -995,10 +995,10 @@ TextureImporter:
       name: GroveGladiator_42
       rect:
         serializedVersion: 2
-        x: 398
-        y: 1729
-        width: 32
-        height: 49
+        x: 384
+        y: 1728
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1016,10 +1016,10 @@ TextureImporter:
       name: GroveGladiator_43
       rect:
         serializedVersion: 2
-        x: 469
-        y: 1729
-        width: 33
-        height: 49
+        x: 448
+        y: 1728
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1037,10 +1037,10 @@ TextureImporter:
       name: GroveGladiator_44
       rect:
         serializedVersion: 2
-        x: 15
-        y: 1665
-        width: 38
-        height: 49
+        x: 0
+        y: 1664
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1058,10 +1058,10 @@ TextureImporter:
       name: GroveGladiator_45
       rect:
         serializedVersion: 2
-        x: 81
-        y: 1667
-        width: 33
-        height: 47
+        x: 64
+        y: 1664
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1079,10 +1079,10 @@ TextureImporter:
       name: GroveGladiator_46
       rect:
         serializedVersion: 2
-        x: 147
-        y: 1667
-        width: 27
-        height: 47
+        x: 128
+        y: 1664
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1100,10 +1100,10 @@ TextureImporter:
       name: GroveGladiator_47
       rect:
         serializedVersion: 2
-        x: 209
-        y: 1667
-        width: 28
-        height: 47
+        x: 192
+        y: 1664
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1121,10 +1121,10 @@ TextureImporter:
       name: GroveGladiator_48
       rect:
         serializedVersion: 2
-        x: 276
-        y: 1667
-        width: 27
-        height: 46
+        x: 256
+        y: 1664
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1142,10 +1142,10 @@ TextureImporter:
       name: GroveGladiator_49
       rect:
         serializedVersion: 2
-        x: 340
-        y: 1667
-        width: 27
-        height: 46
+        x: 320
+        y: 1664
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1163,10 +1163,10 @@ TextureImporter:
       name: GroveGladiator_50
       rect:
         serializedVersion: 2
-        x: 404
-        y: 1667
-        width: 29
-        height: 46
+        x: 384
+        y: 1664
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1184,10 +1184,10 @@ TextureImporter:
       name: GroveGladiator_51
       rect:
         serializedVersion: 2
-        x: 465
-        y: 1667
-        width: 29
-        height: 47
+        x: 448
+        y: 1664
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1205,10 +1205,10 @@ TextureImporter:
       name: GroveGladiator_52
       rect:
         serializedVersion: 2
-        x: 12
-        y: 1602
-        width: 32
-        height: 48
+        x: 0
+        y: 1600
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1226,10 +1226,10 @@ TextureImporter:
       name: GroveGladiator_53
       rect:
         serializedVersion: 2
-        x: 75
-        y: 1602
-        width: 34
-        height: 48
+        x: 64
+        y: 1600
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1247,10 +1247,10 @@ TextureImporter:
       name: GroveGladiator_54
       rect:
         serializedVersion: 2
-        x: 137
-        y: 1602
-        width: 36
-        height: 48
+        x: 128
+        y: 1600
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1268,10 +1268,10 @@ TextureImporter:
       name: GroveGladiator_55
       rect:
         serializedVersion: 2
-        x: 201
-        y: 1602
-        width: 34
-        height: 48
+        x: 192
+        y: 1600
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1289,10 +1289,10 @@ TextureImporter:
       name: GroveGladiator_56
       rect:
         serializedVersion: 2
-        x: 274
-        y: 1602
-        width: 31
-        height: 48
+        x: 256
+        y: 1600
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1310,10 +1310,10 @@ TextureImporter:
       name: GroveGladiator_57
       rect:
         serializedVersion: 2
-        x: 340
-        y: 1602
-        width: 32
-        height: 48
+        x: 320
+        y: 1600
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1331,10 +1331,10 @@ TextureImporter:
       name: GroveGladiator_58
       rect:
         serializedVersion: 2
-        x: 402
-        y: 1602
-        width: 31
-        height: 48
+        x: 384
+        y: 1600
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1352,10 +1352,10 @@ TextureImporter:
       name: GroveGladiator_59
       rect:
         serializedVersion: 2
-        x: 457
-        y: 1602
-        width: 34
-        height: 48
+        x: 448
+        y: 1600
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1373,10 +1373,10 @@ TextureImporter:
       name: GroveGladiator_60
       rect:
         serializedVersion: 2
-        x: 9
-        y: 1539
-        width: 44
-        height: 47
+        x: 0
+        y: 1536
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1394,10 +1394,10 @@ TextureImporter:
       name: GroveGladiator_61
       rect:
         serializedVersion: 2
-        x: 73
-        y: 1539
-        width: 41
-        height: 47
+        x: 64
+        y: 1536
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1415,10 +1415,10 @@ TextureImporter:
       name: GroveGladiator_62
       rect:
         serializedVersion: 2
-        x: 137
-        y: 1538
-        width: 43
-        height: 48
+        x: 128
+        y: 1536
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1436,10 +1436,10 @@ TextureImporter:
       name: GroveGladiator_63
       rect:
         serializedVersion: 2
-        x: 201
-        y: 1537
-        width: 43
-        height: 48
+        x: 192
+        y: 1536
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1457,10 +1457,10 @@ TextureImporter:
       name: GroveGladiator_64
       rect:
         serializedVersion: 2
-        x: 266
-        y: 1538
-        width: 42
-        height: 48
+        x: 256
+        y: 1536
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1478,10 +1478,10 @@ TextureImporter:
       name: GroveGladiator_65
       rect:
         serializedVersion: 2
-        x: 330
-        y: 1539
-        width: 42
-        height: 47
+        x: 320
+        y: 1536
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1499,10 +1499,10 @@ TextureImporter:
       name: GroveGladiator_66
       rect:
         serializedVersion: 2
-        x: 394
-        y: 1538
-        width: 40
-        height: 48
+        x: 384
+        y: 1536
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1520,10 +1520,10 @@ TextureImporter:
       name: GroveGladiator_67
       rect:
         serializedVersion: 2
-        x: 459
-        y: 1537
-        width: 40
-        height: 48
+        x: 448
+        y: 1536
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1541,10 +1541,10 @@ TextureImporter:
       name: GroveGladiator_68
       rect:
         serializedVersion: 2
-        x: 522
-        y: 1538
-        width: 41
-        height: 48
+        x: 512
+        y: 1536
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1562,10 +1562,10 @@ TextureImporter:
       name: GroveGladiator_69
       rect:
         serializedVersion: 2
-        x: 5
-        y: 1474
-        width: 46
-        height: 48
+        x: 0
+        y: 1472
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1583,10 +1583,10 @@ TextureImporter:
       name: GroveGladiator_70
       rect:
         serializedVersion: 2
-        x: 83
-        y: 1474
-        width: 31
-        height: 47
+        x: 64
+        y: 1472
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1604,10 +1604,10 @@ TextureImporter:
       name: GroveGladiator_71
       rect:
         serializedVersion: 2
-        x: 147
-        y: 1475
-        width: 31
-        height: 47
+        x: 128
+        y: 1472
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1625,10 +1625,10 @@ TextureImporter:
       name: GroveGladiator_72
       rect:
         serializedVersion: 2
-        x: 205
-        y: 1475
-        width: 38
-        height: 47
+        x: 192
+        y: 1472
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1646,10 +1646,10 @@ TextureImporter:
       name: GroveGladiator_73
       rect:
         serializedVersion: 2
-        x: 263
-        y: 1474
-        width: 45
-        height: 48
+        x: 256
+        y: 1472
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1667,10 +1667,10 @@ TextureImporter:
       name: GroveGladiator_74
       rect:
         serializedVersion: 2
-        x: 326
-        y: 1474
-        width: 47
-        height: 47
+        x: 320
+        y: 1472
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1688,10 +1688,10 @@ TextureImporter:
       name: GroveGladiator_75
       rect:
         serializedVersion: 2
-        x: 391
-        y: 1474
-        width: 46
-        height: 48
+        x: 384
+        y: 1472
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1709,10 +1709,10 @@ TextureImporter:
       name: GroveGladiator_76
       rect:
         serializedVersion: 2
-        x: 461
-        y: 1474
-        width: 39
-        height: 48
+        x: 448
+        y: 1472
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1730,10 +1730,10 @@ TextureImporter:
       name: GroveGladiator_77
       rect:
         serializedVersion: 2
-        x: 531
-        y: 1474
-        width: 33
-        height: 48
+        x: 512
+        y: 1472
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1751,10 +1751,10 @@ TextureImporter:
       name: GroveGladiator_78
       rect:
         serializedVersion: 2
-        x: 11
-        y: 1410
-        width: 37
-        height: 47
+        x: 0
+        y: 1408
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1772,10 +1772,10 @@ TextureImporter:
       name: GroveGladiator_79
       rect:
         serializedVersion: 2
-        x: 76
-        y: 1410
-        width: 36
-        height: 47
+        x: 64
+        y: 1408
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1793,10 +1793,10 @@ TextureImporter:
       name: GroveGladiator_80
       rect:
         serializedVersion: 2
-        x: 139
-        y: 1409
-        width: 37
-        height: 48
+        x: 128
+        y: 1408
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1814,10 +1814,10 @@ TextureImporter:
       name: GroveGladiator_81
       rect:
         serializedVersion: 2
-        x: 203
+        x: 192
         y: 1408
-        width: 36
-        height: 49
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1835,10 +1835,10 @@ TextureImporter:
       name: GroveGladiator_82
       rect:
         serializedVersion: 2
-        x: 267
-        y: 1409
-        width: 36
-        height: 48
+        x: 256
+        y: 1408
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1856,10 +1856,10 @@ TextureImporter:
       name: GroveGladiator_83
       rect:
         serializedVersion: 2
-        x: 330
-        y: 1410
-        width: 38
-        height: 47
+        x: 320
+        y: 1408
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1877,10 +1877,10 @@ TextureImporter:
       name: GroveGladiator_84
       rect:
         serializedVersion: 2
-        x: 395
-        y: 1409
-        width: 38
-        height: 48
+        x: 384
+        y: 1408
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1898,10 +1898,10 @@ TextureImporter:
       name: GroveGladiator_85
       rect:
         serializedVersion: 2
-        x: 459
-        y: 1409
-        width: 37
-        height: 48
+        x: 448
+        y: 1408
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1919,10 +1919,10 @@ TextureImporter:
       name: GroveGladiator_86
       rect:
         serializedVersion: 2
-        x: 523
-        y: 1409
-        width: 37
-        height: 48
+        x: 512
+        y: 1408
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1940,10 +1940,10 @@ TextureImporter:
       name: GroveGladiator_87
       rect:
         serializedVersion: 2
-        x: 13
-        y: 1346
-        width: 46
-        height: 47
+        x: 0
+        y: 1344
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1961,10 +1961,10 @@ TextureImporter:
       name: GroveGladiator_88
       rect:
         serializedVersion: 2
-        x: 77
-        y: 1346
-        width: 32
-        height: 46
+        x: 64
+        y: 1344
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1982,10 +1982,10 @@ TextureImporter:
       name: GroveGladiator_89
       rect:
         serializedVersion: 2
-        x: 141
-        y: 1347
-        width: 31
-        height: 46
+        x: 128
+        y: 1344
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2003,10 +2003,10 @@ TextureImporter:
       name: GroveGladiator_90
       rect:
         serializedVersion: 2
-        x: 204
-        y: 1347
-        width: 38
-        height: 46
+        x: 192
+        y: 1344
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2024,10 +2024,10 @@ TextureImporter:
       name: GroveGladiator_91
       rect:
         serializedVersion: 2
-        x: 267
-        y: 1346
-        width: 45
-        height: 47
+        x: 256
+        y: 1344
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2045,10 +2045,10 @@ TextureImporter:
       name: GroveGladiator_92
       rect:
         serializedVersion: 2
-        x: 330
-        y: 1346
-        width: 47
-        height: 46
+        x: 320
+        y: 1344
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2066,10 +2066,10 @@ TextureImporter:
       name: GroveGladiator_93
       rect:
         serializedVersion: 2
-        x: 394
-        y: 1346
-        width: 46
-        height: 47
+        x: 384
+        y: 1344
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2087,10 +2087,10 @@ TextureImporter:
       name: GroveGladiator_94
       rect:
         serializedVersion: 2
-        x: 459
-        y: 1346
-        width: 40
-        height: 47
+        x: 448
+        y: 1344
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2108,10 +2108,10 @@ TextureImporter:
       name: GroveGladiator_95
       rect:
         serializedVersion: 2
-        x: 524
-        y: 1346
-        width: 33
-        height: 47
+        x: 512
+        y: 1344
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2129,10 +2129,10 @@ TextureImporter:
       name: GroveGladiator_96
       rect:
         serializedVersion: 2
-        x: 9
-        y: 1282
-        width: 39
-        height: 46
+        x: 0
+        y: 1280
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2150,10 +2150,10 @@ TextureImporter:
       name: GroveGladiator_97
       rect:
         serializedVersion: 2
-        x: 76
-        y: 1281
-        width: 34
-        height: 46
+        x: 64
+        y: 1280
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2171,10 +2171,10 @@ TextureImporter:
       name: GroveGladiator_98
       rect:
         serializedVersion: 2
-        x: 140
-        y: 1281
-        width: 33
-        height: 46
+        x: 128
+        y: 1280
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2192,10 +2192,10 @@ TextureImporter:
       name: GroveGladiator_99
       rect:
         serializedVersion: 2
-        x: 203
-        y: 1281
-        width: 36
-        height: 47
+        x: 192
+        y: 1280
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2213,10 +2213,10 @@ TextureImporter:
       name: GroveGladiator_100
       rect:
         serializedVersion: 2
-        x: 268
-        y: 1281
-        width: 42
-        height: 47
+        x: 256
+        y: 1280
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2234,10 +2234,10 @@ TextureImporter:
       name: GroveGladiator_101
       rect:
         serializedVersion: 2
-        x: 332
-        y: 1281
-        width: 45
-        height: 47
+        x: 320
+        y: 1280
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2255,10 +2255,10 @@ TextureImporter:
       name: GroveGladiator_102
       rect:
         serializedVersion: 2
-        x: 23
-        y: 1217
-        width: 28
-        height: 48
+        x: 0
+        y: 1216
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2276,10 +2276,10 @@ TextureImporter:
       name: GroveGladiator_103
       rect:
         serializedVersion: 2
-        x: 80
-        y: 1217
-        width: 34
-        height: 46
+        x: 64
+        y: 1216
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2297,10 +2297,10 @@ TextureImporter:
       name: GroveGladiator_104
       rect:
         serializedVersion: 2
-        x: 147
-        y: 1217
-        width: 31
-        height: 48
+        x: 128
+        y: 1216
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2318,10 +2318,10 @@ TextureImporter:
       name: GroveGladiator_105
       rect:
         serializedVersion: 2
-        x: 202
-        y: 1217
-        width: 41
-        height: 48
+        x: 192
+        y: 1216
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2339,10 +2339,10 @@ TextureImporter:
       name: GroveGladiator_106
       rect:
         serializedVersion: 2
-        x: 263
-        y: 1217
-        width: 45
-        height: 48
+        x: 256
+        y: 1216
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2360,10 +2360,10 @@ TextureImporter:
       name: GroveGladiator_107
       rect:
         serializedVersion: 2
-        x: 330
-        y: 1217
-        width: 43
-        height: 48
+        x: 320
+        y: 1216
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2381,10 +2381,10 @@ TextureImporter:
       name: GroveGladiator_108
       rect:
         serializedVersion: 2
-        x: 11
-        y: 1153
-        width: 37
-        height: 48
+        x: 0
+        y: 1152
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2402,10 +2402,10 @@ TextureImporter:
       name: GroveGladiator_109
       rect:
         serializedVersion: 2
-        x: 75
-        y: 1153
-        width: 35
-        height: 48
+        x: 64
+        y: 1152
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2423,10 +2423,10 @@ TextureImporter:
       name: GroveGladiator_110
       rect:
         serializedVersion: 2
-        x: 138
-        y: 1153
-        width: 35
-        height: 46
+        x: 128
+        y: 1152
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2444,10 +2444,10 @@ TextureImporter:
       name: GroveGladiator_111
       rect:
         serializedVersion: 2
-        x: 205
-        y: 1153
-        width: 34
-        height: 47
+        x: 192
+        y: 1152
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2465,10 +2465,10 @@ TextureImporter:
       name: GroveGladiator_112
       rect:
         serializedVersion: 2
-        x: 270
-        y: 1153
-        width: 41
-        height: 48
+        x: 256
+        y: 1152
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2486,10 +2486,10 @@ TextureImporter:
       name: GroveGladiator_113
       rect:
         serializedVersion: 2
-        x: 334
-        y: 1153
-        width: 44
-        height: 48
+        x: 320
+        y: 1152
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2507,10 +2507,10 @@ TextureImporter:
       name: GroveGladiator_114
       rect:
         serializedVersion: 2
-        x: 13
-        y: 1089
-        width: 28
-        height: 48
+        x: 0
+        y: 1088
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2528,10 +2528,10 @@ TextureImporter:
       name: GroveGladiator_115
       rect:
         serializedVersion: 2
-        x: 77
-        y: 1089
-        width: 34
-        height: 46
+        x: 64
+        y: 1088
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2549,10 +2549,10 @@ TextureImporter:
       name: GroveGladiator_116
       rect:
         serializedVersion: 2
-        x: 141
-        y: 1089
-        width: 31
-        height: 48
+        x: 128
+        y: 1088
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2570,10 +2570,10 @@ TextureImporter:
       name: GroveGladiator_117
       rect:
         serializedVersion: 2
-        x: 204
-        y: 1089
-        width: 41
-        height: 48
+        x: 192
+        y: 1088
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2591,10 +2591,10 @@ TextureImporter:
       name: GroveGladiator_118
       rect:
         serializedVersion: 2
-        x: 267
-        y: 1089
-        width: 45
-        height: 48
+        x: 256
+        y: 1088
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2612,10 +2612,10 @@ TextureImporter:
       name: GroveGladiator_119
       rect:
         serializedVersion: 2
-        x: 330
-        y: 1089
-        width: 43
-        height: 48
+        x: 320
+        y: 1088
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2633,10 +2633,10 @@ TextureImporter:
       name: GroveGladiator_120
       rect:
         serializedVersion: 2
-        x: 15
-        y: 1041
-        width: 31
-        height: 32
+        x: 0
+        y: 1024
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2654,10 +2654,10 @@ TextureImporter:
       name: GroveGladiator_121
       rect:
         serializedVersion: 2
-        x: 83
-        y: 1036
-        width: 25
-        height: 35
+        x: 64
+        y: 1024
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2675,10 +2675,10 @@ TextureImporter:
       name: GroveGladiator_122
       rect:
         serializedVersion: 2
-        x: 149
-        y: 1038
-        width: 22
-        height: 35
+        x: 128
+        y: 1024
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2696,10 +2696,10 @@ TextureImporter:
       name: GroveGladiator_123
       rect:
         serializedVersion: 2
-        x: 211
-        y: 1038
-        width: 24
-        height: 35
+        x: 192
+        y: 1024
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2717,10 +2717,10 @@ TextureImporter:
       name: GroveGladiator_124
       rect:
         serializedVersion: 2
-        x: 275
-        y: 1040
-        width: 28
-        height: 33
+        x: 256
+        y: 1024
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2738,10 +2738,10 @@ TextureImporter:
       name: GroveGladiator_125
       rect:
         serializedVersion: 2
-        x: 339
-        y: 1043
-        width: 27
-        height: 30
+        x: 320
+        y: 1024
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2759,10 +2759,10 @@ TextureImporter:
       name: GroveGladiator_126
       rect:
         serializedVersion: 2
-        x: 403
-        y: 1044
-        width: 28
-        height: 29
+        x: 384
+        y: 1024
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2780,10 +2780,10 @@ TextureImporter:
       name: GroveGladiator_127
       rect:
         serializedVersion: 2
-        x: 467
-        y: 1043
-        width: 29
-        height: 30
+        x: 448
+        y: 1024
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2801,10 +2801,10 @@ TextureImporter:
       name: GroveGladiator_128
       rect:
         serializedVersion: 2
-        x: 531
-        y: 1043
-        width: 30
-        height: 30
+        x: 512
+        y: 1024
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2822,10 +2822,10 @@ TextureImporter:
       name: GroveGladiator_129
       rect:
         serializedVersion: 2
-        x: 595
-        y: 1040
-        width: 29
-        height: 33
+        x: 576
+        y: 1024
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2843,10 +2843,10 @@ TextureImporter:
       name: GroveGladiator_130
       rect:
         serializedVersion: 2
-        x: 659
-        y: 1038
-        width: 24
-        height: 35
+        x: 640
+        y: 1024
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2864,10 +2864,10 @@ TextureImporter:
       name: GroveGladiator_131
       rect:
         serializedVersion: 2
-        x: 723
-        y: 1038
-        width: 24
-        height: 35
+        x: 704
+        y: 1024
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2885,10 +2885,10 @@ TextureImporter:
       name: GroveGladiator_132
       rect:
         serializedVersion: 2
-        x: 787
-        y: 1038
-        width: 24
-        height: 35
+        x: 768
+        y: 1024
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2906,10 +2906,10 @@ TextureImporter:
       name: GroveGladiator_133
       rect:
         serializedVersion: 2
-        x: 24
-        y: 977
-        width: 20
-        height: 33
+        x: 0
+        y: 960
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2927,10 +2927,10 @@ TextureImporter:
       name: GroveGladiator_134
       rect:
         serializedVersion: 2
-        x: 88
-        y: 977
-        width: 21
-        height: 33
+        x: 64
+        y: 960
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2948,10 +2948,10 @@ TextureImporter:
       name: GroveGladiator_135
       rect:
         serializedVersion: 2
-        x: 147
-        y: 977
-        width: 28
-        height: 33
+        x: 128
+        y: 960
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2969,10 +2969,10 @@ TextureImporter:
       name: GroveGladiator_136
       rect:
         serializedVersion: 2
-        x: 209
-        y: 979
-        width: 31
-        height: 31
+        x: 192
+        y: 960
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2990,10 +2990,10 @@ TextureImporter:
       name: GroveGladiator_137
       rect:
         serializedVersion: 2
-        x: 274
-        y: 983
-        width: 30
-        height: 27
+        x: 256
+        y: 960
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3011,10 +3011,10 @@ TextureImporter:
       name: GroveGladiator_138
       rect:
         serializedVersion: 2
-        x: 337
-        y: 984
-        width: 10
-        height: 9
+        x: 320
+        y: 960
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3032,10 +3032,10 @@ TextureImporter:
       name: GroveGladiator_139
       rect:
         serializedVersion: 2
-        x: 343
-        y: 984
-        width: 22
-        height: 26
+        x: 384
+        y: 960
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3053,10 +3053,10 @@ TextureImporter:
       name: GroveGladiator_140
       rect:
         serializedVersion: 2
-        x: 401
-        y: 984
-        width: 30
-        height: 26
+        x: 448
+        y: 960
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3074,10 +3074,10 @@ TextureImporter:
       name: GroveGladiator_141
       rect:
         serializedVersion: 2
-        x: 466
-        y: 984
-        width: 32
-        height: 26
+        x: 512
+        y: 960
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3095,10 +3095,10 @@ TextureImporter:
       name: GroveGladiator_142
       rect:
         serializedVersion: 2
-        x: 530
-        y: 984
-        width: 34
-        height: 26
+        x: 576
+        y: 960
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3116,10 +3116,10 @@ TextureImporter:
       name: GroveGladiator_143
       rect:
         serializedVersion: 2
-        x: 594
-        y: 983
-        width: 31
-        height: 27
+        x: 640
+        y: 960
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3137,10 +3137,10 @@ TextureImporter:
       name: GroveGladiator_144
       rect:
         serializedVersion: 2
-        x: 658
-        y: 979
-        width: 30
-        height: 31
+        x: 704
+        y: 960
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3158,10 +3158,10 @@ TextureImporter:
       name: GroveGladiator_145
       rect:
         serializedVersion: 2
-        x: 722
-        y: 976
-        width: 26
-        height: 34
+        x: 768
+        y: 960
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3179,10 +3179,10 @@ TextureImporter:
       name: GroveGladiator_146
       rect:
         serializedVersion: 2
-        x: 786
-        y: 979
-        width: 30
-        height: 31
+        x: 0
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3200,10 +3200,10 @@ TextureImporter:
       name: GroveGladiator_147
       rect:
         serializedVersion: 2
-        x: 87
-        y: 979
-        width: 5
-        height: 4
+        x: 64
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3221,10 +3221,10 @@ TextureImporter:
       name: GroveGladiator_148
       rect:
         serializedVersion: 2
-        x: 15
-        y: 914
-        width: 31
-        height: 32
+        x: 128
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3242,10 +3242,10 @@ TextureImporter:
       name: GroveGladiator_149
       rect:
         serializedVersion: 2
-        x: 81
-        y: 914
-        width: 27
-        height: 32
+        x: 192
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3263,10 +3263,10 @@ TextureImporter:
       name: GroveGladiator_150
       rect:
         serializedVersion: 2
-        x: 147
-        y: 914
-        width: 24
-        height: 32
+        x: 256
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3284,10 +3284,10 @@ TextureImporter:
       name: GroveGladiator_151
       rect:
         serializedVersion: 2
-        x: 211
-        y: 913
-        width: 24
-        height: 33
+        x: 320
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3305,10 +3305,10 @@ TextureImporter:
       name: GroveGladiator_152
       rect:
         serializedVersion: 2
-        x: 274
-        y: 914
-        width: 25
-        height: 32
+        x: 384
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3326,10 +3326,10 @@ TextureImporter:
       name: GroveGladiator_153
       rect:
         serializedVersion: 2
-        x: 338
-        y: 917
-        width: 25
-        height: 29
+        x: 448
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3347,10 +3347,10 @@ TextureImporter:
       name: GroveGladiator_154
       rect:
         serializedVersion: 2
-        x: 402
-        y: 917
-        width: 25
-        height: 29
+        x: 512
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3368,10 +3368,10 @@ TextureImporter:
       name: GroveGladiator_155
       rect:
         serializedVersion: 2
-        x: 465
-        y: 918
-        width: 26
-        height: 28
+        x: 576
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3389,10 +3389,10 @@ TextureImporter:
       name: GroveGladiator_156
       rect:
         serializedVersion: 2
-        x: 529
-        y: 914
-        width: 26
-        height: 32
+        x: 640
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3410,10 +3410,10 @@ TextureImporter:
       name: GroveGladiator_157
       rect:
         serializedVersion: 2
-        x: 594
-        y: 914
-        width: 25
-        height: 32
+        x: 704
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3431,10 +3431,10 @@ TextureImporter:
       name: GroveGladiator_158
       rect:
         serializedVersion: 2
-        x: 659
-        y: 914
-        width: 24
-        height: 32
+        x: 768
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3452,10 +3452,10 @@ TextureImporter:
       name: GroveGladiator_159
       rect:
         serializedVersion: 2
-        x: 723
-        y: 914
-        width: 24
-        height: 32
+        x: 0
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3473,10 +3473,10 @@ TextureImporter:
       name: GroveGladiator_160
       rect:
         serializedVersion: 2
-        x: 787
-        y: 914
-        width: 24
-        height: 32
+        x: 64
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3494,10 +3494,10 @@ TextureImporter:
       name: GroveGladiator_161
       rect:
         serializedVersion: 2
-        x: 20
-        y: 849
-        width: 20
-        height: 33
+        x: 128
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3515,10 +3515,10 @@ TextureImporter:
       name: GroveGladiator_162
       rect:
         serializedVersion: 2
-        x: 83
-        y: 849
-        width: 21
-        height: 33
+        x: 192
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3536,10 +3536,10 @@ TextureImporter:
       name: GroveGladiator_163
       rect:
         serializedVersion: 2
-        x: 144
-        y: 849
-        width: 28
-        height: 33
+        x: 256
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3557,10 +3557,10 @@ TextureImporter:
       name: GroveGladiator_164
       rect:
         serializedVersion: 2
-        x: 207
-        y: 851
-        width: 31
-        height: 31
+        x: 320
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3578,10 +3578,10 @@ TextureImporter:
       name: GroveGladiator_165
       rect:
         serializedVersion: 2
-        x: 271
-        y: 854
-        width: 31
-        height: 28
+        x: 384
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3599,10 +3599,10 @@ TextureImporter:
       name: GroveGladiator_166
       rect:
         serializedVersion: 2
-        x: 339
-        y: 855
-        width: 28
-        height: 27
+        x: 448
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3620,10 +3620,10 @@ TextureImporter:
       name: GroveGladiator_167
       rect:
         serializedVersion: 2
-        x: 401
-        y: 855
-        width: 30
-        height: 27
+        x: 512
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3641,10 +3641,10 @@ TextureImporter:
       name: GroveGladiator_168
       rect:
         serializedVersion: 2
-        x: 462
-        y: 855
-        width: 32
-        height: 27
+        x: 576
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3662,10 +3662,10 @@ TextureImporter:
       name: GroveGladiator_169
       rect:
         serializedVersion: 2
-        x: 524
-        y: 855
-        width: 34
-        height: 27
+        x: 640
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3683,10 +3683,10 @@ TextureImporter:
       name: GroveGladiator_170
       rect:
         serializedVersion: 2
-        x: 591
-        y: 854
-        width: 31
-        height: 28
+        x: 704
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3704,10 +3704,10 @@ TextureImporter:
       name: GroveGladiator_171
       rect:
         serializedVersion: 2
-        x: 656
-        y: 851
-        width: 30
-        height: 31
+        x: 768
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3725,10 +3725,10 @@ TextureImporter:
       name: GroveGladiator_172
       rect:
         serializedVersion: 2
-        x: 724
-        y: 848
-        width: 26
-        height: 34
+        x: 0
+        y: 768
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3746,10 +3746,10 @@ TextureImporter:
       name: GroveGladiator_173
       rect:
         serializedVersion: 2
-        x: 784
-        y: 851
-        width: 30
-        height: 31
+        x: 64
+        y: 768
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3767,10 +3767,10 @@ TextureImporter:
       name: GroveGladiator_174
       rect:
         serializedVersion: 2
-        x: 100
-        y: 851
-        width: 5
-        height: 4
+        x: 128
+        y: 768
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3788,10 +3788,10 @@ TextureImporter:
       name: GroveGladiator_175
       rect:
         serializedVersion: 2
-        x: 15
-        y: 769
-        width: 33
-        height: 49
+        x: 192
+        y: 768
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3809,10 +3809,10 @@ TextureImporter:
       name: GroveGladiator_176
       rect:
         serializedVersion: 2
-        x: 81
-        y: 767
-        width: 33
-        height: 50
+        x: 256
+        y: 768
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3830,10 +3830,10 @@ TextureImporter:
       name: GroveGladiator_177
       rect:
         serializedVersion: 2
-        x: 146
+        x: 320
         y: 768
-        width: 31
-        height: 42
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3851,10 +3851,10 @@ TextureImporter:
       name: GroveGladiator_178
       rect:
         serializedVersion: 2
-        x: 210
-        y: 767
-        width: 31
-        height: 38
+        x: 64
+        y: 704
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3872,10 +3872,10 @@ TextureImporter:
       name: GroveGladiator_179
       rect:
         serializedVersion: 2
-        x: 263
-        y: 767
-        width: 43
-        height: 32
+        x: 192
+        y: 704
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3893,10 +3893,10 @@ TextureImporter:
       name: GroveGladiator_180
       rect:
         serializedVersion: 2
-        x: 324
-        y: 768
-        width: 48
-        height: 36
+        x: 256
+        y: 704
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3914,10 +3914,10 @@ TextureImporter:
       name: GroveGladiator_181
       rect:
         serializedVersion: 2
-        x: 73
-        y: 641
-        width: 39
-        height: 48
+        x: 64
+        y: 640
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3935,10 +3935,10 @@ TextureImporter:
       name: GroveGladiator_182
       rect:
         serializedVersion: 2
-        x: 268
+        x: 256
         y: 640
-        width: 34
-        height: 48
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3956,10 +3956,10 @@ TextureImporter:
       name: GroveGladiator_183
       rect:
         serializedVersion: 2
-        x: 455
+        x: 448
         y: 640
-        width: 39
-        height: 48
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3977,10 +3977,10 @@ TextureImporter:
       name: GroveGladiator_184
       rect:
         serializedVersion: 2
-        x: 652
+        x: 640
         y: 640
-        width: 36
-        height: 49
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3998,10 +3998,10 @@ TextureImporter:
       name: GroveGladiator_185
       rect:
         serializedVersion: 2
-        x: 845
+        x: 832
         y: 640
-        width: 56
-        height: 55
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4019,10 +4019,10 @@ TextureImporter:
       name: GroveGladiator_186
       rect:
         serializedVersion: 2
-        x: 1036
+        x: 896
         y: 640
-        width: 62
-        height: 49
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4040,10 +4040,10 @@ TextureImporter:
       name: GroveGladiator_187
       rect:
         serializedVersion: 2
-        x: 69
-        y: 450
-        width: 45
-        height: 48
+        x: 1024
+        y: 640
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4061,10 +4061,10 @@ TextureImporter:
       name: GroveGladiator_188
       rect:
         serializedVersion: 2
-        x: 272
-        y: 450
-        width: 34
-        height: 46
+        x: 1088
+        y: 640
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4082,10 +4082,10 @@ TextureImporter:
       name: GroveGladiator_189
       rect:
         serializedVersion: 2
-        x: 467
-        y: 450
-        width: 32
-        height: 48
+        x: 64
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4103,10 +4103,10 @@ TextureImporter:
       name: GroveGladiator_190
       rect:
         serializedVersion: 2
-        x: 651
-        y: 450
-        width: 41
-        height: 48
+        x: 256
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4124,10 +4124,10 @@ TextureImporter:
       name: GroveGladiator_191
       rect:
         serializedVersion: 2
-        x: 818
-        y: 450
-        width: 67
-        height: 48
+        x: 448
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4145,10 +4145,10 @@ TextureImporter:
       name: GroveGladiator_192
       rect:
         serializedVersion: 2
-        x: 1022
-        y: 450
-        width: 56
-        height: 48
+        x: 640
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4166,10 +4166,10 @@ TextureImporter:
       name: GroveGladiator_193
       rect:
         serializedVersion: 2
-        x: 75
-        y: 258
-        width: 37
-        height: 47
+        x: 768
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4187,10 +4187,10 @@ TextureImporter:
       name: GroveGladiator_194
       rect:
         serializedVersion: 2
-        x: 267
-        y: 258
-        width: 35
-        height: 47
+        x: 832
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4208,10 +4208,10 @@ TextureImporter:
       name: GroveGladiator_195
       rect:
         serializedVersion: 2
-        x: 452
-        y: 258
-        width: 42
-        height: 45
+        x: 960
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4229,10 +4229,10 @@ TextureImporter:
       name: GroveGladiator_196
       rect:
         serializedVersion: 2
-        x: 653
-        y: 258
-        width: 35
-        height: 46
+        x: 1024
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4250,10 +4250,10 @@ TextureImporter:
       name: GroveGladiator_197
       rect:
         serializedVersion: 2
-        x: 847
-        y: 257
-        width: 55
-        height: 48
+        x: 64
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4271,10 +4271,10 @@ TextureImporter:
       name: GroveGladiator_198
       rect:
         serializedVersion: 2
-        x: 1039
-        y: 258
-        width: 65
-        height: 47
+        x: 256
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4292,10 +4292,10 @@ TextureImporter:
       name: GroveGladiator_199
       rect:
         serializedVersion: 2
-        x: 77
-        y: 65
-        width: 46
-        height: 48
+        x: 448
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4313,10 +4313,10 @@ TextureImporter:
       name: GroveGladiator_200
       rect:
         serializedVersion: 2
-        x: 269
-        y: 65
-        width: 34
-        height: 46
+        x: 640
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4334,10 +4334,10 @@ TextureImporter:
       name: GroveGladiator_201
       rect:
         serializedVersion: 2
-        x: 461
-        y: 65
-        width: 32
-        height: 48
+        x: 832
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4355,10 +4355,10 @@ TextureImporter:
       name: GroveGladiator_202
       rect:
         serializedVersion: 2
-        x: 653
-        y: 65
-        width: 41
-        height: 48
+        x: 896
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4376,10 +4376,10 @@ TextureImporter:
       name: GroveGladiator_203
       rect:
         serializedVersion: 2
-        x: 844
-        y: 65
-        width: 66
-        height: 48
+        x: 1024
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4397,10 +4397,10 @@ TextureImporter:
       name: GroveGladiator_204
       rect:
         serializedVersion: 2
-        x: 1034
-        y: 65
-        width: 56
-        height: 48
+        x: 1088
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4410,6 +4410,174 @@ TextureImporter:
       bones: []
       spriteID: 5a26d2f941b88a349a28337f5a301ce0
       internalID: -759684899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroveGladiator_205
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c288385307013942bc6f7e49eae8cd4
+      internalID: -1528104798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroveGladiator_206
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dcc685529a6739488828b1bca74833a
+      internalID: 1958732476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroveGladiator_207
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b043737f25d56e54981553f8698771bd
+      internalID: 971275622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroveGladiator_208
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba70f437c30a20448c4688d86884993
+      internalID: 681455706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroveGladiator_209
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0416cae3fe6794a42a7261a8d381c398
+      internalID: -1884576400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroveGladiator_210
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dffdebd88c11a84ca7501ab89a0e8d2
+      internalID: 1360389148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroveGladiator_211
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 858845720a5280c4286610d559041f58
+      internalID: 753935015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroveGladiator_212
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890011d93af5ed944a41166ebc4f10dc
+      internalID: -1495517324
       vertices: []
       indices: 
       edges: []
@@ -4544,7 +4712,15 @@ TextureImporter:
       GroveGladiator_202: 1543572729
       GroveGladiator_203: 486802038
       GroveGladiator_204: -759684899
+      GroveGladiator_205: -1528104798
+      GroveGladiator_206: 1958732476
+      GroveGladiator_207: 971275622
+      GroveGladiator_208: 681455706
+      GroveGladiator_209: -1884576400
       GroveGladiator_21: 1338076367
+      GroveGladiator_210: 1360389148
+      GroveGladiator_211: 753935015
+      GroveGladiator_212: -1495517324
       GroveGladiator_22: 503052221
       GroveGladiator_23: -560660392
       GroveGladiator_24: 1939192034
