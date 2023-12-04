@@ -11,7 +11,7 @@ public class PlayerExpertSword : PlayerAdvancedSword
 
     public override void Attack(List<GameObject> hitTargets, int extraDamage)
     {
-        base.Attack();
+        base.Attack(hitTargets, extraDamage);
 
         foreach (GameObject target in hitTargets)
         {

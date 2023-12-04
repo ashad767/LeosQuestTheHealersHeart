@@ -45,10 +45,15 @@ public class Player : Entity
     [HideInInspector]public float playerComboTimer;
 
 
-    [HideInInspector]public int swordLevel;
-    private int bowLevel;
-    private int magicLevel;
+    [HideInInspector] public int swordLevel;
+    [HideInInspector] public int bowLevel;
+    [HideInInspector] public int magicLevel;
     public Dictionary<int, int> indexToWeaponLevel = new Dictionary<int, int>() {};
+
+
+    [HideInInspector] public int skillPoints;
+    [HideInInspector] public int coins;
+
 
 
     #endregion
@@ -318,37 +323,61 @@ public class Player : Entity
 
     }
 
+    public void UpgradeSkill(int skill)
+    {
+        if(skillPoints > 0)
+        {
+            
+            if(skill == 0 && swordLevel != 3)
+            {
+                swordLevel = Math.Min(swordLevel + 1, 3);
+                indexToWeaponLevel.Remove(0);
+                indexToWeaponLevel.Add(0, swordLevel);
+                skillPoints--;
+            }
+
+            else if(skill == 1 && bowLevel != 3)
+            {
+                bowLevel = Math.Min(bowLevel + 1, 3);
+                indexToWeaponLevel.Remove(1);
+                indexToWeaponLevel.Add(1, bowLevel);
+                skillPoints--;
+            }
+
+            else if (skill == 2 && magicLevel != 3)
+            {
+                magicLevel = Math.Min(magicLevel + 1, 3);
+                indexToWeaponLevel.Remove(2);
+                indexToWeaponLevel.Add(2, magicLevel);
+                skillPoints--;
+            }
+
+            currentWeapon = weapons[currentWeaponIndex, indexToWeaponLevel[currentWeaponIndex]];
+            playerUIManager.UpdatePlayerUI();
+        }
+    }
+
+    public void AddCoins(int amt)
+    {
+        coins += amt;
+    }
+
+    public bool RemoveCoins(int amt)
+    {
+        if(coins < amt)
+        {
+            return false;
+        }
+
+        coins -= amt;
+        return true;
+    }
+
     public void TestInputs()
     {
-
-        if (Input.GetKeyDown(KeyCode.Insert))
-        {
-            swordLevel = Math.Min(swordLevel + 1, 3);
-            indexToWeaponLevel.Remove(0);
-            indexToWeaponLevel.Add(0, swordLevel);
-
-            currentWeapon = weapons[currentWeaponIndex, indexToWeaponLevel[currentWeaponIndex]];
-            playerUIManager.UpdatePlayerUI();
-        }
-
-        if (Input.GetKeyDown(KeyCode.Home))
-        {
-            bowLevel = Math.Min(bowLevel + 1, 3);
-            indexToWeaponLevel.Remove(1);
-            indexToWeaponLevel.Add(1, bowLevel);
-            
-            currentWeapon = weapons[currentWeaponIndex, indexToWeaponLevel[currentWeaponIndex]];
-            playerUIManager.UpdatePlayerUI();
-        }
-
-        if (Input.GetKeyDown(KeyCode.Delete))
-        {
-            TakeDamage(5);
-        }
-
-        if (Input.GetKeyDown(KeyCode.End))
-        {
-            currentShield -= 1;
-        }
+        if (Input.GetKeyDown(KeyCode.PageUp))
+            skillPoints++;
+        if (Input.GetKeyDown(KeyCode.PageDown))
+            AddCoins(1);
     }
 }
