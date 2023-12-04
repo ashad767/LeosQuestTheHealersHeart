@@ -17,7 +17,7 @@ public class Player : Entity
     public float MaxEnergy;
     protected float currentEnergy;
     public float MaxShield;
-    protected float currentShield;
+    public float currentShield;
 
     [Space]
 
@@ -100,6 +100,7 @@ public class Player : Entity
     public PlayerSword advancedSword;
     public PlayerBow advancedBow;
     [Space]
+    public PlayerSword expertSword;
     public PlayerBow expertBow;
 
     public PlayerWeapon[,] weapons = new PlayerWeapon[3,4];
@@ -137,12 +138,16 @@ public class Player : Entity
         stateMachine.currentState.Update();
 
         UpdateCooldowns();
+
         if (stateMachine.currentState is PlayerGroundState)
         {
             CheckWeaponSwap();
         }
 
         TestInputs();
+
+        playerUIManager.UpdatePlayerUI();
+        
 
         anim.SetFloat("BowChargeState", bowChargeState);
         if(swordLevel > 1)
@@ -166,6 +171,10 @@ public class Player : Entity
         healTimer -= Time.deltaTime;
 
         playerComboTimer -= Time.deltaTime;
+
+        currentShield -= Time.deltaTime/4;
+        if(currentShield < 0)
+            currentShield = 0;
     }
 
     private void CheckWeaponSwap()
@@ -203,6 +212,7 @@ public class Player : Entity
     {
         bowChargeState = 0;
     }
+
     private void StateMachineInit()
     {
         stateMachine = new PlayerStateMachine();
@@ -233,7 +243,7 @@ public class Player : Entity
         weapons[1, 2] = advancedBow;
         weapons[2, 2] = basicMagic;
 
-        weapons[0, 3] = advancedSword;
+        weapons[0, 3] = expertSword;
         weapons[1, 3] = expertBow;
         weapons[2, 3] = basicMagic;
 
@@ -246,7 +256,6 @@ public class Player : Entity
     private void StatsInit()
     {
         currentEnergy = MaxEnergy;
-        currentShield = MaxShield;
     }
 
     public float GetEnergy() => currentEnergy;
@@ -261,6 +270,16 @@ public class Player : Entity
         }
     }
 
+    public void AddShield(int ammount)
+    {
+        currentShield += ammount;
+
+        if(currentShield > MaxShield)
+        {
+            currentShield = MaxShield;
+        }
+    }
+
     public void RegenEnergy()
     {
         if(currentEnergy < MaxEnergy) 
@@ -268,6 +287,27 @@ public class Player : Entity
 
         if(currentEnergy > MaxEnergy)
             currentEnergy = MaxEnergy;
+    }
+
+    public override void TakeDamage(float damage)
+    {
+        if(currentShield > 0)
+        {
+            if(currentShield >= damage)
+            {
+                currentShield -= damage;
+            }
+            else
+            {
+                base.TakeDamage(damage - currentShield);
+                currentShield = 0;
+            }
+        }
+        else
+        {
+            base.TakeDamage(damage);
+        }
+
     }
 
     public void TestInputs()
@@ -291,6 +331,16 @@ public class Player : Entity
             
             currentWeapon = weapons[currentWeaponIndex, indexToWeaponLevel[currentWeaponIndex]];
             playerUIManager.UpdatePlayerUI();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Delete))
+        {
+            TakeDamage(5);
+        }
+
+        if (Input.GetKeyDown(KeyCode.End))
+        {
+            currentShield -= 1;
         }
     }
 }
