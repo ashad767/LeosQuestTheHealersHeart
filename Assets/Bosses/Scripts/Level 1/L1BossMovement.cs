@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class BossMovement : MonoBehaviour
+public class L1BossMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
     private SpriteRenderer sr;
@@ -14,8 +14,8 @@ public class BossMovement : MonoBehaviour
     public float currentHealth = 100f;
     public float maxHealth = 100f;
 
-    [SerializeField] AnimationClip[] anim; // Some of the boss animations. Using it to access their lengths
-    [SerializeField] Transform MC;
+    [SerializeField] private AnimationClip[] anim; // Some of the boss animations. Using it to access their lengths
+    [SerializeField] private Transform MC;
 
     // Prefabs
     [SerializeField] GameObject sawPrefab;
@@ -36,10 +36,10 @@ public class BossMovement : MonoBehaviour
     // for animation control
     private bool idle = true;
     private bool walk = false;
-    
+
     private bool attack = false; // Used to control animation states
     private bool attackInProgress = false; // Used as a flag in case of repeated sword attacks by the boss
-    
+
     private bool jump = false;
     private bool activateBuff = false;
     private bool buffRunning = false;
@@ -49,7 +49,7 @@ public class BossMovement : MonoBehaviour
     private Vector2 snapshotMCPosition; // snapshot of MC's position during boss' jump
     private Vector2 jumpStartPosition; // boss' position before beginning jump
     private float jumpHeight = 5f; // Adjust the jump height as needed
-    float jumpDuration = 1.2f; // Adjust the duration of the jump as needed
+    private float jumpDuration = 1.2f; // Adjust the duration of the jump as needed
 
 
     // Start is called before the first frame update
@@ -191,7 +191,7 @@ public class BossMovement : MonoBehaviour
 
     private void loadPowerUp()
     {
-        Vector3 powerUpOffset = new Vector3(-0.25f, 0.24f, 0f);
+        Vector3 powerUpOffset = new Vector3(-0.26f, 0.18f, 0);
         GameObject powerUp = Instantiate(powerUpPrefab, transform.position + powerUpOffset, Quaternion.identity);
         powerUp.transform.SetParent(transform);
         Destroy(powerUp, anim[5].length);
@@ -203,7 +203,7 @@ public class BossMovement : MonoBehaviour
         float pulseEffectDuration = 15f;
         float pulseStartTime = Time.time;
         Vector3 initialScale = Vector3.zero;
-        Vector3 maxScale = new Vector3(5.5f, 5.5f, 0);
+        Vector3 maxScale = new Vector3(7.5f, 7.5f, 0);
         Transform currentCircle = pulseC;
         pulseCircle.GetComponent<SpriteRenderer>().enabled = true;
         donutCircle.GetComponent<SpriteRenderer>().enabled = true;
@@ -231,7 +231,7 @@ public class BossMovement : MonoBehaviour
             // Instantly contract the circle we just switched to
             currentCircle.localScale = initialScale;
 
-            // Set the sorting layer to make the circle we just switched to render above
+            // Set the sorting layer to make the circle we just switched to, render above
             SetSortingLayerOrder(currentCircle, 2);
 
             // Set the sorting layer to make the other circle render below
@@ -319,7 +319,7 @@ public class BossMovement : MonoBehaviour
 
     private void loadLandingSmoke()
     {
-        Vector3 smokeOffset = new Vector3(-0.13f, -0.53f, 0f);
+        Vector3 smokeOffset = new Vector3(-0.17f, -0.59f, 0);
         GameObject landingSmoke = Instantiate(landingSmokePrefab, transform.position + smokeOffset, Quaternion.identity);
         Destroy(landingSmoke, anim[4].length);
     }
@@ -357,8 +357,10 @@ public class BossMovement : MonoBehaviour
             {
                 dead = true;
                 GetComponent<CircleCollider2D>().enabled = false;
+                
                 a.SetTrigger("death"); // show death animation
                 deathAudio.Play();
+                
                 rb.bodyType = RigidbodyType2D.Static;
                 yield return new WaitForSeconds(deathAudio.clip.length - 0.2f);
                 Destroy(gameObject); // Destroys boss gameobjects
