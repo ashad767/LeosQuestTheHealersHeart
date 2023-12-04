@@ -138,13 +138,16 @@ public class Player : Entity
         stateMachine.currentState.Update();
 
         UpdateCooldowns();
-        playerUIManager.UpdatePlayerUI();
+
         if (stateMachine.currentState is PlayerGroundState)
         {
             CheckWeaponSwap();
         }
 
         TestInputs();
+
+        playerUIManager.UpdatePlayerUI();
+        
 
         anim.SetFloat("BowChargeState", bowChargeState);
         if(swordLevel > 1)
@@ -168,6 +171,10 @@ public class Player : Entity
         healTimer -= Time.deltaTime;
 
         playerComboTimer -= Time.deltaTime;
+
+        currentShield -= Time.deltaTime/4;
+        if(currentShield < 0)
+            currentShield = 0;
     }
 
     private void CheckWeaponSwap()
@@ -205,6 +212,7 @@ public class Player : Entity
     {
         bowChargeState = 0;
     }
+
     private void StateMachineInit()
     {
         stateMachine = new PlayerStateMachine();
@@ -248,7 +256,6 @@ public class Player : Entity
     private void StatsInit()
     {
         currentEnergy = MaxEnergy;
-        currentShield = MaxShield;
     }
 
     public float GetEnergy() => currentEnergy;
@@ -263,6 +270,16 @@ public class Player : Entity
         }
     }
 
+    public void AddShield(int ammount)
+    {
+        currentShield += ammount;
+
+        if(currentShield > MaxShield)
+        {
+            currentShield = MaxShield;
+        }
+    }
+
     public void RegenEnergy()
     {
         if(currentEnergy < MaxEnergy) 
@@ -270,6 +287,27 @@ public class Player : Entity
 
         if(currentEnergy > MaxEnergy)
             currentEnergy = MaxEnergy;
+    }
+
+    public override void TakeDamage(float damage)
+    {
+        if(currentShield > 0)
+        {
+            if(currentShield >= damage)
+            {
+                currentShield -= damage;
+            }
+            else
+            {
+                base.TakeDamage(damage - currentShield);
+                currentShield = 0;
+            }
+        }
+        else
+        {
+            base.TakeDamage(damage);
+        }
+
     }
 
     public void TestInputs()

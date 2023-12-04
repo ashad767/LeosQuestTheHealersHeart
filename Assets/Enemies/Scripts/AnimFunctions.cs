@@ -46,4 +46,9 @@ public class AnimFunctions : MonoBehaviour
     {
         enemy.enemySM.CurrentEnemyState.RangedAttack(enemy.gameObject.name);
     }
+
+    public void OnExplode()
+    {
+        Destroy(this.gameObject);
+    }
 }

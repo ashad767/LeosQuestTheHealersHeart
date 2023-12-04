@@ -49,6 +49,7 @@ public class Enemy : Entity
     #region Ranged Enemies
 
     public bool isRanged = false;
+    public Dictionary<string, Rigidbody2D> projectiles = new Dictionary<string, Rigidbody2D>();
     public Rigidbody2D MM_Projectile;
 
     #endregion
@@ -62,6 +63,8 @@ public class Enemy : Entity
         ChaseState = new EnemyChase(this, enemySM, "Chase");
         DeadState = new EnemyDead(this, enemySM, "Dead");
         AttackRangedState = new EnemyRangedAttack(this, enemySM, "RangedAttack");
+
+        projectiles.Add("MischieviousMerchant", MM_Projectile);
 
         Player = GameObject.FindGameObjectWithTag("Player");
     }

@@ -36,13 +36,10 @@ public class EnemyRangedAttack : EnemyState
     {
         base.RangedAttack(name);
 
-        Debug.Log("rangedAttack");
+        Rigidbody2D proj = enemy.projectiles[name];
 
-       if(name == "Mischievious Merchant")
-       {
-           // Vector2 direction = (PlayerTransform.position - enemy.transform.position).normalized;
-            GameObject.Instantiate(enemy.MM_Projectile, enemy.transform.position, Quaternion.identity);
-            //projectile.velocity = direction * 2f;
-       }
+        //Vector2 direction = (PlayerTransform.position - enemy.transform.position).normalized;
+        GameObject.Instantiate(proj, enemy.transform.position, Quaternion.identity);
+        //projectile.velocity = direction * 2f;
     }
 }
