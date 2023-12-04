@@ -12,6 +12,10 @@ public class PlayerMagicState : PlayerState
     {
         base.Enter();
         player.SetVelocity(0, 0, player.runMultiplier);
+        if(player.magicLevel == 3)
+        {
+            player.invincibleTimer = 2;
+        }
     }
 
     public override void Exit()

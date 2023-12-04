@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5625747844184180784
+--- !u!1 &2554565621569425423
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4403865563959177425}
-  - component: {fileID: 705821811642882355}
+  - component: {fileID: 1258771320229867215}
+  - component: {fileID: 978090196228453388}
   m_Layer: 0
-  m_Name: BasicMagic
+  m_Name: AdvancedMagic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4403865563959177425
+--- !u!4 &1258771320229867215
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5625747844184180784}
+  m_GameObject: {fileID: 2554565621569425423}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -32,18 +32,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &705821811642882355
+--- !u!114 &978090196228453388
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5625747844184180784}
+  m_GameObject: {fileID: 2554565621569425423}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41a2d67fb0a698a40bb844b1e357ac25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponImage: {fileID: -1585712656, guid: f06501cd5fe771543bc9a782fd8af9e3, type: 3}
-  weaponName: Basic Player Magic
-  healField: {fileID: 2896408627580352491, guid: 4f88ca9b6b1cda44abc260fdb64e7d1f, type: 3}
+  weaponImage: {fileID: -1429816703, guid: f06501cd5fe771543bc9a782fd8af9e3, type: 3}
+  weaponName: Player Advanced Magic
+  healField: {fileID: 8253568277950984693, guid: 43ce89a36483bca4da3f64b6c8172737, type: 3}

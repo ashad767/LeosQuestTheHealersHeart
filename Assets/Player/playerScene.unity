@@ -184,9 +184,25 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 5213442865594891871, guid: a072b9a0625e404418aaebb039109919, type: 3}
+      propertyPath: expertMagic
+      value: 
+      objectReference: {fileID: 1606962348139187849, guid: c47fe2f8430dac1408fcc5cf22214b90, type: 3}
+    - target: {fileID: 5213442865594891871, guid: a072b9a0625e404418aaebb039109919, type: 3}
       propertyPath: expertSword
       value: 
       objectReference: {fileID: 9211655063011893728, guid: 7960db3835f3e8c4da139ada4edd1d53, type: 3}
+    - target: {fileID: 5213442865594891871, guid: a072b9a0625e404418aaebb039109919, type: 3}
+      propertyPath: advancedMagic
+      value: 
+      objectReference: {fileID: 978090196228453388, guid: c6f08139882008e4f815a4af4f6fdb55, type: 3}
+    - target: {fileID: 5213442865594891871, guid: a072b9a0625e404418aaebb039109919, type: 3}
+      propertyPath: intermediateMagic
+      value: 
+      objectReference: {fileID: 4971740188876460373, guid: 4d948f1b8a743da408588b9565f550b2, type: 3}
+    - target: {fileID: 5213442865594891871, guid: a072b9a0625e404418aaebb039109919, type: 3}
+      propertyPath: playerHealCooldown
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
