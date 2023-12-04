@@ -17,7 +17,7 @@ public class Player : Entity
     public float MaxEnergy;
     protected float currentEnergy;
     public float MaxShield;
-    protected float currentShield;
+    public float currentShield;
 
     [Space]
 
@@ -138,6 +138,7 @@ public class Player : Entity
         stateMachine.currentState.Update();
 
         UpdateCooldowns();
+        playerUIManager.UpdatePlayerUI();
         if (stateMachine.currentState is PlayerGroundState)
         {
             CheckWeaponSwap();
@@ -292,6 +293,16 @@ public class Player : Entity
             
             currentWeapon = weapons[currentWeaponIndex, indexToWeaponLevel[currentWeaponIndex]];
             playerUIManager.UpdatePlayerUI();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Delete))
+        {
+            TakeDamage(5);
+        }
+
+        if (Input.GetKeyDown(KeyCode.End))
+        {
+            currentShield -= 1;
         }
     }
 }

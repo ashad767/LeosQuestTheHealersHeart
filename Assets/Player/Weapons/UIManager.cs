@@ -11,6 +11,12 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Image bowIcon;
     [SerializeField] private Image magicIcon;
 
+    [SerializeField] private Image healthBar;
+    [SerializeField] private Image shieldBar;
+    [SerializeField] private Image energyBar;
+
+
+
     [SerializeField] private Image[] borders;
     public void UpdatePlayerUI()
     {
@@ -21,6 +27,10 @@ public class UIManager : MonoBehaviour
         foreach (Image img in borders)
             img.enabled = false;
         borders[player.currentWeaponIndex].enabled = true;
+        
+        healthBar.rectTransform.sizeDelta= new Vector2(player.GetHealth() / player.maxHealth * 327, 46.5929f);
+        shieldBar.rectTransform.sizeDelta = new Vector2(player.currentShield / player.MaxShield * 93, 46.5929f);
+        energyBar.rectTransform.sizeDelta = new Vector2(player.GetEnergy() / player.MaxEnergy * 327, 46.6839f);
     }
 
 }
