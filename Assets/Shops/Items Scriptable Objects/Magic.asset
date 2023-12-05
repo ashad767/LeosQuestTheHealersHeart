@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb905783641417d4f851dcd3daed7fcb, type: 3}
-  m_Name: Mobility
+  m_Name: Magic
   m_EditorClassIdentifier: 
-  itemImg: {fileID: 21300000, guid: 8e868889481f05e499ee18ddc2b83bbc, type: 3}
-  imgWidth: 74
-  itemName: Mobility
-  description: Increases player mobility
+  itemImg: {fileID: 21300000, guid: 5644ece08b89dea4c9869793a1c00a65, type: 3}
+  imgWidth: 120
+  itemName: Magic
+  description: Something about magic
   pointerToNextUpgradeBar: 0
-  cost: 250
+  cost: 1305

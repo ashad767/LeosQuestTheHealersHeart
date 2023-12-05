@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Damage Multiplier
   m_EditorClassIdentifier: 
   itemImg: {fileID: 21300000, guid: f7a7fde1ca6804e49b824bf837764637, type: 3}
+  imgWidth: 119
   itemName: Damage Multiplier
   description: Increases the damage inflicted on enemies
-  cost: 50
+  pointerToNextUpgradeBar: 0
+  cost: 70

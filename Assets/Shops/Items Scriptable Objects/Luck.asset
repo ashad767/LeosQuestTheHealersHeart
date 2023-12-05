@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Luck
   m_EditorClassIdentifier: 
   itemImg: {fileID: 21300000, guid: 0fe1b96981f439b4d821bd9fafc5262e, type: 3}
+  imgWidth: 102
   itemName: Luck
   description: Increases the chance of finding treasure chests
-  cost: 30
+  pointerToNextUpgradeBar: 0
+  cost: 125

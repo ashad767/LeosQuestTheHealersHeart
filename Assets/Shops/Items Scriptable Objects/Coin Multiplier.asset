@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Coin Multiplier
   m_EditorClassIdentifier: 
   itemImg: {fileID: 21300000, guid: bff237a33a9bf0d48ab1b0f49ee56ea9, type: 3}
+  imgWidth: 102
   itemName: Coin Multiplier
   description: Increases the value of coins
-  cost: 20
+  pointerToNextUpgradeBar: 0
+  cost: 45

@@ -14,5 +14,7 @@ public class ItemInfo : MonoBehaviour
     
     public TextMeshProUGUI itemNameTxt;
     public TextMeshProUGUI descriptionTxt;
+    public Image[] upgradeBarsList; // list of the item's upgrade bars
+    public TextMeshProUGUI nextUpgradeInfoTxt;
     public TextMeshProUGUI costTxt;
 }
