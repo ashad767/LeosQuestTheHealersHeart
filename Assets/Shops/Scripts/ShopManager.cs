@@ -35,9 +35,9 @@ public class ShopManager : MonoBehaviour
     {
         playerCoinsTxt.text = "Coins: " + playerCoins.ToString();
 
-        // Uncomment this reset the shop data
+        // Uncomment this to reset the shop data
         //Reset();
-        
+
         LoadItems();
         checkIfUpgradeable();
     }
