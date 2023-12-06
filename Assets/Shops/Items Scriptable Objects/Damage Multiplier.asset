@@ -17,4 +17,4 @@ MonoBehaviour:
   itemName: Damage Multiplier
   description: Increases the damage inflicted on enemies
   pointerToNextUpgradeBar: 0
-  cost: 70
+  cost: 30

@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Bosses/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 0
@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Final Game Scenes/MainMenu/Main Menu.unity
     guid: c121df68b7b6a7c45a9a438ee65cb3ba
+  - enabled: 1
+    path: Assets/Shops/Shop.unity
+    guid: 1f3d2c7fbdbdd0a4b9c6a0354bd5e3c4
   m_configObjects: {}

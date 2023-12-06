@@ -17,4 +17,4 @@ MonoBehaviour:
   itemName: Coin Multiplier
   description: Increases the value of coins
   pointerToNextUpgradeBar: 0
-  cost: 45
+  cost: 20

@@ -203,7 +203,7 @@ public class L1BossMovement : MonoBehaviour
         float pulseEffectDuration = 15f;
         float pulseStartTime = Time.time;
         Vector3 initialScale = Vector3.zero;
-        Vector3 maxScale = new Vector3(7.5f, 7.5f, 0);
+        Vector3 maxScale = new Vector3(10f, 10f, 0);
         Transform currentCircle = pulseC;
         pulseCircle.GetComponent<SpriteRenderer>().enabled = true;
         donutCircle.GetComponent<SpriteRenderer>().enabled = true;
@@ -319,7 +319,7 @@ public class L1BossMovement : MonoBehaviour
 
     private void loadLandingSmoke()
     {
-        Vector3 smokeOffset = new Vector3(-0.17f, -0.59f, 0);
+        Vector3 smokeOffset = new Vector3(-0.31f, -0.76f, 0);
         GameObject landingSmoke = Instantiate(landingSmokePrefab, transform.position + smokeOffset, Quaternion.identity);
         Destroy(landingSmoke, anim[4].length);
     }

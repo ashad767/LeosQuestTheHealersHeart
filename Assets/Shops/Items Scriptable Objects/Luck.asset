@@ -17,4 +17,4 @@ MonoBehaviour:
   itemName: Luck
   description: Increases the chance of finding treasure chests
   pointerToNextUpgradeBar: 0
-  cost: 125
+  cost: 55

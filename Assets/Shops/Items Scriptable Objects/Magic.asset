@@ -17,4 +17,4 @@ MonoBehaviour:
   itemName: Magic
   description: Something about magic
   pointerToNextUpgradeBar: 0
-  cost: 1305
+  cost: 85
