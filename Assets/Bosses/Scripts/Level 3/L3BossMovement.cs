@@ -109,7 +109,7 @@ public class L3BossMovement : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(Random.Range(3f, 7f)); // Wait 3-10 seconds before getting the chance to spawn mini-enemies
+            yield return new WaitForSeconds(Random.Range(3f, 7f)); // Wait 3-7 seconds before getting the chance to spawn mini-enemies
 
             // 95% chance of mini-enemies getting spawned (if not the first iteration, only spawns if all 3 mini-enemies are killed from previous wave)
             if (Random.Range(0f, 1f) <= 0.95f)

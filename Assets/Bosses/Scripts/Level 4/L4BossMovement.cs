@@ -257,7 +257,7 @@ public class L4BossMovement : MonoBehaviour
             if (currentHealth <= 0f)
             {
                 dead = true;
-                GetComponent<BoxCollider2D>().enabled = false;
+                GetComponent<CircleCollider2D>().enabled = false;
                 rb.bodyType = RigidbodyType2D.Static;
 
                 a.SetTrigger("death"); // show death animation
