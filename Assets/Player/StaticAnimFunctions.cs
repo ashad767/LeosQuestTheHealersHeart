@@ -32,4 +32,9 @@ public class StaticAnimFunctions : MonoBehaviour
         player.ResetBowState();
         EndAttack();
     }
+
+    public void PlayerDeath()
+    {
+        Destroy(player.gameObject);
+    }
 }
