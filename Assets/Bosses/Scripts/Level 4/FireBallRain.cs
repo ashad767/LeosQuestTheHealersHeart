@@ -6,7 +6,6 @@ using UnityEngine.Experimental.GlobalIllumination;
 public class FireBallRain : MonoBehaviour
 {
     [SerializeField] private GameObject fireBallPrefab;
-    private List<GameObject> fireballsList = new List<GameObject>();
 
     // Audio
     [SerializeField] AudioSource fireballRainStartAudio;
@@ -51,7 +50,7 @@ public class FireBallRain : MonoBehaviour
 
     private IEnumerator fireBallRain()
     {
-        int numberOfFireballs = (int)Random.Range(50f, 80f);
+        int numberOfFireballs = (int)Random.Range(50f, 75f);
 
         for (int i = 0; i < numberOfFireballs; i++)
         {
@@ -88,6 +87,7 @@ public class FireBallRain : MonoBehaviour
 
             if (collider != null && collider.gameObject.CompareTag("Player"))
             {
+                Debug.Log("IM HERE");
                 Destroy(fireBallPrefabInstance);
             }
 

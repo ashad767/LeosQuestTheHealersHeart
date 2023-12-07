@@ -18,7 +18,7 @@ public class MiniEnemiesSpawnManager : MonoBehaviour
     // Audio
     [SerializeField] AudioSource lightningAudio;
 
-    private int numberOfMiniEnemies = 3;
+    private int totalMiniEnemies = 3;
     private int miniEnemiesRemaining = 0;
 
     // Singleton instance
@@ -39,7 +39,7 @@ public class MiniEnemiesSpawnManager : MonoBehaviour
 
     public void StartSpawning()
     {
-        if(miniEnemiesRemaining == 0)
+        if(miniEnemiesRemaining < totalMiniEnemies)
         {
             StartCoroutine(SpawnLightningAndEnemies());
         }
@@ -47,12 +47,13 @@ public class MiniEnemiesSpawnManager : MonoBehaviour
 
     private IEnumerator SpawnLightningAndEnemies()
     {
-        for (int i = 0; i < numberOfMiniEnemies; i++)
+        int howManyEnemiesToSpawn = totalMiniEnemies - miniEnemiesRemaining;
+        for (int i = 0; i < howManyEnemiesToSpawn ; i++)
         {
             SpawnLightning();
             yield return new WaitForSeconds(0.1f);
         }
-        miniEnemiesRemaining = numberOfMiniEnemies; // resetting the 'miniEnemiesRemaining' variable so that in each iteration in spawnMiniEnemies() coroutine (in L3BossMovement.cs), the 'StartSpawning()' function doesn't get called
+        miniEnemiesRemaining += howManyEnemiesToSpawn; // re-filling 'miniEnemiesRemaining'
     }
 
     private void SpawnLightning()

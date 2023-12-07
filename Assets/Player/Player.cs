@@ -76,6 +76,7 @@ public class Player : Entity
     public PlayerMagicState magicState;
     public PlayerRunState runState;
     public PlayerDashState dashState;
+    public PlayerDeathState deathState;
 
     #endregion
 
@@ -155,10 +156,17 @@ public class Player : Entity
         TestInputs();
 
         playerUIManager.UpdatePlayerUI();
+        AnimatorVariablesUpdate();
 
+        if(CurrentHealth == 0)
+            stateMachine.ChangeState(deathState);
+    }
+
+    private void AnimatorVariablesUpdate()
+    {
         anim.SetInteger("Weapon", currentWeaponIndex);
         anim.SetFloat("BowChargeState", bowChargeState);
-        if(swordLevel > 1)
+        if (swordLevel > 1)
             anim.SetFloat("ComboCounter", playerComboCounter);
     }
 
@@ -240,6 +248,7 @@ public class Player : Entity
         magicState = new PlayerMagicState(stateMachine, this, "Attack");
         runState = new PlayerRunState(stateMachine, this, "Run");
         dashState = new PlayerDashState(stateMachine, this, "Dash");
+        deathState = new PlayerDeathState(stateMachine, this, "Death");
     }
 
     private void WeaponsInit()

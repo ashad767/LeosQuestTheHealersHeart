@@ -21,7 +21,7 @@ public class Arrow : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         rotation_in_Degrees = Mathf.Atan2(arrowDir.y, arrowDir.x) * Mathf.Rad2Deg; // Atan2 goes from -pi to pi (counter-clockwise starting from the left side). And since Atan2 returns in radians, I multiplied by Mathf.Rad2Deg to convert to degrees
-        transform.rotation = Quaternion.Euler(0, 0, rotation_in_Degrees); // rotate on z axis
+        transform.rotation = Quaternion.Euler(0, 0, rotation_in_Degrees); // apply rotation on z axis
 
         firePointLight.GetComponent<Light>().intensity = 0.5f; // for the fire to have a lighting effect in the dark
 

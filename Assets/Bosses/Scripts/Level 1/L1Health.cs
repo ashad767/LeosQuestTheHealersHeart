@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class L1Health : MonoBehaviour
 {
-    [SerializeField] private BossMovement minotaur;
+    [SerializeField] private L1BossMovement minotaur;
     private Slider slider;
     [SerializeField] private Image fillImage;
 

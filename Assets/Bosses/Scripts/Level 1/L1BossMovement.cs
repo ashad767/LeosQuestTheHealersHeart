@@ -2,54 +2,61 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class BossMovement : MonoBehaviour
+public class L1BossMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private Animator a;
+    [SerializeField] private AnimationClip[] anim; // Some of the boss animations. Using it to access their lengths
+    [SerializeField] private Transform MC;
     private Transform pulseCircle; // first circle in buff effect
     private Transform donutCircle; // second circle in buff effect
+    [SerializeField] private Slider healthBar;
 
+    #region Health
     public float currentHealth = 100f;
     public float maxHealth = 100f;
+    #endregion
 
-    [SerializeField] AnimationClip[] anim; // Some of the boss animations. Using it to access their lengths
-    [SerializeField] Transform MC;
-
-    // Prefabs
+    #region Prefabs
     [SerializeField] GameObject sawPrefab;
     [SerializeField] GameObject landingSmokePrefab;
     [SerializeField] GameObject powerUpPrefab;
+    #endregion
 
-    // Audio
+    #region Audio
     [SerializeField] AudioSource startJump;
     [SerializeField] AudioSource jumpLanding;
     [SerializeField] AudioSource swordSwing;
     [SerializeField] AudioSource powerUp;
     [SerializeField] AudioSource powerUpPulse;
     [SerializeField] AudioSource deathAudio;
+    #endregion
 
-    // the States enum is to access the int value associated with the animation
+    #region Animation states & bools
     private enum States { idle, walk, attack, jump, fear };
     
     // for animation control
     private bool idle = true;
     private bool walk = false;
-    
+
     private bool attack = false; // Used to control animation states
     private bool attackInProgress = false; // Used as a flag in case of repeated sword attacks by the boss
-    
+
     private bool jump = false;
     private bool activateBuff = false;
     private bool buffRunning = false;
     private bool dead = false;
+    #endregion
 
-    // For the jump animation
+    #region For the jump animation
     private Vector2 snapshotMCPosition; // snapshot of MC's position during boss' jump
     private Vector2 jumpStartPosition; // boss' position before beginning jump
     private float jumpHeight = 5f; // Adjust the jump height as needed
-    float jumpDuration = 1.2f; // Adjust the duration of the jump as needed
+    private float jumpDuration = 1.2f; // Adjust the duration of the jump as needed
+    #endregion
 
 
     // Start is called before the first frame update
@@ -129,6 +136,8 @@ public class BossMovement : MonoBehaviour
         }
     }
 
+    #region Attack Logic
+
     // Same steps as 'OnTriggerEnter2D()'
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -177,6 +186,7 @@ public class BossMovement : MonoBehaviour
             a.SetInteger("state", (int)States.walk);
         }
     }
+    #endregion
 
     private IEnumerator fearFunc()
     {
@@ -191,7 +201,7 @@ public class BossMovement : MonoBehaviour
 
     private void loadPowerUp()
     {
-        Vector3 powerUpOffset = new Vector3(-0.25f, 0.24f, 0f);
+        Vector3 powerUpOffset = new Vector3(-0.26f, 0.18f, 0);
         GameObject powerUp = Instantiate(powerUpPrefab, transform.position + powerUpOffset, Quaternion.identity);
         powerUp.transform.SetParent(transform);
         Destroy(powerUp, anim[5].length);
@@ -203,7 +213,7 @@ public class BossMovement : MonoBehaviour
         float pulseEffectDuration = 15f;
         float pulseStartTime = Time.time;
         Vector3 initialScale = Vector3.zero;
-        Vector3 maxScale = new Vector3(5.5f, 5.5f, 0);
+        Vector3 maxScale = new Vector3(10f, 10f, 0);
         Transform currentCircle = pulseC;
         pulseCircle.GetComponent<SpriteRenderer>().enabled = true;
         donutCircle.GetComponent<SpriteRenderer>().enabled = true;
@@ -231,7 +241,7 @@ public class BossMovement : MonoBehaviour
             // Instantly contract the circle we just switched to
             currentCircle.localScale = initialScale;
 
-            // Set the sorting layer to make the circle we just switched to render above
+            // Set the sorting layer to make the circle we just switched to, render above
             SetSortingLayerOrder(currentCircle, 2);
 
             // Set the sorting layer to make the other circle render below
@@ -319,7 +329,7 @@ public class BossMovement : MonoBehaviour
 
     private void loadLandingSmoke()
     {
-        Vector3 smokeOffset = new Vector3(-0.13f, -0.53f, 0f);
+        Vector3 smokeOffset = new Vector3(-0.31f, -0.76f, 0);
         GameObject landingSmoke = Instantiate(landingSmokePrefab, transform.position + smokeOffset, Quaternion.identity);
         Destroy(landingSmoke, anim[4].length);
     }
@@ -357,15 +367,20 @@ public class BossMovement : MonoBehaviour
             {
                 dead = true;
                 GetComponent<CircleCollider2D>().enabled = false;
+                rb.bodyType = RigidbodyType2D.Static;
                 a.SetTrigger("death"); // show death animation
                 deathAudio.Play();
-                rb.bodyType = RigidbodyType2D.Static;
+
+                destroySaws();
+                destroyChildren();
+
                 yield return new WaitForSeconds(deathAudio.clip.length - 0.2f);
                 Destroy(gameObject); // Destroys boss gameobjects
             }
         }
     }
-    private void OnDestroy()
+
+    private void destroySaws()
     {
         // Find all active saw prefabs (if they exist) in the scene and destroy them
         GameObject[] sawsToDestroy = GameObject.FindGameObjectsWithTag("saw");
@@ -374,5 +389,20 @@ public class BossMovement : MonoBehaviour
         {
             Destroy(saw);
         }
+    }
+
+    private void destroyChildren()
+    {
+        // Iterate through each child of the boss GameObject
+        foreach (Transform child in transform)
+        {
+            // Destroy the child GameObject
+            Destroy(child.gameObject);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        healthBar.gameObject.SetActive(false); // Hide the boss healthbar from view after boss dies
     }
 }

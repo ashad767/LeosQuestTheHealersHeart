@@ -11,35 +11,43 @@ public class L2BossMovement : MonoBehaviour
     private Animator a;
     [SerializeField] private AnimationClip[] animLength;
     [SerializeField] private Transform MC;
-    
-    // Prefabs
+    [SerializeField] private Slider healthBar;
+    [SerializeField] private GameObject audioManagerToBeUsedInDestroyBullet;
+
+    #region Prefabs
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private GameObject shadowClonePrefab;
     [SerializeField] private GameObject angryChargePrefab;
+    #endregion
 
-    // Audio
+    #region Audio
     [SerializeField] AudioSource lungeAudio;
     [SerializeField] AudioSource shootBulletAudio;
     [SerializeField] AudioSource regenAudio;
     [SerializeField] AudioSource death;
+    #endregion
 
-    [SerializeField] private GameObject audioManagerToBeUsedInDestroyBullet;
-
+    #region Animation states & bools
     private enum States { idle, lunge, shoot, regen };
 
     public bool idle = true;
     private bool lunge = false;
     private bool shoot = false;
     private bool regen = false;
+    #endregion
 
-    private float bossMoveSpeed;
-
+    #region Health
     public float maxHealth = 100f;
     public float currentHealth = 100f;
+    #endregion
 
+    #region Boss when Angry
     public bool isAngry = false;
     private Color originalColor;
     private Color angryColor = Color.red;
+    #endregion
+
+    private float bossMoveSpeed;
 
     void Start()
     {
@@ -247,7 +255,7 @@ public class L2BossMovement : MonoBehaviour
             Color hitEffect = sr.color;
 
             yield return new WaitForSeconds(2f);
-            currentHealth -= 5f;
+            currentHealth -= 15f;
 
             // When boss gets hit, I want to momentarily make the boss go slighlty transparent, then back to its original/angry color
             hitEffect.a = 0.3f;
@@ -267,6 +275,8 @@ public class L2BossMovement : MonoBehaviour
     }
     private void OnDestroy()
     {
+        healthBar.gameObject.SetActive(false); // Hide the boss healthbar from view after boss dies
+
         // Find all active shadow clone prefabs in the scene and destroy them
         GameObject[] shadowClonesToDestroy = GameObject.FindGameObjectsWithTag("shadow_clone");
         GameObject[] bulletsToDestroy = GameObject.FindGameObjectsWithTag("wizardBullet");

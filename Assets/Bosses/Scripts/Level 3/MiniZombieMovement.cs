@@ -160,6 +160,7 @@ public class MiniZombieMovement : MonoBehaviour
                 dead = true;
                 GetComponent<BoxCollider2D>().enabled = false;
                 rb.bodyType = RigidbodyType2D.Static;
+                
                 spawnManager.MiniEnemyKilled();
                 darknessManager.spawnedMiniEnemies.Remove(gameObject);
 
