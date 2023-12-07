@@ -371,15 +371,22 @@ MonoBehaviour:
   dialoguePanel: {fileID: 481415918}
   dialogueText: {fileID: 1351578712}
   dialogue:
-  - 'Hey Ashad Hey Ali  Hey Ashad HeyHey Ashad Hey Ali  Hey Ashad Hey Ali  Hey Ashad
-    Hey Ali Hey Ashad Hey Ali Hey Ashad Hey Ali  Hey Ashad Hey Ali  Hey Ashad Hey
-    Ali Hey Ashad Hey Ali Hey Ashad Hey Ali  Hey Ashad Hey Ali  Hey Ashad Hey Ali
-    Hey Ashad Hey Ali Hey Ashad Hey Ali  Hey Ashad Hey Ali  Hey Ashad Hey Ali Hey
-    Ashad Hey Ali Hey Ashad Hey Ali  Hey Ashad Hey Ali  Hey Ashad Hey Ali Hey Ashad
-    Hey Ali Hey Ashad Hey Ali  Hey Ashad Hey Ali  Hey Ashad Hey Ali Hey Ashad Hey
-    Ali  Ali  Hey Ashad Hey Ali Hey Ashad Hey Ali '
-  - Hey Ashad
-  - Hey Ali
+  - Since this is the first time you have chatted with me you will have to listen
+    to everytrhing i say
+  - It will be a very long conversation im sorry
+  - jajajajajajajajajajajaja
+  randomDialogue:
+  - You must find the heart!!!!
+  - you must kill all the mobs first!!!
+  - a
+  - b
+  - c
+  - d
+  - e
+  - f
+  - g
+  - h
+  timesTalked: 0
   button: {fileID: 1922079098}
   wordSpeed: 0.1
   isRange: 0
@@ -416,7 +423,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.050055742, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -427,7 +434,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.6666667, y: 2.6666667}
+  m_Size: {x: 2.3440862, y: 2.6666667}
   m_EdgeRadius: 0
 --- !u!70 &831035017
 CapsuleCollider2D:
@@ -461,8 +468,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 2.6666667, y: 2.6666667}
+  m_Offset: {x: -0.011123896, y: -0.18909907}
+  m_Size: {x: 1.2873559, y: 2.2884688}
   m_Direction: 0
 --- !u!1001 &897492955
 PrefabInstance:

@@ -3,12 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+
 public class NPC : MonoBehaviour
 {
 
     public GameObject dialoguePanel;
     public TMP_Text dialogueText;
     public string[] dialogue;
+
+    public string[] randomDialogue;
+    public int timesTalked;
+
     private int index;
 
 
@@ -23,13 +28,15 @@ public class NPC : MonoBehaviour
 
     {
         isType = false;
+        timesTalked = 0;
         dialogueText.text = "";
     }
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E) && isRange)
+        if(Input.GetKeyDown(KeyCode.E) && isRange && timesTalked < 1)
         {
+            
             if (dialoguePanel.activeInHierarchy)
             {
                 resetText();
@@ -40,6 +47,20 @@ public class NPC : MonoBehaviour
                 StartCoroutine(Typing());
             }
         }
+        else if(Input.GetKeyDown(KeyCode.E) && isRange && timesTalked > 0)
+        {
+            if (dialoguePanel.activeInHierarchy)
+            {
+                resetText();
+            }
+            else
+            {
+                dialoguePanel.SetActive(true);
+                StartCoroutine(RandomTyping());
+            }
+        }
+
+
         if(dialogueText.text == dialogue[index])
         {
             button.SetActive(true);
@@ -55,21 +76,33 @@ public class NPC : MonoBehaviour
         dialogueText.text = "";
         index = 0;
         dialoguePanel.SetActive(false);
+        timesTalked++;
     }
 
     public void NextLine()
     {
         isType = false;
         button.SetActive(false);
-        if(index < dialogue.Length - 1)
+        if (timesTalked <1)
         {
-            index++;
-            dialogueText.text = "";
-            StartCoroutine(Typing());
+            if (index < dialogue.Length - 1)
+            {
+                index++;
+                dialogueText.text = "";
+                StartCoroutine(Typing());
+            }
+            else
+            {
+                resetText();
+            }
         }
-        else
+        else if(timesTalked > 0)
         {
-            resetText();
+            button.SetActive(false);
+            dialoguePanel.SetActive(false);
+            dialogueText.text = "";
+
+
         }
     }
 
@@ -79,7 +112,7 @@ public class NPC : MonoBehaviour
         {
             dialogueText.text += letter;
 
-            if (isType)
+            if (isType && timesTalked < 1)
             {
                 dialogueText.text = dialogue[index];
                 break;
@@ -87,6 +120,27 @@ public class NPC : MonoBehaviour
             isType = false;
             yield return new WaitForSeconds(wordSpeed);
         }
+    }
+
+    IEnumerator RandomTyping()
+    {
+        int randomPhrase = Random.Range(0, randomDialogue.Length - 1);
+        dialogueText.text = "";
+        foreach (char letter in randomDialogue[randomPhrase].ToCharArray())
+        {
+            dialogueText.text += letter;
+
+            if (isType)
+            {
+                dialogueText.text = randomDialogue[randomPhrase];
+                break;
+            }
+            
+            yield return new WaitForSeconds(wordSpeed);
+        }
+        button.SetActive(true);
+
+        isType = false;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
