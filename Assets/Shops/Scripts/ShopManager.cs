@@ -17,7 +17,7 @@ public class ShopManager : MonoBehaviour
     private readonly float[] multipliers = { 1.25f, 1.5f, 1.75f, 2f, 2.25f };
 
     // Declare a jagged array of int arrays {pointer-to-next-upgrade-bar, cost}
-    public int[][] arrayOfArrays = new int[5][]
+    private int[][] upgradeItems_PointerCost_Pairs = new int[5][]
     {
         new int[] { 0, 15 },
         new int[] { 0, 20 },
@@ -44,7 +44,7 @@ public class ShopManager : MonoBehaviour
 
     private void Reset()
     {
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < SO_itemList.Length; i++)
         {
             PlayerPrefs.SetString(i.ToString(), "");
         }
@@ -56,8 +56,8 @@ public class ShopManager : MonoBehaviour
         for (int i = 0; i < 5; i++)
         {
             string[] pointer_and_cost = new string[2];
-            pointer_and_cost[0] = arrayOfArrays[i][nextUpgradeBarIndex].ToString();
-            pointer_and_cost[1] = arrayOfArrays[i][costIndex].ToString();
+            pointer_and_cost[0] = upgradeItems_PointerCost_Pairs[i][nextUpgradeBarIndex].ToString();
+            pointer_and_cost[1] = upgradeItems_PointerCost_Pairs[i][costIndex].ToString();
 
             PlayerPrefs.SetString(i.ToString(), string.Join(",", pointer_and_cost));
         }
@@ -77,29 +77,27 @@ public class ShopManager : MonoBehaviour
             currentItem.itemNameTxt.text = SO_itemList[i].itemName;
             currentItem.descriptionTxt.text = SO_itemList[i].description;
 
+            // If there are already data values from previous interaction with the shop, initialize them here
             if(PlayerPrefs.GetString(i.ToString()) != "")
             {
                 string[] pointer_and_cost = PlayerPrefs.GetString(i.ToString()).Split(",");
-                arrayOfArrays[i][nextUpgradeBarIndex] = int.Parse(pointer_and_cost[nextUpgradeBarIndex]);
-                arrayOfArrays[i][costIndex] = int.Parse(pointer_and_cost[costIndex]);
+                upgradeItems_PointerCost_Pairs[i][nextUpgradeBarIndex] = int.Parse(pointer_and_cost[nextUpgradeBarIndex]);
+                upgradeItems_PointerCost_Pairs[i][costIndex] = int.Parse(pointer_and_cost[costIndex]);
             }
+
+            // If this is the first time the player interacts with the shop, initialize the data with the default values
             else
             {
-                arrayOfArrays[i][nextUpgradeBarIndex] = arrayOfArrays[i][nextUpgradeBarIndex];
-                arrayOfArrays[i][costIndex] = arrayOfArrays[i][costIndex];
+                upgradeItems_PointerCost_Pairs[i][nextUpgradeBarIndex] = upgradeItems_PointerCost_Pairs[i][nextUpgradeBarIndex];
+                upgradeItems_PointerCost_Pairs[i][costIndex] = upgradeItems_PointerCost_Pairs[i][costIndex];
             }
-            
             
             InitializeUpgradeBars(i);
 
-            if (arrayOfArrays[i][nextUpgradeBarIndex] <= 4)
+            if (upgradeItems_PointerCost_Pairs[i][nextUpgradeBarIndex] <= 4)
             {
-                currentItem.nextUpgradeInfoTxt.text = "* " + multipliers[arrayOfArrays[i][nextUpgradeBarIndex]].ToString() + "x increase on next upgrade";
-
-                // DELETE THIS LATER (THIS IS ONLY FOR RESETTING THE BASE COSTS)
-                //SO_itemList[i].cost = baseCost[i];
-
-                currentItem.costTxt.text = arrayOfArrays[i][costIndex].ToString() + " Coins";
+                currentItem.nextUpgradeInfoTxt.text = "* " + multipliers[upgradeItems_PointerCost_Pairs[i][nextUpgradeBarIndex]].ToString() + "x increase on next upgrade";
+                currentItem.costTxt.text = upgradeItems_PointerCost_Pairs[i][costIndex].ToString() + " Coins";
             }
         }
     }
@@ -110,7 +108,7 @@ public class ShopManager : MonoBehaviour
         // Then if the player were to upgrade that item(s) again, the upgrade bars would start turning green from the value of "pointerToNextUpgradeBar", but leaving all the bars before it black.
         // This for-loop is to initialize the upgrade bars and check which upgrade bars are already green and display it from the start of the scene.
         // It iterates over all the upgrade bars of the specific shop item passed as an argument from LoadItems() named "item".
-        for (int upgradeBar = 0; upgradeBar < arrayOfArrays[item][nextUpgradeBarIndex]; upgradeBar++)
+        for (int upgradeBar = 0; upgradeBar < upgradeItems_PointerCost_Pairs[item][nextUpgradeBarIndex]; upgradeBar++)
         {
             itemInfoList[item].upgradeBarsList[upgradeBar].color = Color.green;
         }
@@ -122,7 +120,7 @@ public class ShopManager : MonoBehaviour
         {
             Button currentUpgradeBtn = upgradeBtns[i];
 
-            if (arrayOfArrays[i][nextUpgradeBarIndex] > 4)
+            if (upgradeItems_PointerCost_Pairs[i][nextUpgradeBarIndex] > 4)
             {
                 currentUpgradeBtn.interactable = false;
                 currentUpgradeBtn.GetComponentInChildren<TextMeshProUGUI>().text = "<s><i>Maxed Out</i></s>";
@@ -134,9 +132,9 @@ public class ShopManager : MonoBehaviour
             else
             {
                 // Update the "nextUpgradeInfoTxt" to tell the player by how much the buff will be increased by for the next item upgrade
-                itemInfoList[i].nextUpgradeInfoTxt.text = "* " + multipliers[arrayOfArrays[i][nextUpgradeBarIndex]].ToString() + "x increase on next upgrade";
+                itemInfoList[i].nextUpgradeInfoTxt.text = "* " + multipliers[upgradeItems_PointerCost_Pairs[i][nextUpgradeBarIndex]].ToString() + "x increase on next upgrade";
 
-                if (playerCoins >= arrayOfArrays[i][costIndex])
+                if (playerCoins >= upgradeItems_PointerCost_Pairs[i][costIndex])
                 {
                     currentUpgradeBtn.interactable = true;
                     currentUpgradeBtn.GetComponentInChildren<TextMeshProUGUI>().text = "UPGRADE";
@@ -153,26 +151,28 @@ public class ShopManager : MonoBehaviour
     }
 
     // Used by the onClick() function in the Inspector window
-    public void Upgrade(int btnNumber)
+    public void Upgrade(int item)
     {
-        if(playerCoins >= arrayOfArrays[btnNumber][costIndex])
+        int itemCost = upgradeItems_PointerCost_Pairs[item][costIndex];
+        
+        if (playerCoins >= itemCost)
         {
             // Decrease the player's coins (top right corner)
-            playerCoins -= arrayOfArrays[btnNumber][costIndex];
+            playerCoins -= itemCost;
             playerCoinsTxt.text = "Coins: " + playerCoins.ToString();
 
             // Changes the color of the upgrade bar that the "pointerToNextUpgradeBar" index is pointing to, to green
-            itemInfoList[btnNumber].upgradeBarsList[arrayOfArrays[btnNumber][nextUpgradeBarIndex]].color = Color.green;
+            itemInfoList[item].upgradeBarsList[upgradeItems_PointerCost_Pairs[item][nextUpgradeBarIndex]].color = Color.green;
 
             // Increases upgrade bar price for next item upgrade bar (STARTING FROM 2ND BAR SINCE FIRST BAR IS ALREADY SET AS THE BASE COST IN "CreateItem_SO.cs").
             // So for this, when the player upgrades to the last bar (and thus all 5 bars turn green), this will run and display the cost, but then immediately be an empty string because of the call to "checkIfUpgradeable()".
-            // "SO_itemList[btnNumber].cost" will still hold a price as an integer value as if there were a 6th upgrade bar.
-            float nextUpgradeBarPrice = arrayOfArrays[btnNumber][costIndex] + arrayOfArrays[btnNumber][costIndex] * multipliers[arrayOfArrays[btnNumber][nextUpgradeBarIndex]];
-            arrayOfArrays[btnNumber][costIndex] = ConvertToMultiplesOf5(nextUpgradeBarPrice);
-            itemInfoList[btnNumber].costTxt.text = arrayOfArrays[btnNumber][costIndex].ToString() + " Coins";
+            // Just a note, for "multipliers[upgradeItems_PointerCost_Pairs[item][nextUpgradeBarIndex]]", "nextUpgradeBarIndex" is for the bar that just turned green from line above
+            itemCost = ConvertToMultiplesOf5( itemCost + (itemCost * multipliers[upgradeItems_PointerCost_Pairs[item][nextUpgradeBarIndex]]) );
+            upgradeItems_PointerCost_Pairs[item][costIndex] = itemCost;
+            itemInfoList[item].costTxt.text = itemCost.ToString() + " Coins";
 
             // Point to the next upgrade bar (as an integer)
-            arrayOfArrays[btnNumber][nextUpgradeBarIndex]++;
+            upgradeItems_PointerCost_Pairs[item][nextUpgradeBarIndex]++;
 
             // Check again which items the player can upgrade to
             checkIfUpgradeable();

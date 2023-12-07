@@ -23,6 +23,7 @@ TagManager:
   - miniMapPlayer
   - decoration1Tilemap
   - FrontFront
+  - GameManagers
   layers:
   - Default
   - TransparentFX

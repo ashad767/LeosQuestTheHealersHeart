@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Experimental.GlobalIllumination;
 
 public class L3BossMovement : MonoBehaviour
@@ -11,28 +12,36 @@ public class L3BossMovement : MonoBehaviour
     private Animator a;
     [SerializeField] private AnimationClip[] animLength;
     [SerializeField] private Transform MC;
+    [SerializeField] private Slider healthBar;
 
-    // Prefabs
+    #region Prefabs
     public GameObject lightningPrefab;
     public GameObject miniZombiePrefab;
     public GameObject miniSkeletonPrefab;
     [SerializeField] private GameObject startingDarknessPrefab;
     [SerializeField] private GameObject boneShieldPrefab;
+    #endregion
 
-    private MiniEnemiesSpawnManager spawnManager;
-    [SerializeField] private darknessManager darknessManager; // the script
+    #region Game Level Managers (Scripts)
+    private MiniEnemiesSpawnManager spawnManager; // Singleton
+    [SerializeField] private darknessManager darknessManager;
+    #endregion
+
+    #region Tools for Darkness Effect
     [SerializeField] private GameObject directionalLight;
     [SerializeField] private GameObject MC_PointLight;
+    #endregion
 
-    // Audio
+    #region Audio
     [SerializeField] AudioSource swingAudio;
     [SerializeField] AudioSource maceDragAudio;
     [SerializeField] AudioSource startingDarknessAudio;
     [SerializeField] AudioSource insideDarknessAudio;
     [SerializeField] AudioSource boneShieldAudio;
     [SerializeField] AudioSource deathAudio;
-
-    // Animation states
+    #endregion
+    
+    #region Animation states & bools
     private enum States { idle, walk, attack };
 
     public bool idle = true;
@@ -42,9 +51,12 @@ public class L3BossMovement : MonoBehaviour
     private bool attackInProgress = false; // Used as a flag in case of repeated sword attacks by the boss
     
     private bool dead = false;
-    
+    #endregion
+
+    #region Boss Health
     public float currentHealth = 100f;
     public float maxHealth = 100f;
+    #endregion
 
     // Start is called before the first frame update
     void Start()
@@ -109,7 +121,7 @@ public class L3BossMovement : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(Random.Range(3f, 7f)); // Wait 3-7 seconds before getting the chance to spawn mini-enemies
+            yield return new WaitForSeconds(Random.Range(5f, 10f)); // Wait 5-10 seconds before getting the chance to spawn mini-enemies
 
             // 95% chance of mini-enemies getting spawned (if not the first iteration, only spawns if all 3 mini-enemies are killed from previous wave)
             if (Random.Range(0f, 1f) <= 0.95f)
@@ -142,7 +154,7 @@ public class L3BossMovement : MonoBehaviour
             {
                 StartCoroutine(PlayInsideDarknessAudio());
                 yield return new WaitForSeconds(35f);
-                darknessManager.de_activateDarkness();
+                darknessManager.de_activateDarkness(5f);
 
                 chanceOfDarkness = 0.25f;
                 yield return new WaitForSeconds(5f);
@@ -166,6 +178,7 @@ public class L3BossMovement : MonoBehaviour
         insideDarknessAudio.Play();
     }
 
+    #region Attack Logic
 
     // Same steps as 'OnTriggerEnter2D()'
     private void OnTriggerStay2D(Collider2D collision)
@@ -217,6 +230,7 @@ public class L3BossMovement : MonoBehaviour
             maceDragAudio.Play();
         }
     }
+    #endregion
 
     private IEnumerator activateBoneShield()
     {
@@ -236,7 +250,7 @@ public class L3BossMovement : MonoBehaviour
             Color hitEffect = sr.color;
 
             yield return new WaitForSeconds(2f);
-            currentHealth -= 1f;
+            currentHealth -= 5f;
 
             // When boss gets hit, I want to momentarily make the boss go slighlty transparent, then back to its original/angry color
             hitEffect.a = 0.2f;
@@ -251,12 +265,14 @@ public class L3BossMovement : MonoBehaviour
                 rb.bodyType = RigidbodyType2D.Static;
                 a.SetTrigger("death"); // show death animation
                 deathAudio.Play();
-                
+
+                destroyChildren();
+
                 yield return new WaitForSeconds(deathAudio.clip.length);
 
                 if (darknessManager.isDark)
                 {
-                    darknessManager.de_activateDarkness();
+                    darknessManager.de_activateDarkness(2f);
                 }
 
                 Destroy(gameObject); // Destroys boss gameobject
@@ -264,8 +280,20 @@ public class L3BossMovement : MonoBehaviour
         }
     }
 
+    private void destroyChildren()
+    {
+        // Iterate through each child of the boss GameObject
+        foreach (Transform child in transform)
+        {
+            // Destroy the child GameObject
+            Destroy(child.gameObject);
+        }
+    }
+
     private void OnDestroy()
     {
+        healthBar.gameObject.SetActive(false); // Hide the boss healthbar from view after boss dies
+
         // Find all active mini-zombies/skeleton and arrow prefabs in the scene and destroy them
         GameObject[] miniZombiesToDestroy = GameObject.FindGameObjectsWithTag("miniZombie");
         GameObject[] miniSkeletonsToDestroy = GameObject.FindGameObjectsWithTag("miniSkeleton");

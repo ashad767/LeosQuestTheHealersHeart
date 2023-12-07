@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class L4BossMovement : MonoBehaviour
 {
@@ -9,8 +10,9 @@ public class L4BossMovement : MonoBehaviour
     private Animator a;
     [SerializeField] private AnimationClip[] animLength;
     [SerializeField] private Transform MC;
-    
-    // Animation states
+    [SerializeField] private Slider healthBar;
+
+    #region  Animation states & bools
     private enum States { idle, walk, attack, expandFireCircleState, rocksFallState };
 
     public bool idle = true;
@@ -22,23 +24,28 @@ public class L4BossMovement : MonoBehaviour
     private bool expandFireCircleAnim = false;
     private bool rocksFallAnim = false;
     private bool dead = false;
+    #endregion
 
-    // Prefabs
+    #region Prefabs
     [SerializeField] private GameObject startFireBallRainPrefab;
     GameObject startFireBallRainPrefabInstance; // used in fireBallRain() coroutine
-    
+    #endregion
 
+    #region Game Level Managers (Scripts)
     [SerializeField] private rocksFallManager rFM;
     [SerializeField] private fireCircleManager fCM;
+    #endregion
 
-    // Health
+    #region Health
     public float currentHealth = 100f;
     public float maxHealth = 100f;
+    #endregion
 
-    // Audio
+    #region Audio
     [SerializeField] AudioSource swordClingAudio;
     [SerializeField] AudioSource roarAudio;
     [SerializeField] AudioSource deathAudio;
+    #endregion
 
     // Start is called before the first frame update
     void Start()
@@ -95,6 +102,8 @@ public class L4BossMovement : MonoBehaviour
         }
     }
 
+    #region Attack Logic
+
     // Same steps as 'OnTriggerEnter2D()'
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -146,6 +155,7 @@ public class L4BossMovement : MonoBehaviour
             a.SetInteger("state", (int)States.walk);
         }
     }
+    #endregion
 
     private IEnumerator fireBallRain()
     {
@@ -246,7 +256,7 @@ public class L4BossMovement : MonoBehaviour
             Color hitEffect = sr.color;
 
             yield return new WaitForSeconds(1f);
-            currentHealth -= 1f;
+            currentHealth -= 10f;
 
             // When boss gets hit, I want to momentarily make the boss go slighlty transparent, then back to its original color
             hitEffect.a = 0.2f;
@@ -259,9 +269,11 @@ public class L4BossMovement : MonoBehaviour
                 dead = true;
                 GetComponent<CircleCollider2D>().enabled = false;
                 rb.bodyType = RigidbodyType2D.Static;
-
                 a.SetTrigger("death"); // show death animation
                 deathAudio.Play();
+
+                destroyGameManagers();
+                destroyChildren();
 
                 yield return new WaitForSeconds(deathAudio.clip.length - 0.5f);
                 Destroy(gameObject); // Destroys boss gameobject
@@ -269,13 +281,36 @@ public class L4BossMovement : MonoBehaviour
         }
     }
 
+    private void destroyGameManagers()
+    {
+        GameObject[] gameManagersToDestroy = GameObject.FindGameObjectsWithTag("GameManagers");
+
+        foreach (GameObject gm in gameManagersToDestroy)
+        {
+            Destroy(gm);
+        }
+    }
+
+    private void destroyChildren()
+    {
+        // Iterate through each child of the boss GameObject
+        foreach (Transform child in transform)
+        {
+            // Destroy the child GameObject
+            Destroy(child.gameObject);
+        }
+    }
+
     private void OnDestroy()
     {
+        healthBar.gameObject.SetActive(false); // Hide the boss healthbar from view after boss dies
+
         // Find all active prefabs in the scene and destroy them
         GameObject[] fireballCircleToDestroy = GameObject.FindGameObjectsWithTag("fireballCircle");
         GameObject[] fireballToDestroy = GameObject.FindGameObjectsWithTag("fireball");
         GameObject[] rocksToDestroy = GameObject.FindGameObjectsWithTag("rocks");
 
+        
         foreach (GameObject fireballCircle in fireballCircleToDestroy)
         {
             Destroy(fireballCircle);

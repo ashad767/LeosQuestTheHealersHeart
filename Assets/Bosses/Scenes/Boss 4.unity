@@ -315,7 +315,7 @@ GameObject:
   - component: {fileID: 412948012}
   m_Layer: 0
   m_Name: Rocks Fall Manager
-  m_TagString: Untagged
+  m_TagString: GameManagers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -583,6 +583,7 @@ MonoBehaviour:
   - {fileID: 7400000, guid: f391dcb5a1d830743a99ebc8369d9580, type: 2}
   - {fileID: 7400000, guid: 63c6894f7669c3c409a2fa72ccb31fc0, type: 2}
   MC: {fileID: 881340253}
+  healthBar: {fileID: 108816541}
   idle: 1
   startFireBallRainPrefab: {fileID: 5018142768146605432, guid: 0ff13beb44720b84c88350abf4cd5d54, type: 3}
   rFM: {fileID: 412948012}
@@ -933,7 +934,7 @@ GameObject:
   - component: {fileID: 648907127}
   m_Layer: 0
   m_Name: Fire Circle Manager
-  m_TagString: Untagged
+  m_TagString: GameManagers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -394,6 +394,7 @@ MonoBehaviour:
   - {fileID: 7400000, guid: 4e310032160a70e448d61770cff25865, type: 2}
   - {fileID: 7400000, guid: a27563b04612298448b63eb2bccb22ce, type: 2}
   MC: {fileID: 646124593}
+  healthBar: {fileID: 1825351910}
   lightningPrefab: {fileID: 3022674361806424652, guid: b9a8cabd74996c74aa01481bc361b31a, type: 3}
   miniZombiePrefab: {fileID: 6619434124517427929, guid: da00afa5d0ece0849a8d1bf9bf5d64a1, type: 3}
   miniSkeletonPrefab: {fileID: 2063714503425143593, guid: 713b0d09e394ad7438d3ea41a3c18774, type: 3}
@@ -1202,7 +1203,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

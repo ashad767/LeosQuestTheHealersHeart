@@ -73,7 +73,7 @@ public class darknessManager : MonoBehaviour
         float timer = 0f;
         float transitionToDarknessDuration = 2.7f;
         float originalIntensity = 1f;
-        float darknessIntensity = 0.12f;
+        float darknessIntensity = 0.03f;
 
         while (timer < transitionToDarknessDuration)
         {
@@ -83,16 +83,17 @@ public class darknessManager : MonoBehaviour
         }
     }
 
-    public void de_activateDarkness()
+    // the "transitionToOriginalDuration" float is for having different durations to de-activate darkness.
+    // One for normal duration (5 seconds) ; Another for when the boss dies while it's dark and I want to quickly turn on the lights (2 seconds)
+    public void de_activateDarkness(float transitionToOriginalDuration)
     {
-        StartCoroutine(de_activateDarknessIntensity()); // I have to incrementally deactivate the darkness and THEN reset the sprite material types, or else it would just instantly light up with no gradual progress.
+        StartCoroutine(de_activateDarknessIntensity(transitionToOriginalDuration)); // I have to incrementally deactivate the darkness and THEN reset the sprite material types, or else it would just instantly light up with no gradual progress.
     }
 
-    private IEnumerator de_activateDarknessIntensity()
+    private IEnumerator de_activateDarknessIntensity(float transitionToOriginalDuration)
     {
         float timer = 0f;
-        float transitionToOriginalDuration = 4f;
-        float darknessIntensity = 0.12f;
+        float darknessIntensity = 0.03f;
         float originalIntensity = 1f;
         
         while (timer < transitionToOriginalDuration)

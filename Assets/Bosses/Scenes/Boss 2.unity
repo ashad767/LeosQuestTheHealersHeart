@@ -1307,6 +1307,8 @@ MonoBehaviour:
   - {fileID: 7400000, guid: f676b67b1843f244d81079a209811691, type: 2}
   - {fileID: 7400000, guid: 2e11506ca25b1de4caddde392d2ff57e, type: 2}
   MC: {fileID: 2049059778}
+  healthBar: {fileID: 211980939}
+  audioManagerToBeUsedInDestroyBullet: {fileID: 977503296}
   bulletPrefab: {fileID: 692449540808126300, guid: 4a314bbc9ec77cc49bd4b7e3abe553a0, type: 3}
   shadowClonePrefab: {fileID: 5113236068494620670, guid: 125e49448bbe28342a97034ec95327d0, type: 3}
   angryChargePrefab: {fileID: 8109487914568662869, guid: 7670a6ed053ace345bbd25d32043bbb0, type: 3}
@@ -1314,7 +1316,6 @@ MonoBehaviour:
   shootBulletAudio: {fileID: 2093541459}
   regenAudio: {fileID: 2093541458}
   death: {fileID: 2093541461}
-  audioManagerToBeUsedInDestroyBullet: {fileID: 977503296}
   idle: 1
   maxHealth: 100
   currentHealth: 100
