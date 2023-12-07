@@ -371,11 +371,23 @@ public class L1BossMovement : MonoBehaviour
                 a.SetTrigger("death"); // show death animation
                 deathAudio.Play();
 
+                destroySaws();
                 destroyChildren();
 
                 yield return new WaitForSeconds(deathAudio.clip.length - 0.2f);
                 Destroy(gameObject); // Destroys boss gameobjects
             }
+        }
+    }
+
+    private void destroySaws()
+    {
+        // Find all active saw prefabs (if they exist) in the scene and destroy them
+        GameObject[] sawsToDestroy = GameObject.FindGameObjectsWithTag("saw");
+
+        foreach (GameObject saw in sawsToDestroy)
+        {
+            Destroy(saw);
         }
     }
 
@@ -392,13 +404,5 @@ public class L1BossMovement : MonoBehaviour
     private void OnDestroy()
     {
         healthBar.gameObject.SetActive(false); // Hide the boss healthbar from view after boss dies
-
-        // Find all active saw prefabs (if they exist) in the scene and destroy them
-        GameObject[] sawsToDestroy = GameObject.FindGameObjectsWithTag("saw");
-
-        foreach (GameObject saw in sawsToDestroy)
-        {
-            Destroy(saw);
-        }
     }
 }

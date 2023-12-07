@@ -12,7 +12,7 @@ public class RotatingSaw : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         rotatingSaws.Play();
-        rb.velocity = Vector2.left * 9.5f;
+        rb.velocity = Vector2.left * 12f;
     }
 
     // Update is called once per frame
