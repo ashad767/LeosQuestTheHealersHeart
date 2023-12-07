@@ -32,9 +32,11 @@ public class EnemyAttack : EnemyState
         base.FrameUpdate();
 
         enemy.MoveEnemy(Vector2.zero);
-        
 
-        
+        if(enemy.ability != null && !(enemy.ability is Zombie_Ability))
+        {
+            enemy.ability.OnAbility();
+        }
     }
 
     public override void AnimationTriggerEvent(AudioClip audioClip)

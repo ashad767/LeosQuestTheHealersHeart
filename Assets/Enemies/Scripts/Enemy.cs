@@ -10,8 +10,7 @@ public class Enemy : Entity
     public Animator animator { get; private set; }
     public GameObject Player { get; set; }
     public HitBox[] hitboxes;
-    private Vector2 direction; 
-
+    private Vector2 direction;
 
     #region SM Variables
 
@@ -21,6 +20,7 @@ public class Enemy : Entity
     public EnemyChase ChaseState { get; set; }
     public EnemyDead DeadState { get; set; }
     public EnemyRangedAttack AttackRangedState { get; set; }
+    public EnemyHeavyAttack AttackHeavyState { get; set; }
 
     #endregion
 
@@ -49,8 +49,17 @@ public class Enemy : Entity
     #region Ranged Enemies
 
     public bool isRanged = false;
-    public Dictionary<string, Rigidbody2D> projectiles = new Dictionary<string, Rigidbody2D>();
-    public Rigidbody2D MM_Projectile;
+    public Rigidbody2D Projectile;
+
+    #endregion
+
+    #region Abilities
+
+    public Ability ability;
+    public bool isShield;
+    public float armor;
+    public float damage;
+    public float NormDamage;
 
     #endregion
 
@@ -63,8 +72,7 @@ public class Enemy : Entity
         ChaseState = new EnemyChase(this, enemySM, "Chase");
         DeadState = new EnemyDead(this, enemySM, "Dead");
         AttackRangedState = new EnemyRangedAttack(this, enemySM, "RangedAttack");
-
-        projectiles.Add("MischieviousMerchant", MM_Projectile);
+        AttackHeavyState = new EnemyHeavyAttack(this, enemySM, "HeavyAttack");
 
         Player = GameObject.FindGameObjectWithTag("Player");
     }
@@ -76,15 +84,22 @@ public class Enemy : Entity
         RB = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
         enemySM.Initialize(WalkState);
+        ability = GetComponentInChildren<Ability>();
+        NormDamage = damage;
     }
 
     // Update is called once per frame
     protected override void Update()
     {
+        base.Update();
         enemySM.CurrentEnemyState.FrameUpdate();
         if(CurrentHealth == 0)
         {
             enemySM.ChangeState(DeadState);
+        }
+        if(ability != null)
+        {
+            ability.cooldown -= Time.deltaTime;
         }
     }
 
@@ -92,18 +107,6 @@ public class Enemy : Entity
     {
         enemySM.CurrentEnemyState.PhysicsUpdate();
     }
-
-    /*private void AnimationTriggerEvent(AnimationTriggerType type)
-    {
-        enemySM.CurrentEnemyState.AnimationTriggerEvent(type);
-    }
-
-    public enum AnimationTriggerType
-    {
-        EnemyDamaged,
-        Footsteps,
-        Die
-    } */
 
     public void MoveEnemy(Vector2 velocity)
     {
@@ -127,7 +130,7 @@ public class Enemy : Entity
 
             if (ply != null)
             {
-                ply.TakeDamage(3);
+                ply.TakeDamage(damage);
             }
         }
     }
@@ -158,5 +161,23 @@ public class Enemy : Entity
     public void SetStrikeStatus(bool isStrike)
     {
         IsStrike = isStrike;
+    }
+
+    public override void TakeDamage(float damage)
+    {
+        GG_Ability GG_ab = GetComponent<GG_Ability>();
+
+        if (GG_ab != null && GG_ab.isBlock)
+            GG_ab.isBlock = false;
+        else
+        {
+            damage *= armor;
+            CurrentHealth -= damage;
+
+            if (CurrentHealth < 0)
+                CurrentHealth = 0;
+
+            Debug.Log(name + "'s health is now " + CurrentHealth);
+        }
     }
 }

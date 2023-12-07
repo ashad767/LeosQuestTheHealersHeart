@@ -25,6 +25,10 @@ public class EnemyRangedAttack : EnemyState
     {
         base.FrameUpdate();
         enemy.MoveEnemy(Vector2.zero);
+        if(enemy.ability != null)
+            enemy.ability.OnAbility();
+        //Debug.Log("ability");
+
     }
 
     public override void AnimationTriggerEvent(AudioClip audioClip)
@@ -32,14 +36,8 @@ public class EnemyRangedAttack : EnemyState
         base.AnimationTriggerEvent(audioClip);
     }
 
-    public override void RangedAttack(string name)
+    public override void RangedAttack(Rigidbody2D rb)
     {
-        base.RangedAttack(name);
-
-        Rigidbody2D proj = enemy.projectiles[name];
-
-        //Vector2 direction = (PlayerTransform.position - enemy.transform.position).normalized;
-        GameObject.Instantiate(proj, enemy.transform.position, Quaternion.identity);
-        //projectile.velocity = direction * 2f;
+        base.RangedAttack(rb);
     }
 }

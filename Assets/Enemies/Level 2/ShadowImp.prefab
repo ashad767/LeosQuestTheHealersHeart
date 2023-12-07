@@ -557,6 +557,7 @@ GameObject:
   m_Component:
   - component: {fileID: 733677043446577654}
   - component: {fileID: 3116848323251004471}
+  - component: {fileID: 1155215992061671700}
   - component: {fileID: 4084204154408529568}
   - component: {fileID: 3781202976754157302}
   - component: {fileID: 1540847952526580206}
@@ -577,7 +578,7 @@ Transform:
   m_GameObject: {fileID: 3934995787567752555}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.41, y: -2.72, z: 0}
+  m_LocalPosition: {x: 2.06, y: 0.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -598,6 +599,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  OnFire: 0
+  IsRooted: 0
+  FireTimer: 5
+  RootTimer: 2
   hitboxes:
   - {fileID: 2595632722172126903}
   - {fileID: 6407589778715333215}
@@ -609,7 +614,33 @@ MonoBehaviour:
   WalkSound: {fileID: 0}
   AttackSound: {fileID: 8300000, guid: 0c1afaccff77b5440939e4a8a0c5b2d8, type: 3}
   isRanged: 0
-  MM_Projectile: {fileID: 0}
+  Projectile: {fileID: 0}
+  ability: {fileID: 0}
+  isShield: 0
+  armor: 1
+  damage: 5
+  NormDamage: 0
+--- !u!114 &1155215992061671700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3934995787567752555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d213d08202832449ba6bdad0d9e031, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerTransform: {fileID: 0}
+  cooldown: 5
+  collided: 0
+  timer: 0
+  animator: {fileID: 0}
+  sprite: {fileID: -1367204421, guid: f559ecccf4e513c4f8d8eebfed27b203, type: 3}
+  isReady: 0
+  audioSource: {fileID: 0}
+  vanish: {fileID: 8300000, guid: 9cdb9f4e5470cda48bc1ba4669fdaee5, type: 3}
 --- !u!50 &4084204154408529568
 Rigidbody2D:
   serializedVersion: 4

@@ -10,7 +10,7 @@ public class EnemyProjectile : MonoBehaviour
     protected BoxCollider2D boxCollider2D;
     protected float distance = 10;
     protected Vector2 arrowVelocity;
-    public Vector2 direction;
+    public Vector3 direction;
     public Transform PlayerTransform;
 
     protected virtual void Start()
@@ -18,17 +18,22 @@ public class EnemyProjectile : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         boxCollider2D = GetComponent<BoxCollider2D>();
         PlayerTransform = GameObject.FindGameObjectWithTag("Player").transform;
-        direction = (PlayerTransform.position - transform.position).normalized;
+        direction = (PlayerTransform.position - transform.position);
+        //direction.y += 0.5f;
+
+        float rot = Mathf.Atan2(-direction.y, -direction.x) * Mathf.Rad2Deg;
+
+        transform.Rotate(0, 0, rot + 90);
 
         if (rb != null)
-            rb.velocity = direction * speed;
+            rb.velocity = direction.normalized * speed;
     }
 
     protected virtual void Update()
     {
         Despawn();
     }
-
+                                                                    
     protected virtual void Despawn()
     {
         distance -= Time.deltaTime;
@@ -42,8 +47,22 @@ public class EnemyProjectile : MonoBehaviour
     {
         Entity hitObject = collision.GetComponentInParent<Entity>();
 
+        if (collision.CompareTag("Player"))
+        {
+            Ability ab = GetComponentInParent<Ability>();
+            if(ab != null)
+            {
+                if(!ab.collided)
+                {
+                    ab.collided = true;
+                    //ab.OnAbility();
+                }
+            }
+        }
+
         if (collision.CompareTag("Player") || collision.CompareTag("WALL"))
         {
+            
             //arrowVelocity = rb.velocity;
             rb.velocity = Vector2.zero;
             Destroy(rb);
@@ -56,5 +75,10 @@ public class EnemyProjectile : MonoBehaviour
             }
             //Destroy(gameObject);
         }
+    }
+
+    public void CheckStun(Player player)
+    {
+
     }
 }

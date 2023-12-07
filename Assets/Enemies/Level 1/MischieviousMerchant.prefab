@@ -465,7 +465,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &746591846558096360
 Transform:
   m_ObjectHideFlags: 0
@@ -475,7 +475,7 @@ Transform:
   m_GameObject: {fileID: 6211479782782866910}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.5, y: 3.37, z: 0}
+  m_LocalPosition: {x: -6.38, y: 2.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -496,6 +496,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  OnFire: 0
+  IsRooted: 0
+  FireTimer: 5
+  RootTimer: 2
   hitboxes:
   - {fileID: 97238719311893921}
   - {fileID: 5969606202390340081}
@@ -507,7 +511,12 @@ MonoBehaviour:
   WalkSound: {fileID: 0}
   AttackSound: {fileID: 8300000, guid: 3c39908421b593e428bfb92105e49826, type: 3}
   isRanged: 1
-  MM_Projectile: {fileID: 7785568539873000610, guid: bc6ea25250a1d864eaba260066c6500c, type: 3}
+  Projectile: {fileID: 7785568539873000610, guid: bc6ea25250a1d864eaba260066c6500c, type: 3}
+  ability: {fileID: 0}
+  isShield: 0
+  armor: 1
+  damage: 5
+  NormDamage: 0
 --- !u!50 &852968959157846838
 Rigidbody2D:
   serializedVersion: 4

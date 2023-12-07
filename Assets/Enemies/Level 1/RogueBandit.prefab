@@ -542,7 +542,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1148696812026200811
 Transform:
   m_ObjectHideFlags: 0
@@ -573,6 +573,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  OnFire: 0
+  IsRooted: 0
+  FireTimer: 5
+  RootTimer: 2
   hitboxes:
   - {fileID: 8619385695382446174}
   - {fileID: 4633725779747832343}
@@ -584,7 +588,12 @@ MonoBehaviour:
   WalkSound: {fileID: 0}
   AttackSound: {fileID: 8300000, guid: 20d468f57e4849b44876368f5e2c878f, type: 3}
   isRanged: 0
-  MM_Projectile: {fileID: 0}
+  Projectile: {fileID: 0}
+  ability: {fileID: 0}
+  isShield: 0
+  armor: 1
+  damage: 5
+  NormDamage: 0
 --- !u!50 &5704954923129644050
 Rigidbody2D:
   serializedVersion: 4

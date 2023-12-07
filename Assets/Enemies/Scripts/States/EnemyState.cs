@@ -40,7 +40,9 @@ public class EnemyState
         enemy.audioSource.Play();
     }
 
-    public virtual void RangedAttack(string name)
+    public virtual void RangedAttack(Rigidbody2D rb)
     {
+        Rigidbody2D obj = GameObject.Instantiate(rb, enemy.transform.position, Quaternion.identity);
+        obj.transform.parent = enemy.transform;
     }
 }

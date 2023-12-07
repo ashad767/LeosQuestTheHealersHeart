@@ -44,11 +44,28 @@ public class AnimFunctions : MonoBehaviour
 
     public void RangedAttack()
     {
-        enemy.enemySM.CurrentEnemyState.RangedAttack(enemy.gameObject.name);
+        enemy.enemySM.CurrentEnemyState.RangedAttack(enemy.Projectile);
     }
 
     public void OnExplode()
     {
         Destroy(this.gameObject);
+    }
+
+    public void CheckIsReady()
+    {
+        ShadowImp_Ability shadowAb = GetComponentInParent<ShadowImp_Ability>();
+        if(shadowAb.cooldown <= 0f)
+            shadowAb.isReady = true;
+    }
+
+    public void CheckHeavyAttack()
+    {
+        enemy.ability.OnAbility();
+    }
+
+    public void NormalAttack()
+    {
+        
     }
 }
