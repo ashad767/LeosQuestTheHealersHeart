@@ -11,6 +11,7 @@ public class Enemy : Entity
     public GameObject Player { get; set; }
     public HitBox[] hitboxes;
     private Vector2 direction;
+    public bool IsDead = false;
 
     #region SM Variables
 
@@ -73,6 +74,8 @@ public class Enemy : Entity
         DeadState = new EnemyDead(this, enemySM, "Dead");
         AttackRangedState = new EnemyRangedAttack(this, enemySM, "RangedAttack");
         AttackHeavyState = new EnemyHeavyAttack(this, enemySM, "HeavyAttack");
+
+        GetComponentInChildren<SpriteRenderer>().sharedMaterial.SetFloat("_Fade", 1f);
 
         Player = GameObject.FindGameObjectWithTag("Player");
     }

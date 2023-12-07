@@ -5,10 +5,12 @@ using UnityEngine;
 public class AnimFunctions : MonoBehaviour
 {
     public Enemy enemy;
+    public Animator anim;
 
     public void Awake()
     {
         enemy = GetComponentInParent<Enemy>();
+        anim = GetComponent<Animator>();
     }
 
     public void OnAttack()
@@ -31,7 +33,8 @@ public class AnimFunctions : MonoBehaviour
 
     public void OnDead()
     {
-        Destroy(enemy.gameObject);
+        anim.speed = 0f;
+        enemy.IsDead = true;
     }
 
     public void CheckAttack()

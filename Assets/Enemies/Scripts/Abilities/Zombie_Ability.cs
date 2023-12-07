@@ -5,7 +5,6 @@ using UnityEngine;
 public class Zombie_Ability : Ability
 {
     private Enemy enemy;
-    public int chance;
     private AudioSource audioSource;
 
     private void Start()

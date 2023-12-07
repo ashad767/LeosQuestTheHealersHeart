@@ -8,6 +8,7 @@ public class Ability : MonoBehaviour
     [SerializeField] public float cooldown;
     public bool collided = false;
     protected Player player;
+    public int chance;
 
     private void Awake()
     {

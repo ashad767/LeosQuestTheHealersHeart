@@ -144,15 +144,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  OnFire: 0
   IsRooted: 0
-  FireTimer: 5
   RootTimer: 2
   hitboxes:
   - {fileID: 6021727791872549852}
   - {fileID: 1797340992303435100}
   - {fileID: 8219966091737008583}
   - {fileID: 9172401406455293492}
+  IsDead: 0
   MovementRange: 5
   MovementSpeed: 1
   audioSource: {fileID: 0}
@@ -180,6 +179,7 @@ MonoBehaviour:
   PlayerTransform: {fileID: 0}
   cooldown: 0
   collided: 0
+  chance: 0
   timer: 5
   OnFire: 0
   pRB: {fileID: 0}
@@ -442,7 +442,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: d548622216a5c6043bd4cea6e3581489, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -460,8 +460,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1752717529
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: -1766850570, guid: ffe0f90944ad0fe479faf0f27b1383fd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -508,6 +508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 0}
+  anim: {fileID: 0}
 --- !u!1 &6765237559776737526
 GameObject:
   m_ObjectHideFlags: 0

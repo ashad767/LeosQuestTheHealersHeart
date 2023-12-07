@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class SR_Ability : Ability
 {
-    private float chance;
     public float timer = 2f;
     public bool OnFire = false;
     public Rigidbody2D pRB;
@@ -44,9 +43,8 @@ public class SR_Ability : Ability
         {
             chance = Random.Range(0, 4);
 
-            if (chance == 0 && !player.OnFire)
+            if (chance == 0)
             {
-                player.OnFire = true;
                 cooldown = 5f;
                 collided = false;
             }

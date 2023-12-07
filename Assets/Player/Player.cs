@@ -353,7 +353,7 @@ public class Player : Entity
     {
         if(skillPoints > 0)
         {
-            
+            Debug.Log(skillPoints);
             if(skill == 0 && swordLevel != 3)
             {
                 swordLevel = Math.Min(swordLevel + 1, 3);

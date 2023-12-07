@@ -13,6 +13,7 @@ public class TabMenuFunctions : MonoBehaviour
 
     public void UpgradeBowButton()
     {
+        Debug.Log("Your phone linging");
         player.UpgradeSkill(1);
     }
 

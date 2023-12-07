@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class WB_Ability : Ability
 {
-    private float chance;
     public float timer = 2f;
     public bool stunned = false;
     public Rigidbody2D pRB;

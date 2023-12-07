@@ -12,6 +12,7 @@ public class EnemyProjectile : MonoBehaviour
     protected Vector2 arrowVelocity;
     public Vector3 direction;
     public Transform PlayerTransform;
+    public GameObject FireEffect;
 
     protected virtual void Start()
     {
@@ -50,12 +51,18 @@ public class EnemyProjectile : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Ability ab = GetComponentInParent<Ability>();
+            
             if(ab != null)
             {
                 if(!ab.collided)
                 {
                     ab.collided = true;
                     //ab.OnAbility();
+                }
+                if (ab is SR_Ability && ab.chance == 0)
+                {
+                    GameObject addedEffect = Instantiate(FireEffect);
+                    addedEffect.transform.SetParent(collision.transform);
                 }
             }
         }
