@@ -22,6 +22,8 @@ public class NPC : MonoBehaviour
     public float wordSpeed;
     public bool isRange;
 
+    public bool isCurrentlyTalking;
+
     public bool isType;
 
     void Start()
@@ -29,14 +31,18 @@ public class NPC : MonoBehaviour
     {
         isType = false;
         timesTalked = 0;
+        isCurrentlyTalking = false;
         dialogueText.text = "";
     }
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E) && isRange && timesTalked < 1)
+
+        if(Input.GetKeyDown(KeyCode.E) && isRange && timesTalked < 1 && !isCurrentlyTalking)
         {
-            
+            isType = false;
+            isCurrentlyTalking = true;
+
             if (dialoguePanel.activeInHierarchy)
             {
                 resetText();
@@ -47,8 +53,9 @@ public class NPC : MonoBehaviour
                 StartCoroutine(Typing());
             }
         }
-        else if(Input.GetKeyDown(KeyCode.E) && isRange && timesTalked > 0)
+        else if(Input.GetKeyDown(KeyCode.E) && isRange && timesTalked > 0 && !isCurrentlyTalking)
         {
+            isCurrentlyTalking = true;
             if (dialoguePanel.activeInHierarchy)
             {
                 resetText();
@@ -77,11 +84,13 @@ public class NPC : MonoBehaviour
         index = 0;
         dialoguePanel.SetActive(false);
         timesTalked++;
+        isCurrentlyTalking = false;
     }
 
     public void NextLine()
     {
         isType = false;
+        isCurrentlyTalking=true;
         button.SetActive(false);
         if (timesTalked <1)
         {
@@ -98,9 +107,7 @@ public class NPC : MonoBehaviour
         }
         else if(timesTalked > 0)
         {
-            button.SetActive(false);
-            dialoguePanel.SetActive(false);
-            dialogueText.text = "";
+            resetText();
 
 
         }
@@ -108,6 +115,7 @@ public class NPC : MonoBehaviour
 
     IEnumerator Typing()
     {
+        dialogueText.text = "";
         foreach (char letter in dialogue[index].ToCharArray())
         {
             dialogueText.text += letter;
@@ -117,14 +125,15 @@ public class NPC : MonoBehaviour
                 dialogueText.text = dialogue[index];
                 break;
             }
-            isType = false;
+            
             yield return new WaitForSeconds(wordSpeed);
         }
+        isType = false;
     }
 
     IEnumerator RandomTyping()
     {
-        int randomPhrase = Random.Range(0, randomDialogue.Length - 1);
+        int randomPhrase = Random.Range(0, randomDialogue.Length);
         dialogueText.text = "";
         foreach (char letter in randomDialogue[randomPhrase].ToCharArray())
         {
@@ -139,7 +148,7 @@ public class NPC : MonoBehaviour
             yield return new WaitForSeconds(wordSpeed);
         }
         button.SetActive(true);
-
+        isCurrentlyTalking = false;
         isType = false;
     }
 
