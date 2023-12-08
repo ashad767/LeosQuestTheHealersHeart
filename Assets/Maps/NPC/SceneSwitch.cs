@@ -6,7 +6,6 @@ public class SceneSwitch : MonoBehaviour
 
 {
     public Player player;
-    public GameObject playerCutsceneSprite;
     public Vector3 NextRoom;
 
     public GameObject CameraStuff;
@@ -22,7 +21,6 @@ public class SceneSwitch : MonoBehaviour
     public void CutSceneSceneSwitch()
     {
         player.transform.position = NextRoom;
-        playerCutsceneSprite.transform.position = NextRoom;
         CameraStuff.transform.position = player.transform.position;
     }
     private void OnTriggerEnter2D(Collider2D other)
