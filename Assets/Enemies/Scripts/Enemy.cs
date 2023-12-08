@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Enemy : Entity
 {
@@ -89,12 +90,17 @@ public class Enemy : Entity
         enemySM.Initialize(WalkState);
         ability = GetComponentInChildren<Ability>();
         NormDamage = damage;
+
+        var agent = GetComponent<NavMeshAgent>();
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
     }
 
     // Update is called once per frame
     protected override void Update()
     {
         base.Update();
+ 
         enemySM.CurrentEnemyState.FrameUpdate();
         if(CurrentHealth == 0)
         {
@@ -104,6 +110,7 @@ public class Enemy : Entity
         {
             ability.cooldown -= Time.deltaTime;
         }
+
     }
 
     private void FixedUpdate()
@@ -183,4 +190,14 @@ public class Enemy : Entity
             Debug.Log(name + "'s health is now " + CurrentHealth);
         }
     }
+
+    /*private void OnCollisionEnter2D(Collision2D collision)
+    {
+        //Debug.Log("collided");
+        if (enemySM.CurrentEnemyState == WalkState && collision.gameObject.CompareTag("collisionTilemap"))
+        {
+            Debug.Log("collided");
+            WalkState.target = WalkState.GetRandomPoint();
+        }
+    }*/
 }
