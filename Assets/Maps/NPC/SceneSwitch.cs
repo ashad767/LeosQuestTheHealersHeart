@@ -9,6 +9,8 @@ public class SceneSwitch : MonoBehaviour
     public GameObject playerCutsceneSprite;
     public Vector3 NextRoom;
 
+    public GameObject CameraStuff;
+
     public string SceneToSwitchToo;
 
     public bool isSceneSwapper;
@@ -16,6 +18,7 @@ public class SceneSwitch : MonoBehaviour
     {
         player.transform.position = NextRoom;
         playerCutsceneSprite.transform.position = NextRoom;
+        CameraStuff.transform.position = player.transform.position;
     }
     private void OnTriggerEnter2D(Collider2D other)
     {

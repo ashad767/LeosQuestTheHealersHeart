@@ -435,7 +435,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 2068663586}
   playerCutsceneSprite: {fileID: 1571068911}
-  NextRoom: {x: -42, y: -36, z: 0}
+  NextRoom: {x: -42, y: -38, z: 0}
+  CameraStuff: {fileID: 1436890994}
   SceneToSwitchToo: 
   isSceneSwapper: 0
 --- !u!1 &546776278
@@ -565,7 +566,7 @@ MonoBehaviour:
   m_Follow: {fileID: 1571068912}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 10.63
+    OrthographicSize: 7
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -621,6 +622,8 @@ PlayableDirector:
     value: {fileID: 1391773380}
   - key: {fileID: -5031354756689273106, guid: b0a5d4977dce5364d9e9b8287c122f21, type: 2}
     value: {fileID: 1571068913}
+  - key: {fileID: -1037985131007719831, guid: b0a5d4977dce5364d9e9b8287c122f21, type: 2}
+    value: {fileID: 1571068911}
   m_ExposedReferences:
     m_References:
     - b90126b752c3d27419dec51786e68026: {fileID: 1122222405}
@@ -866,6 +869,7 @@ MonoBehaviour:
   player: {fileID: 2068663586}
   playerCutsceneSprite: {fileID: 1571068911}
   NextRoom: {x: 0, y: 0, z: 0}
+  CameraStuff: {fileID: 0}
   SceneToSwitchToo: Second Scene Village
   isSceneSwapper: 1
 --- !u!61 &1058376417
@@ -961,6 +965,7 @@ MonoBehaviour:
   player: {fileID: 2068663586}
   playerCutsceneSprite: {fileID: 1571068911}
   NextRoom: {x: -9, y: -8, z: 0}
+  CameraStuff: {fileID: 0}
   SceneToSwitchToo: 
   isSceneSwapper: 0
 --- !u!61 &1097985517
@@ -1135,7 +1140,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 9.81
+    OrthographicSize: 7
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -1167,7 +1172,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1132446785
 Transform:
   m_ObjectHideFlags: 0
@@ -1284,8 +1289,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1440883410891812076, guid: 69c5af59353862d49939c90ac894608e, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1440883410891812076, guid: 69c5af59353862d49939c90ac894608e, type: 3}
       propertyPath: orthographic size
       value: 8.4375
+      objectReference: {fileID: 0}
+    - target: {fileID: 1440883410891812076, guid: 69c5af59353862d49939c90ac894608e, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1440883410891812076, guid: 69c5af59353862d49939c90ac894608e, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1440883410891812076, guid: 69c5af59353862d49939c90ac894608e, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3950139213329852999, guid: 69c5af59353862d49939c90ac894608e, type: 3}
       propertyPath: m_LocalPosition.x
