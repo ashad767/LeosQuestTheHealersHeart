@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class SceneSwitch : MonoBehaviour
 
 {
@@ -9,6 +9,9 @@ public class SceneSwitch : MonoBehaviour
     public GameObject playerCutsceneSprite;
     public Vector3 NextRoom;
 
+    public string SceneToSwitchToo;
+
+    public bool isSceneSwapper;
     public void CutSceneSceneSwitch()
     {
         player.transform.position = NextRoom;
@@ -17,10 +20,21 @@ public class SceneSwitch : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
 
-        if (other.CompareTag("Player"))
+        if (!isSceneSwapper)
         {
+            if (other.CompareTag("Player"))
+            {
 
-            player.transform.position = NextRoom;
+                player.transform.position = NextRoom;
+            }
+        }
+        else
+        {
+            if (other.CompareTag("Player"))
+            {
+
+                SceneManager.LoadScene(SceneToSwitchToo);
+            }
         }
     }
 }
