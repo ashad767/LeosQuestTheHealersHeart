@@ -232,10 +232,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: RogueBandit
       objectReference: {fileID: 0}
-    - target: {fileID: 4350949897600015410, guid: 94f4216252a6ed84599d7558d1abed07, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -932,10 +928,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkeletonRevenant
       objectReference: {fileID: 0}
-    - target: {fileID: 1651064276182314888, guid: 79c1c7a523b96be4989e8cea7faef4fc, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8897890066086072108, guid: 79c1c7a523b96be4989e8cea7faef4fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.5
@@ -992,10 +984,6 @@ PrefabInstance:
     - target: {fileID: 1057799926421333593, guid: 15daa26a0f1278245b1ef98593fadcb0, type: 3}
       propertyPath: m_Name
       value: ZombieMiner
-      objectReference: {fileID: 0}
-    - target: {fileID: 1057799926421333593, guid: 15daa26a0f1278245b1ef98593fadcb0, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4987971529764300115, guid: 15daa26a0f1278245b1ef98593fadcb0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1093,10 +1081,6 @@ PrefabInstance:
     - target: {fileID: 3934995787567752555, guid: d9d1f7c261dc75747a915b6759f58089, type: 3}
       propertyPath: m_Name
       value: ShadowImp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3934995787567752555, guid: d9d1f7c261dc75747a915b6759f58089, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

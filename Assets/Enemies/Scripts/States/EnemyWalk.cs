@@ -6,9 +6,11 @@ public class EnemyWalk : EnemyState
 {
     private Vector3 target;
     private Vector3 direction;
+    private BoxCollider2D bc;
 
     public EnemyWalk(Enemy enemy, EnemySM enemySM, string AnimBoolName) : base(enemy, enemySM, AnimBoolName)
     {
+        bc = enemy.GetComponentInChildren<BoxCollider2D>();
     }
 
     public override void EnterState()
@@ -37,6 +39,8 @@ public class EnemyWalk : EnemyState
         {
             target = GetRandomPoint();
         }
+
+        OnTriggerEnter2D(bc);
     }
 
     public override void AnimationTriggerEvent(AudioClip audioClip)
@@ -47,5 +51,13 @@ public class EnemyWalk : EnemyState
     private Vector3 GetRandomPoint()
     {
         return enemy.transform.position + (Vector3)UnityEngine.Random.insideUnitCircle * enemy.MovementRange;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("WALL"))
+        {
+            target = GetRandomPoint();
+        }
     }
 }
