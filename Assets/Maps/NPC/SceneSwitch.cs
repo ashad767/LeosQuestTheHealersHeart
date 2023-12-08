@@ -17,7 +17,7 @@ public class SceneSwitch : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(playerCutsceneSprite.transform.position);
+        //Debug.Log(playerCutsceneSprite.transform.position);
     }
     public void CutSceneSceneSwitch()
     {
