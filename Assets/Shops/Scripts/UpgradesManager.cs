@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using System.IO;
 using static UnityEditor.Progress;
 
-public class ShopManager : MonoBehaviour
+public class UpgradesManager : MonoBehaviour
 {
     private int playerCoins = 1000;
     public TextMeshProUGUI playerCoinsTxt;
@@ -61,7 +61,7 @@ public class ShopManager : MonoBehaviour
 
             PlayerPrefs.SetString(i.ToString(), string.Join(",", pointer_and_cost));
         }
-        
+
         PlayerPrefs.Save();
     }
 

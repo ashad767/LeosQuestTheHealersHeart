@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class DetectPlayer : MonoBehaviour
@@ -8,7 +9,7 @@ public class DetectPlayer : MonoBehaviour
     [SerializeField] private Transform player;
     [SerializeField] private GameObject E_Key;
     [SerializeField] private GameObject toggleShop;
-
+    
     private bool isPlayerInside = false;
 
     // Update is called once per frame

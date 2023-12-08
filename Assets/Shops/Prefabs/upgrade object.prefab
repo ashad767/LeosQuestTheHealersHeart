@@ -1140,7 +1140,7 @@ GameObject:
   - component: {fileID: 7293429531548925978}
   - component: {fileID: 4263066536476029502}
   m_Layer: 5
-  m_Name: Item
+  m_Name: upgrade object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1155,7 +1155,7 @@ RectTransform:
   m_GameObject: {fileID: 7476053498459498371}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9231105, y: 1, z: 1}
+  m_LocalScale: {x: 0.8757785, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1415398528304894600}
@@ -1167,11 +1167,11 @@ RectTransform:
   - {fileID: 1317642138158326814}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -386, y: -93.52869}
-  m_SizeDelta: {x: 845.0773, y: 93.52869}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -48.5}
+  m_SizeDelta: {x: 0, y: 97}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8983135665379369186
 CanvasRenderer:
   m_ObjectHideFlags: 0
