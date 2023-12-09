@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Player : Entity
 {
@@ -140,6 +141,9 @@ public class Player : Entity
         rb = GetComponent<Rigidbody2D>();
 
         stateMachine.Initialize(idleState);
+        var agent = GetComponent<NavMeshAgent>();
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
     }
 
     protected override void Update()
