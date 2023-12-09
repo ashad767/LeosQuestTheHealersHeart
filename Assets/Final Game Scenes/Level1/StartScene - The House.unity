@@ -294,55 +294,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5710cb6c3d5be442b244accee17fd55, type: 3}
---- !u!1 &209463553 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8544879687108118268, guid: c5710cb6c3d5be442b244accee17fd55, type: 3}
-  m_PrefabInstance: {fileID: 209463552}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &209463554 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 945222565524724271, guid: c5710cb6c3d5be442b244accee17fd55, type: 3}
-  m_PrefabInstance: {fileID: 209463552}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &209463555 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7081653967822431585, guid: c5710cb6c3d5be442b244accee17fd55, type: 3}
-  m_PrefabInstance: {fileID: 209463552}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &209463556 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7981495704839957294, guid: c5710cb6c3d5be442b244accee17fd55, type: 3}
-  m_PrefabInstance: {fileID: 209463552}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &209463557 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6346365250467364898, guid: c5710cb6c3d5be442b244accee17fd55, type: 3}
-  m_PrefabInstance: {fileID: 209463552}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &491768676
 GameObject:
   m_ObjectHideFlags: 0
@@ -1772,12 +1723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 526dad28830252646b9936c343956675, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TabMenu: {fileID: 209463553}
   player: {fileID: 17045006}
-  playerInfo: {fileID: 209463554}
-  swordLvl: {fileID: 209463557}
-  bowLvl: {fileID: 209463556}
-  magicLvl: {fileID: 209463555}
   mainCamera: {fileID: 1436890994}
   CutsceneCameras: {fileID: 1132446784}
 --- !u!4 &1696773755
