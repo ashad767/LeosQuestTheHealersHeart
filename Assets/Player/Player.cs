@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -57,6 +58,7 @@ public class Player : Entity
 
     private float coinMultiplier = 1;
     private float armour = 1;
+    public Dictionary<string, string> quests = new Dictionary<string, string>();
 
     #endregion
 
@@ -427,6 +429,23 @@ public class Player : Entity
         armour += coinIncrease;
     }
 
+    public void AddQuest(string questKey,  string questName)
+    {
+        quests.Add(questKey, questName);
+    }
+
+    public void RemoveQuest(string questKey)
+    {
+        if (quests.ContainsKey(questKey))
+        {
+            quests.Remove(questKey);
+        }
+        else
+        {
+            Debug.Log("Quest not found");
+        }
+    }
+
     public void TestInputs()
     {
         if (Input.GetKeyDown(KeyCode.Insert))
@@ -440,5 +459,10 @@ public class Player : Entity
             AddCoins(1);
         if (Input.GetKeyDown(KeyCode.KeypadMinus))
             TakeDamage(5);
+
+        if (Input.GetKeyDown(KeyCode.LeftBracket))
+            AddQuest("Test", "This is a test quest");
+        if (Input.GetKeyDown(KeyCode.RightBracket))
+            RemoveQuest("Test");
     }
 }
