@@ -8,6 +8,7 @@ public class greenBallCollider : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            collision.gameObject.GetComponent<Player>().TakeDamage(1f);
             Destroy(gameObject);
         }
     }

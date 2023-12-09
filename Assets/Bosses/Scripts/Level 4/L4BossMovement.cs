@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class L4BossMovement : MonoBehaviour
+public class L4BossMovement : Entity
 {
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private Animator a;
+    [SerializeField] private CircleCollider2D triggerCircle;
     [SerializeField] private AnimationClip[] animLength;
     [SerializeField] private Transform MC;
     [SerializeField] private Slider healthBar;
@@ -36,11 +37,6 @@ public class L4BossMovement : MonoBehaviour
     [SerializeField] private fireCircleManager fCM;
     #endregion
 
-    #region Health
-    public float currentHealth = 100f;
-    public float maxHealth = 100f;
-    #endregion
-
     #region Audio
     [SerializeField] AudioSource swordClingAudio;
     [SerializeField] AudioSource roarAudio;
@@ -48,34 +44,50 @@ public class L4BossMovement : MonoBehaviour
     #endregion
 
     // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
+        base.Start(); // Simply sets "CurrentHealth = maxHealth;"
+
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         a = GetComponent<Animator>();
+        triggerCircle = GetComponentInChildren<CircleCollider2D>();
 
         StartCoroutine(follow_MC());
         StartCoroutine(fireBallRain());
         StartCoroutine(pickAbility());
-        StartCoroutine(dummyBossHitTester());
-
     }
 
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
-        // Flip boss sprite on its X axis depending on if the MC is left or right of the boss
-        sr.flipX = MC.position.x > transform.position.x;
+        if (MC != null)
+        {
+            // Flip boss sprite on its X axis depending on if the MC is left or right of the boss
+            sr.flipX = MC.position.x > transform.position.x;
 
-        if (idle && !attack && !expandFireCircleAnim && !rocksFallAnim)
+            if (idle && !attack && !expandFireCircleAnim && !rocksFallAnim)
+            {
+                a.SetInteger("state", (int)States.idle);
+            }
+
+            // Make the boss move towards MC when boss is not doing any of the following:
+            if (!idle && !attack && !expandFireCircleAnim && !rocksFallAnim && !dead)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, MC.position, 3f * Time.deltaTime);
+            }
+        }
+
+        // If player dies, just go idle
+        else
         {
             a.SetInteger("state", (int)States.idle);
         }
-
-        // Make the boss move towards MC when MC is NOT idle
-        if (!idle && !attack && !expandFireCircleAnim && !rocksFallAnim && !dead)
+        
+        // Boss death
+        if (GetHealth() <= 0 && !dead)
         {
-            transform.position = Vector2.MoveTowards(transform.position, MC.position, 5f * Time.deltaTime);
+            StartCoroutine(BossDeath());
         }
     }
 
@@ -112,7 +124,7 @@ public class L4BossMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (!dead && collision.gameObject.CompareTag("Player"))
         {
             if (!attackInProgress)
             {
@@ -127,13 +139,28 @@ public class L4BossMovement : MonoBehaviour
     
     private IEnumerator attackFunc()
     {
-        if(!expandFireCircleAnim && !rocksFallAnim)
-        {
-            swordClingAudio.Play();
-        }
-
         yield return new WaitForSeconds(animLength[0].length);
         attackInProgress = false; // Reset the attack flag to let the next attack audio & animation play (if any)
+    }
+
+    // used by event trigger in animation window
+    private void playSwordSlash()
+    {
+        swordClingAudio.Play();
+        isPlayerHit(1f);
+    }
+
+    private void isPlayerHit(float damage)
+    {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(triggerCircle.transform.position, triggerCircle.radius + 0.5f);
+
+        foreach (Collider2D col in colliders)
+        {
+            if (col.gameObject.CompareTag("Player"))
+            {
+                col.gameObject.GetComponent<Player>().TakeDamage(damage);
+            }
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -163,13 +190,14 @@ public class L4BossMovement : MonoBehaviour
         
         yield return new WaitForSeconds(Random.Range(5f, 10f)); // Wait 5-10 sec before giving the chance to start a fireball rain
 
-        while (true)
+        while (MC != null && true)
         {
             if (!startFireBallRainIsActive)
             {
                 startFireBallRainIsActive = true;
                 GameObject startFireBallRain = Instantiate(startFireBallRainPrefab, transform.position, Quaternion.identity);
                 startFireBallRain.transform.SetParent(transform);
+                startFireBallRain.GetComponent<FireBallRain>().isBossDead = this;
 
                 startFireBallRainPrefabInstance = GameObject.FindWithTag("startFireBallRain");
             }
@@ -204,13 +232,12 @@ public class L4BossMovement : MonoBehaviour
 
     private IEnumerator rocksFallAnimFunction()
     {
-        rocksFallAnim = true;
-        
         StartCoroutine(rocksFall());
+        
+        rocksFallAnim = true;
         a.SetInteger("state", (int)States.rocksFallState);
         roarAudio.Play();
         yield return new WaitForSeconds(animLength[2].length);
-        
         rocksFallAnim = false;
 
         // If the boss was walking before this animation, transition back to walking animation
@@ -231,7 +258,7 @@ public class L4BossMovement : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
 
-        while (true)
+        while (MC != null && true)
         {
             if(Random.Range(0f, 1f) <= 0.5f)
             {
@@ -248,37 +275,31 @@ public class L4BossMovement : MonoBehaviour
         }
     }
 
-    private IEnumerator dummyBossHitTester()
+    //private IEnumerator TakeDamageAnimation()
+    //{
+    //    Color originalColor = sr.color;
+    //    Color hitEffect = sr.color;
+
+    //    // When boss gets hit, I want to momentarily make the boss go slighlty transparent, then back to its original color
+    //    hitEffect.a = 0.2f;
+    //    sr.color = hitEffect;
+    //    yield return new WaitForSeconds(0.1f);
+    //    sr.color = originalColor;
+    //}
+
+
+    private IEnumerator BossDeath()
     {
-        while (true)
-        {
-            Color originalColor = sr.color;
-            Color hitEffect = sr.color;
+        dead = true;
+        rb.bodyType = RigidbodyType2D.Static;
+        a.SetTrigger("death"); // show death animation
+        deathAudio.Play();
 
-            yield return new WaitForSeconds(1f);
-            currentHealth -= 10f;
+        destroyGameManagers();
+        destroyPrefabs();
 
-            // When boss gets hit, I want to momentarily make the boss go slighlty transparent, then back to its original color
-            hitEffect.a = 0.2f;
-            sr.color = hitEffect;
-            yield return new WaitForSeconds(0.1f);
-            sr.color = originalColor;
-
-            if (currentHealth <= 0f)
-            {
-                dead = true;
-                GetComponent<CircleCollider2D>().enabled = false;
-                rb.bodyType = RigidbodyType2D.Static;
-                a.SetTrigger("death"); // show death animation
-                deathAudio.Play();
-
-                destroyGameManagers();
-                destroyChildren();
-
-                yield return new WaitForSeconds(deathAudio.clip.length - 0.5f);
-                Destroy(gameObject); // Destroys boss gameobject
-            }
-        }
+        yield return new WaitForSeconds(deathAudio.clip.length - 0.5f);
+        Destroy(gameObject); // Destroys boss gameobject
     }
 
     private void destroyGameManagers()
@@ -291,26 +312,14 @@ public class L4BossMovement : MonoBehaviour
         }
     }
 
-    private void destroyChildren()
+    private void destroyPrefabs()
     {
-        // Iterate through each child of the boss GameObject
-        foreach (Transform child in transform)
-        {
-            // Destroy the child GameObject
-            Destroy(child.gameObject);
-        }
-    }
-
-    private void OnDestroy()
-    {
-        healthBar.gameObject.SetActive(false); // Hide the boss healthbar from view after boss dies
-
         // Find all active prefabs in the scene and destroy them
         GameObject[] fireballCircleToDestroy = GameObject.FindGameObjectsWithTag("fireballCircle");
         GameObject[] fireballToDestroy = GameObject.FindGameObjectsWithTag("fireball");
         GameObject[] rocksToDestroy = GameObject.FindGameObjectsWithTag("rocks");
 
-        
+
         foreach (GameObject fireballCircle in fireballCircleToDestroy)
         {
             Destroy(fireballCircle);
@@ -325,5 +334,11 @@ public class L4BossMovement : MonoBehaviour
         {
             Destroy(rock);
         }
+    }
+
+
+    private void OnDestroy()
+    {
+        Destroy(healthBar.gameObject);
     }
 }

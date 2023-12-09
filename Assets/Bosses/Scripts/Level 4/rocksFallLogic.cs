@@ -6,7 +6,7 @@ public class rocksFallLogic : MonoBehaviour
 {
     private Rigidbody2D rb;
     float impactPos;
-
+    
     // Prefabs
     [SerializeField] private GameObject rockImpactPrefab;
     [SerializeField] private GameObject rockExplosionPrefab;
@@ -54,6 +54,7 @@ public class rocksFallLogic : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            collision.gameObject.GetComponent<Player>().TakeDamage(5f);
             destroyRock();
         }
     }

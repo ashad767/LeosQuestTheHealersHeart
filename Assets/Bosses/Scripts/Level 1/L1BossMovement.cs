@@ -4,21 +4,17 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class L1BossMovement : MonoBehaviour
+public class L1BossMovement : Entity
 {
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private Animator a;
+    [SerializeField] private CircleCollider2D triggerCircle;
     [SerializeField] private AnimationClip[] anim; // Some of the boss animations. Using it to access their lengths
     [SerializeField] private Transform MC;
     private Transform pulseCircle; // first circle in buff effect
     private Transform donutCircle; // second circle in buff effect
     [SerializeField] private Slider healthBar;
-
-    #region Health
-    public float currentHealth = 100f;
-    public float maxHealth = 100f;
-    #endregion
 
     #region Prefabs
     [SerializeField] GameObject sawPrefab;
@@ -44,6 +40,7 @@ public class L1BossMovement : MonoBehaviour
 
     private bool attack = false; // Used to control animation states
     private bool attackInProgress = false; // Used as a flag in case of repeated sword attacks by the boss
+    private float damage = 1f;
 
     private bool jump = false;
     private bool activateBuff = false;
@@ -60,8 +57,10 @@ public class L1BossMovement : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
+        base.Start(); // Simply sets "CurrentHealth = maxHealth;"
+
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         a = GetComponent<Animator>();
@@ -70,27 +69,41 @@ public class L1BossMovement : MonoBehaviour
         donutCircle = transform.Find("Donut");
 
         StartCoroutine(follow_MC());
-        StartCoroutine(dummyBossHitTester());
     }
 
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
-        // used for my Blend Tree
-        Vector2 dir = MC.position - transform.position;
-        dir.Normalize();
-        a.SetFloat("dirX", dir.x);
-        a.SetFloat("dirY", dir.y);
+        if(MC != null)
+        {
+            // used for my Blend Tree
+            Vector2 dir = MC.position - transform.position;
+            dir.Normalize();
+            a.SetFloat("dirX", dir.x);
+            a.SetFloat("dirY", dir.y);
 
-        if (idle && !attack)
+            if (idle && !attack)
+            {
+                a.SetInteger("state", (int)States.idle);
+            }
+
+            float movementSpeed = buffRunning ? 5.5f : 3.5f;
+            if (!idle && !jump && !attack && !activateBuff && !dead)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, MC.position, movementSpeed * Time.deltaTime);
+            }
+        }
+
+        // If player dies, just go idle
+        else
         {
             a.SetInteger("state", (int)States.idle);
         }
 
-        float movementSpeed = buffRunning ? 5.5f : 4f;
-        if (!idle && !jump && !attack && !activateBuff && !dead)
+        // Boss death
+        if (GetHealth() <= 0 && !dead)
         {
-            transform.position = Vector2.MoveTowards(transform.position, MC.position, movementSpeed * Time.deltaTime);
+            StartCoroutine(BossDeath());
         }
     }
 
@@ -113,14 +126,14 @@ public class L1BossMovement : MonoBehaviour
             walk = false;
 
             // after walking for some time, do jump ability (if boss isn't dead)
-            if (!dead) { StartCoroutine(jumpFunc()); }
+            if (!dead && MC != null) { StartCoroutine(jumpFunc()); }
 
             // Control comes back here after the first 'yield' call runs in jumpFunc() coroutine.
             // This is why when the attack animation happened right before the jump animation, the attack animation triggered and finishes during the jump animation duration, and since after that attack=false and idle=true, the idle animation happens while jumping. This is why I added a 1s exit time duration from attack -> jump animations to fix this bug.
             yield return new WaitForSeconds((anim[2].length * 2) + jumpDuration);
 
             // while the power up is running, I don't want to spawn saws in. Also, saws have a 55% chance of being spawned
-            if (!buffRunning && !dead)
+            if (!buffRunning && MC != null && !dead)
             {
                 if (Random.Range(0f, 1f) <= 0.55f)
                 {
@@ -161,10 +174,28 @@ public class L1BossMovement : MonoBehaviour
 
     private IEnumerator attackFunc()
     {
-        swordSwing.Play();
-
         yield return new WaitForSeconds(anim[1].length);
         attackInProgress = false; // Reset the attack flag to let the next attack audio & animation play (if any)
+    }
+
+    // used by event trigger in animation window
+    private void playSwordSwing()
+    {
+        swordSwing.Play();
+        isPlayerHit();
+    }
+
+    private void isPlayerHit()
+    {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(triggerCircle.transform.position, triggerCircle.radius + 0.5f);
+
+        foreach (Collider2D col in colliders)
+        {
+            if (col.gameObject.CompareTag("Player"))
+            {
+                col.gameObject.GetComponent<Player>().TakeDamage(damage);
+            }
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -191,6 +222,7 @@ public class L1BossMovement : MonoBehaviour
     private IEnumerator fearFunc()
     {
         activateBuff = true;
+        damage = 2f;
         a.SetInteger("state", (int)States.fear);
         loadPowerUp(); // power up animation
         powerUp.Play();
@@ -250,6 +282,7 @@ public class L1BossMovement : MonoBehaviour
         }
 
         buffRunning = false;
+        damage = 1f;
         powerUpPulse.Stop();
         pulseCircle.GetComponent<SpriteRenderer>().enabled = false;
         donutCircle.GetComponent<SpriteRenderer>().enabled = false;
@@ -263,8 +296,6 @@ public class L1BossMovement : MonoBehaviour
 
     private IEnumerator jumpFunc()
     {
-        float originalRadius = GetComponent<CircleCollider2D>().radius;
-
         // For the boss' jump animation, I want to first take a snapshot of the MC's position before jumping. I also need the jump duration as well as the elapsed time of the jump.
         // To make a parabolic jump from the boss' position to the snapshot of MC's position, I have to use a combination of the sine function and linear interpolation.
         // I'll explain each line and what its function is in the jump animation (I've commented the line #s)
@@ -284,8 +315,6 @@ public class L1BossMovement : MonoBehaviour
         // disable the fear circle sprites when jumping (looks better this way ig)
         pulseCircle.GetComponent<SpriteRenderer>().enabled = false;
         donutCircle.GetComponent<SpriteRenderer>().enabled = false;
-
-        GetComponent<CircleCollider2D>().radius = 0f; // When boss jumps, don't want a collider on him
 
         float timeElapsed = 0.0f; // time elapsed from the beginning of jump until the end
         snapshotMCPosition = MC.position;
@@ -314,14 +343,10 @@ public class L1BossMovement : MonoBehaviour
             donutCircle.GetComponent<SpriteRenderer>().enabled = true;
         }
 
-        // splash damage from jump landing (double the boss' box collider to imitate splash damage)
-        GetComponent<CircleCollider2D>().radius = originalRadius * 2; 
-
         a.SetTrigger("land"); // Trigger landing animation
         jumpLanding.Play();
         yield return new WaitForSeconds(anim[2].length);
         
-        GetComponent<CircleCollider2D>().radius = originalRadius; // reset box collider size from splash damage effect
         if (buffRunning) { powerUpPulse.Play(); }
 
         jump = false;
@@ -347,37 +372,19 @@ public class L1BossMovement : MonoBehaviour
         Instantiate(sawPrefab, sawPos, Quaternion.identity);
     }
 
-    private IEnumerator dummyBossHitTester()
+    
+    private IEnumerator BossDeath()
     {
-        while (true)
-        {
-            Color originalColor = sr.color;
-            Color hitEffect = sr.color;
+        dead = true;
+        rb.bodyType = RigidbodyType2D.Static;
+        a.SetTrigger("death"); // show death animation
+        deathAudio.Play();
 
-            yield return new WaitForSeconds(2f);
-            currentHealth -= 5f;
+        destroySaws();
+        destroyChildren();
 
-            // When boss gets hit, I want to momentarily make the boss go slighlty transparent, then back to its original/angry color
-            hitEffect.a = 0.3f;
-            sr.color = hitEffect;
-            yield return new WaitForSeconds(0.12f);
-            sr.color = originalColor;
-
-            if (currentHealth <= 0f)
-            {
-                dead = true;
-                GetComponent<CircleCollider2D>().enabled = false;
-                rb.bodyType = RigidbodyType2D.Static;
-                a.SetTrigger("death"); // show death animation
-                deathAudio.Play();
-
-                destroySaws();
-                destroyChildren();
-
-                yield return new WaitForSeconds(deathAudio.clip.length - 0.2f);
-                Destroy(gameObject); // Destroys boss gameobjects
-            }
-        }
+        yield return new WaitForSeconds(deathAudio.clip.length - 0.2f);
+        Destroy(gameObject); // Destroys boss gameobject
     }
 
     private void destroySaws()
@@ -403,6 +410,6 @@ public class L1BossMovement : MonoBehaviour
 
     private void OnDestroy()
     {
-        healthBar.gameObject.SetActive(false); // Hide the boss healthbar from view after boss dies
+        Destroy(healthBar.gameObject);
     }
 }

@@ -24,7 +24,7 @@ public class L2Health : MonoBehaviour
     {
         if(wizard != null)
         {
-            slider.value = wizard.currentHealth / wizard.maxHealth;
+            slider.value = wizard.GetHealth() / wizard.maxHealth;
         }
 
         if (slider.value <= slider.minValue )

@@ -5,7 +5,7 @@ using UnityEngine;
 public class rocksFallManager : MonoBehaviour
 {
     [SerializeField] private GameObject[] rocksFallPrefabs;
-    
+
     Camera mainCamera;
     float frustumHeight;
     float frustumWidth;

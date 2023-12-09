@@ -7,12 +7,14 @@ public class RotatingSaw : MonoBehaviour
     private Rigidbody2D rb;
     [SerializeField] AudioSource rotatingSaws;
 
+    private bool playerHit = false;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         rotatingSaws.Play();
-        rb.velocity = Vector2.left * 12f;
+        rb.velocity = Vector2.left * 20f;
     }
 
     // Update is called once per frame
@@ -27,5 +29,38 @@ public class RotatingSaw : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        // because I don't want to push the player off screen, I set the saw to isTrigger before it exits so it can pass through the player
+        if(screenPos.x <= 0.25f)
+        {
+            GetComponent<CircleCollider2D>().isTrigger = true;
+        }
     }
+
+    #region Continuous damage logic
+    // Same steps as 'OnTriggerEnter2D()'
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        OnTriggerEnter2D(collision);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            if (!playerHit)
+            {
+                collision.gameObject.GetComponent<Player>().TakeDamage(1f);
+                playerHit = true; // Used as a flag in case of repeated inflicted damage on player
+                StartCoroutine(waitForNextDamageTick());
+            }
+        }
+    }
+
+    private IEnumerator waitForNextDamageTick()
+    {
+        yield return new WaitForSeconds(0.3f);
+        playerHit = false; // Reset the attack flag to let the next attack audio & animation play (if any)
+    }
+    #endregion
 }

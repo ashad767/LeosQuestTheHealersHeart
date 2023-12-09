@@ -33,6 +33,6 @@ public class Entity : MonoBehaviour
             CurrentHealth = 0;
         }
 
-        Debug.Log(name + "'s health is now " + CurrentHealth);
+        //Debug.Log(name + "'s health is now " + CurrentHealth);
     }
 }

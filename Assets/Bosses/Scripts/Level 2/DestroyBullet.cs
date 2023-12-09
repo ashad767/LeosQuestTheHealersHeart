@@ -81,6 +81,7 @@ public class DestroyBullet : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            collision.gameObject.GetComponent<Player>().TakeDamage(2.5f);
             triggerExplosion();
         }
     }

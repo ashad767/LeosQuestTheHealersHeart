@@ -7,7 +7,7 @@ public class BossOutlineColliderLogic : MonoBehaviour
 {
     //private void OnTriggerEnter2D(Collider2D collision)
     //{
-    //    if (collision.gameObject.CompareTag("SOME_PLAYER_WEAPON"))
+    //    if (collision.gameObject.CompareTag("PLAYER_WEAPON"))
     //    {
     //        // Take damage away from boss
     //    }

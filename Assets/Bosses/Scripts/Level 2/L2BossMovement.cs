@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class L2BossMovement : MonoBehaviour
+public class L2BossMovement : Entity
 {
     private Rigidbody2D rb;
     private SpriteRenderer sr;
@@ -34,11 +34,7 @@ public class L2BossMovement : MonoBehaviour
     private bool lunge = false;
     private bool shoot = false;
     private bool regen = false;
-    #endregion
-
-    #region Health
-    public float maxHealth = 100f;
-    public float currentHealth = 100f;
+    private bool dead = false;
     #endregion
 
     #region Boss when Angry
@@ -48,9 +44,13 @@ public class L2BossMovement : MonoBehaviour
     #endregion
 
     private float bossMoveSpeed;
+    public float currentHealth;
+    private bool collidingWithplayer = false;
 
-    void Start()
+    protected override void Start()
     {
+        base.Start(); // Simply sets "CurrentHealth = maxHealth;"
+
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         a = GetComponent<Animator>();
@@ -59,31 +59,45 @@ public class L2BossMovement : MonoBehaviour
 
         StartCoroutine(follow_MC());
         StartCoroutine(shootAnim());
-        StartCoroutine(dummyBossHitTester());
     }
 
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
-        // Flip boss sprite on its X axis depending on if the MC is left or right of the boss
-        sr.flipX = MC.position.x > transform.position.x;
+        if(MC != null)
+        {
+            // Flip boss sprite on its X axis depending on if the MC is left or right of the boss
+            sr.flipX = MC.position.x > transform.position.x;
 
-        if (!shoot && !regen && !lunge)
+            if (!shoot && !regen && !lunge)
+            {
+                a.SetInteger("state", (int)States.idle);
+            }
+
+            // Make the boss move towards MC when MC is NOT idle
+            if (!idle)
+            {
+                bossMoveSpeed = isAngry ? 2.5f : 2f;
+                transform.position = Vector2.MoveTowards(transform.position, MC.position, bossMoveSpeed * Time.deltaTime);
+            }
+        }
+
+        // If player dies, just go idle
+        else
         {
             a.SetInteger("state", (int)States.idle);
         }
 
-        // Make the boss move towards MC when MC is NOT idle
-        if (!idle) 
+        // Boss death
+        if (GetHealth() <= 0 && !dead)
         {
-            bossMoveSpeed = isAngry ? 4.2f : 3.5f;
-            transform.position = Vector2.MoveTowards(transform.position, MC.position, bossMoveSpeed * Time.deltaTime); 
+            StartCoroutine(BossDeath());
         }
     }
 
     private IEnumerator follow_MC()
     {
-        while (true)
+        while (MC != null && true)
         {
             // if I'm not currently shooting, then I can regenerate health (if boss is in low health)
             if (!shoot)
@@ -94,7 +108,7 @@ public class L2BossMovement : MonoBehaviour
             // Boss stays idle for a random # of seconds (if angry, stays idle for less time)
             if (isAngry)
             {
-                yield return new WaitForSeconds(Random.Range(1.5f, 2.4f));
+                yield return new WaitForSeconds(Random.Range(1.5f, 2f));
             }
             else
             {
@@ -111,16 +125,10 @@ public class L2BossMovement : MonoBehaviour
                 StartCoroutine(lungeAnim());
             }
 
-            // move around for a few seconds (if angry, move around for longer)
-            if (isAngry)
-            {
-                yield return new WaitForSeconds(Random.Range(3.1f, 3.5f));  
-            }
-            else
-            {
-                yield return new WaitForSeconds(Random.Range(2.5f, 3f));
-            }
+            // Move around
+            yield return new WaitForSeconds(Random.Range(2.5f, 3f));
 
+            // Go back to being idle
             idle = true;
 
             // Create/Instantiate a shadow prefab when idle
@@ -160,12 +168,12 @@ public class L2BossMovement : MonoBehaviour
 
     private IEnumerator shootAnim()
     {
-        while (true)
+        while (MC != null && true)
         {
             // Wait a random # of seconds before shooting (if angry, wait less time)
             if (isAngry)
             {
-                yield return new WaitForSeconds(Random.Range(1.2f, 1.6f));
+                yield return new WaitForSeconds(Random.Range(2f, 2.5f));
             }
             else
             {
@@ -181,17 +189,12 @@ public class L2BossMovement : MonoBehaviour
                 // Instantiate the main bullet 3x rapidly when at low health
                 if (isAngry)
                 {
-                    mainBulletLoader();
-                    shootBulletAudio.Play();
-                    yield return new WaitForSeconds(animLength[0].length);
-
-                    mainBulletLoader();
-                    shootBulletAudio.Play();
-                    yield return new WaitForSeconds(animLength[0].length);
-
-                    mainBulletLoader();
-                    shootBulletAudio.Play();
-                    yield return new WaitForSeconds(animLength[0].length);
+                    for(int i = 0; i < 3; i++)
+                    {
+                        mainBulletLoader();
+                        shootBulletAudio.Play();
+                        yield return new WaitForSeconds(animLength[0].length);
+                    }
                 }
 
                 else
@@ -200,9 +203,9 @@ public class L2BossMovement : MonoBehaviour
                     shootBulletAudio.Play();
                     yield return new WaitForSeconds(animLength[0].length);
                 }
+
                 shoot = false;
             }
-
         }
     }
 
@@ -227,9 +230,9 @@ public class L2BossMovement : MonoBehaviour
 
     private IEnumerator regenFunction()
     {
-        if (currentHealth < 50f)
+        if (GetHealth() < 50f)
         {
-            if (currentHealth < 35f)
+            if (GetHealth() < 35f)
             {
                 GameObject charge = Instantiate(angryChargePrefab, transform.position, Quaternion.identity);
                 charge.transform.SetParent(transform);
@@ -239,44 +242,59 @@ public class L2BossMovement : MonoBehaviour
             }
 
             regen = true;
-            currentHealth += isAngry ? Random.Range(15f, 27f) : Random.Range(10f, 20f);
             a.SetInteger("state", (int)States.regen);
             regenAudio.Play();
+            CurrentHealth += isAngry ? Random.Range(15f, 27f) : Random.Range(10f, 20f);
+            
             yield return new WaitForSeconds(animLength[1].length + 0.1f);
             regen = false;
         }
     }
-    
 
-    private IEnumerator dummyBossHitTester()
+
+    #region Continuous damage logic
+    // Same steps as 'OnTriggerEnter2D()'
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        while (true)
+        OnTriggerEnter2D(collision);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
         {
-            Color hitEffect = sr.color;
-
-            yield return new WaitForSeconds(2f);
-            currentHealth -= 15f;
-
-            // When boss gets hit, I want to momentarily make the boss go slighlty transparent, then back to its original/angry color
-            hitEffect.a = 0.3f;
-            sr.color = hitEffect;
-            yield return new WaitForSeconds(0.12f);
-            sr.color = isAngry ? angryColor : originalColor;
-
-            if (currentHealth <= 0f)
+            if (!collidingWithplayer)
             {
-                a.SetTrigger("death"); // show death animation
-                death.Play();
-                rb.bodyType = RigidbodyType2D.Static;
-                yield return new WaitForSeconds(death.clip.length);
-                Destroy(transform.parent.gameObject); // Destroys boss gameobjects
+                collision.gameObject.GetComponent<Player>().TakeDamage(2f);
+                collidingWithplayer = true; // Used as a flag in case of repeated inflicted damage on player
+                StartCoroutine(waitForNextDamageTick());
             }
         }
     }
-    private void OnDestroy()
-    {
-        healthBar.gameObject.SetActive(false); // Hide the boss healthbar from view after boss dies
 
+    private IEnumerator waitForNextDamageTick()
+    {
+        yield return new WaitForSeconds(0.5f);
+        collidingWithplayer = false; // Reset the attack flag to let the next attack audio & animation play (if any)
+    }
+    #endregion
+
+
+    private IEnumerator BossDeath()
+    {
+        dead = true;
+        rb.bodyType = RigidbodyType2D.Static;
+        a.SetTrigger("death"); // show death animation
+        death.Play();
+
+        destroyPrefabs();
+
+        yield return new WaitForSeconds(death.clip.length);
+        Destroy(gameObject); // Destroys boss gameobject
+    }
+
+    private void destroyPrefabs()
+    {
         // Find all active shadow clone prefabs in the scene and destroy them
         GameObject[] shadowClonesToDestroy = GameObject.FindGameObjectsWithTag("shadow_clone");
         GameObject[] bulletsToDestroy = GameObject.FindGameObjectsWithTag("wizardBullet");
@@ -290,5 +308,10 @@ public class L2BossMovement : MonoBehaviour
         {
             Destroy(bullet);
         }
+    }
+
+    private void OnDestroy()
+    {
+        Destroy(healthBar.gameObject);
     }
 }

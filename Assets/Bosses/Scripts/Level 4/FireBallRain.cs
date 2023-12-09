@@ -6,6 +6,7 @@ using UnityEngine.Experimental.GlobalIllumination;
 public class FireBallRain : MonoBehaviour
 {
     [SerializeField] private GameObject fireBallPrefab;
+    public L4BossMovement isBossDead;
 
     // Audio
     [SerializeField] AudioSource fireballRainStartAudio;
@@ -28,10 +29,10 @@ public class FireBallRain : MonoBehaviour
         float transitionToStartRain = 3f;
         
         float originalScale = 1f;
-        float maxScale = 4f;
+        float maxScale = 4.5f;
         
         float originalOffsetY = 0f;
-        float maxOffsetY = 0.7f;
+        float maxOffsetY = 0.8f;
 
         while (timer < transitionToStartRain)
         {
@@ -81,13 +82,10 @@ public class FireBallRain : MonoBehaviour
 
             timer += Time.deltaTime;
 
-            // Check for collision with the player and destroy the fireball
+            // Check for collision with the player and destroy the fireball (OR WHEN BOSS IS DEAD)
             // 'parabolicPosition' is the same as 'fireBallPrefabInstance.transform.position'
-            Collider2D collider = Physics2D.OverlapCircle(parabolicPosition, fireBallPrefabInstance.GetComponent<CircleCollider2D>().radius);
-
-            if (collider != null && collider.gameObject.CompareTag("Player"))
+            if(isPlayerHit(parabolicPosition, fireBallPrefabInstance.GetComponent<CircleCollider2D>().radius, 1f) || isBossDead.GetHealth() <= 0f)
             {
-                Debug.Log("IM HERE");
                 Destroy(fireBallPrefabInstance);
             }
 
@@ -113,7 +111,23 @@ public class FireBallRain : MonoBehaviour
             Random.Range((-frustumHeight / 2f) + mainCameraPositionY, (frustumHeight / 2f) + mainCameraPositionY)
             );
     }
-    
+
+    private bool isPlayerHit(Vector2 position, float radius, float damage)
+    {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(position, radius);
+
+        foreach (Collider2D col in colliders)
+        {
+            if (col.gameObject.CompareTag("Player"))
+            {
+                Player player = col.gameObject.GetComponent<Player>();
+                player.TakeDamage(damage);
+                return true;
+            }
+        }
+
+        return false;
+    }
 
     private IEnumerator endFireBallRain()
     {

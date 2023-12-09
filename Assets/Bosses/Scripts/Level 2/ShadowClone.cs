@@ -4,17 +4,23 @@ using System.Text.RegularExpressions;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class ShadowClone : MonoBehaviour
+public class ShadowClone : Entity
 {
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private Animator a;
     [SerializeField] private AnimationClip[] shadowAnimLength;
     [SerializeField] AudioSource shadowWhisper;
+    [SerializeField] private GameObject shadowPoofPrefab;
 
+    private bool isWalkingSlow = true;
     private float shadowMoveSpeed;
-    private float health = 50f;
-    private Color originalColor;
+    private float walkTimer;
+
+    private bool collidingWithplayer = false;
+    private float timer = 0f;
+
+    private bool dead= false;
 
     // Getting these values from Wizard.cs when I instantiate a shadow clone.
     // Took me a long time to figure out that you can't just drag in and drop gameObjects from hierarchy window into prefab scripts in Inspector window.
@@ -23,28 +29,54 @@ public class ShadowClone : MonoBehaviour
     public GameObject MC;
 
     // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
+        base.Start(); // Simply sets "CurrentHealth = maxHealth;"
+
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         a = GetComponent<Animator>();
 
-        shadowMoveSpeed = isBossAngry ? Random.Range(6f, 7f) : Random.Range(5f, 6f);
-        originalColor = sr.color;
+        // Initialize timers
+        walkTimer = Random.Range(3f, 6f); // Adjust the initial walk duration
+        SetNewSpeed();
 
         StartCoroutine(lungeAnim());
-        StartCoroutine(dummyShadowHitTester());
-
         shadowWhisper.Play();
     }
 
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
-        // Flip boss sprite on its X axis depending on if the MC is left or right of the boss
-        sr.flipX = MC.transform.position.x > transform.position.x;
+        if(MC != null)
+        {
+            // Flip boss sprite on its X axis depending on if the MC is left or right of the boss
+            sr.flipX = MC.transform.position.x > transform.position.x;
 
-        transform.position = Vector2.MoveTowards(transform.position, MC.transform.position, shadowMoveSpeed * Time.deltaTime);
+            // Update timer
+            walkTimer -= Time.deltaTime;
+
+            // Check if the walk duration is over
+            if (walkTimer <= 0f)
+            {
+                // Reset the timer
+                walkTimer = Random.Range(2f, 7f);
+                SetNewSpeed();
+            }
+
+            transform.position = Vector2.MoveTowards(transform.position, MC.transform.position, shadowMoveSpeed * Time.deltaTime);
+        }
+
+        else
+        {
+            Destroy(gameObject);
+        }
+
+        // Shadow death
+        if (GetHealth() <= 0 && !dead)
+        {
+            StartCoroutine(ShadowDeath());
+        }
     }
 
     private IEnumerator lungeAnim()
@@ -68,27 +100,78 @@ public class ShadowClone : MonoBehaviour
         rb.velocity = new Vector2(0, 0); // stops boss from drifting away after lunging
     }
 
-    private IEnumerator dummyShadowHitTester()
+    // Function to set a new speed based on the current pace
+    private void SetNewSpeed()
     {
-        while (true)
+        if (isWalkingSlow)
         {
-            Color hitEffect = originalColor;
+            shadowMoveSpeed = Random.Range(2.7f, 3f);
+        }
+        else
+        {
+            shadowMoveSpeed = Random.Range(3.3f, 4f);
+        }
 
-            yield return new WaitForSeconds(2.5f);
-            health -= 20f;
+        isWalkingSlow = !isWalkingSlow; // Switch the pace for next call
+    }
 
-            // When boss gets hit, I want to momentarily make the boss go slighlty transparent, then back to its original color
-            hitEffect.a = 0.4f;
-            sr.color = hitEffect;
-            yield return new WaitForSeconds(0.12f);
-            sr.color = originalColor;
+    #region Continuous damage logic
+    // Same steps as 'OnTriggerEnter2D()'
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            timer += Time.deltaTime;
 
-            if (health <= 0f)
+            if (timer >= 1.2f)
             {
-                a.SetTrigger("shadowDeath"); // show death animation
-                yield return new WaitForSeconds(shadowAnimLength[1].length);
-                Destroy(gameObject);
+                timer = 0f;
+                collision.gameObject.GetComponent<Player>().TakeDamage(2f);
+                CurrentHealth = 0f;
+            }
+
+            OnTriggerEnter2D(collision);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            if (!collidingWithplayer)
+            {
+                collision.gameObject.GetComponent<Player>().TakeDamage(1f);
+                collidingWithplayer = true; // Used as a flag in case of repeated inflicted damage on player
+                StartCoroutine(waitForNextDamageTick());
             }
         }
+    }
+
+    private IEnumerator waitForNextDamageTick()
+    {
+        yield return new WaitForSeconds(0.5f);
+        collidingWithplayer = false; // Reset the attack flag to let the next attack audio & animation play (if any)
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            timer = 0f;
+        }
+    }
+    #endregion
+
+    private IEnumerator ShadowDeath()
+    {
+        dead = true;
+        rb.bodyType = RigidbodyType2D.Static;
+        a.SetTrigger("shadowDeath"); // show death animation
+
+        GameObject shadow = Instantiate(shadowPoofPrefab, transform.position, Quaternion.identity);
+
+        yield return new WaitForSeconds(shadowAnimLength[1].length);
+        Destroy(shadow);
+        Destroy(gameObject); // Destroys boss gameobject
     }
 }

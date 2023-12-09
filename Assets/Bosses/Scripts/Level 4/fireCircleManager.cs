@@ -12,10 +12,13 @@ public class fireCircleManager : MonoBehaviour
     [SerializeField] private GameObject fireShieldPrefab;
 
     // Variables for my fire circle
-    private int numberOfFireballs = 12;
-    private float fireCircleRadius = 2.36f;
+    private int numberOfFireballs = 13;
     private float rotationSpeed = 80f; // Rotation speed in degrees per second
-    private float yOffset = 0.5f; // Used to slightly lower the y-position of the fireballs relative to the boss' position
+    
+    private float fireCircleRadius = 2.47f;
+    private float xOffset = 0.12f;
+    private float yOffset = 1.15f; // Used to slightly lower the y-position of the fireballs relative to the boss' position
+    
     private bool isExploding = false;
 
     // Declare a reference to the RotateFireballsManager() coroutine
@@ -57,7 +60,7 @@ public class fireCircleManager : MonoBehaviour
             yield return new WaitForSeconds(0.06f); // Add a slight delay between instantiations
         }
 
-        GameObject fireShield = Instantiate(fireShieldPrefab, Boss.position + new Vector3(-0.05f, -0.9f), Quaternion.identity);
+        GameObject fireShield = Instantiate(fireShieldPrefab, Boss.position + new Vector3(0.1f, -1.36f, 0), Quaternion.identity);
         fireShield.transform.SetParent(Boss);
         fireShieldActivatedAudio.Play();
         fireShieldNoiseAudio.Play();
@@ -68,8 +71,8 @@ public class fireCircleManager : MonoBehaviour
     private Vector2 GetSpawnPosition(float angle, float radius)
     {
         float radians = angle * Mathf.Deg2Rad;
-        float x = Boss.position.x + radius * Mathf.Cos(radians);
-        float y = Boss.position.y + radius * Mathf.Sin(radians) - 0.5f;
+        float x = Boss.position.x + radius * Mathf.Cos(radians) + xOffset;
+        float y = Boss.position.y + radius * Mathf.Sin(radians) - yOffset;
 
         return new Vector2(x, y);
     }
@@ -114,17 +117,17 @@ public class fireCircleManager : MonoBehaviour
 
     private void RotateAroundBoss(GameObject fireball)
     {
-        // Need to add the y-position of the fireball prefab by the y-offset (in this case 0.5f) because I need to perform the direction and angle calculations based on this position, not on the y-direction where the y-offset (0.5f) has been subtracted.
+        // Need to add the y-position of the fireball prefab by the y-offset (in this case 0.5f) because I need to perform the direction and angle calculations based on this position, not on the y-direction where the y-offset has been subtracted.
         // Doing math operations on the subtracted y-offset gives odd results. This happens because in each iteration, I keep taking away 0.5f from the y-position and falsely calculating the distance on the 'Vector2 direction' variable, which in turn gives a false angle value, which then messes up the whole thing.
-        // So I need to bring the fireball prefab's y-position back up by 0.5f and doing operations using this position
-        Vector2 fireballPositionWith_yOffset = fireball.transform.position + new Vector3(0, yOffset);
+        // So I need to bring the fireball prefab's y-position back up by yOffset and doing operations using this position
+        Vector2 fireballPositionWith_yOffset = fireball.transform.position + new Vector3(-xOffset, yOffset);
         Vector2 bossPosition = Boss.position;
         rotationSpeed = isExploding ? 135f : 80f;
 
         Vector2 direction = fireballPositionWith_yOffset - bossPosition;
         float angle = Mathf.Atan2(direction.y, direction.x) + (rotationSpeed * Mathf.Deg2Rad * Time.deltaTime);
 
-        float newX = bossPosition.x + fireCircleRadius * Mathf.Cos(angle);
+        float newX = bossPosition.x + fireCircleRadius * Mathf.Cos(angle) + xOffset;
         float newY = bossPosition.y + (fireCircleRadius * Mathf.Sin(angle)) - yOffset;
 
         fireball.transform.position = new Vector2(newX, newY);
@@ -146,12 +149,17 @@ public class fireCircleManager : MonoBehaviour
         float originalScale = 1f;
         float maxScale = 4f;
 
+        float origDamage = 5f;
+        fireShieldCheckCollision fscc = fireShield.GetComponent<fireShieldCheckCollision>();
+
         Color currentShieldColor = fireShield.GetComponent<SpriteRenderer>().color; // 'fireShield' game object gets instantiated inside 'SpawnFireballs()' coroutine
 
+        // Play/Stop audios
         randomScreamAudio.Play();
         fireShieldNoiseAudio.Stop();
         fireCircleExplosionAudio.Play();
 
+        // Trigger the animation
         StartCoroutine(bossScript.expandFireCircleAnimFunction());
 
         while (timer < transitionToExpand)
@@ -159,9 +167,11 @@ public class fireCircleManager : MonoBehaviour
             float percentageDone = timer / transitionToExpand;
 
             float newScale = Mathf.Lerp(originalScale, maxScale, percentageDone);
+            float newDamage = Mathf.Lerp(origDamage, 0f, percentageDone);
             currentShieldColor.a = Mathf.Lerp(1, 0, percentageDone);
 
             fireShield.transform.localScale = new Vector3(newScale, newScale, 1f);
+            fscc.damage = Mathf.Round(newDamage);
             fireShield.GetComponent<SpriteRenderer>().color = currentShieldColor;
 
             timer += Time.deltaTime;
@@ -180,8 +190,7 @@ public class fireCircleManager : MonoBehaviour
         float originalRadius = fireCircleRadius;
         float maxRadius = 12f;
 
-        GameObject[] activeFireballsInTheScene = GameObject.FindGameObjectsWithTag("fireballCircle");
-        foreach (GameObject fireball in activeFireballsInTheScene)
+        foreach (GameObject fireball in currentFireballs)
         {
             fireball.GetComponent<BoxCollider2D>().enabled = true;
         }
@@ -199,7 +208,7 @@ public class fireCircleManager : MonoBehaviour
         }
 
         
-        foreach (GameObject fireball in activeFireballsInTheScene)
+        foreach (GameObject fireball in currentFireballs)
         {
             Destroy(fireball);
         }
