@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class EnemyChase : EnemyState
 {
     private Transform PlayerTransform;
-    private float MoveSpeed = 2f;
+    private float MoveSpeed = 1.5f;
     private NavMeshAgent agent;
 
     public EnemyChase(Enemy enemy, EnemySM enemySM, string AnimBoolName) : base(enemy, enemySM, AnimBoolName)
@@ -18,7 +18,7 @@ public class EnemyChase : EnemyState
     public override void EnterState()
     {
         base.EnterState();
-        agent.speed = 2f;
+        agent.speed = 1.5f;
     }
 
     public override void ExitState()

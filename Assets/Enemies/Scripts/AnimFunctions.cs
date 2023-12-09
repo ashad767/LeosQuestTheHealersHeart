@@ -6,11 +6,13 @@ public class AnimFunctions : MonoBehaviour
 {
     public Enemy enemy;
     public Animator anim;
+    public EnemiesDead enemyDead;
 
     public void Awake()
     {
         enemy = GetComponentInParent<Enemy>();
         anim = GetComponent<Animator>();
+        enemyDead = GameObject.FindGameObjectWithTag("EnemiesDead").GetComponent<EnemiesDead>();
     }
 
     public void OnAttack()
@@ -35,6 +37,7 @@ public class AnimFunctions : MonoBehaviour
     {
         anim.speed = 0f;
         enemy.IsDead = true;
+        enemyDead.enemies.Remove(enemy);
     }
 
     public void CheckAttack()
@@ -65,10 +68,5 @@ public class AnimFunctions : MonoBehaviour
     public void CheckHeavyAttack()
     {
         enemy.ability.OnAbility();
-    }
-
-    public void NormalAttack()
-    {
-        
     }
 }

@@ -45,7 +45,10 @@ public class EnemyWalk : EnemyState
         {
             target = GetRandomPoint();
         }
-
+        /*else if(enemy.RB.velocity.x < 0.05f && enemy.RB.velocity.y < 0.05f)
+        {
+            target = GetRandomPoint();
+        }*/
         else if(timer >= 2f)
         {
             timer = 0f;
