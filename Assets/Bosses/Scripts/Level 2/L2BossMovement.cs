@@ -86,6 +86,7 @@ public class L2BossMovement : Entity
         else
         {
             a.SetInteger("state", (int)States.idle);
+            StopAllCoroutines();
         }
 
         // Boss death
@@ -287,22 +288,16 @@ public class L2BossMovement : Entity
         a.SetTrigger("death"); // show death animation
         death.Play();
 
-        destroyPrefabs();
+        destroyBullets();
 
         yield return new WaitForSeconds(death.clip.length);
         Destroy(gameObject); // Destroys boss gameobject
     }
 
-    private void destroyPrefabs()
+    private void destroyBullets()
     {
         // Find all active shadow clone prefabs in the scene and destroy them
-        GameObject[] shadowClonesToDestroy = GameObject.FindGameObjectsWithTag("shadow_clone");
         GameObject[] bulletsToDestroy = GameObject.FindGameObjectsWithTag("wizardBullet");
-
-        foreach (GameObject shadowClone in shadowClonesToDestroy)
-        {
-            Destroy(shadowClone);
-        }
 
         foreach (GameObject bullet in bulletsToDestroy)
         {
@@ -312,6 +307,12 @@ public class L2BossMovement : Entity
 
     private void OnDestroy()
     {
+        GameObject[] shadowClonesToDestroy = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject shadowClone in shadowClonesToDestroy)
+        {
+            Destroy(shadowClone);
+        }
+
         Destroy(healthBar.gameObject);
     }
 }

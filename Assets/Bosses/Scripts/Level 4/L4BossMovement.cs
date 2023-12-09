@@ -82,6 +82,7 @@ public class L4BossMovement : Entity
         else
         {
             a.SetInteger("state", (int)States.idle);
+            StopAllCoroutines();
         }
         
         // Boss death

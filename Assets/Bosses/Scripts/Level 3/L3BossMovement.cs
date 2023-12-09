@@ -5,11 +5,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Experimental.GlobalIllumination;
 
-public class L3BossMovement : MonoBehaviour
+public class L3BossMovement : Entity
 {
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private Animator a;
+    [SerializeField] private CircleCollider2D triggerCircle;
     [SerializeField] private AnimationClip[] animLength;
     [SerializeField] private Transform MC;
     [SerializeField] private Slider healthBar;
@@ -51,16 +52,17 @@ public class L3BossMovement : MonoBehaviour
     private bool attackInProgress = false; // Used as a flag in case of repeated sword attacks by the boss
     
     private bool dead = false;
+
+    private bool boneShieldActive = false;
+    private float snapshotHealth;
     #endregion
 
-    #region Boss Health
-    public float currentHealth = 100f;
-    public float maxHealth = 100f;
-    #endregion
 
     // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
+        base.Start(); // Simply sets "CurrentHealth = maxHealth;"
+
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         a = GetComponent<Animator>();
@@ -72,24 +74,48 @@ public class L3BossMovement : MonoBehaviour
         StartCoroutine(follow_MC());
         StartCoroutine(spawnMiniEnemies());
         StartCoroutine(Darken());
-        StartCoroutine(dummyBossHitTester());
     }
 
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
-        // Flip boss sprite on its X axis depending on if the MC is left or right of the boss
-        sr.flipX = MC.position.x < transform.position.x;
-
-        if (idle && !attack)
+        if(MC != null)
         {
-            a.SetInteger("state", (int)States.idle);
+            if(boneShieldActive)
+            {
+                CurrentHealth = snapshotHealth;
+            }
+            else
+            {
+                snapshotHealth = GetHealth();
+            }
+
+            // Flip boss sprite on its X axis depending on if the MC is left or right of the boss
+            sr.flipX = MC.position.x < transform.position.x;
+
+            if (idle && !attack)
+            {
+                a.SetInteger("state", (int)States.idle);
+            }
+
+            // Make the boss move towards MC when MC is NOT idle
+            if (!idle && !attack && !dead)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, MC.position, 2.7f * Time.deltaTime);
+            }
         }
 
-        // Make the boss move towards MC when MC is NOT idle
-        if (!idle && !attack && !dead)
+        // If player dies, just go idle
+        else
         {
-            transform.position = Vector2.MoveTowards(transform.position, MC.position, 2.7f * Time.deltaTime);
+            a.SetInteger("state", (int)States.idle);
+            StopAllCoroutines();
+        }
+
+        // Boss death
+        if (GetHealth() <= 0 && !dead)
+        {
+            StartCoroutine(BossDeath());
         }
     }
 
@@ -178,6 +204,19 @@ public class L3BossMovement : MonoBehaviour
         insideDarknessAudio.Play();
     }
 
+    private IEnumerator activateBoneShield()
+    {
+        boneShieldActive = true;
+        boneShieldAudio.Play();
+        GameObject boneShield = Instantiate(boneShieldPrefab, transform.position, Quaternion.identity);
+        boneShield.transform.SetParent(transform);
+
+        yield return new WaitForSeconds(8f); // let the bone shield effect last 8 seconds
+        
+        boneShieldActive = false;
+        Destroy(boneShield);
+    }
+
     #region Attack Logic
 
     // Same steps as 'OnTriggerEnter2D()'
@@ -204,10 +243,28 @@ public class L3BossMovement : MonoBehaviour
 
     private IEnumerator attackFunc()
     {
-        swingAudio.Play();
-
         yield return new WaitForSeconds(animLength[0].length);
         attackInProgress = false; // Reset the attack flag to let the next attack audio & animation play (if any)
+    }
+
+    // used by event trigger in animation window
+    private void playMaceSwing()
+    {
+        swingAudio.Play();
+        isPlayerHit();
+    }
+
+    private void isPlayerHit()
+    {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(triggerCircle.transform.position, triggerCircle.radius + 0.5f);
+
+        foreach (Collider2D col in colliders)
+        {
+            if (col.gameObject.CompareTag("Player"))
+            {
+                col.gameObject.GetComponent<Player>().TakeDamage(1f);
+            }
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -232,52 +289,22 @@ public class L3BossMovement : MonoBehaviour
     }
     #endregion
 
-    private IEnumerator activateBoneShield()
+
+    private IEnumerator BossDeath()
     {
-        boneShieldAudio.Play();
-        GameObject boneShield = Instantiate(boneShieldPrefab, transform.position, Quaternion.identity);
-        boneShield.transform.SetParent(transform);
-        
-        yield return new WaitForSeconds(8f); // let the bone shield effect last 8 seconds
-        Destroy(boneShield);
-    }
+        dead = true;
+        rb.bodyType = RigidbodyType2D.Static;
+        a.SetTrigger("death"); // show death animation
+        deathAudio.Play();
 
-    private IEnumerator dummyBossHitTester()
-    {
-        while (true)
-        {
-            Color originalColor = sr.color;
-            Color hitEffect = sr.color;
+        destroyChildren();
 
-            yield return new WaitForSeconds(2f);
-            currentHealth -= 5f;
+        yield return new WaitForSeconds(deathAudio.clip.length);
 
-            // When boss gets hit, I want to momentarily make the boss go slighlty transparent, then back to its original/angry color
-            hitEffect.a = 0.2f;
-            sr.color = hitEffect;
-            yield return new WaitForSeconds(0.1f);
-            sr.color = originalColor;
+        if (darknessManager.isDark) { darknessManager.de_activateDarkness(2f); }
+        destroyGameManagers();
 
-            if (currentHealth <= 0f)
-            {
-                dead = true;
-                GetComponent<CircleCollider2D>().enabled = false;
-                rb.bodyType = RigidbodyType2D.Static;
-                a.SetTrigger("death"); // show death animation
-                deathAudio.Play();
-
-                destroyChildren();
-
-                yield return new WaitForSeconds(deathAudio.clip.length);
-
-                if (darknessManager.isDark)
-                {
-                    darknessManager.de_activateDarkness(2f);
-                }
-
-                Destroy(gameObject); // Destroys boss gameobject
-            }
-        }
+        Destroy(gameObject); // Destroys boss gameobject
     }
 
     private void destroyChildren()
@@ -290,23 +317,23 @@ public class L3BossMovement : MonoBehaviour
         }
     }
 
+    private void destroyGameManagers()
+    {
+        GameObject gm = GameObject.FindGameObjectWithTag("GameManagers");
+        Destroy(gm, 2.2f); // Wait for the to the light 2 come back (if any, from darkness manager), then destroy all game managers
+    }
+
     private void OnDestroy()
     {
         healthBar.gameObject.SetActive(false); // Hide the boss healthbar from view after boss dies
 
         // Find all active mini-zombies/skeleton and arrow prefabs in the scene and destroy them
-        GameObject[] miniZombiesToDestroy = GameObject.FindGameObjectsWithTag("miniZombie");
-        GameObject[] miniSkeletonsToDestroy = GameObject.FindGameObjectsWithTag("miniSkeleton");
+        GameObject[] miniEnemiesToDestroy = GameObject.FindGameObjectsWithTag("Enemy");
         GameObject[] arrowsToDestroy = GameObject.FindGameObjectsWithTag("arrow");
 
-        foreach (GameObject miniZombie in miniZombiesToDestroy)
+        foreach (GameObject miniEnemy in miniEnemiesToDestroy)
         {
-            Destroy(miniZombie);
-        }
-
-        foreach (GameObject miniSkeleton in miniSkeletonsToDestroy)
-        {
-            Destroy(miniSkeleton);
+            Destroy(miniEnemy);
         }
 
         foreach (GameObject arrow in arrowsToDestroy)

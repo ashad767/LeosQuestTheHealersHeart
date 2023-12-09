@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MiniSkeletonMovement : MonoBehaviour
+public class MiniSkeletonMovement : Entity
 {
     private Rigidbody2D rb;
     private SpriteRenderer sr;
@@ -24,38 +24,56 @@ public class MiniSkeletonMovement : MonoBehaviour
     public bool idle = true;
     private bool shoot = false;
     private bool dead = false;
-
-    public float health = 100f;
+    private bool collidingWithplayer = false;
 
     // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
+        base.Start(); // Simply sets "CurrentHealth = maxHealth;"
+
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         a = GetComponent<Animator>();
         spawnManager = MiniEnemiesSpawnManager.Instance;
 
         StartCoroutine(follow_MC());
-        StartCoroutine(dummyBossHitTester());
     }
 
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
-        // used for my Blend Tree
-        Vector2 dir = MC.position - transform.position;
-        dir.Normalize();
-        a.SetFloat("dirX", dir.x);
-        a.SetFloat("dirY", dir.y);
-
-        if (idle && !shoot)
+        if(MC != null)
         {
-            a.SetInteger("state", (int)States.idle);
+            // used for my Blend Tree
+            Vector2 dir = MC.position - transform.position;
+            dir.Normalize();
+            a.SetFloat("dirX", dir.x);
+            a.SetFloat("dirY", dir.y);
+
+            if (idle && !shoot)
+            {
+                a.SetInteger("state", (int)States.idle);
+            }
+
+            if (!idle && !dead)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, MC.position, Random.Range(0.7f, 3f) * Time.deltaTime);
+            }
         }
 
-        if (!idle && !dead)
+        else
         {
-            transform.position = Vector2.MoveTowards(transform.position, MC.position, Random.Range(0.7f, 3f) * Time.deltaTime);
+            // death when player dies
+            if (!dead)
+            {
+                StartCoroutine(miniSkeletonDeath());
+            }
+        }
+
+        // death
+        if (GetHealth() <= 0 && !dead)
+        {
+            StartCoroutine(miniSkeletonDeath());
         }
     }
 
@@ -107,36 +125,44 @@ public class MiniSkeletonMovement : MonoBehaviour
         shoot = false;
     }
 
-    private IEnumerator dummyBossHitTester()
+    #region Continuous damage logic
+    // Same steps as 'OnTriggerEnter2D()'
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        while (true)
+        OnTriggerEnter2D(collision);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
         {
-            Color originalColor = sr.color;
-            Color hitEffect = sr.color;
-
-            yield return new WaitForSeconds(2.5f);
-            health -= Random.Range(10f, 20f);
-
-            // When boss gets hit, I want to momentarily make the boss go slighlty transparent, then back to its original/angry color
-            hitEffect.a = 0.2f;
-            sr.color = hitEffect;
-            yield return new WaitForSeconds(0.1f);
-            sr.color = originalColor;
-
-            if (health <= 0f)
+            if (!collidingWithplayer)
             {
-                dead = true;
-                GetComponent<BoxCollider2D>().enabled = false;
-                rb.bodyType = RigidbodyType2D.Static;
-               
-                spawnManager.MiniEnemyKilled();
-                darknessManager.spawnedMiniEnemies.Remove(gameObject);
-
-                a.SetTrigger("death"); // show death animation
-                //deathAudio.Play();
-                yield return new WaitForSeconds(animLength[1].length);
-                Destroy(gameObject); // Destroys boss gameobject
+                collision.gameObject.GetComponent<Player>().TakeDamage(1f);
+                collidingWithplayer = true; // Used as a flag in case of repeated inflicted damage on player
+                StartCoroutine(waitForNextDamageTick());
             }
         }
+    }
+
+    private IEnumerator waitForNextDamageTick()
+    {
+        yield return new WaitForSeconds(0.5f);
+        collidingWithplayer = false; // Reset the attack flag to let the next attack audio & animation play (if any)
+    }
+    #endregion
+
+    private IEnumerator miniSkeletonDeath()
+    {
+        dead = true;
+        rb.bodyType = RigidbodyType2D.Static;
+
+        spawnManager.MiniEnemyKilled();
+        darknessManager.spawnedMiniEnemies.Remove(gameObject);
+
+        a.SetTrigger("death"); // show death animation
+
+        yield return new WaitForSeconds(animLength[1].length);
+        Destroy(gameObject); // Destroys boss gameobject
     }
 }

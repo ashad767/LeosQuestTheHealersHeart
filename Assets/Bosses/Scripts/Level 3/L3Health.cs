@@ -21,7 +21,7 @@ public class L3Health : MonoBehaviour
         // Since boss gameobject gets destroyed and this script is attached to Slider, not boss, it would throw a null exception error if I didn't put this if-statement
         if (moros != null)
         {
-            slider.value = moros.currentHealth / moros.maxHealth;
+            slider.value = moros.GetHealth() / moros.maxHealth;
         }
 
         if (slider.value <= slider.minValue)

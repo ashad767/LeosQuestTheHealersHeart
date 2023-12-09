@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MiniZombieMovement : MonoBehaviour
+public class MiniZombieMovement : Entity
 {
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private Animator a;
+    [SerializeField] private CircleCollider2D triggerCircle;
     [SerializeField] private AnimationClip[] animLength;
     
     public Transform MC;
@@ -29,11 +30,11 @@ public class MiniZombieMovement : MonoBehaviour
     private bool attackInProgress = false; // Used as a flag in case of repeated sword attacks by the mini-zombie
     private bool dead = false;
 
-    public float health = 100f;
-
     // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
+        base.Start(); // Simply sets "CurrentHealth = maxHealth;"
+
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         a = GetComponent<Animator>();
@@ -43,34 +44,51 @@ public class MiniZombieMovement : MonoBehaviour
         walkTimer = Random.Range(3f, 6f); // Adjust the initial walk duration
         SetNewSpeed();
 
-        StartCoroutine(dummyBossHitTester());
         zombieSpawnAudio.Play();
         Invoke("PlayZombieMoveAudio", zombieSpawnAudio.clip.length + Random.Range(0.2f, 1.2f));
     }
 
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
-        // used for my Blend Tree
-        Vector2 dir = MC.position - transform.position;
-        dir.Normalize();
-        a.SetFloat("dirX", dir.x);
-        a.SetFloat("dirY", dir.y);
-
-        if(!attack && !dead)
+        if(MC != null)
         {
-            // Update timer
-            walkTimer -= Time.deltaTime;
+            // used for my Blend Tree
+            Vector2 dir = MC.position - transform.position;
+            dir.Normalize();
+            a.SetFloat("dirX", dir.x);
+            a.SetFloat("dirY", dir.y);
 
-            // Check if the walk duration is over
-            if (walkTimer <= 0f)
+            if (!attack && !dead)
             {
-                // Reset the timer
-                walkTimer = Random.Range(2f, 7f);
-                SetNewSpeed();
-            }
+                // Update timer
+                walkTimer -= Time.deltaTime;
 
-            transform.position = Vector2.MoveTowards(transform.position, MC.position, currentSpeed * Time.deltaTime);
+                // Check if the walk duration is over
+                if (walkTimer <= 0f)
+                {
+                    // Reset the timer
+                    walkTimer = Random.Range(2f, 7f);
+                    SetNewSpeed();
+                }
+
+                transform.position = Vector2.MoveTowards(transform.position, MC.position, currentSpeed * Time.deltaTime);
+            }
+        }
+
+        else
+        {
+            // death when player dies
+            if (!dead)
+            {
+                StartCoroutine(miniZombieDeath());
+            }
+        }
+
+        // death
+        if (GetHealth() <= 0 && !dead)
+        {
+            StartCoroutine(miniZombieDeath());
         }
     }
 
@@ -88,7 +106,7 @@ public class MiniZombieMovement : MonoBehaviour
         }
         else
         {
-            currentSpeed = Random.Range(4.5f, 6.5f);
+            currentSpeed = Random.Range(4.4f, 6f);
         }
 
         isWalkingSlow = !isWalkingSlow; // Switch the pace for next call
@@ -121,6 +139,20 @@ public class MiniZombieMovement : MonoBehaviour
         attackInProgress = false; // Reset the attack flag to let the next attack audio & animation play (if any)
     }
 
+    // used by event trigger in animation window
+    private void isPlayerHit()
+    {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(triggerCircle.transform.position, triggerCircle.radius + 0.5f);
+
+        foreach (Collider2D col in colliders)
+        {
+            if (col.gameObject.CompareTag("Player"))
+            {
+                col.gameObject.GetComponent<Player>().TakeDamage(1f);
+            }
+        }
+    }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -138,38 +170,53 @@ public class MiniZombieMovement : MonoBehaviour
 
     }
 
-    
-    private IEnumerator dummyBossHitTester()
+    //private IEnumerator dummyBossHitTester()
+    //{
+    //    while (true)
+    //    {
+    //        Color originalColor = sr.color;
+    //        Color hitEffect = sr.color;
+
+    //        yield return new WaitForSeconds(2.5f);
+    //        health -= Random.Range(5f, 20f);
+
+    //        // When boss gets hit, I want to momentarily make the boss go slighlty transparent, then back to its original/angry color
+    //        hitEffect.a = 0.2f;
+    //        sr.color = hitEffect;
+    //        yield return new WaitForSeconds(0.1f);
+    //        sr.color = originalColor;
+
+    //        if (health <= 0f)
+    //        {
+    //            dead = true;
+    //            GetComponent<BoxCollider2D>().enabled = false;
+    //            rb.bodyType = RigidbodyType2D.Static;
+
+    //            spawnManager.MiniEnemyKilled();
+    //            darknessManager.spawnedMiniEnemies.Remove(gameObject);
+
+    //            a.SetTrigger("death"); // show death animation
+    //            zombieMoveAudio.Stop();
+    //            deathAudio.Play();
+    //            yield return new WaitForSeconds(animLength[1].length);
+    //            Destroy(gameObject); // Destroys boss gameobject
+    //        }
+    //    }
+    //}
+
+    private IEnumerator miniZombieDeath()
     {
-        while (true)
-        {
-            Color originalColor = sr.color;
-            Color hitEffect = sr.color;
+        dead = true;
+        rb.bodyType = RigidbodyType2D.Static;
 
-            yield return new WaitForSeconds(2.5f);
-            health -= Random.Range(5f, 20f);
+        spawnManager.MiniEnemyKilled();
+        darknessManager.spawnedMiniEnemies.Remove(gameObject);
 
-            // When boss gets hit, I want to momentarily make the boss go slighlty transparent, then back to its original/angry color
-            hitEffect.a = 0.2f;
-            sr.color = hitEffect;
-            yield return new WaitForSeconds(0.1f);
-            sr.color = originalColor;
+        a.SetTrigger("death"); // show death animation
+        zombieMoveAudio.Stop();
+        deathAudio.Play();
 
-            if (health <= 0f)
-            {
-                dead = true;
-                GetComponent<BoxCollider2D>().enabled = false;
-                rb.bodyType = RigidbodyType2D.Static;
-                
-                spawnManager.MiniEnemyKilled();
-                darknessManager.spawnedMiniEnemies.Remove(gameObject);
-
-                a.SetTrigger("death"); // show death animation
-                zombieMoveAudio.Stop();
-                deathAudio.Play();
-                yield return new WaitForSeconds(animLength[1].length);
-                Destroy(gameObject); // Destroys boss gameobject
-            }
-        }
+        yield return new WaitForSeconds(animLength[1].length);
+        Destroy(gameObject); // Destroys boss gameobject
     }
 }

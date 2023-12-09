@@ -6,9 +6,8 @@ public class Arrow : MonoBehaviour
 {
     private Rigidbody2D rb;
 
-    private float timer = 0f;
     public Vector2 arrowDir;
-    private float arrowSpeed = 15f;
+    private float arrowSpeed = 13.5f;
 
     private float rotation_in_Degrees;
 
@@ -31,8 +30,6 @@ public class Arrow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
-
         // If the arrow is exiting the camera's view, destroy it
         if (!IsWithinCameraFrustum())
         {
@@ -48,11 +45,15 @@ public class Arrow : MonoBehaviour
 
         return GeometryUtility.TestPlanesAABB(planes, arrowCollider.bounds);
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Destroy(gameObject);
+            collision.gameObject.GetComponent<Player>().TakeDamage(2f);
+            rb.velocity = Vector2.zero;
+            transform.SetParent(collision.transform);
+            Destroy(gameObject, 2f);
         }
     }
 }

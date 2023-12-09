@@ -10,7 +10,6 @@ public class ShadowClone : Entity
     private SpriteRenderer sr;
     private Animator a;
     [SerializeField] private AnimationClip[] shadowAnimLength;
-    [SerializeField] AudioSource shadowWhisper;
     [SerializeField] private GameObject shadowPoofPrefab;
 
     private bool isWalkingSlow = true;
@@ -27,6 +26,12 @@ public class ShadowClone : Entity
     // Have to get a reference/s from the script that instantiates this prefab and assign values from there to use it here.
     public bool isBossAngry;
     public GameObject MC;
+
+    #region Audio
+    [SerializeField] AudioSource shadowWhisper;
+    [SerializeField] AudioSource shadowPoofExplode;
+    [SerializeField] AudioSource shadowPoofMagic;
+    #endregion
 
     // Start is called before the first frame update
     protected override void Start()
@@ -169,8 +174,10 @@ public class ShadowClone : Entity
         a.SetTrigger("shadowDeath"); // show death animation
 
         GameObject shadow = Instantiate(shadowPoofPrefab, transform.position, Quaternion.identity);
+        shadowPoofExplode.Play();
+        shadowPoofMagic.Play();
 
-        yield return new WaitForSeconds(shadowAnimLength[1].length);
+        yield return new WaitForSeconds(shadowPoofMagic.clip.length);
         Destroy(shadow);
         Destroy(gameObject); // Destroys boss gameobject
     }
