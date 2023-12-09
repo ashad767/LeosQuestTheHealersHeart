@@ -14,6 +14,7 @@ public class SceneSwitch : MonoBehaviour
 
     public bool isSceneSwapper;
 
+
     private void Update()
     {
         //Debug.Log(playerCutsceneSprite.transform.position);

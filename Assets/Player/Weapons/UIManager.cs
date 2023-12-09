@@ -15,6 +15,9 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Image shieldBar;
     [SerializeField] private Image energyBar;
 
+    [SerializeField] private Text Quests;
+    private string currentQuests;
+
 
 
     [SerializeField] private Image[] borders;
@@ -40,6 +43,14 @@ public class UIManager : MonoBehaviour
         
         healthBar.rectTransform.sizeDelta= new Vector2(player.GetHealth() / player.maxHealth * 327, 46.5929f);
         energyBar.rectTransform.sizeDelta = new Vector2(player.GetEnergy() / player.MaxEnergy * 327, 46.6839f);
+
+        currentQuests = "";
+        foreach(KeyValuePair<string, string> quest in player.quests)
+        {
+            currentQuests += quest.Value + "\n";
+        }
+
+        Quests.text = currentQuests;
     }
 
 }
