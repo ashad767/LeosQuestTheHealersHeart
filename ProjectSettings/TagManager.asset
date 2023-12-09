@@ -24,6 +24,8 @@ TagManager:
   - decoration1Tilemap
   - FrontFront
   - GameManagers
+  - NavSurface
+  - EnemiesDead
   layers:
   - Default
   - TransparentFX
@@ -34,10 +36,10 @@ TagManager:
   - UI BG
   - UI Front
   - 
+  - collision
   - 
   - 
-  - 
-  - 
+  - ground
   - 
   - 
   - 

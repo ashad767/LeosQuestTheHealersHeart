@@ -5,13 +5,8 @@ using UnityEngine.UI;
 
 public class MenuController : MonoBehaviour
 {
-    public GameObject TabMenu;
     public GameObject player;
 
-    public Text playerInfo;
-    public Text swordLvl;
-    public Text bowLvl;
-    public Text magicLvl;
 
     public GameObject mainCamera;
     public GameObject CutsceneCameras;
@@ -29,30 +24,7 @@ public class MenuController : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Tab) && !inCutscene)
-        {
-            if (!inCutscene)
-            {
-                player.SetActive(!player.activeInHierarchy);
-            }
-           
-            TabMenu.SetActive(!TabMenu.activeInHierarchy);
 
-            if (Time.timeScale != 1)
-            {
-                Time.timeScale = 1;
-            }
-            else
-            {
-                Time.timeScale = 0;
-            }
-        }
-
-        playerInfo.text = "Available Points: " + playerScript.skillPoints.ToString() +"\nAvailable Coins: " + playerScript.coins.ToString();
-
-        swordLvl.text = (playerScript.swordLevel + 1).ToString();
-        bowLvl.text = (playerScript.bowLevel + 1).ToString();
-        magicLvl.text = (playerScript.magicLevel + 1).ToString();
     }
 
 

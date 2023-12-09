@@ -1,20 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyWalk : EnemyState
 {
-    private Vector3 target;
+    public Vector3 target;
     private Vector3 direction;
+    private NavMeshAgent agent;
+    private BoxCollider2D bc;
+    public float timer = 0f;
 
     public EnemyWalk(Enemy enemy, EnemySM enemySM, string AnimBoolName) : base(enemy, enemySM, AnimBoolName)
     {
+        agent = enemy.GetComponent<NavMeshAgent>();
+        bc = enemy.GetComponentInChildren<BoxCollider2D>();
     }
 
     public override void EnterState()
     {
         base.EnterState();
         target = GetRandomPoint();
+        agent.speed = 1f;
     }
 
     public override void ExitState()
@@ -25,16 +32,26 @@ public class EnemyWalk : EnemyState
     public override void FrameUpdate()
     {
         base.FrameUpdate();
-
+        timer += Time.deltaTime;
         if (enemy.IsAggro)
             enemy.enemySM.ChangeState(enemy.ChaseState);
 
         direction = (target - enemy.transform.position).normalized;
+        agent.destination = target;
 
-        enemy.MoveEnemy(direction * enemy.MovementSpeed);
+        enemy.MoveEnemy(direction * agent.speed);
 
         if((enemy.transform.position - target).sqrMagnitude < 0.01f)
         {
+            target = GetRandomPoint();
+        }
+        /*else if(enemy.RB.velocity.x < 0.05f && enemy.RB.velocity.y < 0.05f)
+        {
+            target = GetRandomPoint();
+        }*/
+        else if(timer >= 2f)
+        {
+            timer = 0f;
             target = GetRandomPoint();
         }
     }
@@ -44,7 +61,7 @@ public class EnemyWalk : EnemyState
         base.AnimationTriggerEvent(audioClip);
     }
 
-    private Vector3 GetRandomPoint()
+    public Vector3 GetRandomPoint()
     {
         return enemy.transform.position + (Vector3)UnityEngine.Random.insideUnitCircle * enemy.MovementRange;
     }

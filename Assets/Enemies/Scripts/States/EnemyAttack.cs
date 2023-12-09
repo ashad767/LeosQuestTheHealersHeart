@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyAttack : EnemyState
 {
     protected Transform PlayerTransform;
+    private NavMeshAgent agent;
 
     public EnemyAttack(Enemy enemy, EnemySM enemySM, string AnimBoolName) : base(enemy, enemySM, AnimBoolName)
     {
         PlayerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        agent = enemy.GetComponent<NavMeshAgent>();
     }
 
     public override void EnterState()
@@ -16,7 +19,8 @@ public class EnemyAttack : EnemyState
         base.EnterState();
         //enemy.RB.constraints = RigidbodyConstraints2D.FreezePositionY;
         //enemy.RB.constraints = RigidbodyConstraints2D.FreezePositionX;
-
+        enemy.RB.constraints = RigidbodyConstraints2D.FreezeAll;
+        agent.speed = 0f;
         //enemy.RB.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 
@@ -24,7 +28,7 @@ public class EnemyAttack : EnemyState
     {
         base.ExitState();
        // enemy.RB.constraints = RigidbodyConstraints2D.None;
-        //enemy.RB.constraints = RigidbodyConstraints2D.FreezeRotation;
+        enemy.RB.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 
     public override void FrameUpdate()
@@ -32,9 +36,11 @@ public class EnemyAttack : EnemyState
         base.FrameUpdate();
 
         enemy.MoveEnemy(Vector2.zero);
-        
 
-        
+        if(enemy.ability != null && !(enemy.ability is Zombie_Ability))
+        {
+            enemy.ability.OnAbility();
+        }
     }
 
     public override void AnimationTriggerEvent(AudioClip audioClip)

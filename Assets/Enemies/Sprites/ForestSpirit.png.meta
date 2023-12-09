@@ -1,0 +1,4813 @@
+fileFormatVersion: 2
+guid: cee6d939af6fcd84f9e05854cf3dce25
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ForestSpirit_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2047
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3ee739cb68b534986c8e77edcbbc02
+      internalID: -1586976228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2047
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d5ef94c4e8279e49bf2d0bafc7c86be
+      internalID: -792625076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2047
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0449649a1e8f5994d951cc522c5608f8
+      internalID: -1273075022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2047
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151316c158334034ea84a9004ec72ad8
+      internalID: -280056198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2047
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d115410dae43e2147998cea7847b3b03
+      internalID: -1999341272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2047
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea53af940dc14a1478503d59231fd1f3
+      internalID: -1113344889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2047
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa9eb2a3041113d40a4b3890fbf8e53b
+      internalID: 1998213764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2047
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea364d46ba1e44a4681924a50a9f8bc0
+      internalID: -1526225933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1983
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b058bb6fe6ac6f84a890d36b98920ae0
+      internalID: -512907086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1983
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b2c5f58044b892429d1d9dc089f1d30
+      internalID: -1473976199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1983
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ece084362d62f941aea1347cf9db85f
+      internalID: -1192724350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1983
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfc95a05c33306d4785864237b8fcce6
+      internalID: 1497495420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_12
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1983
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e078a8ad6d4fbfc48ad649d6575bd87f
+      internalID: 797664733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_13
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1983
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1841673f3c4edb940bb19c685dc71b60
+      internalID: 2090640347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_14
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1983
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716fec841c12ac04fa14ed461f9f6f0e
+      internalID: 1477519128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1919
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe23047912d23a419b32348409aab71
+      internalID: 2010395746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1919
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7419ab798d649964eb6e723c335da9e8
+      internalID: 1213798582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1919
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b01ffa69c3d98940b5ab785a4257c4f
+      internalID: 507719886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1919
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d5091da9cf59564e9f88908d041808f
+      internalID: 694546007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_19
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1919
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f67afe2f12f0580468a6a7795c0e8b26
+      internalID: 1256341033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_20
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1919
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc318929e46f6744997d4f6c0ce45a4
+      internalID: -382003014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_21
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1919
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce458f63899ba0041812b60ba74b0d18
+      internalID: -1693313685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1855
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916b88dd961130b488470d29615871b8
+      internalID: -182905166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_23
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1855
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75cd86a4da949224796c7ace529943c1
+      internalID: -462702880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1855
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea8a9501b17b3374caee2deb86693e7f
+      internalID: 1445766761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_25
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1855
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7826483a5a8361e4691fb5482842bcf0
+      internalID: 1762111026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_26
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1855
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4c25812dac4664c814ef29532decb6
+      internalID: -571747013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_27
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1855
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73098c10c24a781479c804c34e00dc4d
+      internalID: 2015323352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_28
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1855
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 039c04ef50942cb4b94235543717dec0
+      internalID: -118774639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1791
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e649a83b68c3d84bb7a2ec5f24a9215
+      internalID: 1852886922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_30
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1791
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe25cadf1bdb664586a3497de78df35
+      internalID: -913852706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_31
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1791
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d63fd7a254480d419a0887412b33814
+      internalID: -769577618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_32
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1791
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35189fb29f70cc740a56c72ce73a68d3
+      internalID: -928695520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_33
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1791
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc444333f83e42e4c84e0a06c91e8e04
+      internalID: -952593821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_34
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1791
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19281ea3fa7dc89469a3b51bc37960aa
+      internalID: -2001182064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_35
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1791
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92b2d3deb657d24c9b15bd036269f19
+      internalID: 1372371378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_36
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1791
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f3138087233804690451694acc1a2c
+      internalID: 473510249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1727
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bd6fee718e581c48b3ce33ea223c770
+      internalID: 74257870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_38
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1727
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d83eb4dad958f40907f94e30dc3215
+      internalID: 172627577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_39
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1727
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a760a23e92c3e164ea74ef887bcf9e1d
+      internalID: 328546954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_40
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1727
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9130e3a5088f8f64c9f7629ed435aac8
+      internalID: 1608034612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_41
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1727
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c04eb58d5a85e4e92221494b964b11
+      internalID: 1628779390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_42
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1727
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 022b377afd4a35448bcb206efed76b35
+      internalID: 1105436320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_43
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1727
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a451d1e90951448428f87ceb88cd8525
+      internalID: 212283904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_44
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1727
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f79e3ec93e6327143ab8b605d511f15d
+      internalID: 679310090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1663
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358968bf6eb984948802d502ca388369
+      internalID: -2133477571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_46
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1663
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdda2d4436ab1044796f7d56a45dbb3f
+      internalID: 1571353173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_47
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1663
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e61464e2dbab24faf1c8c3c6e1380c
+      internalID: -1708319923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_48
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1663
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 568e504a18a5e6c4aa7c55a11cb65b71
+      internalID: 1921004611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_49
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1663
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58c6f76a98f61ab43bfe635cfeb1ffb0
+      internalID: -912464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_50
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1663
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1d0309fbaab1942960cb2c4a052f66
+      internalID: 1084195447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_51
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1663
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 690625fe3cf28544281a2c04545e44f3
+      internalID: -731355462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_52
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1663
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a07d06927a2ac45a4c4612ccbd403f
+      internalID: -1751027422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1599
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae1a1137fe6655d4492b9b0e54e637f9
+      internalID: -1916976548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_54
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1599
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f49c93ce37934cb439be491812dcecd3
+      internalID: 1015442662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_55
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1599
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278c75ba2c169634c930f6215b065be6
+      internalID: 2067309777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_56
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1599
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 094160bf7821d824989cf606458ee2a2
+      internalID: -290902738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_57
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1599
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b5dd125d9ac8a547afc4aee7f3c1955
+      internalID: -1841267935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_58
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1599
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a2adc36844f4b4eac025fa64dfb3d4
+      internalID: 1890164117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_59
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1599
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89889a0cf5cf73944a278fcfd1016c00
+      internalID: 1354458510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_60
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1599
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd7704728f9a3648be32b1b3a10c2f9
+      internalID: -1496076352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_61
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1535
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 815b10b173570d84998105827ce52063
+      internalID: 1355759317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_62
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1535
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b2e57677660eb48b4ea8fc47cd02e6
+      internalID: 900140189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_63
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1535
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfabd0facd2699048a9e831e39d143d1
+      internalID: 1790480838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_64
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1535
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6483b5349c837a44ca9264bcb51478be
+      internalID: 264459152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_65
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1535
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a6710f93fe73849ab2fbbbfa0c3054
+      internalID: 756389701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_66
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1535
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f291c78fed78f1b41a1151acba0de568
+      internalID: 966017907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_67
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1535
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f556c1e4fd2f7424abda77e1a94a0571
+      internalID: 292120564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_68
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1535
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e18f124ef9f01ce479bd48d224589cc2
+      internalID: 1484978792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_69
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1535
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bfa0245e8cc2094b95481eec3e554dd
+      internalID: 1603812157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1471
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3db687fb9a4a1cb4e9cb79c8fad35c92
+      internalID: -698101993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_71
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1471
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4953d8d1ef7e1048a3d0c07ea9c3d1f
+      internalID: -1013723922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_72
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1471
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e2993800718cf4cbcae59eca54c0af
+      internalID: 1697425474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_73
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1471
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9743838d0033a8441ba4e0601d4f001e
+      internalID: -105280063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_74
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1471
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7eecb13c783766419cd6d28b34a9555
+      internalID: 678186198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_75
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1471
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1487424b9e045584a98710b17588d502
+      internalID: 1156153249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_76
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1471
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c2ea3a4e6ea3a479218b62256722d9
+      internalID: -1318612180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_77
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1471
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 924e7e4bf928bea43b66cd1b0bb431ce
+      internalID: -118569395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_78
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1471
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a68c8c2a9b25b4b86f7925259daaeb
+      internalID: 1548904436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_79
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1407
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb5c4bd2da3a15d46a27ff705752f8c1
+      internalID: 1887673429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_80
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1407
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32d0dfc3fc780f4aa251520055c47a0
+      internalID: -2013885064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_81
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1407
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 342bbe3350129ee4a963d4b8d096cb64
+      internalID: -1387283859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_82
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1407
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cf04098cbdea0641b9c833887492ed6
+      internalID: -1264617500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_83
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1407
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af979a09f3b0cb94eb00577bd0d1fadb
+      internalID: 572804518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_84
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1407
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cce8b56c48e9f041a6ef274a2ae692b
+      internalID: 517810709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_85
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1407
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5609f9fced22d7a48ad2ca7e72d5b372
+      internalID: -885234376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_86
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1407
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40fc894b9c4c88f4ca2a28484b4bbae7
+      internalID: -1736112571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_87
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1407
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af5b97b86b676f4eb11dd638ba83333
+      internalID: 972864259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1343
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 965f99390d88cfd4c9cbc9e6b2a745c6
+      internalID: 369514514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_89
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1343
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b28d8a188d5257241bc5c11a9832c758
+      internalID: -594237573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_90
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1343
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a65386473574148abac93d5baaa8f0
+      internalID: 1459448057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_91
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1343
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c8d690c4f9c5134c89b9baaa9851d5c
+      internalID: -860965998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_92
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1343
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71987f8b2ccb6214bbb995010327d5c0
+      internalID: 2079932838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_93
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1343
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1e2d583692e0548b813f8818d1e015
+      internalID: -1316041481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_94
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1343
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a07b444a36bb0409e2a24dfad5d0e3
+      internalID: -1966887374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_95
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1343
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ce7176328d775449ab833ca72b8105
+      internalID: -1770613047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_96
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1343
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af27f9d61f5e2a46b65ae6cf35a1113
+      internalID: -1591520758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_97
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1279
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7920fd00a9a4be74dbd5344423fd80f0
+      internalID: 571287026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_98
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1279
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88196280d7587b4418d835e5eb45fa8c
+      internalID: -177354770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_99
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1279
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c636444bb6fdbe4992b629eb0e4e70e
+      internalID: -338827334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_100
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1279
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e57b1464a1dcdd4c820a934ff1a85d5
+      internalID: -803603405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_101
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1279
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a927204b536f24493413912fc9b909
+      internalID: -457687691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_102
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1279
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb0496c6dff8ce4db600231dcd42fee
+      internalID: -611507846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_103
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1215
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f4c51af118f964b9ebb3b78edbf086
+      internalID: -929108698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_104
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1215
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b58b3180211a3a4b81a2b7b41a31e64
+      internalID: 101654602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_105
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1215
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d68cf08e4dc4f84468b772d916dbbbd6
+      internalID: 1783838930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_106
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1215
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 748adfcde965b6242a98a8469fe5b78f
+      internalID: 618022398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_107
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1215
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea9317805cb403f42bdef1bdb59e01b7
+      internalID: -266158630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_108
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1215
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98171176977774b40934a527c625ec4e
+      internalID: -1153897488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_109
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1151
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693b9e919b3c8564c806e6719dc1517c
+      internalID: -899736622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_110
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1151
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eab34a453ee32d489182d2d43a01c96
+      internalID: 2099928953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_111
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1151
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fdc5da5278dc67429c58a980330972e
+      internalID: 13341933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_112
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1151
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cda406ff4dedd84b9fede749a0edda8
+      internalID: -1463599351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_113
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1151
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95b5da946d46e1d49852c25a62975919
+      internalID: -471478656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_114
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1151
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b829506c42a7c459591a22fae9ddca
+      internalID: 1053422440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_115
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1087
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e27cf46158b405647a655e839d9f6f91
+      internalID: 83728521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_116
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1087
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed0b2e2f0402eb4d9987e8d0d7bbf7a
+      internalID: -1198237717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_117
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1087
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f83085165476db4d8019b565eac15bd
+      internalID: -653246217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_118
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1087
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2765d8c7d8c6a44aa4d037fc290e5f
+      internalID: 978925494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_119
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1087
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5756be7d7e396b14b91c86a403c0d75b
+      internalID: -870480911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_120
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1087
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49be29e4fc7a6e74580e121680c541f2
+      internalID: 1054946378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_121
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1023
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d43a02e98c2b04b88bab252f9acf3e
+      internalID: -781245542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_122
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1023
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b719aeea49ff2e649b1def080a68668b
+      internalID: 854195134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_123
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1023
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 698455bc42d674547b13d6ba04f0fc7c
+      internalID: -2144479551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_124
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1023
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb38da93eb66964fb193147cf7859e0
+      internalID: -574829049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_125
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1023
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cb94ad67f9d3c94da35cd565346f430
+      internalID: -2035509933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_126
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1023
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32eab77654de32a4583151deac46db9f
+      internalID: 497457497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_127
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1023
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2d3203002042c4180eeff02c24a6cb
+      internalID: -1650935984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_128
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1023
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135e79fe811e5834793f1c42249e0c5a
+      internalID: 762209404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_129
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1023
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d05dbef5f53154bb580259d21b33e9
+      internalID: -1583256508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_130
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1023
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 720a9d8366a55254988b9ecec9a2c2b5
+      internalID: 827960620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_131
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1023
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 996b8fc3aee30a4428319475dcc16dcc
+      internalID: 1256582944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_132
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1023
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aaf67314904ebd46a8afae82671613d
+      internalID: -149137601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_133
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1023
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90992796def0e4c4ebb8583e64e387b9
+      internalID: 1573068424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_134
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 959
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 409517f57fd8d3646af71121058038eb
+      internalID: 2017483293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_135
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 959
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e72fd2e61ecdb04ba5631fbaa91b03c
+      internalID: 1706525121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_136
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 959
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45a17be93f397743992cb6da33cd840
+      internalID: -1218597270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_137
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 959
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42ce5df4dca4ef14f99f40309084fe6e
+      internalID: 1854234011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_138
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 959
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379723308cfb5d6448a50aa615ee5518
+      internalID: 729897466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_139
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 959
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4cb793b322d3f74fb63ab7f0a8d0923
+      internalID: -249155658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_140
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 959
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554b26d3320a4df4b8f88416ed15dc68
+      internalID: -1491749485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_141
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 959
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002fd0ea8a6eba94bb6eba5157cb9f5e
+      internalID: -230588062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_142
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 959
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae23f6f75c668f419f621f996aa51b3
+      internalID: 316417828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_143
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 959
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30efdb431fec56840bba0d28c21c7aa5
+      internalID: -1195869638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_144
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 959
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d1d77d37e2d7245a502e8f5a0012a3
+      internalID: 695861545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_145
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 959
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 657d941163f5e9d43ba65120a6d2e1e9
+      internalID: 161429077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_146
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 959
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e5e7fd76de8aa48a008dee734a4103
+      internalID: -1411993232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_147
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 895
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9b995c9d06729046a22afa4354c1a02
+      internalID: 1608677404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_148
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 895
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13610b450152af04297c8a3cf1f8362d
+      internalID: 258460352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_149
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 895
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9de1931ad3ef304ba7bd170ba559816
+      internalID: 818871500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_150
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 895
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab7137eecade24b4c8855a4a72a5fdf9
+      internalID: 985458021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_151
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 895
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa8c0dcf8a6f0d4da7f28eef6be2ec7
+      internalID: -1510094563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_152
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 895
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 420864bbf77c9a44fa142dbf1941faf0
+      internalID: -1568847343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_153
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 895
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea57c87af3e35e2489ad8982f889a38a
+      internalID: 1556352102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_154
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 895
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f908a1270293cc40bf7fb934537447b
+      internalID: 2047104034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_155
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 895
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d983beff68d4de0449408559a4d90154
+      internalID: 1939407473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_156
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 895
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b40df54fddca14fa1744b97a2e4808
+      internalID: 1691251450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_157
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 895
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480b9b9d9ac9eb24eb65b7577dd65efd
+      internalID: -1681117748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_158
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 895
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa4031752e468e4d90a67e4dc8c68fe
+      internalID: 286489309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_159
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 895
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b68798c6b2712488ef35af198c6336
+      internalID: 232756528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_160
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 831
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f157a7cdea44c194cb278693fdd5b495
+      internalID: -1754530242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_161
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 831
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0dbe71130f8b4246a165118f4abb944
+      internalID: -990196252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_162
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 831
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c3b7a93035fc11439e0cb5a7ec2fcf3
+      internalID: 95829334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_163
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 831
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b4b656fed61604c948431c0c9ec6f4
+      internalID: -322238730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_164
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 831
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f02498e68956c646ac3eacf49367562
+      internalID: -1425786133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_165
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 831
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88896a344186b5a46bb7010767fb05f1
+      internalID: 1900593988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_166
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 831
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce098055bb04d544692f1c6af68e8131
+      internalID: 1783882694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_167
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 831
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54dbb565f4b00f44a85f32bf38bd845b
+      internalID: -433721905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_168
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 831
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 764d395b7375e1043b01a9e53aee94b6
+      internalID: 1511716544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_169
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 831
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a5552fa92dfe6a43afa612700567261
+      internalID: -646514077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_170
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 831
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13e8dffa17ec2d4ea16bf656772553f
+      internalID: -2076205000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_171
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 831
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a7fdabd3768cb43b9bf775315c6154
+      internalID: -1235181707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_172
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 831
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5415ede82f492b34eab4f4a1f99b94db
+      internalID: 631646010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_173
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 767
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef78b249fd1a4db4d9359a4997eea5f1
+      internalID: -1804014367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_174
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 767
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ffc3c62a85073e4abf769e1d186ec7e
+      internalID: 1910647855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_175
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 767
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc5da0292aac4848bb180811dc72854
+      internalID: 523423218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_176
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 767
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e8d5f4ecc58e34f8350bbd9602f759
+      internalID: -1232787791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_177
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 767
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e917377b0a1068e4cadf6c80422ce7be
+      internalID: -1967288322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_178
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 767
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab3796ac40ee8b4591fec2370ecda2d
+      internalID: -524551999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_179
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 639
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa387ce0aa167014abbb8e31f81495f3
+      internalID: -687691739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_180
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 639
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e46ef130d5e4123429c9f82ab33f0dc7
+      internalID: -224920286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_181
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 639
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f9319273f8f37479dce2b48bc77c22
+      internalID: -1687858323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_182
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 639
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1027a90ba349d849aeac82688525ef8
+      internalID: -1481870846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_183
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 639
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844a4c1416ae2754db29dc82d8239dd3
+      internalID: -278667035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_184
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 639
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5566dbe5d6ebe544386bdd1dca8bea86
+      internalID: 1671176175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_185
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 639
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9576c21ef1968cc4d97f0f5480f3ef27
+      internalID: 1170409227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_186
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 639
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ebb73e1648fbf040b2e881795bb8708
+      internalID: 1955482818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_187
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 447
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea10d3d9c4bb554e95906060adfa81a
+      internalID: 244261730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_188
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 447
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b218c9090e8f64042b3180acee1159af
+      internalID: -644958189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_189
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 447
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb72f993b86b2b4db4883b52fc29e35
+      internalID: 95699204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_190
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 447
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152fc409e21162e4da7a5b97a87612f5
+      internalID: 1774975608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_191
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 447
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a787dbe2462b864885a898ca93a2581
+      internalID: 1126333188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_192
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 447
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea473a8b8399fc4e8e8e9a0b48bb7df
+      internalID: 1220689984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_193
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 447
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9cf4b6abc929d42a8ce7d74b1029a6
+      internalID: -1437959532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_194
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 447
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26b3bdfa2fe1b664aa7ba93b1f4849a0
+      internalID: -894888149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_195
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 447
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957d43b6f044e4d48a3035c6b9c3c232
+      internalID: 1808808121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_196
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 255
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d381e2024e6cf4b977832097aedb60
+      internalID: 669014919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_197
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 255
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c37824d2e9665499936dca973fac6f
+      internalID: -2112737685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_198
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 255
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7917ee4ef85f964298c2e8787b4b14b
+      internalID: -232134720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_199
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 255
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 009b35b39613bd843992bd728b709962
+      internalID: 1540876342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_200
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 255
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88951b46b6c470f4bb7edde16d274e2b
+      internalID: 295610426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_201
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 255
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272301ac1e093064b9bdf80f2c45bb78
+      internalID: -828483738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_202
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 255
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ef5024b3f74e642b09cb910bb50136
+      internalID: 1675598945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_203
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 255
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2220f16012c40be4ab2121d1f0e5aeea
+      internalID: -1075002066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_204
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 63
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e42a62b77dbd4644893b5afdf218071
+      internalID: -1760748838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_205
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 63
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac35c46f24311e4781ac3f8edd189fb
+      internalID: 277754211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_206
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 63
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6194a4cf360c4f4fb4beebafc51a861
+      internalID: -961794889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_207
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 63
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96eaeaf9306f5ad4b998786ffcf5910d
+      internalID: -1597207346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_208
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 63
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65eb5a73dd310624ea8e270df1785adf
+      internalID: 928752746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_209
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 63
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d30c0953d6249944b9d9cf68cc8d8c2f
+      internalID: -2133175617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_210
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 63
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79dfda73cdf88734cbb4139b060f40a9
+      internalID: -1376609365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_211
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 63
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f59b9dbe97082f94980d009730d5e7d1
+      internalID: -282418388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpirit_212
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 63
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db50bcaf2cac334f9d8ab716cd29ee8
+      internalID: -305336919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ForestSpirit_0: -1586976228
+      ForestSpirit_1: -792625076
+      ForestSpirit_10: -1192724350
+      ForestSpirit_100: -803603405
+      ForestSpirit_101: -457687691
+      ForestSpirit_102: -611507846
+      ForestSpirit_103: -929108698
+      ForestSpirit_104: 101654602
+      ForestSpirit_105: 1783838930
+      ForestSpirit_106: 618022398
+      ForestSpirit_107: -266158630
+      ForestSpirit_108: -1153897488
+      ForestSpirit_109: -899736622
+      ForestSpirit_11: 1497495420
+      ForestSpirit_110: 2099928953
+      ForestSpirit_111: 13341933
+      ForestSpirit_112: -1463599351
+      ForestSpirit_113: -471478656
+      ForestSpirit_114: 1053422440
+      ForestSpirit_115: 83728521
+      ForestSpirit_116: -1198237717
+      ForestSpirit_117: -653246217
+      ForestSpirit_118: 978925494
+      ForestSpirit_119: -870480911
+      ForestSpirit_12: 797664733
+      ForestSpirit_120: 1054946378
+      ForestSpirit_121: -781245542
+      ForestSpirit_122: 854195134
+      ForestSpirit_123: -2144479551
+      ForestSpirit_124: -574829049
+      ForestSpirit_125: -2035509933
+      ForestSpirit_126: 497457497
+      ForestSpirit_127: -1650935984
+      ForestSpirit_128: 762209404
+      ForestSpirit_129: -1583256508
+      ForestSpirit_13: 2090640347
+      ForestSpirit_130: 827960620
+      ForestSpirit_131: 1256582944
+      ForestSpirit_132: -149137601
+      ForestSpirit_133: 1573068424
+      ForestSpirit_134: 2017483293
+      ForestSpirit_135: 1706525121
+      ForestSpirit_136: -1218597270
+      ForestSpirit_137: 1854234011
+      ForestSpirit_138: 729897466
+      ForestSpirit_139: -249155658
+      ForestSpirit_14: 1477519128
+      ForestSpirit_140: -1491749485
+      ForestSpirit_141: -230588062
+      ForestSpirit_142: 316417828
+      ForestSpirit_143: -1195869638
+      ForestSpirit_144: 695861545
+      ForestSpirit_145: 161429077
+      ForestSpirit_146: -1411993232
+      ForestSpirit_147: 1608677404
+      ForestSpirit_148: 258460352
+      ForestSpirit_149: 818871500
+      ForestSpirit_15: 2010395746
+      ForestSpirit_150: 985458021
+      ForestSpirit_151: -1510094563
+      ForestSpirit_152: -1568847343
+      ForestSpirit_153: 1556352102
+      ForestSpirit_154: 2047104034
+      ForestSpirit_155: 1939407473
+      ForestSpirit_156: 1691251450
+      ForestSpirit_157: -1681117748
+      ForestSpirit_158: 286489309
+      ForestSpirit_159: 232756528
+      ForestSpirit_16: 1213798582
+      ForestSpirit_160: -1754530242
+      ForestSpirit_161: -990196252
+      ForestSpirit_162: 95829334
+      ForestSpirit_163: -322238730
+      ForestSpirit_164: -1425786133
+      ForestSpirit_165: 1900593988
+      ForestSpirit_166: 1783882694
+      ForestSpirit_167: -433721905
+      ForestSpirit_168: 1511716544
+      ForestSpirit_169: -646514077
+      ForestSpirit_17: 507719886
+      ForestSpirit_170: -2076205000
+      ForestSpirit_171: -1235181707
+      ForestSpirit_172: 631646010
+      ForestSpirit_173: -1804014367
+      ForestSpirit_174: 1910647855
+      ForestSpirit_175: 523423218
+      ForestSpirit_176: -1232787791
+      ForestSpirit_177: -1967288322
+      ForestSpirit_178: -524551999
+      ForestSpirit_179: -687691739
+      ForestSpirit_18: 694546007
+      ForestSpirit_180: -224920286
+      ForestSpirit_181: -1687858323
+      ForestSpirit_182: -1481870846
+      ForestSpirit_183: -278667035
+      ForestSpirit_184: 1671176175
+      ForestSpirit_185: 1170409227
+      ForestSpirit_186: 1955482818
+      ForestSpirit_187: 244261730
+      ForestSpirit_188: -644958189
+      ForestSpirit_189: 95699204
+      ForestSpirit_19: 1256341033
+      ForestSpirit_190: 1774975608
+      ForestSpirit_191: 1126333188
+      ForestSpirit_192: 1220689984
+      ForestSpirit_193: -1437959532
+      ForestSpirit_194: -894888149
+      ForestSpirit_195: 1808808121
+      ForestSpirit_196: 669014919
+      ForestSpirit_197: -2112737685
+      ForestSpirit_198: -232134720
+      ForestSpirit_199: 1540876342
+      ForestSpirit_2: -1273075022
+      ForestSpirit_20: -382003014
+      ForestSpirit_200: 295610426
+      ForestSpirit_201: -828483738
+      ForestSpirit_202: 1675598945
+      ForestSpirit_203: -1075002066
+      ForestSpirit_204: -1760748838
+      ForestSpirit_205: 277754211
+      ForestSpirit_206: -961794889
+      ForestSpirit_207: -1597207346
+      ForestSpirit_208: 928752746
+      ForestSpirit_209: -2133175617
+      ForestSpirit_21: -1693313685
+      ForestSpirit_210: -1376609365
+      ForestSpirit_211: -282418388
+      ForestSpirit_212: -305336919
+      ForestSpirit_22: -182905166
+      ForestSpirit_23: -462702880
+      ForestSpirit_24: 1445766761
+      ForestSpirit_25: 1762111026
+      ForestSpirit_26: -571747013
+      ForestSpirit_27: 2015323352
+      ForestSpirit_28: -118774639
+      ForestSpirit_29: 1852886922
+      ForestSpirit_3: -280056198
+      ForestSpirit_30: -913852706
+      ForestSpirit_31: -769577618
+      ForestSpirit_32: -928695520
+      ForestSpirit_33: -952593821
+      ForestSpirit_34: -2001182064
+      ForestSpirit_35: 1372371378
+      ForestSpirit_36: 473510249
+      ForestSpirit_37: 74257870
+      ForestSpirit_38: 172627577
+      ForestSpirit_39: 328546954
+      ForestSpirit_4: -1999341272
+      ForestSpirit_40: 1608034612
+      ForestSpirit_41: 1628779390
+      ForestSpirit_42: 1105436320
+      ForestSpirit_43: 212283904
+      ForestSpirit_44: 679310090
+      ForestSpirit_45: -2133477571
+      ForestSpirit_46: 1571353173
+      ForestSpirit_47: -1708319923
+      ForestSpirit_48: 1921004611
+      ForestSpirit_49: -912464
+      ForestSpirit_5: -1113344889
+      ForestSpirit_50: 1084195447
+      ForestSpirit_51: -731355462
+      ForestSpirit_52: -1751027422
+      ForestSpirit_53: -1916976548
+      ForestSpirit_54: 1015442662
+      ForestSpirit_55: 2067309777
+      ForestSpirit_56: -290902738
+      ForestSpirit_57: -1841267935
+      ForestSpirit_58: 1890164117
+      ForestSpirit_59: 1354458510
+      ForestSpirit_6: 1998213764
+      ForestSpirit_60: -1496076352
+      ForestSpirit_61: 1355759317
+      ForestSpirit_62: 900140189
+      ForestSpirit_63: 1790480838
+      ForestSpirit_64: 264459152
+      ForestSpirit_65: 756389701
+      ForestSpirit_66: 966017907
+      ForestSpirit_67: 292120564
+      ForestSpirit_68: 1484978792
+      ForestSpirit_69: 1603812157
+      ForestSpirit_7: -1526225933
+      ForestSpirit_70: -698101993
+      ForestSpirit_71: -1013723922
+      ForestSpirit_72: 1697425474
+      ForestSpirit_73: -105280063
+      ForestSpirit_74: 678186198
+      ForestSpirit_75: 1156153249
+      ForestSpirit_76: -1318612180
+      ForestSpirit_77: -118569395
+      ForestSpirit_78: 1548904436
+      ForestSpirit_79: 1887673429
+      ForestSpirit_8: -512907086
+      ForestSpirit_80: -2013885064
+      ForestSpirit_81: -1387283859
+      ForestSpirit_82: -1264617500
+      ForestSpirit_83: 572804518
+      ForestSpirit_84: 517810709
+      ForestSpirit_85: -885234376
+      ForestSpirit_86: -1736112571
+      ForestSpirit_87: 972864259
+      ForestSpirit_88: 369514514
+      ForestSpirit_89: -594237573
+      ForestSpirit_9: -1473976199
+      ForestSpirit_90: 1459448057
+      ForestSpirit_91: -860965998
+      ForestSpirit_92: 2079932838
+      ForestSpirit_93: -1316041481
+      ForestSpirit_94: -1966887374
+      ForestSpirit_95: -1770613047
+      ForestSpirit_96: -1591520758
+      ForestSpirit_97: 571287026
+      ForestSpirit_98: -177354770
+      ForestSpirit_99: -338827334
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

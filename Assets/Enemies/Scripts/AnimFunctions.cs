@@ -5,10 +5,14 @@ using UnityEngine;
 public class AnimFunctions : MonoBehaviour
 {
     public Enemy enemy;
+    public Animator anim;
+    public EnemiesDead enemyDead;
 
     public void Awake()
     {
         enemy = GetComponentInParent<Enemy>();
+        anim = GetComponent<Animator>();
+        enemyDead = GameObject.FindGameObjectWithTag("EnemiesDead").GetComponent<EnemiesDead>();
     }
 
     public void OnAttack()
@@ -31,7 +35,9 @@ public class AnimFunctions : MonoBehaviour
 
     public void OnDead()
     {
-        Destroy(enemy.gameObject);
+        anim.speed = 0f;
+        enemy.IsDead = true;
+        enemyDead.enemies.Remove(enemy);
     }
 
     public void CheckAttack()
@@ -44,11 +50,23 @@ public class AnimFunctions : MonoBehaviour
 
     public void RangedAttack()
     {
-        enemy.enemySM.CurrentEnemyState.RangedAttack(enemy.gameObject.name);
+        enemy.enemySM.CurrentEnemyState.RangedAttack(enemy.Projectile);
     }
 
     public void OnExplode()
     {
         Destroy(this.gameObject);
+    }
+
+    public void CheckIsReady()
+    {
+        ShadowImp_Ability shadowAb = GetComponentInParent<ShadowImp_Ability>();
+        if(shadowAb.cooldown <= 0f)
+            shadowAb.isReady = true;
+    }
+
+    public void CheckHeavyAttack()
+    {
+        enemy.ability.OnAbility();
     }
 }

@@ -2,7 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.Collections;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Player : Entity
 {
@@ -50,11 +52,13 @@ public class Player : Entity
     [HideInInspector] public int magicLevel;
     public Dictionary<int, int> indexToWeaponLevel = new Dictionary<int, int>() {};
 
-
-    [HideInInspector] public int skillPoints;
-    [HideInInspector] public int coins;
+    [HideInInspector] public float coins;
 
     public float invincibleTimer;
+
+    private float coinMultiplier = 1;
+    private float armour = 1;
+    public Dictionary<string, string> quests = new Dictionary<string, string>();
 
     #endregion
 
@@ -139,6 +143,9 @@ public class Player : Entity
         rb = GetComponent<Rigidbody2D>();
 
         stateMachine.Initialize(idleState);
+        var agent = GetComponent<NavMeshAgent>();
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
     }
 
     protected override void Update()
@@ -331,19 +338,19 @@ public class Player : Entity
         {
             if (currentShield > 0)
             {
-                if (currentShield >= damage)
+                if (currentShield >= damage * 1 / armour)
                 {
-                    currentShield -= damage;
+                    currentShield -= damage * 1/armour;
                 }
                 else
                 {
-                    base.TakeDamage(damage - currentShield);
+                    base.TakeDamage(damage - currentShield * 1 / armour);
                     currentShield = 0;
                 }
             }
             else
             {
-                base.TakeDamage(damage);
+                base.TakeDamage(damage * 1 / armour);
             }
         }
 
@@ -351,15 +358,11 @@ public class Player : Entity
 
     public void UpgradeSkill(int skill)
     {
-        if(skillPoints > 0)
-        {
-            
             if(skill == 0 && swordLevel != 3)
             {
                 swordLevel = Math.Min(swordLevel + 1, 3);
                 indexToWeaponLevel.Remove(0);
                 indexToWeaponLevel.Add(0, swordLevel);
-                skillPoints--;
             }
 
             else if(skill == 1 && bowLevel != 3)
@@ -367,7 +370,6 @@ public class Player : Entity
                 bowLevel = Math.Min(bowLevel + 1, 3);
                 indexToWeaponLevel.Remove(1);
                 indexToWeaponLevel.Add(1, bowLevel);
-                skillPoints--;
             }
 
             else if (skill == 2 && magicLevel != 3)
@@ -375,17 +377,15 @@ public class Player : Entity
                 magicLevel = Math.Min(magicLevel + 1, 3);
                 indexToWeaponLevel.Remove(2);
                 indexToWeaponLevel.Add(2, magicLevel);
-                skillPoints--;
             }
 
             currentWeapon = weapons[currentWeaponIndex, indexToWeaponLevel[currentWeaponIndex]];
             playerUIManager.UpdatePlayerUI();
-        }
     }
 
     public void AddCoins(int amt)
     {
-        coins += amt;
+        coins += amt * coinMultiplier;
     }
 
     public bool RemoveCoins(int amt)
@@ -399,13 +399,70 @@ public class Player : Entity
         return true;
     }
 
+    public void AddMaxHealth(int amt)
+    {
+        maxHealth += amt;
+        Heal(amt);
+    }
+
+    public void AddMaxEnergy(int amt)
+    {
+        MaxEnergy += amt;
+        currentEnergy += amt;
+    }
+
+    public void ChangeSpeed(float speedIncrease)
+    {
+        //Base speed is 4
+        moveSpeed += speedIncrease;
+    }
+
+    public void ChangeCoinMultiplier(float coinIncrease)
+    {
+        //base is 1
+        coinMultiplier += coinIncrease;
+    }
+
+    public void ChangeArmourMultiplier(float coinIncrease)
+    {
+        //base is 1
+        armour += coinIncrease;
+    }
+
+    public void AddQuest(string questKey,  string questName)
+    {
+        quests.Add(questKey, questName);
+    }
+
+    public void RemoveQuest(string questKey)
+    {
+        if (quests.ContainsKey(questKey))
+        {
+            quests.Remove(questKey);
+        }
+        else
+        {
+            Debug.Log("Quest not found");
+        }
+    }
+
     public void TestInputs()
     {
+        if (Input.GetKeyDown(KeyCode.Insert))
+            UpgradeSkill(0);
+        if (Input.GetKeyDown(KeyCode.Home))
+            UpgradeSkill(1);
         if (Input.GetKeyDown(KeyCode.PageUp))
-            skillPoints++;
+            UpgradeSkill(2);
+
         if (Input.GetKeyDown(KeyCode.PageDown))
             AddCoins(1);
         if (Input.GetKeyDown(KeyCode.KeypadMinus))
             TakeDamage(5);
+
+        if (Input.GetKeyDown(KeyCode.LeftBracket))
+            AddQuest("Test", "This is a test quest");
+        if (Input.GetKeyDown(KeyCode.RightBracket))
+            RemoveQuest("Test");
     }
 }
