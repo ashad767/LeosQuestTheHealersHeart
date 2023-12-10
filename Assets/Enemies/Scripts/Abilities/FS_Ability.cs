@@ -50,6 +50,8 @@ public class FS_Ability : Ability
             newPos.y += dir.y;*/
 
             Rigidbody2D rb = GameObject.Instantiate(FSWall, newPos, Quaternion.identity);
+            //OnTriggerEnter2D(rb.gameObject.GetComponentInChildren<BoxCollider2D>());
+            
             audioSource.PlayOneShot(blockPlace, 0.6f);
 
             //float hyp = Mathf.Sqrt((direction.x * direction.x) + (direction.y * direction.y));
@@ -106,7 +108,7 @@ public class FS_Ability : Ability
 
             //if (direction.x > 0)
             //{
-             //   rot *= -1;
+                //   rot *= -1;
             //}
 
             
@@ -114,6 +116,7 @@ public class FS_Ability : Ability
             rb.transform.Rotate(0, 0, rot+90);
             
             cooldown = 3f;
+
         }
     }
 }

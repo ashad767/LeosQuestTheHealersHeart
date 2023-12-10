@@ -16,6 +16,10 @@ public class SwitchTabs : MonoBehaviour
     [SerializeField] private RectTransform items_Eqpmt;
     [SerializeField] private RectTransform items_Special;
 
+    // the btns under "Upgrades" tabs
+    [SerializeField] private RectTransform upgrades_Skills;
+    [SerializeField] private RectTransform upgrades_Weapon;
+
     private void Start()
     {
         currentLayout = itemsUI;
@@ -29,7 +33,7 @@ public class SwitchTabs : MonoBehaviour
     {
         currentLayout.gameObject.SetActive(false);
 
-        RectTransform[] layouts = { itemsUI, upgradesUI, items_Weapon, items_Eqpmt, items_Special };
+        RectTransform[] layouts = { itemsUI, upgradesUI, items_Weapon, items_Eqpmt, items_Special, upgrades_Skills, upgrades_Weapon };
         currentLayout = layouts[btnNumber];
 
         currentLayout.gameObject.SetActive(true);

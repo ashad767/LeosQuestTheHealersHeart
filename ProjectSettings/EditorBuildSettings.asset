@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Bosses/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -26,4 +26,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Final Game Scenes/Level4/Fourth Scene - The Caverns.unity
     guid: c999d97bcb7fdc8428c468375dbb1b87
+  - enabled: 1
+    path: Assets/Final Game Scenes/BossRooms/CavernBossScene/CavernBoss.unity
+    guid: 00f7e5b2a43613d499337716c1345b72
+  - enabled: 1
+    path: Assets/Final Game Scenes/BossRooms/EndBossScene/EndBoss.unity
+    guid: 1341abd02d8378946ac50761e4d59c69
+  - enabled: 1
+    path: Assets/Final Game Scenes/BossRooms/ForestBossScene/ForestBoss.unity
+    guid: c0b21b0426cd43641862d801deb77e62
+  - enabled: 1
+    path: Assets/Final Game Scenes/BossRooms/VillageBossScene/VillageBoss.unity
+    guid: 28fab1d01e41fb242bbea9f335ee6c90
   m_configObjects: {}

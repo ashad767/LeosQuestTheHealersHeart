@@ -11,6 +11,7 @@ public class rocksFallLogic : MonoBehaviour
     [SerializeField] private GameObject rockImpactPrefab;
     [SerializeField] private GameObject rockExplosionPrefab;
 
+   
     // For the prefab animations
     [SerializeField] private AnimationClip[] animLength;
 
@@ -67,8 +68,6 @@ public class rocksFallLogic : MonoBehaviour
 
         AudioSource.PlayClipAtPoint(rockImpactAudio.clip, Camera.main.transform.position, 0.45f); // Play impact audio without interruption
 
-        // Trigger screen shake when the rock lands
-        Camera.main.GetComponent<ScreenShake>().Shake();
 
         Destroy(gameObject);
         Destroy(rockImpact, animLength[0].length);

@@ -9,6 +9,9 @@ public class L1BossMovement : Entity
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private Animator a;
+
+    public GameObject mainCamera;
+
     [SerializeField] private CircleCollider2D triggerCircle;
     [SerializeField] private AnimationClip[] anim; // Some of the boss animations. Using it to access their lengths
     [SerializeField] private Transform MC;
@@ -331,9 +334,9 @@ public class L1BossMovement : Entity
             timeElapsed += Time.deltaTime; // line 6
             yield return null; // Let the physics update. Just goes to next frame to render the boss' position incrementally.
         }
-        
+
         // Trigger screen shake when the boss lands
-        Camera.main.GetComponent<ScreenShake>().Shake();
+        mainCamera.GetComponent<ScreenShake>().Shake();
         
         loadLandingSmoke(); // landing the jump animation
         
