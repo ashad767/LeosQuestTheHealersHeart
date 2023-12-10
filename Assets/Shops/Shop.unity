@@ -415,6 +415,7 @@ MonoBehaviour:
   items_Special: {fileID: 2126445058}
   upgrades_Skills: {fileID: 2058204904}
   upgrades_Weapon: {fileID: 1008895551}
+  shop: {fileID: 155151477}
 --- !u!1001 &35713209
 PrefabInstance:
   m_ObjectHideFlags: 0

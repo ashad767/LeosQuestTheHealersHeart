@@ -23,7 +23,7 @@ public class ItemsE_Manager : MonoBehaviour
     void Start()
     {
         // Uncomment this to reset the shop data
-        Reset();
+        //Reset();
 
         LoadItems();
     }
@@ -119,7 +119,7 @@ public class ItemsE_Manager : MonoBehaviour
         }
     }
 
-    private void checkIfPurchaseable()
+    public void checkIfPurchaseable()
     {
         for (int item = 0; item < SO_itemList.Length; item++)
         {

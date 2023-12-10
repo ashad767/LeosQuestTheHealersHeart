@@ -34,7 +34,7 @@ public class UpgradesSkillsManager : MonoBehaviour
     void Start()
     {
         // Uncomment this to reset the shop data
-        Reset();
+        //Reset();
 
         LoadItems();
         checkIfUpgradeable();
@@ -112,7 +112,7 @@ public class UpgradesSkillsManager : MonoBehaviour
         }
     }
 
-    private void checkIfUpgradeable()
+    public void checkIfUpgradeable()
     {
         for (int i = 0; i < SO_itemList.Length; i++)
         {

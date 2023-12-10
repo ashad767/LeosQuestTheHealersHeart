@@ -49,7 +49,7 @@ public class UpgradesWeaponsManager : MonoBehaviour
         };
 
         // Uncomment this to reset the shop data
-        Reset();
+        //Reset();
 
         LoadItems();
         checkIfUpgradeable();
@@ -127,7 +127,7 @@ public class UpgradesWeaponsManager : MonoBehaviour
         }
     }
 
-    private void checkIfUpgradeable()
+    public void checkIfUpgradeable()
     {
         for (int i = 0; i < SO_itemList.Length; i++)
         {
