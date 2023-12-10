@@ -924,7 +924,7 @@ PrefabInstance:
     - target: {fileID: 813688551012056957, guid: 67e7aba8515a87940a10e26c96ee9010, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 424986976, guid: aa09893c4a1de9246b23284ae3b27660, type: 3}
+      objectReference: {fileID: 21300000, guid: 0ed5443258155554495783fe1050f165, type: 3}
     - target: {fileID: 4154462370487576970, guid: 67e7aba8515a87940a10e26c96ee9010, type: 3}
       propertyPath: button
       value: 
@@ -1272,6 +1272,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3482329587359843215, guid: 9d5e91e70f5eee24ea386c57fa117d2b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fb6f7922185492d4b8e468e2cf988e2a, type: 3}
     - target: {fileID: 4790072686914080516, guid: 9d5e91e70f5eee24ea386c57fa117d2b, type: 3}
       propertyPath: m_Name
       value: Dialogue(NPC CUTSCENE)
@@ -1762,6 +1766,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3482329587359843215, guid: 9d5e91e70f5eee24ea386c57fa117d2b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fb6f7922185492d4b8e468e2cf988e2a, type: 3}
     - target: {fileID: 4790072686914080516, guid: 9d5e91e70f5eee24ea386c57fa117d2b, type: 3}
       propertyPath: m_Name
       value: Dialogue(NPC)
