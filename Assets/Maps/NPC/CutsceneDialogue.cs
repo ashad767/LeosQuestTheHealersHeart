@@ -15,8 +15,9 @@ public class CutsceneDialogue : MonoBehaviour
 {
     public GameObject dialoguePanel;
     public TMP_Text dialogueText;
-    public DialogueSet[] dialogue; 
+    public DialogueSet[] dialogue;
 
+    public MenuController menuController;
     private int dialogueSetIndex = 0;
     private int dialogueLineIndex = 0;
     private int totalDialogueSets;
@@ -41,9 +42,21 @@ public class CutsceneDialogue : MonoBehaviour
         totalLinesInCurrentSet = dialogue[dialogueSetIndex].dialogues.Length;
     }
 
+    public void StopTimeline()
+    {
+        if (director != null)
+        {
+            director.Stop();
+            EndDialogue();
+            menuController.enablePlayerForCutscene();
+
+
+        }
+    }
+
     void Update()
     {
-        Debug.Log(dialogueSetIndex + " " + dialogueLineIndex + this.gameObject.name);
+        
         //Debug.Log("totalDialogueSets: " + totalDialogueSets + " " + "totalLinesInCurrentSet: " + totalLinesInCurrentSet + this.gameObject.name);
 
         if (isDialogueStarted && dialogueText.text == dialogue[dialogueSetIndex].dialogues[dialogueLineIndex])
