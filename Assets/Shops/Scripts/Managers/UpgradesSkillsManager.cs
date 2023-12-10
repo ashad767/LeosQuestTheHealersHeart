@@ -6,13 +6,13 @@ using UnityEngine.UI;
 using System.IO;
 using static UnityEditor.Progress;
 
-public class UpgradesManager : MonoBehaviour
+public class UpgradesSkillsManager : MonoBehaviour
 {
-    private int playerCoins = 1000;
+    [SerializeField] private Player player;
     public TextMeshProUGUI playerCoinsTxt;
     
-    public CreateItem_SO[] SO_itemList;
-    public ItemInfo[] itemInfoList;
+    public CreateUpgrades_SO[] SO_itemList;
+    public ItemInfo_UpgradesSkills[] itemInfoList;
     public Button[] upgradeBtns;
     private readonly float[] multipliers = { 1.25f, 1.5f, 1.75f, 2f, 2.25f };
 
@@ -33,10 +33,8 @@ public class UpgradesManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerCoinsTxt.text = "Coins: " + playerCoins.ToString();
-
         // Uncomment this to reset the shop data
-        //Reset();
+        Reset();
 
         LoadItems();
         checkIfUpgradeable();
@@ -69,7 +67,7 @@ public class UpgradesManager : MonoBehaviour
     {
         for (int i = 0; i < SO_itemList.Length; i++)
         {
-            ItemInfo currentItem = itemInfoList[i];
+            ItemInfo_UpgradesSkills currentItem = itemInfoList[i];
 
             currentItem.itemImg.sprite = SO_itemList[i].itemImg;
             currentItem.itemImg.GetComponent<RectTransform>().sizeDelta = new Vector2(SO_itemList[i].imgWidth, 64f);
@@ -134,7 +132,7 @@ public class UpgradesManager : MonoBehaviour
                 // Update the "nextUpgradeInfoTxt" to tell the player by how much the buff will be increased by for the next item upgrade
                 itemInfoList[i].nextUpgradeInfoTxt.text = "* " + multipliers[upgradeItems_PointerCost_Pairs[i][nextUpgradeBarIndex]].ToString() + "x increase on next upgrade";
 
-                if (playerCoins >= upgradeItems_PointerCost_Pairs[i][costIndex])
+                if (player.coins >= upgradeItems_PointerCost_Pairs[i][costIndex])
                 {
                     currentUpgradeBtn.interactable = true;
                     currentUpgradeBtn.GetComponentInChildren<TextMeshProUGUI>().text = "UPGRADE";
@@ -155,11 +153,10 @@ public class UpgradesManager : MonoBehaviour
     {
         int itemCost = upgradeItems_PointerCost_Pairs[item][costIndex];
         
-        if (playerCoins >= itemCost)
+        if (player.RemoveCoins(itemCost))
         {
             // Decrease the player's coins (top right corner)
-            playerCoins -= itemCost;
-            playerCoinsTxt.text = "Coins: " + playerCoins.ToString();
+            playerCoinsTxt.text = "Coins: " + player.coins.ToString();
 
             // Changes the color of the upgrade bar that the "pointerToNextUpgradeBar" index is pointing to, to green
             itemInfoList[item].upgradeBarsList[upgradeItems_PointerCost_Pairs[item][nextUpgradeBarIndex]].color = Color.green;
