@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class darknessManager : MonoBehaviour
 {
@@ -9,11 +10,15 @@ public class darknessManager : MonoBehaviour
     [SerializeField] private GameObject MC;
     [SerializeField] private GameObject directionalLight;
     [SerializeField] private GameObject MC_PointLight;
+
+    public Tilemap[] tilemapsToChange;
     
     // I have to keep track of the existing mini-enemies in this list so that I can update their respective material type when the darkening effect activates/deactivates
     public List<GameObject> spawnedMiniEnemies = new List<GameObject>();
 
     private Material originalMaterial;
+
+    private Material originalTilemapMaterial;
     [SerializeField] private Material darkenMaterial;
 
     public bool isDark = false;
@@ -21,8 +26,10 @@ public class darknessManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // this stores the original material type of the sprites. To be used when the darkening effect fades away.
-        originalMaterial = background.GetComponent<SpriteRenderer>().material;
+        originalMaterial = bossSkeleton.GetComponent<SpriteRenderer>().material;
+
+        originalTilemapMaterial = tilemapsToChange[0].GetComponent<TilemapRenderer>().material; 
+
     }
 
     private void Update()
@@ -54,7 +61,12 @@ public class darknessManager : MonoBehaviour
     public void activateDarkness()
     {
         isDark = true;
-        background.GetComponent<SpriteRenderer>().material = darkenMaterial;
+        foreach(Tilemap tilemap in tilemapsToChange)
+        {
+            TilemapRenderer renderer = tilemap.GetComponent<TilemapRenderer>();
+            renderer.material = darkenMaterial;
+        }
+
         if(bossSkeleton != null)
         {
             bossSkeleton.GetComponent<SpriteRenderer>().material = darkenMaterial;
@@ -104,7 +116,12 @@ public class darknessManager : MonoBehaviour
         }
 
         isDark = false;
-        background.GetComponent<SpriteRenderer>().material = originalMaterial;
+
+        foreach (Tilemap tilemap in tilemapsToChange)
+        {
+            TilemapRenderer renderer = tilemap.GetComponent<TilemapRenderer>();
+            renderer.material = originalTilemapMaterial;
+        }
         if (bossSkeleton != null)
         {
             bossSkeleton.GetComponent<SpriteRenderer>().material = originalMaterial;

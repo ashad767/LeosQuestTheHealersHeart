@@ -76,8 +76,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1993489113
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 1470059301, guid: 37fcfe366cc969f4a818ce0bb35ec5df, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -103,6 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireBallPrefab: {fileID: 5532919033880659257, guid: 1c7a00045ba26d746bc26cfe7ae48016, type: 3}
+  isBossDead: {fileID: 0}
   fireballRainStartAudio: {fileID: -3476519956636433169}
   fireballRainMiddleAudio: {fileID: -5354078178164262955}
   fireballRainEndAudio: {fileID: 8885200333252102029}

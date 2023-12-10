@@ -78,8 +78,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1993489113
+  m_SortingLayer: 5
   m_SortingOrder: 1
   m_Sprite: {fileID: -256652293, guid: 44668c136c3770a4c9dc28893195d2b7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -105,6 +105,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 20
+  IsRooted: 0
+  RootTimer: 2
   triggerCircle: {fileID: 331521728220175583}
   animLength:
   - {fileID: 7400000, guid: bbde0425a39746345a5f43650a75d9ae, type: 2}
