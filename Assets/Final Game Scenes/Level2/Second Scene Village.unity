@@ -3835,9 +3835,13 @@ PrefabInstance:
       propertyPath: m_AnimatedTiles.Array.data[15].second.m_AnimationSpeed
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 6339056728160071690, guid: 40c4d54436046c647b511ff7fe6177cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6339056728160071697, guid: 40c4d54436046c647b511ff7fe6177cf, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6339056728160071700, guid: 40c4d54436046c647b511ff7fe6177cf, type: 3}
       propertyPath: m_ColliderPaths.Array.size
