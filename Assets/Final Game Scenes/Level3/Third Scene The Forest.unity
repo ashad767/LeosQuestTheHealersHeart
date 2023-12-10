@@ -235,6 +235,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: CutsceneDialogue, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 6992044242333603784, guid: 9d5e91e70f5eee24ea386c57fa117d2b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8166231812404507596, guid: 9d5e91e70f5eee24ea386c57fa117d2b, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -263,7 +267,7 @@ PrefabInstance:
     - target: {fileID: 813688551012056957, guid: 67e7aba8515a87940a10e26c96ee9010, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -1985911688, guid: aa09893c4a1de9246b23284ae3b27660, type: 3}
+      objectReference: {fileID: 21300000, guid: 511a03cfeae5a784fb9cf53f94f16048, type: 3}
     - target: {fileID: 4154462370487576970, guid: 67e7aba8515a87940a10e26c96ee9010, type: 3}
       propertyPath: button
       value: 
@@ -912,6 +916,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3482329587359843215, guid: 9d5e91e70f5eee24ea386c57fa117d2b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 477ff21c7dcdbb140b087836a882a881, type: 3}
     - target: {fileID: 4790072686914080516, guid: 9d5e91e70f5eee24ea386c57fa117d2b, type: 3}
       propertyPath: m_Name
       value: Dialogue(NPC-Cutscene)
@@ -935,6 +943,10 @@ PrefabInstance:
     - target: {fileID: 6775836992525356443, guid: 9d5e91e70f5eee24ea386c57fa117d2b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: CutsceneDialogue, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992044242333603784, guid: 9d5e91e70f5eee24ea386c57fa117d2b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8166231812404507596, guid: 9d5e91e70f5eee24ea386c57fa117d2b, type: 3}
       propertyPath: m_IsActive
@@ -1227,6 +1239,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3482329587359843215, guid: 9d5e91e70f5eee24ea386c57fa117d2b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 477ff21c7dcdbb140b087836a882a881, type: 3}
     - target: {fileID: 4790072686914080516, guid: 9d5e91e70f5eee24ea386c57fa117d2b, type: 3}
       propertyPath: m_Name
       value: Dialogue(NPC - not cutscene)
@@ -1258,6 +1274,10 @@ PrefabInstance:
     - target: {fileID: 6992044242333603784, guid: 9d5e91e70f5eee24ea386c57fa117d2b, type: 3}
       propertyPath: m_Name
       value: Continue NOT CS
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992044242333603784, guid: 9d5e91e70f5eee24ea386c57fa117d2b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8166231812404507596, guid: 9d5e91e70f5eee24ea386c57fa117d2b, type: 3}
       propertyPath: m_Name
