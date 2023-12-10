@@ -11,6 +11,7 @@ public class Entity : MonoBehaviour
     public bool IsRooted = false;
     public float RootTimer = 2f;
     private Rigidbody2D RB;
+    public int value;
 
     protected virtual void Start()
     {

@@ -345,6 +345,8 @@ MonoBehaviour:
   - {fileID: 5800331696171867451}
   - {fileID: 2683816996036445765}
   IsDead: 0
+  value: 100
+  coin: {fileID: 6902377311953366790, guid: 82fb42261712f874ca443856ec7c8e27, type: 3}
   MovementRange: 5
   MovementSpeed: 1
   audioSource: {fileID: 0}
@@ -987,6 +989,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 0}
   anim: {fileID: 0}
+  enemyDead: {fileID: 0}
 --- !u!1 &9107942281038957010
 GameObject:
   m_ObjectHideFlags: 0
