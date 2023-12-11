@@ -19876,7 +19876,7 @@ MonoBehaviour:
   player: {fileID: 1003633553}
   NextRoom: {x: -42, y: -36, z: 0}
   CameraStuff: {fileID: 1513937518}
-  SceneToSwitchToo: Third Scene The Forest
+  SceneToSwitchToo: VillageBoss
   isSceneSwapper: 1
   E_Key_Object: {fileID: 1527524681}
   canLeave: 0

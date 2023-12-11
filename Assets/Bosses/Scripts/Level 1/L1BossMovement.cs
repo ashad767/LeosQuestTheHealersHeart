@@ -61,10 +61,13 @@ public class L1BossMovement : Entity
     private float jumpDuration = 1.2f; // Adjust the duration of the jump as needed
     #endregion
 
+    public SceneSwitch sceneSwitch;
+
 
     // Start is called before the first frame update
     protected override void Start()
     {
+        sceneSwitch.canLeave = false;
         base.Start(); // Simply sets "CurrentHealth = maxHealth;"
 
         DeathMaterial = GetComponent<SpriteRenderer>().material;
@@ -385,6 +388,7 @@ public class L1BossMovement : Entity
     private IEnumerator BossDeath()
     {
         dead = true;
+        sceneSwitch.canLeave = true;
         rb.bodyType = RigidbodyType2D.Static;
         a.SetTrigger("death"); // show death animation
         deathAudio.Play();
