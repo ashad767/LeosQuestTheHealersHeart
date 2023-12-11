@@ -46,4 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponImage: {fileID: -1504763096, guid: f06501cd5fe771543bc9a782fd8af9e3, type: 3}
   weaponName: Player Intermediate Sword
-  damage: 15
+  damage: 20

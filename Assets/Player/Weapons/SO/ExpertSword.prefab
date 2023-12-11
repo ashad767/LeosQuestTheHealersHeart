@@ -46,5 +46,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponImage: {fileID: 402961983, guid: f06501cd5fe771543bc9a782fd8af9e3, type: 3}
   weaponName: Player Advanced Sword
-  damage: 15
+  damage: 30
   effect: {fileID: 1506973812447396797, guid: b0e7bd0253a9a8046b71d796fed3d0bd, type: 3}

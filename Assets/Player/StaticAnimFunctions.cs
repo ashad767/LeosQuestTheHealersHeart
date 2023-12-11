@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StaticAnimFunctions : MonoBehaviour 
 {
@@ -36,5 +37,7 @@ public class StaticAnimFunctions : MonoBehaviour
     public void PlayerDeath()
     {
         Destroy(player.gameObject);
+
+        SceneManager.LoadScene("Main Menu");
     }
 }

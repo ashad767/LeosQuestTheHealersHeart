@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectName: Poison
   effectDuration: 10
-  effectDamage: 1
+  effectDamage: 3
 --- !u!212 &-2375371899426188606
 SpriteRenderer:
   m_ObjectHideFlags: 0

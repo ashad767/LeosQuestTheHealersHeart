@@ -5,6 +5,7 @@ using TMPro;
 using Unity.Collections;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class Player : Entity
 {
@@ -368,6 +369,7 @@ public class Player : Entity
                 swordLevel = Math.Min(swordLevel + 1, 3);
                 indexToWeaponLevel.Remove(0);
                 indexToWeaponLevel.Add(0, swordLevel);
+                PlayerPrefs.SetInt("Sword", swordLevel);
             }
 
             else if(skill == 1 && bowLevel != 3)
@@ -375,6 +377,7 @@ public class Player : Entity
                 bowLevel = Math.Min(bowLevel + 1, 3);
                 indexToWeaponLevel.Remove(1);
                 indexToWeaponLevel.Add(1, bowLevel);
+                PlayerPrefs.SetInt("Bow", bowLevel);
             }
 
             else if (skill == 2 && magicLevel != 3)
@@ -382,6 +385,7 @@ public class Player : Entity
                 magicLevel = Math.Min(magicLevel + 1, 3);
                 indexToWeaponLevel.Remove(2);
                 indexToWeaponLevel.Add(2, magicLevel);
+                PlayerPrefs.SetInt("Magic", magicLevel);
             }
 
             currentWeapon = weapons[currentWeaponIndex, indexToWeaponLevel[currentWeaponIndex]];
@@ -391,6 +395,7 @@ public class Player : Entity
     public void AddCoins(int amt)
     {
         coins += amt * coinMultiplier;
+        PlayerPrefs.SetFloat("Coins", coins);
     }
 
     public bool RemoveCoins(int amt)
@@ -401,6 +406,7 @@ public class Player : Entity
         }
 
         coins -= amt;
+        PlayerPrefs.SetFloat("Coins", coins);
         return true;
     }
 
@@ -460,14 +466,13 @@ public class Player : Entity
         if (Input.GetKeyDown(KeyCode.PageUp))
             UpgradeSkill(2);
 
-        if (Input.GetKeyDown(KeyCode.PageDown))
-            AddCoins(100);
+ 
         if (Input.GetKeyDown(KeyCode.KeypadMinus))
             TakeDamage(5);
+        if (Input.GetKeyDown(KeyCode.KeypadPlus))
+            AddCoins(100);
 
-        if (Input.GetKeyDown(KeyCode.LeftBracket))
-            AddQuest("Test", "This is a test quest");
-        if (Input.GetKeyDown(KeyCode.RightBracket))
-            RemoveQuest("Test");
+        if (Input.GetKeyDown(KeyCode.Alpha0))
+            SceneManager.LoadScene("Shop");
     }
 }

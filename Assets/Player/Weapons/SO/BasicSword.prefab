@@ -46,4 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponImage: {fileID: -1784336292, guid: f06501cd5fe771543bc9a782fd8af9e3, type: 3}
   weaponName: Basic Player Sword
-  damage: 10
+  damage: 15

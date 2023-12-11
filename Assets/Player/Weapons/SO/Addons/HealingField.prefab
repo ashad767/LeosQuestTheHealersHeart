@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 10
-  damage: 1
+  damage: 5
   hits: []
 --- !u!58 &-1944442225521559688
 CircleCollider2D:

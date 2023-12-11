@@ -182,6 +182,22 @@ public class UpgradesWeaponsManager : MonoBehaviour
             upgradeItems_PointerCost_Pairs[item][costIndex] = itemCost;
             itemInfoList[item].costTxt.text = itemCost.ToString() + " Coins";
 
+            switch (item)
+            {
+                case 0:
+                    player.UpgradeSkill(0);
+                    break;
+
+                case 1:
+                    player.UpgradeSkill(1);
+                    break;
+
+                case 2:
+                    player.UpgradeSkill(2);
+                    break;
+
+            }
+
             // Point to the next upgrade bar (as an integer)
             upgradeItems_PointerCost_Pairs[item][nextUpgradeBarIndex]++;
 
@@ -189,8 +205,11 @@ public class UpgradesWeaponsManager : MonoBehaviour
             itemInfoList[item].itemImg.sprite = spritesInit[item][nextBar];
             itemInfoList[item].descriptionTxt.text = desc[nextBar];
 
+
             // Check again which items the player can upgrade to
             checkIfUpgradeable();
+
+
         }
     }
 

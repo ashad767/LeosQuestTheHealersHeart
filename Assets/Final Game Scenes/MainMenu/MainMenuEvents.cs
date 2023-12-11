@@ -9,6 +9,8 @@ public class MainMenuEvents : MonoBehaviour
     public GameObject main;
     public GameObject controls;
 
+
+
     public void ExitButtonClick()
     {
 #if     UNITY_EDITOR
@@ -33,11 +35,21 @@ public class MainMenuEvents : MonoBehaviour
 
     public void StartGame()
     {
+        Reset();
+
+        SceneManager.LoadScene("StartScene - The House");
+    }
+
+    private void Reset()
+    {
         PlayerPrefs.SetFloat("Coins", 0f);
         PlayerPrefs.SetInt("Sword", 0);
         PlayerPrefs.SetInt("Bow", 0);
         PlayerPrefs.SetInt("Magic", 0);
 
-        SceneManager.LoadScene("StartScene - The House");
+        for (int i = 0; i < 3; i++)
+        {
+            PlayerPrefs.SetString("UW_" + i.ToString(), "");
+        }
     }
 }
