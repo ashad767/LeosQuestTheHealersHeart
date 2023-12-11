@@ -22,8 +22,7 @@ public class MainMenuEvents : MonoBehaviour
 
     public void ControlsButtonClick()
     {
-        main.SetActive(false);
-        controls.SetActive(true);
+        SceneManager.LoadScene("TrainingGrounds");
     }
 
     public void BackToMainFromControls()

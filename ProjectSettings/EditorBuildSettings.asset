@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Final Game Scenes/MainMenu/Main Menu.unity
     guid: c121df68b7b6a7c45a9a438ee65cb3ba
   - enabled: 1
+    path: Assets/Final Game Scenes/Level1/StartScene - The House.unity
+    guid: 77607f2c8822b8f4f82b7bd25139a7fc
+  - enabled: 1
     path: Assets/Shops/Shop.unity
     guid: 1f3d2c7fbdbdd0a4b9c6a0354bd5e3c4
   - enabled: 1
@@ -38,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Final Game Scenes/BossRooms/VillageBossScene/VillageBoss.unity
     guid: 28fab1d01e41fb242bbea9f335ee6c90
+  - enabled: 1
+    path: Assets/Final Game Scenes/TrainingGrounds/TrainingGrounds.unity
+    guid: 43c5cf14bd464ad418a79a354b8137ba
   m_configObjects: {}
