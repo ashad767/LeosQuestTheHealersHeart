@@ -122,6 +122,7 @@ public class UpgradesSkillsManager : MonoBehaviour
             {
                 currentUpgradeBtn.interactable = false;
                 currentUpgradeBtn.GetComponentInChildren<TextMeshProUGUI>().text = "<s><i>Maxed Out</i></s>";
+                currentUpgradeBtn.GetComponent<RectTransform>().anchoredPosition = new Vector2(-100f, -50f);
 
                 itemInfoList[i].nextUpgradeInfoTxt.text = "";
                 itemInfoList[i].costTxt.text = "";
@@ -136,12 +137,14 @@ public class UpgradesSkillsManager : MonoBehaviour
                 {
                     currentUpgradeBtn.interactable = true;
                     currentUpgradeBtn.GetComponentInChildren<TextMeshProUGUI>().text = "UPGRADE";
+                    currentUpgradeBtn.GetComponentInChildren<TextMeshProUGUI>().fontSize = 16.5f;
                 }
 
                 else
                 {
                     currentUpgradeBtn.interactable = false;
                     currentUpgradeBtn.GetComponentInChildren<TextMeshProUGUI>().text = "Insufficient Coins";
+                    currentUpgradeBtn.GetComponentInChildren<TextMeshProUGUI>().fontSize = 11.3f;
                 }
             }
             
@@ -167,6 +170,33 @@ public class UpgradesSkillsManager : MonoBehaviour
             itemCost = ConvertToMultiplesOf5( itemCost + (itemCost * multipliers[upgradeItems_PointerCost_Pairs[item][nextUpgradeBarIndex]]) );
             upgradeItems_PointerCost_Pairs[item][costIndex] = itemCost;
             itemInfoList[item].costTxt.text = itemCost.ToString() + " Coins";
+
+
+            float multiplier = multipliers[upgradeItems_PointerCost_Pairs[item][nextUpgradeBarIndex]];
+
+            switch (item)
+            {
+                case 0:
+                    player.ChangeSpeed(multiplier);
+                    break;
+
+                case 1:
+                    player.ChangeCoinMultiplier(multiplier);
+                    break;
+
+                case 2:
+                    player.ChangeArmourMultiplier(player.armour * multiplier);
+                    break;
+
+                case 3:
+                    player.AddMaxHealth((int)(player.maxHealth * multiplier));
+                    break;
+
+                case 4:
+                    player.AddMaxEnergy((int)(player.MaxEnergy * multiplier));
+                    break;
+            }
+
 
             // Point to the next upgrade bar (as an integer)
             upgradeItems_PointerCost_Pairs[item][nextUpgradeBarIndex]++;

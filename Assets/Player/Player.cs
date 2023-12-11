@@ -57,7 +57,7 @@ public class Player : Entity
     public float invincibleTimer;
 
     private float coinMultiplier = 1;
-    private float armour = 1;
+    public float armour = 1;
     public Dictionary<string, string> quests = new Dictionary<string, string>();
 
     #endregion
@@ -417,16 +417,16 @@ public class Player : Entity
         moveSpeed += speedIncrease;
     }
 
-    public void ChangeCoinMultiplier(float coinIncrease)
+    public void ChangeCoinMultiplier(float multiplier)
     {
         //base is 1
-        coinMultiplier += coinIncrease;
+        coinMultiplier = multiplier;
     }
 
-    public void ChangeArmourMultiplier(float coinIncrease)
+    public void ChangeArmourMultiplier(float multiplier)
     {
         //base is 1
-        armour += coinIncrease;
+        armour += multiplier;
     }
 
     public void AddQuest(string questKey,  string questName)
@@ -456,7 +456,7 @@ public class Player : Entity
             UpgradeSkill(2);
 
         if (Input.GetKeyDown(KeyCode.PageDown))
-            AddCoins(1);
+            AddCoins(100);
         if (Input.GetKeyDown(KeyCode.KeypadMinus))
             TakeDamage(5);
 

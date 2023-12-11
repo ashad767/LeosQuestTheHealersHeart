@@ -12,7 +12,11 @@ public class playerCoinsInit : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        player.AddCoins(1500); // delete this later
+        playerCoinsTxt.text = "Coins: " + player.coins.ToString();
+    }
+
+    void Update()
+    {
         playerCoinsTxt.text = "Coins: " + player.coins.ToString();
     }
 

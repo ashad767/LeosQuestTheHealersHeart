@@ -20,7 +20,6 @@ public class SwitchTabs : MonoBehaviour
     [SerializeField] private RectTransform upgrades_Weapon;
     #endregion
 
-
     [SerializeField] private GameObject shop;
 
     private int currentLayoutTracker;
