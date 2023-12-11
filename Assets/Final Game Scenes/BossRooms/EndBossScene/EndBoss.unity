@@ -899,6 +899,8 @@ MonoBehaviour:
   CameraStuff: {fileID: 810817901}
   SceneToSwitchToo: 
   isSceneSwapper: 1
+  E_Key_Object: {fileID: 0}
+  canLeave: 1
 --- !u!61 &625730910
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1171,6 +1173,8 @@ MonoBehaviour:
   CameraStuff: {fileID: 810817901}
   SceneToSwitchToo: 
   isSceneSwapper: 1
+  E_Key_Object: {fileID: 0}
+  canLeave: 1
 --- !u!61 &707385128
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1647,6 +1651,8 @@ MonoBehaviour:
   CameraStuff: {fileID: 810817901}
   SceneToSwitchToo: 
   isSceneSwapper: 1
+  E_Key_Object: {fileID: 0}
+  canLeave: 1
 --- !u!61 &1761962515
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2246,7 +2252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da82dfc19faf79441b51e47ad73540bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 350
+  maxHealth: 400
   IsRooted: 0
   RootTimer: 2
   IsDead: 0
@@ -2257,8 +2263,7 @@ MonoBehaviour:
   - {fileID: 7400000, guid: 63c6894f7669c3c409a2fa72ccb31fc0, type: 2}
   MC: {fileID: 1605422555}
   healthBar: {fileID: 449817469}
-  Coin: {fileID: 6902377311953366790, guid: d9f3f6e9e824e5c4e821868de9b79ea9, type: 3}
-  value: 300
+  Heart: {fileID: 6902377311953366790, guid: 8daa7813587c8fc42b3bf8615786e433, type: 3}
   idle: 1
   startFireBallRainPrefab: {fileID: 5018142768146605432, guid: 0ff13beb44720b84c88350abf4cd5d54, type: 3}
   rFM: {fileID: 774244124}

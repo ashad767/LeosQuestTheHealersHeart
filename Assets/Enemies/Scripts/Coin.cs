@@ -14,7 +14,6 @@ public class Coin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 
     public void OnTriggerEnter2D(Collider2D collider) 
@@ -22,7 +21,6 @@ public class Coin : MonoBehaviour
         if(collider.CompareTag("Player"))
         {
             collider.GetComponent<Player>().AddCoins(value);
-            Debug.Log("collected: " + value);
             Destroy(gameObject);
         }
     }
