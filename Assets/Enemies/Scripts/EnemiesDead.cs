@@ -6,6 +6,7 @@ public class EnemiesDead : MonoBehaviour
 {
     public List<Enemy> enemies = new List<Enemy>();
     public bool NextLevel = false;
+    public SceneSwitch sceneSwitch;
 
     void Start()
     {
@@ -22,5 +23,7 @@ public class EnemiesDead : MonoBehaviour
         {
             NextLevel = true;
         }
+
+        sceneSwitch.canLeave = NextLevel;
     }
 }

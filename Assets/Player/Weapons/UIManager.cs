@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,6 +18,7 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private Text Quests;
     private string currentQuests;
+    public TextMeshProUGUI coins;
 
 
 
@@ -51,6 +53,8 @@ public class UIManager : MonoBehaviour
         }
 
         Quests.text = currentQuests;
+
+        coins.SetText(player.coins.ToString());
     }
 
 }

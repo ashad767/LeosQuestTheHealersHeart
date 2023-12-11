@@ -33,6 +33,11 @@ public class MainMenuEvents : MonoBehaviour
 
     public void StartGame()
     {
+        PlayerPrefs.SetFloat("Coins", 0f);
+        PlayerPrefs.SetInt("Sword", 0);
+        PlayerPrefs.SetInt("Bow", 0);
+        PlayerPrefs.SetInt("Magic", 0);
+
         SceneManager.LoadScene("StartScene - The House");
     }
 }
