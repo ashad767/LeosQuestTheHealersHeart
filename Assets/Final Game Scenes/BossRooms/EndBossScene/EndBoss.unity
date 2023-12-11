@@ -845,10 +845,10 @@ RectTransform:
   - {fileID: 687639099}
   m_Father: {fileID: 647193019}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 7}
-  m_SizeDelta: {x: 191.4923, y: 20}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -155, y: -57.3}
+  m_SizeDelta: {x: 191.49231, y: 20}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &449817471
 MonoBehaviour:
@@ -1609,7 +1609,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -11.7917, y: 0}
+  m_AnchoredPosition: {x: -11.791687, y: 0}
   m_SizeDelta: {x: -33.5834, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1761962513
@@ -2244,6 +2244,7 @@ MonoBehaviour:
   maxHealth: 50
   IsRooted: 0
   RootTimer: 2
+  value: 0
   triggerCircle: {fileID: 1164306690}
   animLength:
   - {fileID: 7400000, guid: 5feb23a65a7c56f4993ef9b0811d9f5a, type: 2}

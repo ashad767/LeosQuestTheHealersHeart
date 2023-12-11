@@ -150,13 +150,16 @@ public class L2BossMovement : Entity
         // So I first take the direction in which the boss has to lunge towards (-1 or 1, in X or Y direction)
         // Then multiply by the distance between the boss and MC. But that would be too fast,so I divided the distance by either 1.5 or 1.7 to make it slower
         // I then put those X & Y values as the velocity for the boss 
-        float whereIsMC_X = Mathf.Sign(MC.position.x);
-        float whereIsMC_Y = Mathf.Sign(MC.position.y);
-        float lungeSpeedX = Mathf.Abs(MC.position.x - transform.position.x);
-        float lungeSpeedY = Mathf.Abs(MC.position.y - transform.position.y);
+        //float whereIsMC_X = Mathf.Sign(MC.position.x);
+        //float whereIsMC_Y = Mathf.Sign(MC.position.y);
+        //float lungeSpeedX = Mathf.Abs(MC.position.x - transform.position.x);
+        //float lungeSpeedY = Mathf.Abs(MC.position.y - transform.position.y);
 
-        float lungeSpeedController = isAngry ? 1.5f : 1.7f;
-        rb.velocity = new Vector2(whereIsMC_X * (lungeSpeedX / lungeSpeedController), whereIsMC_Y * (lungeSpeedY / lungeSpeedController));
+        Vector2 test = MC.position - transform.position;
+        float lungeSpeedController = isAngry ? 16f : 10f;
+        rb.velocity = test.normalized * lungeSpeedController;
+
+        //rb.velocity = new Vector2(whereIsMC_X * (lungeSpeedX / lungeSpeedController), whereIsMC_Y * (lungeSpeedY / lungeSpeedController));
 
         lunge = true;
         a.SetInteger("state", (int)States.lunge);
@@ -231,7 +234,7 @@ public class L2BossMovement : Entity
 
     private IEnumerator regenFunction()
     {
-        if (GetHealth() < 50f)
+        if (GetHealth() < 60f)
         {
             if (GetHealth() < 35f)
             {

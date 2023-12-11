@@ -1248,6 +1248,7 @@ MonoBehaviour:
   maxHealth: 100
   IsRooted: 0
   RootTimer: 2
+  value: 0
   triggerCircle: {fileID: 1631364215}
   animLength:
   - {fileID: 7400000, guid: cce0452bcca08db4384de2f85bd12b64, type: 2}
@@ -1919,7 +1920,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -11.7917, y: 0}
+  m_AnchoredPosition: {x: -11.791687, y: 0}
   m_SizeDelta: {x: -33.5834, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1945399735
@@ -2008,10 +2009,10 @@ RectTransform:
   - {fileID: 1596662902}
   m_Father: {fileID: 379769496}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 922}
-  m_SizeDelta: {x: 191.4923, y: 20}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -151.05, y: -58.7}
+  m_SizeDelta: {x: 191.49231, y: 20}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1945399738
 MonoBehaviour:

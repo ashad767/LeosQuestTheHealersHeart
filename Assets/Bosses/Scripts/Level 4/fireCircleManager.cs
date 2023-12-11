@@ -99,7 +99,7 @@ public class fireCircleManager : MonoBehaviour
             // Check if it's time to expand shield and fire circle
             if (timer >= triggerExpansion)
             {
-                Camera.main.GetComponent<ScreenShake>().Shake();
+                //Camera.main.GetComponent<ScreenShake>().Shake();
                 isExploding = true;
 
                 // Call the coroutines
@@ -144,10 +144,10 @@ public class fireCircleManager : MonoBehaviour
     {
         float timer = 0f;
 
-        float transitionToExpand = 0.25f;
+        float transitionToExpand = 0.55f;
 
         float originalScale = 1f;
-        float maxScale = 4f;
+        float maxScale = 8f;
 
         float origDamage = 5f;
         fireShieldCheckCollision fscc = fireShield.GetComponent<fireShieldCheckCollision>();
@@ -188,7 +188,7 @@ public class fireCircleManager : MonoBehaviour
         float transitionToExpand = 1f;
 
         float originalRadius = fireCircleRadius;
-        float maxRadius = 12f;
+        float maxRadius = 18f;
 
         foreach (GameObject fireball in currentFireballs)
         {
