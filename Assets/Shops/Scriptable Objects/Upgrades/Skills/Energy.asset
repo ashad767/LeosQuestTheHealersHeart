@@ -10,11 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb905783641417d4f851dcd3daed7fcb, type: 3}
-  m_Name: Damage Multiplier
+  m_Name: Energy
   m_EditorClassIdentifier: 
-  itemImg: {fileID: 21300000, guid: f7a7fde1ca6804e49b824bf837764637, type: 3}
-  imgWidth: 119
-  itemName: Damage Multiplier
-  description: Increases the damage inflicted on enemies
-  pointerToNextUpgradeBar: 0
-  cost: 30
+  itemImg: {fileID: 21300000, guid: e830b3e6d8981584a95525f28991de5a, type: 3}
+  imgWidth: 141
+  itemName: Energy
+  description: Increases max energy

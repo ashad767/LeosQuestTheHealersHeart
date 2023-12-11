@@ -23,7 +23,7 @@ public class ItemsS_Manager : MonoBehaviour
     void Start()
     {
         // Uncomment this to reset the shop data
-        Reset();
+        //Reset();
 
         LoadItems();
     }
@@ -63,6 +63,7 @@ public class ItemsS_Manager : MonoBehaviour
                 if (player.coins >= cost)
                 {
                     currentItem.itemCostTxt.text = cost.ToString();
+                    costBtns[item].interactable = true;
                 }
                 else
                 {
@@ -86,7 +87,8 @@ public class ItemsS_Manager : MonoBehaviour
 
         currentItem.itemCostTxt.text = "Purchased";
         currentItem.itemCostTxt.GetComponent<RectTransform>().anchoredPosition = Vector2.zero; // moves the "Purchased" text to the middle after removing coins img
-        currentItem.itemCostTxt.fontSize = 20.4f;
+        currentItem.itemCostTxt.GetComponent<RectTransform>().sizeDelta = new Vector2(105.46f, 39.1646f);
+        currentItem.itemCostTxt.fontSize = 10.2f;
 
         purchasedTracker[item] = 1;
         costBtns[item].interactable = false;
@@ -94,9 +96,10 @@ public class ItemsS_Manager : MonoBehaviour
 
     private void Insufficient(ItemInfo_Items currentItem, int item)
     {
-        currentItem.itemCostTxt.text = "Insufficient Funds";
-        currentItem.itemCostTxt.fontSize = 16;
-        currentItem.itemCostTxt.GetComponent<RectTransform>().anchoredPosition = new Vector2(15f, 0f);
+        currentItem.itemCostTxt.text = "Insufficient Coins";
+        currentItem.itemCostTxt.fontSize = 6.85f;
+        currentItem.itemCostTxt.GetComponent<RectTransform>().anchoredPosition = new Vector2(16.58f, 0f);
+        currentItem.itemCostTxt.GetComponent<RectTransform>().sizeDelta = new Vector2(90.6f, 39.1646f);
         costBtns[item].interactable = false;
     }
 
@@ -119,7 +122,7 @@ public class ItemsS_Manager : MonoBehaviour
         }
     }
 
-    private void checkIfPurchaseable()
+    public void checkIfPurchaseable()
     {
         for (int item = 0; item < SO_itemList.Length; item++)
         {
@@ -131,9 +134,10 @@ public class ItemsS_Manager : MonoBehaviour
                 if (player.coins >= cost)
                 {
                     currentItem.itemCostTxt.text = cost.ToString();
-                    currentItem.itemCostTxt.fontSize = 20.4f;
-                    currentItem.itemCostTxt.GetComponent<RectTransform>().anchoredPosition = new Vector2(4.4349f, 0f);
-
+                    currentItem.itemCostTxt.fontSize = 15f;
+                    currentItem.itemCostTxt.GetComponent<RectTransform>().anchoredPosition = new Vector2(11.5f, 0f);
+                    currentItem.itemCostTxt.GetComponent<RectTransform>().sizeDelta = new Vector2(90.6f, 39.1646f);
+                    costBtns[item].interactable = true;
                 }
                 else
                 {

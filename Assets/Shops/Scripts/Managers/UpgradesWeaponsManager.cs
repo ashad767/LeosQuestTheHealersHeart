@@ -49,7 +49,7 @@ public class UpgradesWeaponsManager : MonoBehaviour
         };
 
         // Uncomment this to reset the shop data
-        Reset();
+        //Reset();
 
         LoadItems();
         checkIfUpgradeable();
@@ -127,7 +127,7 @@ public class UpgradesWeaponsManager : MonoBehaviour
         }
     }
 
-    private void checkIfUpgradeable()
+    public void checkIfUpgradeable()
     {
         for (int i = 0; i < SO_itemList.Length; i++)
         {
@@ -137,6 +137,7 @@ public class UpgradesWeaponsManager : MonoBehaviour
             {
                 currentUpgradeBtn.interactable = false;
                 currentUpgradeBtn.GetComponentInChildren<TextMeshProUGUI>().text = "<s><i>Maxed Out</i></s>";
+                currentUpgradeBtn.GetComponent<RectTransform>().anchoredPosition = new Vector2(-100f, -50f);
 
                 itemInfoList[i].costTxt.text = "";
             }
@@ -147,12 +148,14 @@ public class UpgradesWeaponsManager : MonoBehaviour
                 {
                     currentUpgradeBtn.interactable = true;
                     currentUpgradeBtn.GetComponentInChildren<TextMeshProUGUI>().text = "UPGRADE";
+                    currentUpgradeBtn.GetComponentInChildren<TextMeshProUGUI>().fontSize = 16.5f;
                 }
 
                 else
                 {
                     currentUpgradeBtn.interactable = false;
                     currentUpgradeBtn.GetComponentInChildren<TextMeshProUGUI>().text = "Insufficient Coins";
+                    currentUpgradeBtn.GetComponentInChildren<TextMeshProUGUI>().fontSize = 11.3f;
                 }
             }
 

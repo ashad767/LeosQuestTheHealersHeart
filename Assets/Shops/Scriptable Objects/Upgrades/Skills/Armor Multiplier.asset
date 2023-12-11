@@ -10,11 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb905783641417d4f851dcd3daed7fcb, type: 3}
-  m_Name: Magic
+  m_Name: Armor Multiplier
   m_EditorClassIdentifier: 
-  itemImg: {fileID: 21300000, guid: 5644ece08b89dea4c9869793a1c00a65, type: 3}
-  imgWidth: 120
-  itemName: Magic
-  description: Something about magic
-  pointerToNextUpgradeBar: 0
-  cost: 85
+  itemImg: {fileID: -306784612, guid: f06501cd5fe771543bc9a782fd8af9e3, type: 3}
+  imgWidth: 131
+  itemName: Armor
+  description: Increases armor
