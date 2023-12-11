@@ -14,7 +14,6 @@ public class Enemy : Entity
     public HitBox[] hitboxes;
     private Vector2 direction;
     public bool IsDead = false;
-    public int value = 1;
     public Rigidbody2D coin;
 
     #region SM Variables

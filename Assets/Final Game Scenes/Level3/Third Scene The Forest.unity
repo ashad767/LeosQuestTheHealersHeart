@@ -374,10 +374,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShadowImp
       objectReference: {fileID: 0}
-    - target: {fileID: 3934995787567752555, guid: d9d1f7c261dc75747a915b6759f58089, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -820,7 +816,7 @@ GameObject:
   - component: {fileID: 296545261}
   m_Layer: 0
   m_Name: Enemies
-  m_TagString: Untagged
+  m_TagString: EnemiesDead
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1269,27 +1265,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7966843282668227747, guid: b2969cfa026ecc24e8a87b6bfc44648f, type: 3}
   m_PrefabInstance: {fileID: 1701716151}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &543728881 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6339056728160071690, guid: 2c86b60ffd9d3c641b7c92690dfb63f5, type: 3}
-  m_PrefabInstance: {fileID: 1454164051}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &543728883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 543728881}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1 &744014592 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8166231812404507596, guid: 9d5e91e70f5eee24ea386c57fa117d2b, type: 3}
@@ -1601,6 +1576,14 @@ PrefabInstance:
     - target: {fileID: 5159267617351135093, guid: aabb0d5e31623974197a1411570443e1, type: 3}
       propertyPath: m_Name
       value: ForestSpirit (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201505914150531110, guid: aabb0d5e31623974197a1411570443e1, type: 3}
+      propertyPath: coin
+      value: 
+      objectReference: {fileID: 6902377311953366790, guid: de41ca93ea034d941a8abe7abf2894e1, type: 3}
+    - target: {fileID: 5201505914150531110, guid: aabb0d5e31623974197a1411570443e1, type: 3}
+      propertyPath: value
+      value: 150
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2391,14 +2374,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6339056728160071690, guid: 2c86b60ffd9d3c641b7c92690dfb63f5, type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 6339056728160071697, guid: 2c86b60ffd9d3c641b7c92690dfb63f5, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6339056728572248380, guid: 2c86b60ffd9d3c641b7c92690dfb63f5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2446,10 +2421,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6339056728160071690, guid: 2c86b60ffd9d3c641b7c92690dfb63f5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 543728883}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c86b60ffd9d3c641b7c92690dfb63f5, type: 3}
 --- !u!1 &1490021350
 GameObject:
@@ -3350,6 +3322,14 @@ PrefabInstance:
     - target: {fileID: 733677043446577654, guid: d9d1f7c261dc75747a915b6759f58089, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116848323251004471, guid: d9d1f7c261dc75747a915b6759f58089, type: 3}
+      propertyPath: coin
+      value: 
+      objectReference: {fileID: 6902377311953366790, guid: de41ca93ea034d941a8abe7abf2894e1, type: 3}
+    - target: {fileID: 3116848323251004471, guid: d9d1f7c261dc75747a915b6759f58089, type: 3}
+      propertyPath: value
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 3934995787567752555, guid: d9d1f7c261dc75747a915b6759f58089, type: 3}
       propertyPath: m_Name
