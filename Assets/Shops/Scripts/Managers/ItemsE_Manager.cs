@@ -84,25 +84,70 @@ public class ItemsE_Manager : MonoBehaviour
         GameObject costBtn = currentItem.transform.GetChild(2).gameObject;
         Destroy(costBtn.transform.GetChild(0).gameObject);
 
-        currentItem.itemCostTxt.text = "Purchased";
-        currentItem.itemCostTxt.GetComponent<RectTransform>().anchoredPosition = Vector2.zero; // moves the "Purchased" text to the middle after removing coins img
-        currentItem.itemCostTxt.GetComponent<RectTransform>().sizeDelta = new Vector2(105.46f, 39.1646f);
-        currentItem.itemCostTxt.fontSize = 10.2f;
+        ChangeBtnConfigs(2, currentItem.itemCostTxt, 2.98f, 90.88f, 8.6f);
+
+        costBtns[item].interactable = false;
+        // Convert the hexadecimal color to a Color object
+        Color disabledColor = HexToColor("#FF0006");
+
+        // Get the current colors
+        ColorBlock colors = costBtns[item].colors;
+
+        // Set the disabled color
+        colors.disabledColor = disabledColor;
+        costBtns[item].colors = colors;
 
         purchasedTracker[item] = 1;
-        costBtns[item].interactable = false;
     }
 
     private void Insufficient(ItemInfo_Items currentItem, int item)
     {
-        currentItem.itemCostTxt.text = "Insufficient Coins";
-        currentItem.itemCostTxt.fontSize = 6.85f;
-        currentItem.itemCostTxt.GetComponent<RectTransform>().anchoredPosition = new Vector2(16.58f, 0f);
-        currentItem.itemCostTxt.GetComponent<RectTransform>().sizeDelta = new Vector2(90.6f, 39.1646f);
+        ChangeBtnConfigs(1, currentItem.itemCostTxt, 14.45f, 78.8236f, 5.3f);
+
         costBtns[item].interactable = false;
+        // Convert the hexadecimal color to a Color object
+        Color disabledColor = HexToColor("#FF0006");
+
+        // Get the current colors
+        ColorBlock colors = costBtns[item].colors;
+
+        // Set the disabled color
+        colors.disabledColor = disabledColor;
+        costBtns[item].colors = colors;
     }
 
+    // Convert a hexadecimal color string to a Color object
+    Color HexToColor(string hex)
+    {
+        Color color = Color.black;
+        ColorUtility.TryParseHtmlString(hex, out color);
+        return color;
+    }
 
+    private void ChangeBtnConfigs(int btn, TextMeshProUGUI itemCostTxt, float xPos, float xWidth, float fontSize)
+    {
+        if (btn == 0)
+        {
+            itemCostTxt.GetComponent<RectTransform>().anchoredPosition = new Vector2(9.95f, 0f);
+            itemCostTxt.GetComponent<RectTransform>().sizeDelta = new Vector2(90.6f, 39.1646f);
+            itemCostTxt.fontSize = 14f;
+        }
+        else if (btn == 1)
+        {
+            itemCostTxt.text = "Insufficient Coins";
+            itemCostTxt.GetComponent<RectTransform>().anchoredPosition = new Vector2(xPos, 0f);
+            itemCostTxt.GetComponent<RectTransform>().sizeDelta = new Vector2(xWidth, 39.1646f);
+            itemCostTxt.fontSize = fontSize;
+        }
+
+        else if (btn == 2)
+        {
+            itemCostTxt.text = "Purchased";
+            itemCostTxt.GetComponent<RectTransform>().anchoredPosition = new Vector2(xPos, 0f);
+            itemCostTxt.GetComponent<RectTransform>().sizeDelta = new Vector2(xWidth, 39.1646f);
+            itemCostTxt.fontSize = fontSize;
+        }
+    }
 
     // Used by the onClick() function in the Inspector window
     public void BuyItem(int item)
@@ -133,9 +178,9 @@ public class ItemsE_Manager : MonoBehaviour
                 if (player.coins >= cost)
                 {
                     currentItem.itemCostTxt.text = cost.ToString();
-                    currentItem.itemCostTxt.fontSize = 15f;
-                    currentItem.itemCostTxt.GetComponent<RectTransform>().anchoredPosition = new Vector2(11.5f, 0f);
-                    currentItem.itemCostTxt.GetComponent<RectTransform>().sizeDelta = new Vector2(90.6f, 39.1646f);
+                    
+                    ChangeBtnConfigs(0, currentItem.itemCostTxt, 9.95f, 90.6f, 14f);
+
                     costBtns[item].interactable = true;
                 }
                 else

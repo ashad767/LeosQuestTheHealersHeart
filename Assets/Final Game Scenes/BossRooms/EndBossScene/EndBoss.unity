@@ -1613,7 +1613,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -11.7917, y: 0}
+  m_AnchoredPosition: {x: -11.791687, y: 0}
   m_SizeDelta: {x: -33.5834, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1761962513
@@ -2255,7 +2255,11 @@ MonoBehaviour:
   maxHealth: 400
   IsRooted: 0
   RootTimer: 2
+<<<<<<< HEAD
+  value: 0
+=======
   IsDead: 0
+>>>>>>> 8e263904f4d2a8fcd637cb9fc32b5bbfebe42d32
   triggerCircle: {fileID: 1164306690}
   animLength:
   - {fileID: 7400000, guid: 5feb23a65a7c56f4993ef9b0811d9f5a, type: 2}
