@@ -49,8 +49,11 @@ public class L2BossMovement : Entity
     public float currentHealth;
     private bool collidingWithplayer = false;
 
+    public SceneSwitch sceneSwitch;
+
     protected override void Start()
     {
+        sceneSwitch.canLeave = false;
         base.Start(); // Simply sets "CurrentHealth = maxHealth;"
 
         rb = GetComponent<Rigidbody2D>();
@@ -286,6 +289,7 @@ public class L2BossMovement : Entity
     private IEnumerator BossDeath()
     {
         dead = true;
+        sceneSwitch.canLeave = true;
         rb.bodyType = RigidbodyType2D.Static;
         a.SetTrigger("death"); // show death animation
         death.Play();

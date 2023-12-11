@@ -59,11 +59,15 @@ public class L3BossMovement : Entity
     private float snapshotHealth;
     #endregion
 
+    public SceneSwitch sceneSwitch;
+
 
     // Start is called before the first frame update
     protected override void Start()
     {
         base.Start(); // Simply sets "CurrentHealth = maxHealth;"
+
+        sceneSwitch.canLeave = false;
 
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
@@ -295,6 +299,7 @@ public class L3BossMovement : Entity
     private IEnumerator BossDeath()
     {
         dead = true;
+        sceneSwitch.canLeave = true;
         rb.bodyType = RigidbodyType2D.Static;
         a.SetTrigger("death"); // show death animation
         deathAudio.Play();
