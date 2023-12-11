@@ -4,14 +4,8 @@ using UnityEngine;
 
 public class GG_Ability : Ability
 {
-    public bool isBlock = false;
-
-    public override void OnAbility()
+    public int OnAbility()
     {
-        if (Random.Range(0, 4) == 0)
-        {
-            isBlock = true;
-            Debug.Log("blocked");
-        }
+        return Random.Range(0, 4);
     }
 }

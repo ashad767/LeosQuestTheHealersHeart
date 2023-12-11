@@ -37,7 +37,7 @@ public class EnemyAttack : EnemyState
 
         enemy.MoveEnemy(Vector2.zero);
 
-        if(enemy.ability != null && !(enemy.ability is Zombie_Ability))
+        if(enemy.ability != null && !(enemy.ability is Zombie_Ability) && !(enemy.ability is GG_Ability))
         {
             enemy.ability.OnAbility();
         }

@@ -179,18 +179,20 @@ public class Enemy : Entity
     {
         GG_Ability GG_ab = GetComponent<GG_Ability>();
 
-        if (GG_ab != null && GG_ab.isBlock)
-            GG_ab.isBlock = false;
-        else
+        if (GG_ab != null)
         {
-            damage *= armor;
-            CurrentHealth -= damage;
-
-            if (CurrentHealth < 0)
-                CurrentHealth = 0;
-
-            Debug.Log(name + "'s health is now " + CurrentHealth);
+            if(GG_ab.OnAbility() == 0)
+                return;
         }
+        
+        damage *= armor;
+        CurrentHealth -= damage;
+
+        if (CurrentHealth < 0)
+            CurrentHealth = 0;
+
+        Debug.Log(name + "'s health is now " + CurrentHealth);
+        
     }
 
     /*private void OnCollisionEnter2D(Collision2D collision)
