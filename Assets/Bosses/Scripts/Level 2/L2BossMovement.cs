@@ -13,6 +13,8 @@ public class L2BossMovement : Entity
     [SerializeField] private Transform MC;
     [SerializeField] private Slider healthBar;
     [SerializeField] private GameObject audioManagerToBeUsedInDestroyBullet;
+    [SerializeField] private Rigidbody2D Coin;
+    [SerializeField] private int value;
 
     #region Prefabs
     [SerializeField] private GameObject bulletPrefab;
@@ -292,6 +294,19 @@ public class L2BossMovement : Entity
 
         yield return new WaitForSeconds(death.clip.length);
         Destroy(gameObject); // Destroys boss gameobject
+    }
+
+    private void OnBossDeath()
+    {
+        
+            Rigidbody2D rbCoin = GameObject.Instantiate(Coin, transform.position, Quaternion.identity);
+            rbCoin.gameObject.GetComponent<Coin>().value = value;
+
+
+
+        //Destroy(gameObject); // Destroys boss gameobject
+
+        //yield return null;
     }
 
     private void destroyBullets()

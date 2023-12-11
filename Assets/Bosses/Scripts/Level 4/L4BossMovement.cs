@@ -12,6 +12,8 @@ public class L4BossMovement : Entity
     [SerializeField] private AnimationClip[] animLength;
     [SerializeField] private Transform MC;
     [SerializeField] private Slider healthBar;
+    [SerializeField] private Rigidbody2D Coin;
+    [SerializeField] private int value;
 
     #region  Animation states & bools
     private enum States { idle, walk, attack, expandFireCircleState, rocksFallState };
@@ -300,6 +302,13 @@ public class L4BossMovement : Entity
         destroyPrefabs();
 
         yield return new WaitForSeconds(deathAudio.clip.length - 0.5f);
+    }
+
+    private void OnBossDeath()
+    {
+        Rigidbody2D rbCoin = GameObject.Instantiate(Coin, transform.position, Quaternion.identity);
+        rbCoin.gameObject.GetComponent<Coin>().value = value;
+
         Destroy(gameObject); // Destroys boss gameobject
     }
 

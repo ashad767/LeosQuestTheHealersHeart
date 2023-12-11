@@ -229,9 +229,9 @@ MonoBehaviour:
   dialogueText: {fileID: 220931642}
   dialogue:
   - dialogues:
-    - Son listen carefully!!
-    - Iv Fallen Sick
-    - Go Talk to the grand wizard... he will know what to do.
+    - Son listen carefully!
+    - I've fallen sick!
+    - Go talk to The Grand Wizard... He will know what to do.
     - Quickly!!!
   menuController: {fileID: 1696773754}
   button: {fileID: 61825665}
@@ -332,6 +332,67 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &389269677
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 491250573260385486, guid: dbb106de36f0541409963ce5a822f43d, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 330461806}
+    - target: {fileID: 1503352193251635685, guid: dbb106de36f0541409963ce5a822f43d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 60.930546
+      objectReference: {fileID: 0}
+    - target: {fileID: 1503352193251635685, guid: dbb106de36f0541409963ce5a822f43d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 40.76223
+      objectReference: {fileID: 0}
+    - target: {fileID: 1503352193251635685, guid: dbb106de36f0541409963ce5a822f43d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0060322336
+      objectReference: {fileID: 0}
+    - target: {fileID: 1503352193251635685, guid: dbb106de36f0541409963ce5a822f43d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1503352193251635685, guid: dbb106de36f0541409963ce5a822f43d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1503352193251635685, guid: dbb106de36f0541409963ce5a822f43d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1503352193251635685, guid: dbb106de36f0541409963ce5a822f43d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1503352193251635685, guid: dbb106de36f0541409963ce5a822f43d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1503352193251635685, guid: dbb106de36f0541409963ce5a822f43d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1503352193251635685, guid: dbb106de36f0541409963ce5a822f43d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4543639910394775791, guid: dbb106de36f0541409963ce5a822f43d, type: 3}
+      propertyPath: m_Name
+      value: PauseMenu
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dbb106de36f0541409963ce5a822f43d, type: 3}
 --- !u!1 &491768676
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,8 +673,6 @@ PlayableDirector:
     value: {fileID: 1571068913}
   - key: {fileID: -1037985131007719831, guid: b0a5d4977dce5364d9e9b8287c122f21, type: 2}
     value: {fileID: 1571068911}
-  - key: {fileID: 6798007955381949723, guid: b0a5d4977dce5364d9e9b8287c122f21, type: 2}
-    value: {fileID: 129583291}
   m_ExposedReferences:
     m_References:
     - b90126b752c3d27419dec51786e68026: {fileID: 1122222405}
@@ -788,6 +847,59 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4154462370487576970, guid: 67e7aba8515a87940a10e26c96ee9010, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154462370487576970, guid: 67e7aba8515a87940a10e26c96ee9010, type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: Since this is the first time you have chatted with me, you will have
+        to listen to everything I say.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154462370487576970, guid: 67e7aba8515a87940a10e26c96ee9010, type: 3}
+      propertyPath: dialogue.Array.data[1]
+      value: It will be a very long conversation, so I'm sorry.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154462370487576970, guid: 67e7aba8515a87940a10e26c96ee9010, type: 3}
+      propertyPath: randomDialogue.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154462370487576970, guid: 67e7aba8515a87940a10e26c96ee9010, type: 3}
+      propertyPath: randomDialogue.Array.data[0]
+      value: You must find the heart!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154462370487576970, guid: 67e7aba8515a87940a10e26c96ee9010, type: 3}
+      propertyPath: randomDialogue.Array.data[1]
+      value: You must kill all the mobs first!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154462370487576970, guid: 67e7aba8515a87940a10e26c96ee9010, type: 3}
+      propertyPath: randomDialogue.Array.data[2]
+      value: Save me son!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154462370487576970, guid: 67e7aba8515a87940a10e26c96ee9010, type: 3}
+      propertyPath: randomDialogue.Array.data[3]
+      value: c
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154462370487576970, guid: 67e7aba8515a87940a10e26c96ee9010, type: 3}
+      propertyPath: randomDialogue.Array.data[4]
+      value: d
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154462370487576970, guid: 67e7aba8515a87940a10e26c96ee9010, type: 3}
+      propertyPath: randomDialogue.Array.data[5]
+      value: e
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154462370487576970, guid: 67e7aba8515a87940a10e26c96ee9010, type: 3}
+      propertyPath: randomDialogue.Array.data[6]
+      value: f
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154462370487576970, guid: 67e7aba8515a87940a10e26c96ee9010, type: 3}
+      propertyPath: randomDialogue.Array.data[7]
+      value: g
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154462370487576970, guid: 67e7aba8515a87940a10e26c96ee9010, type: 3}
+      propertyPath: randomDialogue.Array.data[8]
+      value: h
+      objectReference: {fileID: 0}
     - target: {fileID: 6061755131257642994, guid: 67e7aba8515a87940a10e26c96ee9010, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.5713387
@@ -1963,16 +2075,16 @@ MonoBehaviour:
   dialogueText: {fileID: 353289654}
   dialogue:
   - dialogues:
-    - What a great morning...
-    - Let me go downstairs and fix myself a nice breakfast
-    - I Love my mom!!
+    - What a lovely morning...
+    - Let me go downstairs and fix myself a nice breakfast.
+    - I love my mom!
   - dialogues:
-    - Hey mom im awake!!
-    - Hm? Wheres my mom at?
-    - let me check the kitchen
+    - Hey mom I'm awake!
+    - Hmm? Where's my mom at?
+    - Let me check the kitchen.
   - dialogues:
-    - Mom!!!!
-    - What happend!!
+    - MOM!!!!!
+    - WHAT HAPPENED?!
     - SOMEBODY HELP!!!
   menuController: {fileID: 1696773754}
   button: {fileID: 1107683470}
@@ -2225,3 +2337,4 @@ SceneRoots:
   - {fileID: 129583293}
   - {fileID: 1696773755}
   - {fileID: 330461804}
+  - {fileID: 389269677}

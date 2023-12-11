@@ -99,7 +99,7 @@ public class fireCircleManager : MonoBehaviour
             // Check if it's time to expand shield and fire circle
             if (timer >= triggerExpansion)
             {
-                Camera.main.GetComponent<ScreenShake>().Shake();
+                //Camera.main.GetComponent<ScreenShake>().Shake();
                 isExploding = true;
 
                 // Call the coroutines

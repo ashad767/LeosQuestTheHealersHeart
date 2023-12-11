@@ -13,8 +13,8 @@ public class Enemy : Entity
     public GameObject Player { get; set; }
     public HitBox[] hitboxes;
     private Vector2 direction;
-    public bool IsDead = false;
     public Rigidbody2D coin;
+    public int value;
 
     #region SM Variables
 

@@ -14,6 +14,8 @@ public class L3BossMovement : Entity
     [SerializeField] private AnimationClip[] animLength;
     [SerializeField] private Transform MC;
     [SerializeField] private Slider healthBar;
+    [SerializeField] private Rigidbody2D Coin;
+    [SerializeField] private int value;
 
     #region Prefabs
     public GameObject lightningPrefab;
@@ -302,7 +304,13 @@ public class L3BossMovement : Entity
         yield return new WaitForSeconds(deathAudio.clip.length);
 
         if (darknessManager.isDark) { darknessManager.de_activateDarkness(2f); }
-        destroyGameManagers();
+        destroyGameManagers();    
+    }
+
+    private void OnBossDeath()
+    {
+        Rigidbody2D rbCoin = GameObject.Instantiate(Coin, transform.position, Quaternion.identity);
+        rbCoin.gameObject.GetComponent<Coin>().value = value;
 
         Destroy(gameObject); // Destroys boss gameobject
     }
