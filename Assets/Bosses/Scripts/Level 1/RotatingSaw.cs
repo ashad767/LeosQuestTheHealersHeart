@@ -31,7 +31,7 @@ public class RotatingSaw : MonoBehaviour
         }
 
         // because I don't want to push the player off screen, I set the saw to isTrigger before it exits so it can pass through the player
-        if(screenPos.x <= 0.25f)
+        if(screenPos.x <= 0.1f)
         {
             GetComponent<CircleCollider2D>().isTrigger = true;
         }
