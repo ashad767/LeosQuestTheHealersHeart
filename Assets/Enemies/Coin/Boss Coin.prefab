@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -5335942830464051973}
   - component: {fileID: 615814956756146111}
   m_Layer: 0
-  m_Name: Lvl1 Coin
+  m_Name: Boss Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,8 +30,8 @@ Transform:
   m_GameObject: {fileID: 7871478013718107150}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.94, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: -2.04, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -99,7 +99,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.18, y: 0.18}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -149,7 +149,7 @@ SpriteRenderer:
   m_SortingLayerID: 1752717529
   m_SortingLayer: 6
   m_SortingOrder: 0
-  m_Sprite: {fileID: 435003798, guid: b6619e5ba511dc540a7527ab0a0aaca6, type: 3}
+  m_Sprite: {fileID: 137430117, guid: 7d135e05d9e19444e9a6d56fca162741, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -170,7 +170,7 @@ Animator:
   m_GameObject: {fileID: 7871478013718107150}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c6b7afc0e83b93b40bd9bd8c87257a56, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7e90c604b744ef04c8c7ccee02ba59bc, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

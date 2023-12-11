@@ -11,6 +11,10 @@ public class MushroomStrikeCheck : MonoBehaviour
     public bool dmg = false;
     public AudioSource audioSource;
 
+    void Start()
+    {
+    }
+
     // Update is called once per frame
     void Update()
     {

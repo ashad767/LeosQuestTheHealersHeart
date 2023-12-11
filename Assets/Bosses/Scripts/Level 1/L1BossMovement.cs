@@ -18,6 +18,9 @@ public class L1BossMovement : Entity
     private Transform pulseCircle; // first circle in buff effect
     private Transform donutCircle; // second circle in buff effect
     [SerializeField] private Slider healthBar;
+    [SerializeField] private Rigidbody2D Coin;
+    [SerializeField] private int value;
+    private Material DeathMaterial;
 
     #region Prefabs
     [SerializeField] GameObject sawPrefab;
@@ -63,6 +66,8 @@ public class L1BossMovement : Entity
     protected override void Start()
     {
         base.Start(); // Simply sets "CurrentHealth = maxHealth;"
+
+        DeathMaterial = GetComponent<SpriteRenderer>().material;
 
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
@@ -388,6 +393,25 @@ public class L1BossMovement : Entity
         destroyChildren();
 
         yield return new WaitForSeconds(deathAudio.clip.length - 0.2f);
+    }
+
+    private IEnumerator OnBossDeath()
+    {
+        float timer = 0f;
+        float val = 0f;
+
+        while (timer < 1)
+        {
+            val = Mathf.Lerp(1f, 0f, timer / 1);
+            timer += Time.deltaTime;
+            DeathMaterial.SetFloat("_Fade", val);
+            yield return null;
+        }
+
+        Rigidbody2D rbCoin = GameObject.Instantiate(Coin, transform.position, Quaternion.identity);
+        rbCoin.gameObject.GetComponent<Coin>().value = value;
+
+        DeathMaterial.SetFloat("_Fade", 1f);
         Destroy(gameObject); // Destroys boss gameobject
     }
 

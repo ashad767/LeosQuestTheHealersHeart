@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: mushroomIdle
+  m_Name: BossCoinAnim
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,7 +21,17 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -457721795, guid: a7d3a23d55530ec4b8f1fabd0ba57571, type: 3}
+      value: {fileID: 137430117, guid: 7d135e05d9e19444e9a6d56fca162741, type: 3}
+    - time: 0.14285715
+      value: {fileID: -926530337, guid: 7d135e05d9e19444e9a6d56fca162741, type: 3}
+    - time: 0.2857143
+      value: {fileID: -802575099, guid: 7d135e05d9e19444e9a6d56fca162741, type: 3}
+    - time: 0.42857143
+      value: {fileID: 701935165, guid: 7d135e05d9e19444e9a6d56fca162741, type: 3}
+    - time: 0.5714286
+      value: {fileID: -1730837386, guid: 7d135e05d9e19444e9a6d56fca162741, type: 3}
+    - time: 0.71428573
+      value: {fileID: 553867191, guid: 7d135e05d9e19444e9a6d56fca162741, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,13 +54,18 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -457721795, guid: a7d3a23d55530ec4b8f1fabd0ba57571, type: 3}
+    - {fileID: 137430117, guid: 7d135e05d9e19444e9a6d56fca162741, type: 3}
+    - {fileID: -926530337, guid: 7d135e05d9e19444e9a6d56fca162741, type: 3}
+    - {fileID: -802575099, guid: 7d135e05d9e19444e9a6d56fca162741, type: 3}
+    - {fileID: 701935165, guid: 7d135e05d9e19444e9a6d56fca162741, type: 3}
+    - {fileID: -1730837386, guid: 7d135e05d9e19444e9a6d56fca162741, type: 3}
+    - {fileID: 553867191, guid: 7d135e05d9e19444e9a6d56fca162741, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.14285715
+    m_StopTime: 0.85714287
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

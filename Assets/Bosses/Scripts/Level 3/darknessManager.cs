@@ -122,10 +122,10 @@ public class darknessManager : MonoBehaviour
             TilemapRenderer renderer = tilemap.GetComponent<TilemapRenderer>();
             renderer.material = originalTilemapMaterial;
         }
-        if (bossSkeleton != null)
+        /*if (bossSkeleton != null)
         {
             bossSkeleton.GetComponent<SpriteRenderer>().material = originalMaterial;
-        }
+        }*/
         
         directionalLight.SetActive(false);
         MC_PointLight.SetActive(false);
