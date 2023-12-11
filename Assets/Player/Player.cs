@@ -132,8 +132,8 @@ public class Player : Entity
     private void Awake()
     {
         StateMachineInit();
-        WeaponsInit();
         StatsInit();
+        WeaponsInit();
     }
 
     protected override void Start()
@@ -289,6 +289,11 @@ public class Player : Entity
     private void StatsInit()
     {
         currentEnergy = MaxEnergy;
+
+        coins = PlayerPrefs.GetFloat("Coins", 0);
+        swordLevel = PlayerPrefs.GetInt("Sword", 0);
+        bowLevel = PlayerPrefs.GetInt("Bow", 0);
+        magicLevel = PlayerPrefs.GetInt("Magic", 0);
     }
 
     public float GetEnergy() => currentEnergy;

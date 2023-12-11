@@ -6417,7 +6417,7 @@ MonoBehaviour:
   maxHealth: 0
   IsRooted: 0
   RootTimer: 2
-  value: 0
+  IsDead: 0
   floatingNumber: {fileID: 1650984290}
 --- !u!1 &1186383615
 GameObject:
@@ -6807,6 +6807,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8422878326171844410, guid: b2969cfa026ecc24e8a87b6bfc44648f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8597597475596323515, guid: b2969cfa026ecc24e8a87b6bfc44648f, type: 3}
       propertyPath: m_Name
       value: Everyting
@@ -7069,7 +7073,7 @@ MonoBehaviour:
   maxHealth: 0
   IsRooted: 0
   RootTimer: 2
-  value: 0
+  IsDead: 0
   floatingNumber: {fileID: 0}
 --- !u!114 &1560135151
 MonoBehaviour:
@@ -7086,7 +7090,7 @@ MonoBehaviour:
   maxHealth: 0
   IsRooted: 0
   RootTimer: 2
-  value: 0
+  IsDead: 0
   floatingNumber: {fileID: 1650984290}
 --- !u!1 &1650984290
 GameObject:
@@ -10053,7 +10057,7 @@ MonoBehaviour:
   maxHealth: 0
   IsRooted: 0
   RootTimer: 2
-  value: 0
+  IsDead: 0
   floatingNumber: {fileID: 1650984290}
 --- !u!1 &1999495724
 GameObject:

@@ -33,6 +33,11 @@ public class SceneSwitch : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.E))
             {
+                PlayerPrefs.SetFloat("Coins", player.coins);
+                PlayerPrefs.SetInt("Sword", player.swordLevel);
+                PlayerPrefs.SetInt("Bow", player.bowLevel);
+                PlayerPrefs.SetInt("Magic", player.magicLevel);
+
                 SceneManager.LoadScene(SceneToSwitchToo);
             }
         }
