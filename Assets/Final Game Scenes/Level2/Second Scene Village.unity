@@ -18549,7 +18549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6918330087087934773, guid: b2969cfa026ecc24e8a87b6bfc44648f, type: 3}
       propertyPath: playerComboGrace
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6918330087087934773, guid: b2969cfa026ecc24e8a87b6bfc44648f, type: 3}
       propertyPath: playerComboScalingDamage

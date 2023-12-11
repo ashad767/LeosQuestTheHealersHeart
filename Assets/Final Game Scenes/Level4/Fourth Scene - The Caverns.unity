@@ -8736,6 +8736,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ZombieMiner
       objectReference: {fileID: 0}
+    - target: {fileID: 3708519622455218987, guid: 15daa26a0f1278245b1ef98593fadcb0, type: 3}
+      propertyPath: value
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708519622455218987, guid: 15daa26a0f1278245b1ef98593fadcb0, type: 3}
+      propertyPath: maxHealth
+      value: 250
+      objectReference: {fileID: 0}
     - target: {fileID: 4987971529764300115, guid: 15daa26a0f1278245b1ef98593fadcb0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.24
@@ -8866,6 +8874,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2033284727}
     m_Modifications:
+    - target: {fileID: 3472809322519961913, guid: 4adf158a89fafde46bdeac5cd1208156, type: 3}
+      propertyPath: value
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3472809322519961913, guid: 4adf158a89fafde46bdeac5cd1208156, type: 3}
+      propertyPath: maxHealth
+      value: 250
+      objectReference: {fileID: 0}
     - target: {fileID: 4357782264996217706, guid: 4adf158a89fafde46bdeac5cd1208156, type: 3}
       propertyPath: m_LocalPosition.x
       value: 34.93
@@ -9217,6 +9233,14 @@ PrefabInstance:
     - target: {fileID: 1057799926421333593, guid: 15daa26a0f1278245b1ef98593fadcb0, type: 3}
       propertyPath: m_Name
       value: ZombieMiner
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708519622455218987, guid: 15daa26a0f1278245b1ef98593fadcb0, type: 3}
+      propertyPath: value
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708519622455218987, guid: 15daa26a0f1278245b1ef98593fadcb0, type: 3}
+      propertyPath: maxHealth
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 4987971529764300115, guid: 15daa26a0f1278245b1ef98593fadcb0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9658,11 +9682,15 @@ PrefabInstance:
       objectReference: {fileID: 6902377311953366790, guid: 2267502f1b734d1438c72d195c3d3ed8, type: 3}
     - target: {fileID: 7469504316305318539, guid: 79c1c7a523b96be4989e8cea7faef4fc, type: 3}
       propertyPath: value
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 7469504316305318539, guid: 79c1c7a523b96be4989e8cea7faef4fc, type: 3}
       propertyPath: IsDead
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7469504316305318539, guid: 79c1c7a523b96be4989e8cea7faef4fc, type: 3}
+      propertyPath: maxHealth
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 8897890066086072108, guid: 79c1c7a523b96be4989e8cea7faef4fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9723,7 +9751,7 @@ PrefabInstance:
       objectReference: {fileID: 6902377311953366790, guid: 2267502f1b734d1438c72d195c3d3ed8, type: 3}
     - target: {fileID: 3472809322519961913, guid: 4adf158a89fafde46bdeac5cd1208156, type: 3}
       propertyPath: value
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3472809322519961913, guid: 4adf158a89fafde46bdeac5cd1208156, type: 3}
       propertyPath: IsDead
@@ -9731,7 +9759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3472809322519961913, guid: 4adf158a89fafde46bdeac5cd1208156, type: 3}
       propertyPath: maxHealth
-      value: 100
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 4357782264996217706, guid: 4adf158a89fafde46bdeac5cd1208156, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10033,6 +10061,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkeletonRevenant
       objectReference: {fileID: 0}
+    - target: {fileID: 7469504316305318539, guid: 79c1c7a523b96be4989e8cea7faef4fc, type: 3}
+      propertyPath: value
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 7469504316305318539, guid: 79c1c7a523b96be4989e8cea7faef4fc, type: 3}
+      propertyPath: maxHealth
+      value: 250
+      objectReference: {fileID: 0}
     - target: {fileID: 8897890066086072108, guid: 79c1c7a523b96be4989e8cea7faef4fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14.48
@@ -10125,6 +10161,14 @@ PrefabInstance:
     - target: {fileID: 2257739832114063345, guid: b2969cfa026ecc24e8a87b6bfc44648f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918330087087934773, guid: b2969cfa026ecc24e8a87b6bfc44648f, type: 3}
+      propertyPath: playerComboGrace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918330087087934773, guid: b2969cfa026ecc24e8a87b6bfc44648f, type: 3}
+      propertyPath: playerComboScalingDamage
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8597597475596323515, guid: b2969cfa026ecc24e8a87b6bfc44648f, type: 3}
       propertyPath: m_Name
@@ -10419,11 +10463,15 @@ PrefabInstance:
       objectReference: {fileID: 6902377311953366790, guid: 2267502f1b734d1438c72d195c3d3ed8, type: 3}
     - target: {fileID: 3472809322519961913, guid: 4adf158a89fafde46bdeac5cd1208156, type: 3}
       propertyPath: value
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3472809322519961913, guid: 4adf158a89fafde46bdeac5cd1208156, type: 3}
       propertyPath: IsDead
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3472809322519961913, guid: 4adf158a89fafde46bdeac5cd1208156, type: 3}
+      propertyPath: maxHealth
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 4357782264996217706, guid: 4adf158a89fafde46bdeac5cd1208156, type: 3}
       propertyPath: m_LocalPosition.x
