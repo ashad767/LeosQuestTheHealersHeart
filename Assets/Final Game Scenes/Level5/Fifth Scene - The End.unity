@@ -1611,14 +1611,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkeletonRevenant
       objectReference: {fileID: 0}
-    - target: {fileID: 7469504316305318539, guid: 79c1c7a523b96be4989e8cea7faef4fc, type: 3}
-      propertyPath: value
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 7469504316305318539, guid: 79c1c7a523b96be4989e8cea7faef4fc, type: 3}
-      propertyPath: maxHealth
-      value: 300
-      objectReference: {fileID: 0}
     - target: {fileID: 8897890066086072108, guid: 79c1c7a523b96be4989e8cea7faef4fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 100.46098
@@ -1715,18 +1707,6 @@ PrefabInstance:
     - target: {fileID: 5159267617351135093, guid: aabb0d5e31623974197a1411570443e1, type: 3}
       propertyPath: m_Name
       value: ForestSpirit
-      objectReference: {fileID: 0}
-    - target: {fileID: 5201505914150531110, guid: aabb0d5e31623974197a1411570443e1, type: 3}
-      propertyPath: coin
-      value: 
-      objectReference: {fileID: 6902377311953366790, guid: 2267502f1b734d1438c72d195c3d3ed8, type: 3}
-    - target: {fileID: 5201505914150531110, guid: aabb0d5e31623974197a1411570443e1, type: 3}
-      propertyPath: value
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 5201505914150531110, guid: aabb0d5e31623974197a1411570443e1, type: 3}
-      propertyPath: maxHealth
-      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2437,10 +2417,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6918330087087934773, guid: b2969cfa026ecc24e8a87b6bfc44648f, type: 3}
-      propertyPath: playerComboScalingDamage
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 8597597475596323515, guid: b2969cfa026ecc24e8a87b6bfc44648f, type: 3}
       propertyPath: m_Name
       value: Everyting
@@ -2525,18 +2501,6 @@ PrefabInstance:
     - target: {fileID: 4625862200769009523, guid: f52c81bd56b4e104ab71283aa0277524, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8020473636755006883, guid: f52c81bd56b4e104ab71283aa0277524, type: 3}
-      propertyPath: coin
-      value: 
-      objectReference: {fileID: 6902377311953366790, guid: 2267502f1b734d1438c72d195c3d3ed8, type: 3}
-    - target: {fileID: 8020473636755006883, guid: f52c81bd56b4e104ab71283aa0277524, type: 3}
-      propertyPath: value
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 8020473636755006883, guid: f52c81bd56b4e104ab71283aa0277524, type: 3}
-      propertyPath: maxHealth
-      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

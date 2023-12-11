@@ -366,14 +366,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3116848323251004471, guid: d9d1f7c261dc75747a915b6759f58089, type: 3}
-      propertyPath: value
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 3116848323251004471, guid: d9d1f7c261dc75747a915b6759f58089, type: 3}
-      propertyPath: maxHealth
-      value: 200
-      objectReference: {fileID: 0}
     - target: {fileID: 3934995787567752555, guid: d9d1f7c261dc75747a915b6759f58089, type: 3}
       propertyPath: m_Name
       value: ShadowImp
@@ -1568,11 +1560,7 @@ PrefabInstance:
       objectReference: {fileID: 6902377311953366790, guid: de41ca93ea034d941a8abe7abf2894e1, type: 3}
     - target: {fileID: 5201505914150531110, guid: aabb0d5e31623974197a1411570443e1, type: 3}
       propertyPath: value
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 5201505914150531110, guid: aabb0d5e31623974197a1411570443e1, type: 3}
-      propertyPath: maxHealth
-      value: 200
+      value: 150
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1978,14 +1966,6 @@ PrefabInstance:
     - target: {fileID: 5159267617351135093, guid: aabb0d5e31623974197a1411570443e1, type: 3}
       propertyPath: m_Name
       value: ForestSpirit
-      objectReference: {fileID: 0}
-    - target: {fileID: 5201505914150531110, guid: aabb0d5e31623974197a1411570443e1, type: 3}
-      propertyPath: value
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 5201505914150531110, guid: aabb0d5e31623974197a1411570443e1, type: 3}
-      propertyPath: maxHealth
-      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9653,14 +9633,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6918330087087934773, guid: b2969cfa026ecc24e8a87b6bfc44648f, type: 3}
-      propertyPath: playerComboGrace
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6918330087087934773, guid: b2969cfa026ecc24e8a87b6bfc44648f, type: 3}
-      propertyPath: playerComboScalingDamage
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 8597597475596323515, guid: b2969cfa026ecc24e8a87b6bfc44648f, type: 3}
       propertyPath: m_Name
       value: Everyting
@@ -10270,11 +10242,7 @@ PrefabInstance:
       objectReference: {fileID: 6902377311953366790, guid: de41ca93ea034d941a8abe7abf2894e1, type: 3}
     - target: {fileID: 3116848323251004471, guid: d9d1f7c261dc75747a915b6759f58089, type: 3}
       propertyPath: value
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 3116848323251004471, guid: d9d1f7c261dc75747a915b6759f58089, type: 3}
-      propertyPath: maxHealth
-      value: 200
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 3934995787567752555, guid: d9d1f7c261dc75747a915b6759f58089, type: 3}
       propertyPath: m_Name
