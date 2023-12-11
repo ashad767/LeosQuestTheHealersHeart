@@ -23,7 +23,7 @@ public class ItemsS_Manager : MonoBehaviour
     void Start()
     {
         // Uncomment this to reset the shop data
-        Reset();
+        //Reset();
 
         LoadItems();
     }
