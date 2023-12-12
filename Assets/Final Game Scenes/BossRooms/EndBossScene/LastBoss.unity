@@ -921,11 +921,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6339056728572248380, guid: 11b5f2f0722e60045a2d778d9a3fd2bd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.8
+      value: 11.7
       objectReference: {fileID: 0}
     - target: {fileID: 6339056728572248380, guid: 11b5f2f0722e60045a2d778d9a3fd2bd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -44.2
+      value: -42.7
       objectReference: {fileID: 0}
     - target: {fileID: 6339056728572248380, guid: 11b5f2f0722e60045a2d778d9a3fd2bd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1571,7 +1571,7 @@ MonoBehaviour:
   - {fileID: 7400000, guid: 63c6894f7669c3c409a2fa72ccb31fc0, type: 2}
   MC: {fileID: 2133256492}
   healthBar: {fileID: 1451616565}
-  Heart: {fileID: 0}
+  Heart: {fileID: 5495372844304071297, guid: 024a61e0a3e55b44d9278826ad4f19b7, type: 3}
   idle: 1
   startFireBallRainPrefab: {fileID: 5018142768146605432, guid: 0ff13beb44720b84c88350abf4cd5d54, type: 3}
   rFM: {fileID: 204985791}
@@ -1702,7 +1702,7 @@ Transform:
   m_GameObject: {fileID: 949629204}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 4.7, y: -1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1727,7 +1727,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &988545125
 BoxCollider2D:
   m_ObjectHideFlags: 0
