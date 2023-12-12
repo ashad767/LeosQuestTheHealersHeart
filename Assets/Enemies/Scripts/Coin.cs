@@ -16,7 +16,7 @@ public class Coin : MonoBehaviour
     {
     }
 
-    public void OnTriggerEnter2D(Collider2D collider) 
+    public virtual void OnTriggerEnter2D(Collider2D collider) 
     {
         if(collider.CompareTag("Player"))
         {
