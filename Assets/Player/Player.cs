@@ -474,5 +474,8 @@ public class Player : Entity
 
         if (Input.GetKeyDown(KeyCode.Alpha0))
             SceneManager.LoadScene("Shop");
+
+        if(Input.GetKeyDown(KeyCode.Alpha9))
+            SceneManager.LoadScene("LastBoss");
     }
 }
