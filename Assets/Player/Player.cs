@@ -459,23 +459,23 @@ public class Player : Entity
 
     public void TestInputs()
     {
-        if (Input.GetKeyDown(KeyCode.Insert))
+        if (Input.GetKeyDown(KeyCode.I))
             UpgradeSkill(0);
-        if (Input.GetKeyDown(KeyCode.Home))
+        if (Input.GetKeyDown(KeyCode.O))
             UpgradeSkill(1);
-        if (Input.GetKeyDown(KeyCode.PageUp))
+        if (Input.GetKeyDown(KeyCode.P))
             UpgradeSkill(2);
 
  
-        if (Input.GetKeyDown(KeyCode.KeypadMinus))
+        if (Input.GetKeyDown(KeyCode.DownArrow))
             TakeDamage(5);
-        if (Input.GetKeyDown(KeyCode.KeypadPlus))
+        if (Input.GetKeyDown(KeyCode.UpArrow))
             AddCoins(100);
 
-        if (Input.GetKeyDown(KeyCode.Alpha0))
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
             SceneManager.LoadScene("Shop");
 
-        if(Input.GetKeyDown(KeyCode.Alpha9))
+        if(Input.GetKeyDown(KeyCode.RightArrow))
             SceneManager.LoadScene("LastBoss");
     }
 }
